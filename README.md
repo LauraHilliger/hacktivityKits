@@ -16,4 +16,6 @@ IÕve been brainstorming the best way to create hackable content that is also usa
 
 Get more context at http://www.zythepsary.com/?s=hacktivity+kits and at http://www.zythepsary.com
 
+<h1>See the kits in action at: http://www.zythepsary.com/mozilla/hacktivity</h1>
+
 I'll be updating with a drawing of the kits from a meta level...hopefully soon ;)
