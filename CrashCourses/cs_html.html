@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>HTML Cheatsheet</title>
+<link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+<header><a href="http://www.webmaker.org" title="Webmaker Logo"><img src="../icons/webmaker_logo.png" alt="webmaker_logo"></a>
+
+  <hgroup>
+    <h1>Cheatsheet</h1>
+    <h2>HTML</h2>
+  </hgroup>
+    <nav>
+    <h3>What this page is</h3>
+    <p>The HTML Cheatsheet is a reference guide for the most commonly used HTML tags. Learn more about the basic building blocks of the web by making some <a href="http://www.webmaker.org/projects" target="_blank">Webmaker Projects!</a></p>
+  </nav>
+</header>
+<section class="onePager">
+  <h1>Dive into HTML</h1>
+  <ol>
+    <li>
+      <h5>Elements that Every Page Has</h5>
+      <ul>
+        <li><strong>&lt;html&gt; (Document Root)</strong> creates an HTML document. Everything in an HTML document should be inside an &lt;html&gt; tag except the doctype. <code class="exampleCode">&lt;!DOCTYPE html&gt;<br/>
+          &lt;html&gt;<br/>
+          &nbsp;&lt;head&gt;&lt;/head&gt;<br/>
+          &nbsp;&lt;body&gt;&lt;/body&gt;<br/>
+          &lt;/html&gt;<br/>
+          </code> </li>
+        <li>
+          <p><strong>&lt;head&gt; (Document Metadata Container)</strong> contains document information. You can provide general information about the current document in the &lt;head&gt;, such as stylesheets, javascripts, search keywords, character encoding.</p>
+        </li>
+        <li>
+          <p><strong>&lt;title&gt;  (Document Title)</strong> defines the title of the document, shown in a browser's title bar or on the page's tab.</p>
+        </li>
+        <li>
+          <p><strong>&lt;body&gt; (Document Body)</strong> frames the main content of a web page. All content needs to be within the &lt;body&gt; tags It's  where all the stuff people actually see goes. Oh, and documents only have one &lt;body&gt; tag.</p>
+        </li>
+      </ul>
+    </li>
+    <li class="right">
+      <h5>Text</h5>
+      <ul>
+        <li> <strong>&lt;h1&gt; , &lt;h2&gt; , &lt;h3&gt; , &lt;h4&gt; , &lt;h5&gt; , &lt;h6&gt;  (Heading Elements)</strong> Heading elements implement six levels of document headings, &lt;h1&gt; is the most important and &lt;h6&gt; is the least. A heading element  briefly describes the topic of the section it introduces. Heading information may be used by user agents, for example, to construct a table of contents for a document automatically. <code class="exampleCode">&lt;h1&gt;This is the most important header&lt;/h1&gt;</code> </li>
+        <li> <strong>&lt;p&gt; (Paragraph)</strong> creates a new paragraph <code class="exampleCode">&lt;p&gt;...&lt;/p&gt;</code> </li>
+        <li> <strong>&lt;ul&gt; (Unordered List)</strong> creates a bulleted list <code class="exampleCode">&lt;ul&gt;<br/>
+          &nbsp;&nbsp;&lt;li&gt;List Item&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&lt;li&gt;List Item&lt;/li&gt; <br/>
+          &lt;/ul&gt;</code> </li>
+        <li> <strong>&lt;ol&gt; (Ordered List)</strong> creates a numbered list <code class="exampleCode">&lt;ol&gt;<br/>
+          &nbsp;&nbsp;&lt;li&gt;List Item&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&lt;li&gt;List Item&lt;/li&gt; <br/>
+          &lt;/ol&gt;</code> </li>
+        <li> <strong>&lt;li&gt; (List Item)</strong> inserts a list item, and adds a number or symbol depending upon the type of list selected </li>
+        <li> <strong>&lt;strong&gt; (Bold Text)</strong> <code class="exampleCode">&lt;strong&gt;This will display as bold text&lt;/strong&gt;</code> </li>
+        <li> <strong>&lt;em&gt; (Italic Text)</strong> <code class="exampleCode">&lt;em&gt;This will display as italic text&lt;/em&gt;</code> </li>
+        <li> <strong>&lt;span&gt; (Span)</strong> serves as a hook for inline styling <code class="exampleCode">&lt;span style="color:red;"&gt;This text will be red&lt;/span&gt;</code> </li>
+      </ul>
+    <li>
+      <h5>Links and Images</h5>
+      <ul>
+        <li> <strong>&lt;a&gt; (Anchor or Hyperlink)</strong> (&lt;a&gt;) is the building-block of the web. It defines a link. Use the href attribute to define the target of the link <code class="exampleCode">&lt;a href="https://etherpad.mozilla.org/simple-mdn"&gt;Simple MDN Definitions&lt;/a&gt;</code> </li>
+        <li> <strong>&lt;img&gt; (Image)</strong> produces an image. Use the src attribute to define the image to embed. The image tag does not have a closing tag. Instead a "/" is used as below: <code class="exampleCode"> &lt;img src="https://developer.mozilla.org/skins/mdn/Transitional/img/mdn-logo-sm.png"/&gt;</code> </li>
+      </ul>
+    </li>
+    <li class="right">
+      <h5>Page Structure</h5>
+      <ul>
+        <li> <strong>&lt;div&gt; (Document Division)</strong> &lt;div&gt; is a generic container for content. It can be used to group elements for styling purposes (using the <strong>class</strong> or <strong>id</strong> attributes), or because they share attribute values, such as lang. It should be used only when no other semantic element (such as &lt;article&gt;  or &lt;nav&gt; ) is appropriate. <code class="exampleCode">&lt;div&gt;...&lt;/div&gt;</code> </li>
+        <li> <strong>&lt;section&gt; (Document Outline Section) HTML5</strong> represents a generic section of a document, i.e., a thematic grouping of content, typically with a heading. <code class="exampleCode">&lt;section&gt;...&lt;/section&gt;</code> </li>
+        <li> <strong>&lt;nav&gt; (Navigation) HTML5</strong> produces a link that allows users to jump from one area of a site to another, including from one page to another or within the same page: a section with navigation links. <code class="exampleCode">&lt;ul&gt;<br/>
+          &nbsp;&nbsp;&lt;li&gt;&lt;a href="..."&gt;Link&lt;/a&gt;&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&lt;li&gt;&lt;a href="..."&gt;Link&lt;/a&gt;&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&lt;li&gt;&lt;a href="..."&gt;Link&lt;/a&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="..."&gt;Link&lt;/a&gt;&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="..."&gt;Link&lt;/a&gt;&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br/>
+          &lt;/li&gt;<br/>
+          &lt;/ul&gt;</code> </li>
+      </ul>
+    </li>
+  </ol>
+</section>
+<section class="two">
+  <div class="sidebar">
+    <h1>Helpful Resources</h1>
+    <h5>Mozilla Developer Network (MDN)</h5>
+    <p> The MDN is an open community of developers building resources for a better web, regardless of brand, browser or platform. There is a complete list of all HTML elements here: <a href="https://developer.mozilla.org/en/HTML/Element">https://developer.mozilla.org/en/HTML/Element</a></p>
+    <h5>Stackoverflow</h5>
+    <p> Stackoverflow is a programming question and answer site. If you have questions, search this site and you'll likely find the answers. <a href="http://stackoverflow.com/">http://stackoverflow.com/</a></p>
+  </div>
+</section>
+</body>
+</html>
