@@ -47,9 +47,6 @@ Together, make a list of what each article should have. Start with one story on 
   <li class="right"><img src="static/hh_thimble/step04_projectsThimble.png" alt="step04_projectsThimble" width="140" height="123" class="right">
    <p>Have learners use the "<a href="https://webmaker.org/en-US/projects/learn-html-fast-making-your-own-web-page/" target="_blank">Create Your Own HTML page</a>" project to create a page for their bias story. Allow them to collaborate to figure out tags, find mistakes, and tinker around with HTML and CSS.</p>
   </li>
-  <li class="right">
-   <p><strong>Extra credit:</strong> after building a news story, take a look at the social web and build a <a href="http://storify.com">Storify</a> of the topic. Consider biasing the Storify in a new way, or try a new challenge: can you make it neutral?</p>
-  </li>
  </ol>
 </section>
 <section class="two">

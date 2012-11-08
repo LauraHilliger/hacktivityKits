@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Welcome and introductions</title>
+<link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+<header>  <a href="index_thimble_opennews.html" title="Thimble Logo"><img src="../icons/thimble.png" alt="Thimble" /></a>
+  <hgroup>
+    <h1>Welcome and introductions</h1>
+    <h2></h2>
+  </hgroup>
+
+  <nav> 
+    <!--An icebreaker is an activity that gets the blood pumping, forms connections between learners, and introduces a topic. There are thousands of different ways to introduce a topic and get learners interacting with each other. Choose one and hack it to be your own! -->
+    <h3>Icebreaker</h3>
+    <!--Give 2 to 3 sentences about what the Hacktivity is and what learners will do.-->
+    <p>You might be at an event with a lot of people you don't know. This ice breaker is a really brief go-round to get people talking.</p><p>
+      <p><a href="index_thimble_opennews.html">See what we're going to work on in this kit!</a></p>
+  </nav>
+</header>
+<section class="onePager">
+  <h1>Steps</h1>
+  <ol>
+    <li>Welcome everyone to the space and review any important logistical items: bathrooms, food, water, etc. Help make sure that everyone has access to Internet and a power supply. Introduce folks to Thimble, review the agenda for the event, and make sure folks have links to relevant documents, such as this kit! </li>
+    <li>Start a go-round for introductions. Have each person give three items of information: Name, where they're from (however they want to define that), and what brings them to the event today. </li>
+    <li>Wrap up in the welcome with an outline of some basic ground rules: respect time and the schedule; respect communication, so be mindful of vocabulary that might not be familiar to everyone; and the rule of one, rule of n: each person should speak 1/nth of the time.</li>
+  </ol>
+</section>
+<section class="two">
+  <div class="materials">
+    <h1>Materials</h1>
+    <ul>
+      <li>Chairs</li>
+<li>Etherpad to share links and materials</li>
+    </ul>
+  </div>
+</section>
+<section class="two">
+  <div class="discussion">
+    <h1>Discussion</h1>
+   <p>Check in with participants to see if they have any questions. Discuss any areas of concern and transition to the <a href="intro_html_css.html">HTML and CSS crash course</a>. </p>
+  </div>
+</section>
+</body>
+</html>

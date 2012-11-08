@@ -17,24 +17,47 @@
    <!--A setting up activity is one that gives pointed instruction to participants on tools or procedures. An example of a setting up activity would be allowing the participants to get used to the interface of Thimble or Popcorn by having them make projects. Before learners can practically apply new skills, they need to be comfortable with the tools they'll be using and have a basic understanding of the skills they'll be sharpening. -->
     <h3>Setting Up</h3>
     <!--Give 2 to 3 sentences about what the Hacktivity is and what learners will do.-->
-    <p>Learners use HTML and CSS to remix an article and learn some basic tags and style properties.<br/>
-      <a href="index_thimble_opennews.html">See what's in the Thimble Kit!</a></p>
+    <p>Let's put to use those HTML and CSS skills by editing the code behind a news article using Thimble.</p>
         <a href="../index.html" class="button">View other kits!</a>
   </nav>
 </header>
 <section class="onePager">
   <h1>Steps</h1>
   <ol>
-    <li><img src="static/su_thimble/step01_openThimble.png" alt="step01_openThimble">
-      <p>Start hacking a news article. Learn how to transform a blob of text into an article format welcome on any news organization website. Read up on the introduction to the Thimble project on Webmaker.org, and click the Get Started button at the bottom when ready to work on the article. On the Thimble page are additional tips and instructions on the left side of the editor.</p>
+   <li class="right">  <img src="static/su_thimble/step02_projectsThimble.png" alt="step02_projectsThimble" class="right"><h5>Thimble helps you edit live</h5><p>Start hacking a news article. We have a <a href="https://thimble.webmaker.org/p/ffjt/edit">Thimble page</a> all ready for you to hack. Learn how to transform a blob of text into an article format welcome on any news organization website. Read through the comments on the left side of the page for tips on how to edit the article.</p>
     </li>
-    <li class="right">  <img src="static/su_thimble/step02_projectsThimble.png" alt="step02_projectsThimble" class="right">    <p>Feel free to work alone or in a team. If you'd like, you could also choose a different <a href="https://www.webmaker.org/en-US/projects/?difficulty=beginner&tool=thimble#filter" target="_blank">beginner Thimble project</a> such as <a href="https://webmaker.org/en-US/projects/make-your-own-meme/">"Make your own meme."</a></p>
+    <li> <h5>Start editing some HTML code</h5>   <p>Feel free to work alone or in a team. Play around styling the text. Here are some changes you can make to this example Al Jazeera article:  <ul><li>* Make the first sentence the main headline</li>
+
+  <li>* Make the second sentence the secondary headline</li>
+
+   <li>* Add paragraph tags to the paragraphs</li>
+
+    <li>* Make the last modified information italic</li>
+
+    <li>* Put this image (http://www.dw.de/image/0,,16233560_401,00.jpg ) in under the last modified information</li>
+
+    <li>* Make “Tight race” a second headline</li>
+
+   <li>* The sentence starting “If another party wins ... “ is a quotation from http://www.reuters.com/article/2012/09/11/us-dutch-election-idUSBRE88A0UW20120911  Add the tags to make it into a blockquote. </li>
+
+  <li>* “Parties In The Dutch Election” is a second headline and the party names should be in an unordered list</li></ul>
+
+ </p>
     </li>
-    <li> <img src="static/su_thimble/step03_thimbleInterface.png" alt="step03_thimbleInterface">
-      <p> Float around to help learners that get stuck. In the Hands on Hacking hacktivity, learners will have a specific task to complete, so for now, allow them to play with Thimble and get used to the interface.</p>
+    <li class="right"><h5>CSS is next!</h5><p>After editing the HTML, you can use <a href="<h5>Start editing some HTML code</h5>">this Thimble</a> to start working on editing CSS. Here are some example edits you can make:
+   <ul><li>* Make the headline font Arial</li>
+
+   <li>* Make the "Last modified" font blue and size 8px</li>
+
+   <li>* Give the blockquote a background colour of #E0E0DE, font size 0.8em and font family Georgia </li>
+
+   <li>* Centre the "Parties In The Dutch Election" heading and make it the Georgia font</li>
+
+   <li>* Give the unordered list a background colour of #F2D59D</li><ul></p><p>To practice CSS skills even more, try this a challenging CSS assignment. Try to make the list of Dutch parties into an info box. To do this you will need to use properties like padding and margin. Refer back to the <a href="../CrashCourses/cs_css.html">CSS cheatsheet</a> for help. </p>
     </li>
-    <li class="right">
-    <p><div><img src="http://farm4.staticflickr.com/3514/3968766889_2f2503d702_t.jpg" alt="you can do it" class="right"/>Photo:</div>Have learners publish their projects and post them to a blog or save links in an Etherpad. Encourage learners to create their own Thimble using text from a story they've worked on or copying and pasting from their favorite site. See if they can copy, or improve on!, the formatting of the text on the original page.</p>
+    <li class="right"><h5>Wrapping up</h5> <img src="static/su_thimble/step03_thimbleInterface.png" alt="step03_thimbleInterface">
+      <p>Session facilitators will float around to help learners that get stuck. In the upcoming Hands on Hacking hacktivity, learners will have a specific task to complete, so for now, the focus is on playing with Thimble and getting used to the interface.</p>
+    <p>Extra credit: Have learners publish their projects and post them to a blog or save links in an Etherpad. Encourage learners to create their own Thimble using text from a story they've worked on or copying and pasting from their favorite site. See if they can copy, or improve on!, the formatting of the text on the original page.</p>
     </li>
   </ol>
 </section>
