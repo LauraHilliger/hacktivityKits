@@ -45,15 +45,15 @@
  </p>
     </li>
     <li class="right"><h5>CSS is next!</h5><p>After editing the HTML, you can use <a href="<h5>Start editing some HTML code</h5>">this Thimble</a> to start working on editing CSS. Here are some example edits you can make:
-   <ul><li>* Make the headline font Arial</li>
+   <ul class="inner"><li>Make the headline font Arial</li>
 
-   <li>* Make the "Last modified" font blue and size 8px</li>
+   <li>Make the "Last modified" font blue and size 8px</li>
 
-   <li>* Give the blockquote a background colour of #E0E0DE, font size 0.8em and font family Georgia </li>
+   <li>Give the blockquote a background colour of #E0E0DE, font size 0.8em and font family Georgia </li>
 
-   <li>* Centre the "Parties In The Dutch Election" heading and make it the Georgia font</li>
+   <li>Centre the "Parties In The Dutch Election" heading and make it the Georgia font</li>
 
-   <li>* Give the unordered list a background colour of #F2D59D</li><ul></p><p>To practice CSS skills even more, try this a challenging CSS assignment. Try to make the list of Dutch parties into an info box. To do this you will need to use properties like padding and margin. Refer back to the <a href="../CrashCourses/cs_css.html">CSS cheatsheet</a> for help. </p>
+   <li>Give the unordered list a background colour of #F2D59D</li></ul><p>To practice CSS skills even more, try this a challenging CSS assignment. Try to make the list of Dutch parties into an info box. To do this you will need to use properties like padding and margin. Refer back to the <a href="../CrashCourses/cs_css.html">CSS cheatsheet</a> for help. </p>
     </li>
     <li class="right"><h5>Wrapping up</h5> <img src="static/su_thimble/step03_thimbleInterface.png" alt="step03_thimbleInterface">
       <p>Session facilitators will float around to help learners that get stuck. In the upcoming Hands on Hacking hacktivity, learners will have a specific task to complete, so for now, the focus is on playing with Thimble and getting used to the interface.</p>
@@ -66,7 +66,7 @@
     <h1>Materials</h1>
     <ul>
       <li>Computer</li>
-      <li>Web Access</li>
+      <li>Web access</li>
       <li>Projector</li>
       <li>A blog or <a href="http://etherpad.mozilla.org">Etherpad</a> for posting work and/or links</li>
       <li><a href="../CrashCourses/cs_html.html">HTML Cheatsheet</a></li>
