@@ -7,7 +7,7 @@
 </head>
 <body>
 <header>
- <a href="http://webmaker.org" title="Webmaker Logo"><img src="../icons/webmaker_logo.png" alt="webmaker_logo"></a>
+<a href="index_thimble_opennews.html" title="Thimble Logo"><img src="../icons/thimble.png" alt="Thimble" /></a>
   <hgroup>
     <h1>Crash Course for Journalists</h1>
     <h2>HTML and CSS</h2>
@@ -15,7 +15,7 @@
  
   <nav>
     <h3>Learning the code behind the page</h3>
-    <p>The HTML and CSS Crash Course is a quick read into what these technologies actually are. Learn more about the basic building blocks of the web (and how to style them) by making some <a href="http://www.webmaker.org/projects" target="_blank">Webmaker Projects!</a></p>
+    <p>The HTML and CSS Crash Course is a quick read into what these technologies actually are. Learn more about the basic building blocks of the web (and how to style them) by <a href="index_thimble_opennews.html">working through the rest of this kit</a>.</p>
   </nav>
 </header>
 <section class="onePager">
@@ -23,7 +23,7 @@
   <ol>
     <li>
       <h5>What is HTML?</h5>
-      <p>HTML (<a ref="http://en.wikipedia.org/wiki/Html">Hyper Text Markup Language</a>) is the language used to tell computers how to structure webpages. Document writing software like Microsoft Word, allows you to structure text into paragraphs and lists, bold and coloured print, etc. HTML is used to mark text in a way in which browsers can interpret and present the text in a structured form. </p>
+      <p>HTML (<a ref="http://en.wikipedia.org/wiki/Html">Hyper Text Markup Language</a>) is the language used to tell computers how to structure webpages. Document writing software, like Microsoft Word, allows you to structure text into paragraphs and lists, bold and coloured print, etc. HTML is used to mark text in a way in which browsers can interpret and present the text in a structured form. </p>
 <p>Here’s a really simple web page:</p>
       <p><code>I can &lt;em&gt;hear&lt;/em&gt; you!</code></p>
       <p> Because the sentence is wrapped in what we call "tags," this page displays as a single line of text with the word “hear” italicized. The &lt;em&gt; tag tells the computer to emphasize anything inside of it. If a blind person were listening to the webpage, a computerized voice would place emphasis on the word “hear.”</p>
@@ -35,7 +35,7 @@
     </li>
     <li>
       <h5>Attributes add meaning to elements.</h5>
-      <p>This element is slightly more complex because it includes an <a href="http://en.wikipedia.org/wiki/Html#Attributes">attribute</a>, or piece of information that adds meaning to the element’s content. In this case, the href attribute tells a computer that “Wikipedia” is associated with — or hyperlinked to — the website wikipedia.org. That means clicking (or tapping) on the word will take the reader to Wikipedia’s website. Some elements don’t actually contain any content, and hence have no closing tag, but represent special kinds of content themselves. One example is the &lt;img&gt; tag:</p>
+      <p>The above element is slightly more complex because it includes an <a href="http://en.wikipedia.org/wiki/Html#Attributes">attribute</a>, or piece of information that adds meaning to the element’s content. In this case, the href attribute tells a computer that “Wikipedia” is associated with — or hyperlinked to — the website wikipedia.org. That means clicking (or tapping) on the word will take the reader to Wikipedia’s website. Some elements don’t actually contain any content, and hence have no closing tag, but represent special kinds of content themselves. One example is the &lt;img&gt; tag:</p>
       <p><code>This is serious!<br/>
         &lt;img src=“http://seriouscat.com/serious_cat_is_serious.jpg”&gt;</code></p>
 <p>Another example of an attribute is adding cite to a block quote. So for the &lt;blockquote&gt; you should, as good journalistic practice, add a cite attribute which is a link to where the quote has come from, e.g. &lt;blockquote cite="http://source_of_quotation.html"&gt;quotation&lt;/blockquote&gt;.</p>
@@ -50,7 +50,7 @@
     </li>
     <li>
       <h5>Some common tags:</h5>
-<p><ul>    <li>&lt;p&gt; = paragraph</li>
+<p><ul class="inner">    <li>&lt;p&gt; = paragraph</li>
 
     <li>&lt;h1&gt; = primary header</li>
 
@@ -85,7 +85,7 @@
       <li>
         <h5>CSS properties </h5>
 <p>Here are some common properties you'll encounter in our hacktivities:
-<ul><li>background-color</li>
+<ul class="inner"><li>background-color</li>
 
    <li>color</li>
 
@@ -95,7 +95,7 @@
 
    <li>font-size</li></ul></p>
        <p>You can see a full list of CSS properties here: <a href="https://developer.mozilla.org/en/CSS_Reference">https://developer.mozilla.org/en/CSS_Reference</a></p>
-        <p>But what about when you want to make all &lt;em&gt; elements be styled this way? It sure is tedious to add the same style attribute to every occurrence, and this approach also makes it hard to change all the styles at once when you want to tinker. This is where CSS stylesheets come in, and they’re actually what most webpages use — but they’re also out of the scope of this tiny guide. </p><p>Here's a handy <a href="../CrashCourses/cs_css.html">CSS cheatsheet</a> for reference.</p></p>
+        <p>But what about when you want to make all &lt;em&gt; elements be styled this way? It sure is tedious to add the same style attribute to every occurrence, and this approach also makes it hard to change all the styles at once when you want to tinker. This is where external CSS stylesheets come in, and they’re actually what most webpages use — but they’re also out of the scope of this tiny guide. </p><p>Here's a handy <a href="../CrashCourses/cs_css.html">CSS cheatsheet</a> for reference.</p></p>
       </li>
     </ul>
   </div>
