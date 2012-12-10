@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Additional resources</title>
+<link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+<header><a href="http://www.webmaker.org" title="Webmaker Logo"><img src="../icons/webmaker_logo.png" alt="webmaker_logo"></a>
+
+  <hgroup>
+    <h1>Additional resources</h1>
+    <h2>for learning HTML and CSS </h2>
+  </hgroup>
+    <nav>
+    <h3>Keep up the learning</h3>
+    <p>There are a ton of resources available for learning HTML and CSS. Here's a short list of further reading and learning.</p>
+  </nav>
+</header>
+<section class="onePager">
+  <h1>Keep learning HTML</h1>
+  <ol>
+    <li>
+      <h5>Learning to code websites</h5>
+<p>Here are some great sites:<ul class="inner">
+<li><a href="http://www.codecademy.com/">CodeAcademy</a></li>
+<li><a href="http://learncodethehardway.org/">LearnCodeTheHardWay</a></li>
+<li><a href="https://www.coursera.org/">Coursera</a></li>
+<li><a href="http://www.udacity.com/">Udacity</a></li>
+<li>...and many more</li></ul>
+</p>
+    </li>
+    <li class="right">
+      <h5>Journalism-specific resources</h5>
+<p>Journalists are learning this stuff together. <a href="http://www.codewithmedc.com/">Code with me</a> holds in-person learning sessions. <a href="https://www.ire.org/events-and-training/">NICAR-IRE</a>, <a href="http://help.hackshackers.com/questions/">Hacks/Hackers</a>, the <a href="https://members.journalists.org/tools-tech">Online News Association</a>, and <a href="http://newsu.org">Poynter</a> all have great learning materials in person and online.</p></li>
+    <li>
+      <h5>General tips</h5>
+      <p>Google it. No, really. If you have a problem, someone else or many someone elses probably have had it too. Search the web for answers and you'll start encountering sites like Stack Overflow where folks answer a wide variety of coding questions. Lisa Williams <a href="http://lifeandcode.tumblr.com/">devoted a tumblr</a> to detailing the process of learning to code. Just look around a bit and you'll find a lot of great, supportive resources and communities out there.</p>
+    </li>
+  </ol>
+</section>
+<section class="two">
+  <div class="sidebar">
+    <h1>Stay connected</h1>
+    <h5>OpenNews</h5>
+    <p>Please, stay in touch! We're on Twitter, <a href="http://twitter.com/opennews">@opennews</a>. And we just launched <a href="http://source.mozillaopennews.org">Source</a>, a hub for journalism code and the people who make it. We have an <a href="https://lists.mozilla.org/listinfo/community-mojo">email list</a>, <a href="https://wiki.mozilla.org/OpenNews/Calls">community calls</a>, and if IRC is your speed, join #opennews on irc.mozilla.org. </p>
+  </div>
+</section>
+</body>
+</html>

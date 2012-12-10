@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CSS Cheatsheet</title>
+<link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+<header>
+ <a href="http://www.webmaker.org" title="Webmaker Logo"><img alt="Popcorn" src="../static/storycamp_logo.png" width="170px"></a>
+  <hgroup>
+    <h1>Cheatsheet</h1>
+    <h2>CSS</h2>
+  </hgroup>
+ 
+  <nav>
+    <h3>What this page is</h3>
+    <p>The CSS Cheatsheet is a reference guide for the most commonly used CSS selectors and properties. Learn more about styling HTML by making some <a href="http://www.webmaker.org/projects" target="_blank">Webmaker Projects!</a></p>
+  </nav>
+</header>
+<section class="onePager">
+  <h1>Dive into CSS</h1>
+  <p><em>n</em> is used to indicate where a number can be used. Don't forget to add a "%" or "px" after the number. Remember to use American spellings.
+  <ol>
+    <li>
+      <h5>CSS Syntax</h5>
+      <code class="exampleCode">selector {<br/>
+      &nbsp; property: value;<br/>
+      } </code> </li>
+    <li class="right">
+      <h5>Color</h5>
+      Uses one of <a href="http://www.w3schools.com/cssref/css_colornames.asp">147 color names</a> or a <a href="http://en.wikipedia.org/wiki/Hexadecimal">hexadecimal</a>. <code class="exampleCode">selector {<br/>
+      &nbsp; color: red;<br/>
+      &nbsp; background-color: #ff0000;
+      } </code> </li>
+    <li>
+      <h5>Background</h5>
+      <code class="exampleCode">selector {<br/>
+      &nbsp; background-image: url(http://thisisanimage.jpg);<br/>
+      &nbsp; background-position: top left;<br/>
+      <div class="indent">top center;<br/>
+        top right;<br/>
+        center left;<br/>
+        center center;<br/>
+        center right;<br/>
+        bottom left;<br/>
+        bottom center;<br/>
+        bottom right;<br/>
+        <em>n</em> <em>n</em>;<br/>
+      </div>
+      &nbsp; background-repeat: repeat;<br/>
+      <div class="indent">repeat-x;<br/>
+        repeat-y;<br/>
+        no-repeat;<br/>
+      </div>
+      } </code> </li>
+    <li class="right">
+      <h5>Text</h5>
+      <code class="exampleCode">selector {<br/>
+      &nbsp; font-family: Font Name;<br/>
+      &nbsp; font-size: <em>n</em>;<br/>
+      &nbsp; font-style: normal;
+      <div class="indent">italic;<br/>
+        oblique;<br/>
+      </div>
+      &nbsp; font-weight: lighter;
+      <div class="indent">normal;<br/>
+        bold;<br/>
+        bolder; </div>
+      &nbsp; line-height: normal;<br/>
+      <div class="indent"><em>n</em>;<br/>
+      </div>
+      &nbsp; letter-spacing: normal;<br/>
+      <div class="indent"><em>n</em>;<br/>
+      </div>
+      &nbsp; text-align: left;<br/>
+      <div class="indent">right;<br/>
+        center;<br/>
+        justify;<br/>
+      </div>
+      &nbsp; text-decoration: none;<br/>
+      <div class="indent">underline;<br/>
+        line-through;<br/>
+      </div>
+      &nbsp; text-transform: none;<br/>
+      <div class="indent">capitalize;<br/>
+        uppercase;<br/>
+        lowercase; </div>
+      } </code> </li>
+  </ol>
+</section>
+<section class="two">
+  <div class="sidebar">
+    <h1>Helpful Resources</h1>
+    <h5>Mozilla Developer Network (MDN)</h5>
+    <p>The MDN is an open community of developers building resources for a better web, regardless of brand, browser or platform. There is CSS Resource library here: <a href="https://developer.mozilla.org/en-US/learn/css">https://developer.mozilla.org/en-US/learn/css</a></p>
+    <h5>CSS Generators</h5>
+    <p>You can search online to find interesting background tiles and use CSS tools like:<br/>
+      <a href="http://www.stripegenerator.com/">http://www.stripegenerator.com/</a><br/>
+      <a href="http://www.colorzilla.com/gradient-editor/">http://www.colorzilla.com/gradient-editor/</a><br/>
+      <a href="http://cssgenerator.com">http://cssgenerator.com</a> </p>
+    <h5>the Box Model</h5>
+    <p>This model describes the content of the space taken by an element. Each box has four edges: the margin edge, border edge, padding edge, and content edge.</p>
+    <p> <a href="https://developer.mozilla.org/en-US/docs/CSS/box_model"><img src="https://developer.mozilla.org/files/72/boxmodel%20%281%29.png" width="260px"/>Learn more about the box model.</a> </p>
+  </div>
+</section>
+</body>
+</html>
