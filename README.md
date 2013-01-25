@@ -18,6 +18,6 @@ I have been brainstorming the best way to create hackable content that is also u
 
 Get more context at http://www.zythepsary.com/?s=hacktivity+kits and at http://www.zythepsary.com
 
-<h3>See the kits in action at: http://www.zythepsary.com/mozilla/hacktivity</h3>
+<h3>See the kits in action at: http://hivenyc.org</h3>
 
 I'll be updating with a drawing of the kits from a meta level...hopefully soon ;)
