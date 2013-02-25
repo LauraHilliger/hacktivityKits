@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Dripping Marker';
+    src: url('http://www.hivenyc.org/thimble/graffiti/static/adrip1-webfont.eot');
+    src: url('http://www.hivenyc.org/thimble/graffiti/static/adrip1-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://www.hivenyc.org/thimble/graffiti/static/adrip1-webfont.woff') format('woff'),
+         url('http://www.hivenyc.org/thimble/graffiti/static/adrip1-webfont.ttf') format('truetype'),
+         url('http://www.hivenyc.org/thimble/graffiti/static/adrip1-webfont.svg#adrippingmarkerRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

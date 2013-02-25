@@ -1,0 +1,116 @@
+<!doctype html>
+
+<!-- =======================================================================
+Someone started spraying a graffiti tip on this wall, but they didn't finish their sentence! They also didn't put the words in a single line. Finish the sentence and line the words up on the top of the page. 
+========================================================================= -->
+
+<!--
+
+Let's get started.
+
+1) READ THROUGH THE COMMENTS. This is a comment. Everything inside of this tag for HTML or '/*' for CSS, is not processed as code, but instead is just 
+text comments about the code. For this project, the comments will give you instructions, hints and guides to completing the project, 
+so skim down through the comments to get an understanding of what you are being asked to do.
+
+2) GET ORIENTED IN THE CODE. HTML is made up of tags that look like this <p> </p>. 
+The tags tell you something about the information contained between them. 
+Click on the tags in the code on this side of the editor to get a description of what each tag is for.
+
+-->
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Graffiti Navigation</title>
+<link href='http://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>  <!--
+  ====================================== 
+              STYLE BELOW 
+  ======================================
+  -->
+
+	<style>
+/* Everything between the <style> tags is CSS. Note the comments look different in CSS. */
+
+        body {
+    	background: #000 url("http://www.hivenyc.org/thimble/graffiti/static/graffitiwall.jpg");
+    	background-repeat: no-repeat;
+    	background-size:100%;
+        }
+
+        .navigation{
+	        font-family:'Permanent Marker';
+	        font-size:95px;
+	        margin: 20px auto 0px auto;
+        }
+        .navigation div{
+	      /* float:left;*/
+/* To get the words to line up on a single line, we'll use the CSS Float property. Floats allow you to push elements to the right or left, allowing you to wrap other bits of content around the element that has the float. Uncomment the float above and watch what happens!*/
+        }
+        .nav01{
+        margin-top:30px;
+        }
+        .nav02{
+	      padding:100px;
+        }
+        .nav03{
+	       padding:10px;
+        }
+        .nav04{
+	   
+        }
+        .nav05{
+	     
+        }
+        .nav06{
+	    
+        }
+        
+        a:link, a:visited{
+	        color:#15d9e5;
+	        text-decoration: none;
+	        text-shadow: 2px 2px 1px #2f5ca8, 
+	        			-2px 2px 1px #2f5ca8,
+	        			2px -2px 1px #2f5ca8,
+	        			-2px -2px 1px #2f5ca8, 
+	        			5px 5px 1px #52ce51, 
+	        			-5px 5px 1px #52ce51,
+	        			5px -5px 1px #52ce51,
+	        			-5px -5px 1px #52ce51;
+/* Let's unpack this code: The first number is the horizontal offset and the second is the vertical offset. These two numbers designate how far away the shadow is from the letters. Negative numbers push the shadow to the left for horizontal offset and towards the top for vertical offset. The third number is the amount of blurring the shadow should have. Finally, there is a hexadecimal color code. If you use multiple definitions, you can create a great many different text effects. 
+
+There are lots of interesting things you can do with the text-shadow property! Check out 12 cool effects here: http://designshack.net/articles/css/12-fun-css-text-shadows-you-can-copy-and-paste/ */
+        }
+        a:hover{
+	       color:red;
+	 
+        }
+    </style>
+
+<!--
+Note, the <style> tag is closed so we are done with CSS, now moving back to HTML.
+-->
+  </head>
+
+  <body>
+		
+<!--
+Here are the a tags. You can use these tags as navigation for your page. Don't forget to finish the sentence and change the styles above to make the words float side by side. 
+-->
+<section class="navigation">
+		<div class="nav01"><a href="#">DoN't</a></div>
+		<div class="nav02"><a href="#">forgeT</a></div>
+		<div class="nav03"><a href="#">to</a></div>
+		<div class="nav04"><a href="#"></a></div>
+		<div class="nav05"><a href="#"></a></div>	
+		<div class="nav06"><a href="#"></a></div>	
+</section>
+  	</body>
+  	
+</html>
+
+<!-- ====================================================================
+Congrats for making it this far! You've probably surprised yourself, you learned a lot in this project, especially how to wrangle the CSS float property and make text effects!
+======================================================================== -->
+<!--Images used under Fair Use. Credits:
+http://fc06.deviantart.net/fs71/i/2011/047/4/8/wall_texture___9_by_agf81-d39ofj7.jpg
+-->

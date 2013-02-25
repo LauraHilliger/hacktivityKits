@@ -1,0 +1,175 @@
+<!doctype html>
+
+<!-- =======================================================================
+Keeaokchek has studied the human beings from afar since early alienhood. Now he has come to Earth to meet the human beings and learn first hand about their culture. In order to do so, Keeaokchek needs to blend in so that the FBI doesn't find out he's here. Use your CSS skills to dress Keeakochek in, ahem, more human clothes and help him avoid Area 51.
+========================================================================= -->
+
+<!--
+
+Let's get started.
+
+1) READ THROUGH THE COMMENTS. This is a comment. Everything inside of this tag for HTML or '/*' for CSS, is not processed as code, but instead is just 
+text comments about the code. For this project, the comments will give you instructions, hints and guides to completing the project, 
+so skim down through the comments to get an understanding of what you are being asked to do.
+
+2) GET ORIENTED IN THE CODE. HTML is made up of tags that look like this <p> </p>. 
+The tags tell you something about the information contained between them. 
+Click on the tags in the code on this side of the editor to get a description of what each tag is for.
+
+-->
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Alien Invasion</title>
+
+  <!--
+  ====================================== 
+              STYLE BELOW 
+  ======================================
+  -->
+
+	<style>
+/* Everything between the <style> tags is CSS. Note the comments look different in CSS. */
+
+        body {
+    	background: #000 url("http://hivenyc.org/thimble/alien/static/earth_background.jpg");
+    	background-repeat: no-repeat;
+    	background-size:100%;
+        }
+
+/*To control distances using left, right, bottom, or top, we have to choose a position first. An Absolute position means that the clothing class will be located 100px from the top of the browser window. It doesn't matter what comes before or after or whether or not the browser windo is resized, the objects in this class will always be 100px from the top of the browser window. Trying changing the numbers and see what happens. */
+
+.clothing{
+			position:absolute;
+			top:100px;
+			right:50px;
+		}
+
+/* A relative position means that the "alien" class will be 210px from the object above it. Try changing these numbers and resizing the browser window. Look at the difference between absolute and relative positioning.   */
+
+		.alien {	
+		position:relative;
+		top:210px;
+		margin-left:75px;
+		width:255px;
+		}
+		
+		.clothing img{
+			float:left;
+		}
+		
+/* In CSS you can tell multiple classes to have the same properties. Here, all the clothing items have a relative position. If you decide you want all the clothes to have absolute positions, you only have to change it once here. Combining classes into a single definition makes for cleaner code and saves you time! */		
+		.bag,.blue_shirt, .cap, .dress, .glasses, .grey_shirt, .jeans_spotted, .jeans, .red_shirt, .shoes, .skirt{
+			position:relative;
+		}
+		
+/* Let's start dressing Keeaokchek! Under this comment you will find all the definitions for the clothes. */	
+
+		.bag {
+		left: 25em;
+		top: 25em;
+		}
+		
+		.blue_shirt {
+		z-index:4;
+		left: 234px;
+		top: 288px;
+		}
+		
+		.cap {
+		z-index:9;
+		}
+		
+		.dress {
+		z-index:5;
+		}
+		
+		.glasses {
+		z-index:10;
+		left: -20%;
+		top: 7em;
+		}
+		.grey_shirt {
+		z-index:7;
+		}
+
+/* If you want the shirt to be "tucked in", you will have to change the z-index. The z-index defines the "layers" of the CSS classes. When you have different elements that should overlap, you'll need to use z-indexes to control which element appears on top. Try chaning the z-indexes and see what happens! */
+		
+		.jeans_spotted {
+		z-index:1;
+		}
+		
+		.jeans {
+		z-index:2;
+		}
+		
+		.red_shirt {
+		z-index:3;
+		}
+		
+		.shoes {
+		z-index:8;
+		}
+		
+		.skirt {
+		z-index:6;
+		}
+		
+    </style>
+
+<!--
+Note, the <style> tag is closed so we are done with CSS, now moving back to HTML.
+-->
+
+
+<!--
+How does Keeaokchek look now? Do you think the FBI will find him? If you don't like the clothes in this page, try building your own by checking out this project: 
+-->
+  </head>
+
+  <body>
+		<img class="alien" src="http://hivenyc.org/thimble/alien/static/alien.png">
+		
+<!--
+Here we have all the pictures of the clothes.
+-->
+<section class="clothing">
+		<img class="bag" src="http://hivenyc.org/thimble/alien/static/bag.png">
+		<img class="blue_shirt" src="http://hivenyc.org/thimble/alien/static/blue_shirt.png">
+		<img class="cap" src="http://hivenyc.org/thimble/alien/static/cap.png">
+		<img class="dress" src="http://hivenyc.org/thimble/alien/static/dress.png">
+		<img class="glasses" src="http://hivenyc.org/thimble/alien/static/glasses.png">
+		<img class="grey_shirt" src="http://hivenyc.org/thimble/alien/static/grey_shirt.png">
+		<img class="jeans_spotted" src="http://hivenyc.org/thimble/alien/static/jeans_spotted.png">
+		<img class="jeans" src="http://hivenyc.org/thimble/alien/static/jeans.png">
+		<img class="red_shirt" src="http://hivenyc.org/thimble/alien/static/red_shirt.png">
+		<img class="shoes" src="http://hivenyc.org/thimble/alien/static/shoes.png">
+		<img class="skirt" src="http://hivenyc.org/thimble/alien/static/skirt.png">
+		
+</section>
+  	</body>
+  	
+</html>
+
+<!-- ====================================================================
+Congrats for making it this far! You've probably surprised yourself, you learned a lot in this project, especially how to wrangle CSS positions!
+======================================================================== -->
+<!--Images used under Fair Use. Credits:
+http://terriblybad.com/wp-content/uploads/2010/03/ackbar.png
+http://1.bp.blogspot.com/-StlEsv5N1og/Tgpbnq1CBsI/AAAAAAAAAB4/9JWwIL__vH8/s1600/alien-sketch.jpg
+http://www.bitrebels.com/wp-content/uploads/2010/04/Twitter-T-Shirts-28.jpg
+http://www.werbemittel-lieferant.de/Galerie/Trends2009/slides/Muetze.Bommel.iab.JPG
+http://us.123rf.com/400wm/400/400/red33/red331111/red33111100010/11183404-cute-space-rocket-sketch-doodle-art-illustration.jpg
+http://hdwallpapernet.com/wp-content/gallery/earth_wallpaper_012/earth_wallpaper.jpg
+http://img1.etsystatic.com/000/0/6298191/il_570xN.344203141.jpg
+http://cdn.maedchen.de/bilder/jeans-shorts-von-pimkie-426x500-686977.jpg
+http://images.paraorkut.com/img/pics/images/r/ray_ban_sunglasses-12216.jpg
+http://i1.ztat.net/large/E1/32/1D/00/Y1/02/E1321D00Y-102@1.1.jpg
+http://i1.ztat.net/large/QS/12/1A/01/59/51/QS121A015-951@1.1.jpg
+http://i1.ztat.net/large/P3/42/1B/00/63/02/P3421B006-302@1.1.jpg
+http://i1.ztat.net/large/SU/62/1D/00/P5/11/SU621D00P-511@1.1.jpg
+http://us.123rf.com/400wm/400/400/ericlefrancais/ericlefrancais1104/ericlefrancais110400044/9357453-vintage-red-shoes-front-view-on-pure-white-background.jpg
+http://3.bp.blogspot.com/_qjzwA-M0V3I/TPq4GyrvZlI/AAAAAAAAACs/qe66o6sGK9o/s1600/4%252BBeutel_kl.jpg
+http://www.pocketberry.com/wp-content/uploads/2011/04/IMG_000000162.jpg
+-->
