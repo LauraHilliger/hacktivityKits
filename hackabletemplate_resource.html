@@ -1,0 +1,191 @@
+<!DOCTYPE html><!-- ======================================================================
+Welcome to the Webmaker Hackable Resource Template!
+
+This page requires a unique blend of HTML agility, CSS wizardry and mental firepower. There are people who are on the web, and then there are people who MAKE the web. Your goal in this project is to MAKE your very own Webmaker resource page. Add images, links and content to this page to create your very own resource page and share some knowledge.
+============================================================================ --><!--
+Let's get started.
+
+1) READ THROUGH THE COMMENTS. This is a comment. Everything inside of this tag for HTML or '/*' for CSS, is not processed as code, but instead is just text comments about the code. For this project, the comments will give you instructions, hints and guides to completing the project, so skim down through the comments to get an understanding of what you are being asked to do.
+
+2) GET ORIENTED IN THE CODE. HTML is made up of tags that look like this <p> </p>. The tags tell you something about the information contained between them. Click on the tags in the code on this side of the editor to get a description of what each tag is for.
+--><html><head><meta charset="utf-8">
+<meta name="webmaker:thumbnail" content="http://stuff.webmaker.org/thumbnails/thumb-toolkit-webmaker-resource.png">
+<meta name="webmaker:description" content="Help other people teach the web and make a cheatsheet, step-by-step instructional guide, background reading, discussion guide – any kind of resource that can help support learning!">
+<meta content="guide" name="webmaker:tags">
+<meta content="lauramakes" name="webmaker:tags">
+<meta content="resource" name="webmaker:tags">
+<meta content="templatehacks" name="webmaker:tags">
+<title>Hackable Resource Template</title>
+ 
+ <!--/* 
+Everything contained within this <style> tag is called CSS and it is used to define the presentational components of the page, like fonts, colors, containers, positioning, etc. Remember that in CSS, comments are enclosed in '/*'. You can edit this CSS.
+*/-->
+ 
+  
+<style>
+  body { font-family:Open Sans, "Helvetica Neue", Helvetica, sans-serif;width:1000px;margin:0 auto; }
+h2 a { color: inherit; text-decoration: inherit; display: block; }
+h2 a:hover { background: #f0f0f0; }
+  .header {height:90px;}
+  .text {position:absolute;left:0;}
+  .red {color:#CBAC;}
+  .photos { position:absolute;right:0;padding-top:5px;}
+  .content{position:relative;}
+  .column{width:470px;}
+  .title{color:gray;}
+  .docname{ color: #7CCBAC; display:inline-block; padding-top:25px; height:30px; vertical-align:top;}
+  .badges{list-style-type: none;margin-left:-20px;}
+  .badges li {display:inline;}
+  .note{font-style:italic;}
+  .nav{ display:inline-block; font-size:.8em;float:right;position:relative;top:-1em;}
+    .make-details-page {
+    text-align: left;
+  }
+  .make-bar-link:link, .make-bar-link:visited {
+    font-weight: normal;
+    border-bottom: medium none;
+  }
+</style>
+  
+ <!--
+Now list a few things that you want to include in your cheet sheet. The <ul> tag is used for bulleted, or unordered lists (versus <ol> for ordered lists). Each <li> tag is a separate list item, or bullet. You can change the text between each <li> tag. You can even try making this an ordered list (Hint: <ol> instead of <ul> and remember to close the tag!)
+
+You can also link out to projects you've done or sites you love by using the <a> tag which is used for hyperlinks. The <a> tag has a very important attribute: href, which defines the URL you want to point to. The text you put between the open <a> tag and the close </a> tag will hyperlink the text that shows up on the page, linking to the URL you specify. Try it out!
+-->
+  
+</head>
+<body>
+<div class="header">
+<!--Replace the Webmaker logo and link with your logo and home page.-->
+<p>
+  <img height="64" src="http://stuff.webmaker.org/teach-assets/kits/images/webmaker_logo.png">
+
+  
+  <img src="http://i.imgur.com/fZqjmHw.png"><span class="docname">Tagline: "Make up your own tagline here."</span>
+<span class="nav">
+      <a href="https://mozteach.makes.org/thimble/hackable-goals-template">Create Learning Goals</a>
+      <a href="http://hivenyc.org/hacktivityGrid.html">Make Activities</a>
+      </span>
+</p>
+  <hr class="red">
+  
+  <!--
+You can change your tagline by changing the text within the <h1> tag. <h1> is used for headings - the "h" stands for header and the "1" stands for most important (versus h2, h3, etc.). Try a different headline for your avatar.
+-->
+
+</div>
+<div class="content">
+<div class="text column">
+  <h2> Title (Example: HTML Cheatsheat) </h2>
+  <h3><span class="title"> Describe what this page is. </span></h3>
+  <p>Example: <em>The HTML Cheatsheet is a reference guide for the most commonly used HTML tags. Learn more about the basic building blocks of the web by making some <a href="http://www.webmaker.org/">Webmaker Projects!</a></em></p>
+<a href="http://imgur.com/h0qS4Bv"><img src="http://i.imgur.com/h0qS4Bv.png?1"></a>
+<section class="onePager">
+  <h1>Explain your topic <em>(Example: Dive into html)</em> </h1>
+  <ol>
+    <li>
+      <h5>Step One: (Example: Tags)</h5>
+      <ul>
+        <li><strong>&lt;html&gt; (Document Root)</strong> creates an HTML document. Everything in an HTML document should be inside an &lt;html&gt; tag except the doctype. <code class="exampleCode">&lt;!DOCTYPE html&gt;<br>
+          &lt;html&gt;<br>
+           &lt;head&gt;&lt;/head&gt;<br>
+           &lt;body&gt;&lt;/body&gt;<br>
+          &lt;/html&gt;<br>
+          </code> </li>
+        <li>
+          <p><strong>&lt;head&gt; (Document Metadata Container)</strong> contains document information. You can provide general information about the current document in the &lt;head&gt;, such as stylesheets, javascripts, search keywords, character encoding.</p>
+        </li>
+        <li>
+          <p><strong>&lt;title&gt;  (Document Title)</strong> defines the title of the document, shown in a browser's title bar or on the page's tab.</p>
+        </li>
+        <li>
+          <p><strong>&lt;body&gt; (Document Body)</strong> frames the main content of a web page. All content needs to be within the &lt;body&gt; tags It's  where all the stuff people actually see goes. Oh, and documents only have one &lt;body&gt; tag.</p>
+        </li>
+      </ul>
+    </li>
+    <li class="right">
+      <h5>Step Two: (Example: Text)</h5>
+      <ul>
+        <li> <strong>&lt;h1&gt; , &lt;h2&gt; , &lt;h3&gt; , &lt;h4&gt; , &lt;h5&gt; , &lt;h6&gt;  (Heading Elements)</strong> Heading elements implement six levels of document headings, &lt;h1&gt; is the most important and &lt;h6&gt; is the least. A heading element  briefly describes the topic of the section it introduces. Heading information may be used by user agents, for example, to construct a table of contents for a document automatically. <code class="exampleCode">&lt;h1&gt;This is the most important header&lt;/h1&gt;</code> </li>
+        <li> <strong>&lt;p&gt; (Paragraph)</strong> creates a new paragraph <code class="exampleCode">&lt;p&gt;...&lt;/p&gt;</code> </li>
+        <li> <strong>&lt;ul&gt; (Unordered List)</strong> creates a bulleted list <code class="exampleCode">&lt;ul&gt;<br>
+            &lt;li&gt;List Item&lt;/li&gt;<br>
+            &lt;li&gt;List Item&lt;/li&gt; <br>
+          &lt;/ul&gt;</code> </li>
+        <li> <strong>&lt;ol&gt; (Ordered List)</strong> creates a numbered list <code class="exampleCode">&lt;ol&gt;<br>
+            &lt;li&gt;List Item&lt;/li&gt;<br>
+            &lt;li&gt;List Item&lt;/li&gt; <br>
+          &lt;/ol&gt;</code> </li>
+        <li> <strong>&lt;li&gt; (List Item)</strong> inserts a list item, and adds a number or symbol depending upon the type of list selected </li>
+        <li> <strong>&lt;strong&gt; (Bold Text)</strong> <code class="exampleCode">&lt;strong&gt;This will display as bold text&lt;/strong&gt;</code> </li>
+        <li> <strong>&lt;em&gt; (Italic Text)</strong> <code class="exampleCode">&lt;em&gt;This will display as italic text&lt;/em&gt;</code> </li>
+        <li> <strong>&lt;span&gt; (Span)</strong> serves as a hook for inline styling <code class="exampleCode">&lt;span style="color:red;"&gt;This text will be red&lt;/span&gt;</code> </li>
+      </ul>
+    </li><li>
+      <h5>Step Three: (Example: Images and Links)</h5>
+      <ul>
+        <li> <strong>&lt;a&gt; (Anchor or Hyperlink)</strong> (&lt;a&gt;) is the building-block of the web. It defines a link. Use the href attribute to define the target of the link <code class="exampleCode">&lt;a href="https://etherpad.mozilla.org/simple-mdn"&gt;Simple MDN Definitions&lt;/a&gt;</code> </li>
+        <li> <strong>&lt;img&gt; (Image)</strong> produces an image. Use the src attribute to define the image to embed. The image tag does not have a closing tag. Instead a "/" is used as below: <code class="exampleCode"> &lt;img src="https://developer.mozilla.org/skins/mdn/Transitional/img/mdn-logo-sm.png"/&gt;</code> </li>
+      </ul>
+    </li>
+    <li class="right">
+      <h5>Step Four: (Example: Page Structure)</h5>
+      <ul>
+        <li> <strong>&lt;div&gt; (Document Division)</strong> &lt;div&gt; is a generic container for content. It can be used to group elements for styling purposes (using the <strong>class</strong> or <strong>id</strong> attributes), or because they share attribute values, such as lang. It should be used only when no other semantic element (such as &lt;article&gt;  or &lt;nav&gt; ) is appropriate. <code class="exampleCode">&lt;div&gt;...&lt;/div&gt;</code> </li>
+        <li> <strong>&lt;section&gt; (Document Outline Section) HTML5</strong> represents a generic section of a document, i.e., a thematic grouping of content, typically with a heading. <code class="exampleCode">&lt;section&gt;...&lt;/section&gt;</code> </li>
+        <li> <strong>&lt;nav&gt; (Navigation) HTML5</strong> produces a link that allows users to jump from one area of a site to another, including from one page to another or within the same page: a section with navigation links. <code class="exampleCode">&lt;ul&gt;<br>
+            &lt;li&gt;&lt;a href="..."&gt;Link&lt;/a&gt;&lt;/li&gt;<br>
+            &lt;li&gt;&lt;a href="..."&gt;Link&lt;/a&gt;&lt;/li&gt;<br>
+            &lt;li&gt;&lt;a href="..."&gt;Link&lt;/a&gt;<br>
+              &lt;ul&gt;<br>
+                &lt;li&gt;&lt;a href="..."&gt;Link&lt;/a&gt;&lt;/li&gt;<br>
+                &lt;li&gt;&lt;a href="..."&gt;Link&lt;/a&gt;&lt;/li&gt;<br>
+              &lt;/ul&gt;<br>
+          &lt;/li&gt;<br>
+          &lt;/ul&gt;</code> </li>
+      </ul>
+    </li>
+  </ol>
+</section>
+<section class="two">
+  <div class="sidebar">
+    <h1>Other Resources</h1>
+    <h5>List other resources you can link to (Example: Mozilla Developer Network (MDN)</h5>
+    <p> The MDN is an open community of developers building resources for a better web, regardless of brand, browser or platform. There is a complete list of all HTML elements here: <a href="https://developer.mozilla.org/en/HTML/Element">https://developer.mozilla.org/en/HTML/Element</a></p>
+    <h5>Stackoverflow</h5>
+    <p> Stackoverflow is a programming question and answer site. If you have questions, search this site and you'll likely find the answers. <a href="http://stackoverflow.com/">http://stackoverflow.com/</a></p>
+  </div>
+</section>
+<footer>
+<a class="tag" href="https://twitter.com/search?q=%23teachtheweb"><img src="http://stuff.webmaker.org/teach-assets/kits/images/resources_icon.png" width="30px"></a>
+<a class="add" href="https://wiki.mozilla.org/Webmaker/Teach"><img src="http://stuff.webmaker.org/teach-assets/kits/images/converse_icon.png" width="30px"></a>
+<a class="follow" href="https://twitter.com/mozteach"><img src="https://abs.twimg.com/a/1363285036/images/resources/twitter-bird-blue-on-white.png" width="30px"></a>
+
+</footer>
+
+</div>
+<div class="photos column">
+<a href="http://ripixelvomit.tumblr.com/"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRf4tWIFUUNjnTqqJv1XkkDfRVHD2FlsGpKrnb30AoBJ4RZn0enEw" width="424"></a>
+  <p>Add images for your cheatsheet here</p>
+  <hr>
+<h3>Include any other images or links here</h3>
+  <a href="https://webmaker.org/party"><img height="120" src="http://stuff.webmaker.org/teach-assets/kits/images/MakerPartyLogo.png" width=""></a>
+  <img height="120" src="http://i.imgur.com/fZqjmHw.png"> 
+  <a href="webmaker.org/mentor"><img height="120" src="http://stuff.webmaker.org/teach-assets/kits/images/150px-MozMentors.png" width=""></a>
+  
+  <hr>
+  
+<h3>If you have any video tutorials or audio clips place them here</h3>
+ <br> 
+  <iframe allowfullscreen="" frameborder="0" height="300" src="http://popcorn.webmadecontent.org/r7" width="424"></iframe>
+  
+  <p>Add any additional thoughts, quotes or inspirations here...</p>
+
+  </div>
+</div>
+
+
+
+</body></html><!-- 
+Congrats on completing your Resource page! You can still go back and change things - that's the beauty of the Web. You might have missed it, but you actually learned some stuff in this project. You now know how to do comments in HTML and CSS, manipulate some CSS, work with headers (the <h1> tag), use lists (<ul> and <ol>) and bullets (<li>), add hyperlinks to text (<a> tag) and even a little about Web safety and privacy. Way to go, Webmaker!
+-->

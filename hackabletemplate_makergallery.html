@@ -1,0 +1,301 @@
+<!DOCTYPE html><!-- ======================================================================
+Welcome to the Webmaker Maker Gallery Template!
+
+This page requires a unique blend of HTML agility, CSS wizardry and mental firepower. If you are on this page, there's a fairly high chance that you already have created one or more projects using the Webmaker Tools. 
+
+If not, don't worry you make something now! Try a Thimble project at http://thimble.webmaker.org! If you'd rather make an interactive video, check out http://popcorn.webmaker.org. Or are you looking for something a little easier? Remix a webpage with the X-Ray Goggles https://webmaker.org/en-US/tools/x-ray-goggles/
+
+Once you've created a few makes, put them together into a gallery using this template. You can share all your wonderful work and add a personal touch of your own. Sounds exciting? Well then, its time for less yack and more hack!
+============================================================================ --><!--
+Let's get started.
+
+1) READ THROUGH THE COMMENTS. This is a comment. Everything inside of this tag for HTML or '/*' for CSS, is not processed as code, but instead is just text comments about the code. For this project, the comments will give you instructions, hints and guides to completing the project, so skim down through the comments to get an understanding of what you are being asked to do.
+
+2) GET ORIENTED IN THE CODE. HTML is made up of tags that look like this <p> </p>. The tags tell you something about the information contained between them. Click on the tags in the code on this side of the editor to get a description of what each tag is for.
+
+===================================================================================== -->
+<html>
+<head>
+
+<!-- 
+The <meta> tag provides metadata about the HTML document. Metadata is data (information) about data. Metadata will not be displayed on the page, but will be machine parsable. Meta elements are typically used to specify page description, keywords, author of the document, last modified, and other metadata. The metadata can be used by browsers (how to display content or reload page), search engines (keywords), or other web services.
+-->
+<meta charset="utf-8">
+<meta content="width=device-width" name="viewport">
+<meta content="chrome=1">
+
+<!-- 
+The <title> tag is required in all HTML documents. It defines a title in the browser toolbar, provides a title for the page when it is added to favorites and displays a title for the page in search-engine results. You may change the text in between the <title> tags to something that describes your page.
+-->
+<title>Maker Gallery</title>
+</head>
+
+<body>
+<!--
+The <header> tag specifies a header for a document or section. The <header> element is used here as a container for introductory content. Here, we are telling the browser that the header logo and the tagline comprise of the Page Header.
+-->
+<header>
+  <p> <img height="75" src="http://zythepsary.com/mozilla/images/MakerPartyLogo.png"> <img src="http://i.imgur.com/fZqjmHw.png"> 
+    <!--
+You can change your tagline by changing the text within the <span> tag with the "webmaker-tag" id. The <span> tag is used to group inline-elements in a document. It provides a way to add a hook to a part of a text or a part of a document. When a text is hooked in a <span> element, you can style it with CSS, or manipulate it with JavaScript.
+--> 
+    <span id="webmaker-tag">Tagline: "Make up your own webmaker tag here."</span> </p>
+  <hr>
+</header>
+<div class="sidebar"> 
+  <!--
+The <img> tag defines an image in an HTML page. Change the value of the src attribute to the path of your own picture/avatar.
+--> 
+  <img id="avatar" src="http://www.cdpe.com/assets/images/cdpe-profile-placeholder.png"> 
+  <!--
+<h1> is used for headings - the "h" stands for header and the "1" stands for most important (versus h2, h3, etc.). Try changing the text within the <h1> tag above to show your name. 
+-->
+  <h1>MY NAME</h1>
+  <div class="introduction"> 
+    <!--
+Change the text within the <p> tag with a small 2-3 line introduction of who you are and/or what you have created.
+-->
+    <p>Give an introduction to your work and explain what you've made.</p>
+    <ul>
+      <li> <img src="https://raw.github.com/sayak-sarkar/MakerGallery/master/images/goggles-icon.png"> <span class="list-tool-name"> <a href="#goggles">X-Ray Goggles</a> </span> </li>
+      <br>
+      <br>
+      <li> <img src="https://raw.github.com/sayak-sarkar/MakerGallery/master/images/thimble-icon.png"> <span class="list-tool-name"> <a href="#thimble">Thimble</a> </span> </li>
+      <br>
+      <br>
+      <li> <img src="https://raw.github.com/sayak-sarkar/MakerGallery/master/images/popcorn-icon.png"> <span class="list-tool-name"> <a href="#popcorn">Popcorn Maker</a> </span> </li>
+      <br>
+      <br>
+    </ul>
+  </div>
+</div>
+<div class="content_wrapper"> 
+  <!--
+The <section> tag defines sections in a document. The contents within the following <section> tag contain an embedded preview of a web page that you have remixed using the X-Ray Goggles. Follow the instructions inline to customize the page to your needs.
+-->
+  <section id="goggles"><br>
+    <div class="tool-name"> <img src="https://raw.github.com/sayak-sarkar/MakerGallery/master/images/goggles-icon.png">
+      <h4>X-Ray Goggles</h4>
+    </div>
+    <div class="content">
+      <div class="embed"> 
+        <!--
+Change the text within the <span> tag to customize the title of your Remixed Web Page.
+-->
+        <p><span class="caption">My Smurfy Remixed Goggles</span></p>
+        <!--
+The <iframe> tag specifies an inline frame. An inline frame is used to embed another document within the current HTML document. To embed your remixed web-page within the current page, change the value of the src attribute above to the URL of your published web page.
+-->
+        <iframe frameborder="0" id="page" src="http://p.webremixes.org/gyfpmggp"></iframe>
+      </div>
+    </div>
+  </section>
+  <!--
+The contents within the following <section> tag contain an embedded preview of your published Thimble web page . Follow the instructions inline to customize the page.
+-->
+  <section id="thimble"><br>
+    <div class="tool-name"> <img src="https://raw.github.com/sayak-sarkar/MakerGallery/master/images/thimble-icon.png">
+      <h4>Thimble</h4>
+    </div>
+    <div class="content">
+      <div class="embed"> 
+        <!--
+Change the text within the <span> tag above to customize the title of your Thimble Page.
+-->
+        <p><span class="caption">My Thimble Profile Page</span></p>
+        <!--
+To embed your Thimble page, change the value of the src attribute above to the URL of your published Thimble page.
+-->
+        <iframe frameborder="0" id="page" src="https://thimble.webmaker.org/p/lj1p"></iframe>
+      </div>
+    </div>
+  </section>
+  <!--
+The contents within the following <section> tag again contain an embedded preview of your published content within an <iframe>. However, there's a slight difference this time. Now we will be embedding a Popcorn video player within the current webpage. 
+-->
+  <section id="popcorn"><br>
+    <div class="tool-name"> <img src="https://raw.github.com/sayak-sarkar/MakerGallery/master/images/popcorn-icon.png">
+      <h4>Popcorn Maker</h4>
+    </div>
+    <div class="content">
+      <div class="embed"> 
+        <!--
+Change the text within the <span> tag to customize the title of your Popcorn Video.
+-->
+        <p><span class="caption">My Popcorn Video Remix</span></p>
+        <!--
+If you look carefully, the sample URL has an extra underscore "_" at end. By default the published link to a Popcorn video consists of a webpage with the Popcorn video player in the center of the page. However, adding an underscore to address of any published Popcorn video allows you to access the Popcorn video player directly. The player automatically resizes itself to the size of the frame available to it, thus saving us the trouble of handling player sizes.
+
+To embed your Published Popcorn Video within the current page, simply change the value of the src attribute to the URL of your published Popcorn Video followed by an underscore "_" character at the end of the address.
+-->
+        
+        <iframe frameborder="0" id="popcorn-video" src="http://popcorn.webmadecontent.org/r7_"></iframe>
+      </div>
+    </div>
+    <br>
+  </section>
+</div>
+
+<!--/* 
+Everything contained within this <style> tag is called CSS and it is used to define the presentational components of the page, like fonts, colors, containers, positioning, etc. Remember that in CSS, comments are enclosed in '/*'. You can edit this CSS.
+*/-->
+
+<style>
+	a {
+		color: #456;
+		outline: 0;
+		text-decoration: none;
+	}
+	body {
+		font-family: Open Sans, "Helvetica Neue", Helvetica, sans-serif;
+		font-size: 1em; 
+		width: 70%;
+		margin: 0 auto;
+	}
+	header {
+		height: 90px;
+	}
+	ul
+	{
+		list-style: none;
+		padding: 10%;
+	}
+	li img {
+		float: left;
+		width: 32px;
+	}
+	#avatar {
+		padding-left: 1em;
+	}
+	#page {
+		transform: scale(0.6);
+		-moz-transform: scale(0.6); 
+		-ms-transform: scale(0.6);
+		-o-transform: scale(0.6);
+		-webkit-transform: scale(0.6); 
+		height: 650px;
+		margin-left: -225px;
+		margin-top: -125px;
+		width: 1050px;
+	}
+	#popcorn-video {
+		margin-top: 15px;
+	}
+	#webmaker-tag {
+		color: #00AD9C;
+		display: inline-block;
+		height: 30px;
+		padding-top: 25px;
+		vertical-align: top;
+	}
+	.caption {
+		font-size: 1rem;
+		font-weight: bold;
+	}
+	.content {
+		padding-left: 5px;
+		padding-right: 5px;
+		text-align: justify;
+	}
+	.content_wrapper {
+		 background-color: #EEEEEE;
+    float: right;
+    margin-top: 0.53em;
+    width: 75%;
+	}
+	.embed	{
+		background-color: #FFFFFF;
+		border-top: 20px;
+		color: grey;
+		font-family: 'Open Sans Light','Open Sans',sans-serif;
+		font-size: 14px;
+		height: 480px;
+		line-height: 20px;
+		margin: 20px;
+		overflow: hidden;
+		padding-top: 20px;
+		padding-left: 50px;
+		padding-right: 10px;
+		padding-bottom: 20px;
+		position: relative;
+		text-align: justify;
+		width: 640px;
+
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-ms-border-radius: 5px;
+		-o-border-radius: 5px;
+		-webkit-border-radius:5px;
+
+		box-shadow: 0px 2px 4px rgba(0, 0, 0,0.25);
+		-moz-box-shadow: 0px 2px 4px rgba(0, 0, 0,0.25);
+		-ms-box-shadow: 0px 2px 4px rgba(0, 0, 0,0.25);
+		-o-box-shadow: 0px 2px 4px rgba(0, 0, 0,0.25);
+		-webkit-box-shadow:	0px 2px 4px rgba(0, 0, 0,0.25);
+	}
+    .introduction{
+      	color: gray;
+    }
+	.embed iframe {
+		height: 400px;
+		width: 600px;
+	}
+	.embed span {
+		width: 100%;
+	}
+	.list-tool-name {
+		float: left;
+		margin-top: 4%;
+		padding-left: 5%;
+	}
+	.sidebar {
+		float: left;
+        padding-top: 1em;
+		width: 22%;
+	}
+	.sidebar h1 {
+		text-align: center;
+		font-size: 1.5em;
+	}
+	.sidebar introduction {
+		text-align: justify;
+	}
+	.tool-name{
+		padding-left: 1.5em;
+		background-color:#ccc;	
+	}
+	.tool-name h4 {
+		  color: #666666;
+    float: right;
+    position: relative;
+    top: -0.5em;
+    width: 90%;
+		 }
+	
+	.tool-name img{
+		position:relative;
+		top:0.15em;
+		padding-right:1em
+	}
+	a:hover {
+		border-color: #aaa;
+		color: #345;
+
+		border-radius: 3px;
+		-moz-border-radius: 3px;
+		-ms-border-radius: 3px;
+		-o-border-radius: 3px;
+		-webkit-border-radius: 3px;
+
+		box-shadow: inset 0 0 2px #fff, inset 0 -10px 50px rgba(0,0,0,0.1);
+		-moz-box-shadow: inset 0 0 2px #fff, inset 0 -10px 50px rgba(0,0,0,0.1);
+		-ms-box-shadow: inset 0 0 2px #fff, inset 0 -10px 50px rgba(0,0,0,0.1);
+		-o-box-shadow: inset 0 0 2px #fff, inset 0 -10px 50px rgba(0,0,0,0.1);
+		-webkit-box-shadow:	inset 0 0 2px #fff, inset 0 -10px 50px rgba(0,0,0,0.1);
+	}
+  </style>
+</body>
+</html>
+<!-- 
+Congrats on completing your very own Webmaker Maker Gallery page! You can still go back and change things - that's the beauty of the Web. You might have missed it, but you actually learned some stuff in this project. You now know how to do comments in HTML and CSS, manipulate some CSS, work with headers (the <h1> tag), use lists (<ul> and <ol>) and bullets (<li>), add hyperlinks to text (<a> tag) and even a little about Web safety and privacy. Way to go, Webmaker!
+-->

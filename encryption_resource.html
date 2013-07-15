@@ -1,0 +1,122 @@
+<!DOCTYPE html><!-- ======================================================================
+Welcome to the Webmaker Introduction to Internet Privacy and Encryption Resource.
+
+This page requires a unique blend of HTML agility, CSS wizardry and mental firepower. There are people who are on the web, and then there are people who MAKE the web. Your goal in this project is to MAKE your very own Webmaker activity page. Add images, links and content to this page to create your very own activity page and help others teach the web.
+============================================================================ --><!--
+Let's get started.
+
+1) READ THROUGH THE COMMENTS. This is a comment. Everything inside of this tag for HTML or '/*' for CSS, is not processed as code, but instead is just text comments about the code. For this project, the comments will give you instructions, hints and guides to completing the project, so skim down through the comments to get an understanding of what you are being asked to do.
+
+2) GET ORIENTED IN THE CODE. HTML is made up of tags that look like this <p> </p>. The tags tell you something about the information contained between them. Click on the tags in the code on this side of the editor to get a description of what each tag is for.
+--><html><head>
+<meta charset="utf-8">
+<meta name="webmaker:thumbnail" content="http://hivenyc.org/images/thumbnails_webmaker/resource_thumb.png">
+<meta name="webmaker:description" content="Help other people teach the web and make a cheatsheet, step-by-step instructional guide, background reading, discussion guide – any kind of resource that can help support learning!">
+<meta name="webmaker:tags" content="guide">
+<meta name="webmaker:tags" content="featured">
+<title>Webmaker: Introduction to Internet Privacy and Encryption</title>
+ 
+ <!--/* 
+Everything contained within this <style> tag is called CSS and it is used to define the presentational components of the page, like fonts, colors, containers, positioning, etc. Remember that in CSS, comments are enclosed in '/*'. You can edit this CSS.
+*/-->
+ 
+  
+<style>
+  body { font-family:Open Sans, "Helvetica Neue", Helvetica, sans-serif;width:1000px;margin:0 auto; }
+h2 a { color: inherit; text-decoration: inherit; display: block; }
+h2 a:hover { background: #f0f0f0; }
+  .header {height:90px;}  .text {position:absolute;left:0;}
+  .photos { position:absolute;right:0;padding-top:5px;}
+  .content{position:relative;}
+  .column{width:470px;}
+  .subtitle{color:gray;}
+  .docname{ color: #7CCBAC; display:inline-block; padding-top:25px; height:30px; vertical-align:top;}
+  .nav{ display:inline-block; font-size:.8em;float:right;position:relative;top:-1em;}
+  .badges{list-style-type: none;margin-left:-20px;}
+  .badges li {display:inline;}
+  .note{font-style:italic;}
+  ol li p img{float:left;}
+</style>
+  
+</head><body><div class="header">
+  <!--Replace the Webmaker logo and link with your logo and home page.-->
+<p>
+  <img height="64" src="http://hivenyc.org/images/webmaker_logo.png">
+
+  
+  <img src="http://i.imgur.com/fZqjmHw.png"><span class="docname">Webmaker: Introduction to Encryption</span>
+<span class="nav">
+      <a href="http://hivenyc.org/hacktivityGrid.html">make activities</a>
+      </span>
+</p>
+    
+  <hr>
+  
+  <!--
+You can change the text within the different <h> tags. <h1> is used for headings - the "h" stands for header and the "1" stands for most important (versus h2, h3, etc.). Try different headlines for your activity.
+-->
+
+</div>
+<div class="content">
+<div class="text column">
+  <h2>Your Rights on the Web</h2>
+  <h3><span class="subtitle"> Introduction to Encryption</span></h3>
+<a href="http://imgur.com/h0qS4Bv"><img src="http://i.imgur.com/h0qS4Bv.png?1"></a>
+    <h3>Encryption Basics</h3>
+
+  	<!--Write a few lines to describe who you are, the work you do and what your kit can be used for. You can hack the mad lib below or write your own!-->
+  <p>Encryption is a technique that uses math to transform information in a way that makes it unreadable to anyone except those with special knowledge, usually referred to as a "key." There are many applications of encryption, but some of the most important uses help protect the security and privacy of files on your computer, information passing over the Internet, or left sitting in a file on someone else's computer. If encryption is used properly, the information should only be readable by you and people that receive the key from you. Encryption provides a very strong technical protection against many kinds of threats — and this protection is often easy to obtain.</p><p>
+  </p><h3>How Does Encryption Work?</h3>
+
+What do you need to know about how encryption works? Surprisingly little. Encryption is conceptually similar to the "secret codes" that children learn about and use to communicate. If you’ve ever spoken in pig Latin or used a decoder ring, you've used very simple encryption techniques on a message. Again, the idea is to take a normal human-readable message (often called the plaintext message) and transform it into an incomprehensible format that can only become comprehensible again to someone with secret knowledge:<p>
+
+<b>Plaintext message + Encryption algorithm + Key = Scrambled message</b></p><p><b>
+
+  Decryption algorithm + Key + Scrambled message = Plaintext Message</b></p><p>
+
+Your Little Brother’s Cryptography. A simple encryption system would be to change each letter in your message to a set number of letters later in the alphabet. The specific number of spaces you move down the alphabet for each letter is the secret key. If the key is two, A becomes C, B becomes D, C becomes E, etc. Using that encryption system, the plaintext message "INSECURE" would become "KPUGEWTG."</p><p>
+  
+  </p><h3>How is Encryption Applied?</h3>
+
+Although the mechanics of encryption can be explained by the "decoder ring" analogy, the modern practice of using encryption has been accurately described as using a very resilient envelope for your messages. Most unencrypted data transmitted online is accessible to the servers passing off the information. Conversely, using encryption puts your online communications in a "steel envelope" — they can't be read in the course of delivering the message to the recipient and are extremely resistant to tampering.<p>
+
+Modern encryption is very difficult to break, using very complex mathematics to scramble information and ensure that only people possessing the right key can unscramble it. In many cases you can get major security benefits from encryption without a detailed understanding of how it works. Some software implements very convenient, fully automated encryption features which may simply require that you turn them on.</p><p>
+
+For instance, when a website is configured properly, web browsers can use SSL encryption to protect the privacy of information you send to or receive from a web server. This is most often used to protect log-in passwords and financial data. Using a browser's SSL encryption can be as simple as accessing a site with the https scheme instead of the http scheme (for instance, https://www.eff.org/ instead of http://www.eff.org/); the browser typically takes care of all the details behind the scenes.</p><p>
+  </p><h3>Why Is Encryption Important?</h3>
+
+Encryption plays an important role in mitigating risk related to the many threats listed in this guide. If sensitive information stored on your computer is encrypted, it will take a secret key to decode it. If sensitive information en route to others is encrypted, only someone that knows the secret key can read what it says. When you encrypt sensitive information and it ends up logged by others in the course of communicating online, encryption keeps those without the secret key from knowing the contents of the message.<p>
+
+Most of the Defensive Technology articles in this guide will cover practical ways to apply encryption to particular communications (like email) or particular applications (like web browsers).</p><p>
+
+Encryption is absolutely essential to maintaining information security. Moreover, modern computers are powerful enough that we can aim to make encryption of our communications and data routine, not just reserving encryption for special occasions or particularly sensitive information.</p><p>
+  
+  </p><h3>For More About Encryption</h3>
+
+Many encryption tools can be used successfully without much beyond a conceptual understanding. We explain how to use many of these well-developed tools in other parts of this guide.<p>
+
+However, be aware that while encryption is a powerful tool and is critical to information security, it has limitations — particularly if it is not being used correctly. Learning more about encryption and its limitations can help ensure that you're using it properly and getting protection against as many kinds of attacks as possible.</p>
+  
+  <hr>
+
+  <p class="note"><a href="https://ssd.eff.org/tech/encryption">Text from the Electronic Frontier Foundation</a>. Made available under a <a href="http://creativecommons.org/licenses/by/3.0/us/">Creative Commons BY 3.0 US</a> license. </p>
+
+</div>&gt;
+<div class="photos column">
+  <img src="https://ssd.eff.org/sites/all/themes/effed/images/header-banner-bg.png" width="388">
+  <hr>
+  <h3>Activities:</h3>
+  <!--Make a list of links to your activities, so that others can use your kit to teach the web.-->
+  <ul>
+  <li><a href="https://www.eff.org/pages/tor-and-https">Explore TOR and HTTPS</a></li>
+  <li><a href="https://www.eff.org/https-everywhere">Install HTTPS Everywhere in your browser</a></li>
+  <li><a href="https://www.eff.org/torchallenge/setting-up/">Set up a TOR relay</a></li>
+  
+  </ul>
+
+  </div>
+</div>
+
+</body></html><!-- 
+Congrats on completing your kit! You can still go back and change things - that's the beauty of the Web. You might have missed it, but you actually learned some stuff in this project. You now know how to do comments in HTML and CSS, manipulate some CSS, work with headers (the <h1> tag), use lists (<ul> and <ol>) and bullets (<li>), add hyperlinks to text (<a> tag) and even a little about open educational resources. Way to go, Webmaker!
+-->
