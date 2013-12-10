@@ -1,0 +1,223 @@
+section {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1;
+  margin-bottom: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+section div {
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+i {
+  font-size: 45px;
+}
+
+section h1 {
+  margin-top: 0;
+  font-size: 45px;
+}
+
+.wrapper {
+  margin: 10px 10px 40px 10px;
+  width: 620px;
+}
+
+#header {
+  padding: 30px;
+  text-align: center;
+  -webkit-flex-direction: column;
+  -webkit-box-orient: vertical;
+}
+
+#header-img img {
+  position: relative;
+  left: auto;
+}
+
+#header-content {
+  left: auto;
+  margin: auto;
+}
+
+#header-group {
+  width: auto;
+}
+
+#header-group h1 {
+  font-size: 54px;
+}
+
+#header-group h2 {
+  font-size: 32px;
+}
+
+#teachingkit-banner {
+  display: none;
+}
+
+#metadata {
+  display: none;
+}
+
+.print {
+  display: none;
+}
+
+#content {
+  display: table;
+  padding: 30px 5px;
+}
+
+#left-side {
+  padding: 0;
+  width: auto;
+  display: table-row-group;
+}
+
+#left-side section {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.small-checkbox-section div,
+#review div {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.small-checkbox-section ul,
+#review ul {
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.small-checkbox-section li {
+  position: relative;
+  bottom: 5px;
+  font-size: 30px;
+}
+
+.small-checkbox-section input[type=checkbox] + label:after,
+#review input[type=checkbox] + label:after {
+  position: relative;
+  display: inline-block;
+  font-family: "FontAwesome";
+  content: '\f096';
+  font-size: 40px;
+  color: #3fb58e;
+  margin-right: 32px;
+  width: 15px;
+  top: 7px;
+}
+
+#right-side {
+  padding: 0;
+  width: auto;
+  display: table-header-group;
+}
+
+#agenda ol {
+  font-size: 30px;
+  line-height: 55px;
+  font-weight: 300;
+}
+
+#about p:first-of-type {
+  margin-top: 0;
+}
+
+#agenda ol li {
+  margin-left: 45px;
+  font-weight: 400;
+}
+
+#agenda a {
+  display: inline-block;
+  line-height: 1.2;
+}
+
+#agenda ol li:before {
+  font-size: 26px;
+}
+
+#resources ul {
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+
+#resources ul li:before {
+}
+
+#resources ul li {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+#resources ul li:last-of-type {
+  margin-bottom: 0;
+}
+
+#resources ul li a {
+  font-size: 30px;
+  vertical-align: middle;
+}
+
+.tag-section {
+  margin-bottom: 40px;
+}
+
+#tags {
+  padding-top: 30px;
+  margin-bottom: 20px;
+}
+
+#tags ul {
+  position: relative;
+}
+
+.tag-item {
+  line-height: 1;
+  font-size: 30px;
+  font-weight: 300;
+  padding: 30px 25px;
+  margin: 0 10px 10px 0;
+}
+
+#about h1,
+#review h1 {
+  font-size: 48px;
+  line-height: 1;
+  margin-bottom: 22px;
+}
+
+.step-section ol {
+  position: relative;
+  width: 90%;
+  left: 50px;
+}
+
+.step-section ol > li:before {
+  font-size: 20px;
+}
+
+.small-checkbox-section ul {
+  font-size: 26px;
+}
+
+.example-div {
+  max-width: none;
+}
+
+.example-div ul {
+  padding-left: 40px;
+}
+
+.big-green-title {
+  font-size: 55px;
+}

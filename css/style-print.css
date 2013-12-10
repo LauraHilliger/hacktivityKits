@@ -1,0 +1,123 @@
+* {
+  overflow: visible;
+}
+
+body {
+  color: #000;
+  background-color: #fff;
+}
+
+a:after {
+  content: " (" attr(href) ") ";
+}
+
+section {
+  margin-bottom: 10px;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0;
+}
+
+#teachingkit-banner {
+  display: none;
+}
+
+#header {
+  color: #000;
+  background-color: #fff;
+  padding: 35px 0 30px 20px;
+  overflow: hidden;
+  page-break-after: avoid;
+}
+
+#header h1 {
+  font-size: 26px;
+}
+
+#author {
+  color: #000;
+}
+
+.print {
+  display: none;
+}
+
+
+#content {
+  border-radius: none;
+  box-shadow: none;
+  page-break-inside: always;
+}
+
+#left-side {
+  padding: 0;
+  width: 55%;
+}
+
+#review div {
+  color: #000;
+  background-color: #fff;
+  padding: 0
+}
+
+
+#right-side {
+  padding: 10px 0 0 20px;
+  width: 44%;
+}
+
+.tag-item:not(:last-child):after {
+  content: ', ';
+  margin-right: 3px;
+}
+
+.tag-item:hover {
+  background-color: #fff;
+}
+
+.tag-item {
+  color: #27aae1;
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.tag-item a {
+  color: #27aae1;
+}
+
+#agenda ol {
+  background-color: #fff;
+  padding-left: 0;
+  border-bottom: none;
+}
+
+#agenda ol li {
+  list-style-type: none;
+  border-bottom: none;
+  margin: 0;
+}
+
+#agenda ol li:before {
+  font-weight: 400;
+  color: #000;
+  content: counter(item, decimal) ')';
+  counter-increment: item;
+  left: 0px;
+  margin-right: 5px;
+  position: relative;
+}
+
+.line {
+  display: none;
+}
+
+#about h1,
+#review h1 {
+  font-size: 22px;
+  color: #00be7a;
+  font-weight: 300;
+}

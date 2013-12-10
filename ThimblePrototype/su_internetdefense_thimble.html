@@ -1,82 +1,134 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><!-- ================================================================
+WELCOME TO THE WEBMAKER ACTIVITY TEMPLATE!
+Use this template to create your own activity for learners, educational resource or lesson. 
+Edit the HTML below to add your own content, links and images.
+Code comments like these will help with hints and guides. 
+Need help? Start here: http://mzl.la/teachingkit-tips
+================================================================ -->
+<html>
 <head>
 <meta charset="utf-8">
-<title>Hack the Web: with Thimble</title>
-<link rel="stylesheet" href="../styles.css" />
+<meta content="width=640px" name="viewport">
+<link href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.0/normalize.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet" type="text/css">
+<link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://stuff.webmaker.org/teach-assets/css/activity-template/style-desktop.css" media="all" rel="stylesheet" type="text/css">
+<link href="https://stuff.webmaker.org/teach-assets/css/activity-template/style-mobile.css" media="screen and (max-device-width: 640px)" rel="stylesheet" type="text/css">
+<link href="https://stuff.webmaker.org/teach-assets/css/activity-template/style-print.css" media="print" rel="stylesheet" type="text/css">
+<meta content="teach" name="webmaker:tags">
+<!-- =============================== -->
+<!-- ADD A THUMBNAIL IMAGE HERE -->
+<!-- This is the image that will be displayed on the front page or Teach page -->
+<meta content="https://stuff.webmaker.org/teach-assets/kits/images/explain.png" name="webmaker:thumbnail">
+<!-- =============================== -->
+
+<!-- =============================== -->
+<!-- ADD YOUR TITLE HERE -->
+<title>Hack the Web with Thimble</title>
 </head>
-
 <body>
-<header>  <a href="index_thimble.html" title="Thimble Logo"><img src="http://stuff.webmaker.org/teach-assets/kits/images/thimble.png" alt="Thimble" /></a>
-  <hgroup>
-    <h1>Hack the Web:</h1>
-    <h2>with Thimble</h2>
-  </hgroup>
-
-  <nav> 
-   <!--A diving in activity is one that gives pointed instruction to participants on tools or procedures. An example of a diving in activity would be allowing the participants to get used to the interface of Thimble or Popcorn by having them make projects. Before learners can practically apply new skills, they need to be comfortable with the tools they'll be using and have a basic understanding of the skills they'll be sharpening. -->
-    <h3>Diving In</h3>
-    <!--Give 2 to 3 sentences about what the Hacktivity is and what learners will do.-->
-    <p>Learners use HTML to remix and create their own Internet Defense League page and help protect the web!.<br/>
-       </p>
-    <div class="hacktivityNav">
-      <a class="button" href="index_thimble.html">Back to the overview</a>
-        <a class="button2" href="../kits.html">View other kits</a>
-      </div>
-  </nav>
-</header>
-<section class="onePager">
-  <h1>Steps</h1>
-  <ol>
-    <li><img src="static/su_thimble/step01_openThimble.png" alt="step01_openThimble">
-      <p>Review <a href="https://www.webmaker.org/en-US/projects/internet-defense-league/" target="_blank">the Thimble project on Webmaker.org</a> description, click the <a href="https://thimble.webmaker.org/en-US/projects/idl/edit" target="_blank">Get Started</a> button at the bottom and explain to learners that they will be working through the comments in the left side of the editor.</a></p>
-    </li>
-    <li class="right">  <img src="static/su_thimble/step02_projectsThimble.png" alt="step02_projectsThimble" class="right">    <p>Allow learners to work individually or together. You might also allow learners to choose a different <a href="https://www.webmaker.org/en-US/projects/?difficulty=beginner&tool=thimble#filter" target="_blank">beginner Thimble project</a> they would like to work with.</p>
-    </li>
-    <li> <img src="static/su_thimble/step03_thimbleInterface.png" alt="step03_thimbleInterface">
-      <p> Float around to help learners that get stuck. In the Hands on Hacking hacktivity, learners will have a specific task to complete, so for now, allow them to play with Thimble and get used to the interface.</p>
-    </li>
-    <li class="right">
-    <p>Have learners publish their projects and post them to a blog or save links in an Etherpad.</p>
-    </li>
-  </ol>
-</section>
-<section class="two">
-  <div class="materials">
-    <h1>Materials</h1>
-    <ul>
-      <li>Computer</li>
-      <li>Web Access</li>
-      <li>Projector</li>
-      <li>A blog or <a href="http://etherpad.mozilla.org">Etherpad</a> for posting work and/or links</li>
-      <li><a href="../CrashCourses/cs_html.html">HTML Cheatsheet</a></li>
-       <li><a href="../CrashCourses/cs_css.html">CSS Cheatsheet</a></li>
-    </ul>
+<div class="wrapper">
+  <header id="header">
+    <div class="note-paper-side"></div>
+    <div class="note-paper"></div>
+    <div id="teachingkit-banner"> Activity </div>
+    <div id="header-img"> <img alt="Header Image" height="180" src="https://stuff.webmaker.org/teach-assets/kits/images/icebreaker.png" width="180"> </div>
+    <div id="header-content">
+      <hgroup id="header-group">
+        <h1>Hack the Web with Thimble</h1>
+        <h2>Learners use HTML to remix and create their own Internet Defense League page and help protect the web!</h2>
+      </hgroup>
+      <div id="metadata"> <span id="made-by">Made by <a href="https://webmaker.org/u/mozteach" id="author">MozTeach</a></span> </div>
+    </div>
+  </header>
+  <div id="content">
+    <div id="left-side">
+      <section class="step-section">
+        <h1 class="big-green-title">Steps for the Activity</h1>
+        <ol>
+          <li> <img alt="step01_openThimble" src="https://stuff.webmaker.org/teach-assets/kits/ThimblePrototype/static/su_thimble/step01_openThimble.png" width="105px">
+            <p>Review <a href="https://mozteach.makes.org/thimble/internet-defense-league" target="_blank">the Thimble project on Webmaker.org</a> description, click the <a href="https://thimble.webmaker.org/project/4470/remix" target="_blank">Remix</a> button at the bottom and explain to learners that they will be working through the comments in the left side of the editor.</p>
+          </li>
+          <li>
+            <p>Allow learners to work individually or together. You might also allow learners to choose a different <a href="https://webmaker.org/en-US/search?type=tags&q=webmaker:template" target="_blank">beginner Thimble project</a> they would like to work with.</p>
+          </li>
+          <li> <img alt="step03_thimbleInterface" src="https://stuff.webmaker.org/teach-assets/kits/ThimblePrototype/static/su_thimble/step03_thimbleInterface.png" width="135px">
+            <p> Float around to help learners that get stuck. In <a href="https://mozteach.makes.org/thimble/evil-twin-the-opposite-of-me">the next activity</a>, learners will have a specific task to complete, so for now, allow them to play with Thimble and get used to the interface.</p>
+          </li>
+          <li> Have learners publish their projects and post them to a blog or save links in an Etherpad. </li>
+        </ol>
+      </section>
+      <section class="attention-section">
+        <h1><i class="icon-comments"></i> Discussion</h1>
+        <div>Have participants talk about their hacks and display their pages. Ask them what they had to do to create their project. Reinforce the idea that in HTML, elements have opening and closing tags. Ask learners why syntax and web standards are important.
+          <p> Following the presentations, facilitators should direct participants to other resources in their community or online to learn more about hacking and web design/development. Provide individual constructive feedback during presentations.</p>
+        </div>
+      </section>
+    </div>
+    <div id="right-side">
+      <section class="small-checkbox-section">
+        <h1><i class="icon-check-sign"></i> Materials</h1>
+        <!--What is needed to run this activity? Replace the example materials with those your activity needs!-->
+        <div>
+          <ul>
+            <li>
+              <input id="r1" type="checkbox">
+              <label for="r1"></label>
+              Computer</li>
+            <li>
+              <input id="r2" type="checkbox">
+              <label for="r2"></label>
+              Web Access</li>
+            <li>
+              <input id="r3" type="checkbox">
+              <label for="r3"></label>
+              Projector</li>
+            <li>
+              <input id="r4" type="checkbox">
+              <label for="r4"></label>
+              A blog or <a href="http://etherpad.mozilla.org">Etherpad</a> for posting work and/or links</li>
+            <li>
+              <input id="r5" type="checkbox">
+              <label for="r5"></label>
+              <a href="https://mozteach.makes.org/thimble/crash-course-html-and-css">Crash Course in HTML and CSS</a></li>
+            <li>
+              <input id="r6" type="checkbox">
+              <label for="r6"></label>
+              <a href="https://mozteach.makes.org/thimble/html-cheatsheet">HTML Cheatsheet</a></li>
+            <li>
+              <input id="r7" type="checkbox">
+              <label for="r7"></label>
+              <a href="https://mozteach.makes.org/thimble/css-cheatsheet">CSS Basic Cheatsheet</a></li>
+            <li>
+              <input id="r8" type="checkbox">
+              <label for="r8"></label>
+              Pens</li>
+            <li>
+              <input id="r9" type="checkbox">
+              <label for="r9"></label>
+              Post-its</li>
+          </ul>
+        </div>
+      </section>
+      
+      <!-- ADDITIONAL RESOURCES -->
+      <section class="teach-list">
+        <h1>Related Activities</h1>
+        <div>
+          <ul>
+            <li><a href="https://mozteach.makes.org/thimble/thimble-teaching-kit">Thimble Teaching Kit</a></li>
+            <li><a href="https://mozteach.makes.org/thimble/a-strong-wind-blows-for-the-open-web">A Strong Wind Blows for the Open Web</a></li>
+            <li><a href="https://mozteach.makes.org/thimble/evil-twin-the-opposite-of-me">Evil Twin/the Opposite of Me</a></li>
+          </ul>
+        </div>
+      </section>
+      <!-- =============================== --> 
+      <!-- TAGS 
+Help others know what skills and competencies your activity helps teach by tagging it! You'll have the opportunity to add tags upon publish. If your kit teaches Web Skills, consider using the Web Literacy Standard to tag it! Here's a helpful resource: https://support.mozilla.org/en-US/kb/how-tag-webmaker-makes-web-literacy-standard
+--> 
+      <!-- =============================== --> 
+    </div>
   </div>
-</section>
-<section class="two">
-  <div class="discussion">
-    <h1>Discussion</h1>
-    <p>Have participants talk about their hacks and display their pages. Ask them what they had to do to create their project. Reinforce the idea that in HTML, elements have opening and closing tags. Ask learners why syntax and web standards are important.</p><p>
-Following the presentations, facilitators should direct participants to other resources in their community or online to learn more about hacking and web design/development. Provide individual constructive feedback during presentations.</p>  </div>
-</section>
-<footer>
-<a class="tag" title="Tell us what you think, tag your story with #teachtheweb." href="https://twitter.com/search?q=%23teachtheweb"><img src="http://stuff.webmaker.org/teach-assets/kits/images/converse_icon.png" width="30px"></a>
-<a class="add" title="Add your own resources." href="https://wiki.mozilla.org/Webmaker/Teach"><img src="http://stuff.webmaker.org/teach-assets/kits/images/resources_icon.png" width="30px"></a>
-<a class="follow" title="Follow @MozTeach" href="https://twitter.com/mozteach"><img src="https://abs.twimg.com/a/1363285036/images/resources/twitter-bird-blue-on-white.png" width="30px"></a>
-
-</footer>
+</div>
 </body>
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-12156376-8']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script></html>
+</html>

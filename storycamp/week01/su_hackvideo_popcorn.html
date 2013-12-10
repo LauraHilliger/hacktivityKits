@@ -1,91 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- ================================================================
+WELCOME TO THE WEBMAKER ACTIVITY TEMPLATE!
+Use this template to create your own activity for learners, educational resource or lesson. 
+Edit the HTML below to add your own content, links and images.
+Code comments like these will help with hints and guides. 
+Need help? Start here: http://mzl.la/teachingkit-tips
+================================================================ -->
+
+<html>
 <head>
-<meta charset="utf-8">
-<title>Hack Video on the Web: with Popcorn Maker</title>
-<link rel="stylesheet" href="../../styles.css" />
+    <meta charset="utf-8">
+    <meta content="width=640px" name="viewport">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.0/normalize.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet" type="text/css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://stuff.webmaker.org/teach-assets/css/activity-template/style-desktop.css" media="all" rel="stylesheet" type="text/css">
+    <link href="https://stuff.webmaker.org/teach-assets/css/activity-template/style-mobile.css" media="screen and (max-device-width: 640px)" rel="stylesheet" type="text/css">
+    <link href="https://stuff.webmaker.org/teach-assets/css/activity-template/style-print.css" media="print" rel="stylesheet" type="text/css">
+    <meta content="teach" name="webmaker:tags"><!-- =============================== -->
+    <!-- ADD A THUMBNAIL IMAGE HERE -->
+    <!-- This is the image that will be displayed on the front page or Teach page -->
+    <meta content="https://stuff.webmaker.org/teach-assets/kits/images/explain.png" name="webmaker:thumbnail"><!-- =============================== -->
+    <!-- =============================== -->
+    <!-- ADD YOUR TITLE HERE -->
+
+    <title>Hack Video on the Web: with Popcorn Maker</title>
+    <style>
+
+    .examples ul{
+    left: -5%;
+    list-style: none outside none;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    }
+    .examples ul li{
+    float:left;
+    width:29%;
+    margin:2%;
+    }
+    .examples ul li img{
+    margin:0px;
+    }
+    </style>
 </head>
 
 <body>
-<header> <a href="../index.html" title="Popcorn Logo"><img src="../static/storycamp_logo.png" alt="StoryCamp Logo" width="170px" /></a>
-  <hgroup>
-    <h1>Hack Video on the Web:</h1>
-    <h2>with Popcorn Maker</h2>
-  </hgroup>
- 
-  <nav> 
-    <!--A diving in activity is one that gives pointed instruction to participants on tools or procedures. An example of a diving in activity would be allowing the participants to get used to the interface of Thimble or Popcorn by having them make projects. Before learners can practically apply new skills, they need to be comfortable with the tools they'll be using and have a basic understanding of the skills they'll be sharpening. -->
-    <h3>Diving In</h3>
-    <!--Give 2 to 3 sentences about what the Hacktivity is and what learners will do.-->
-    <p>The goal of this hacktivity is for participants to create their first interactive video by hacking and tinkering with Popcorn Maker.
-      </p>
-      <div class="hacktivityNav">
-      <a class="button" href="index_popcorn01_intro.html">Back to the overview</a>
-        <a class="button2" href="../howtouse.html">View other kits</a>
-      </div>
-  </nav>
-</header>
-<section class="onePager">
-  <h1>Steps</h1>
-  <ol>
-    <li><img src="../static/su_popcorn/step01_openPopcorn.png" alt="step01_openPopcorn" width="165" height="142">
-      <p>If you haven’t already, visit the Popcorn <a href="https://popcorn.webmaker.org/">here</a>. Tell participants that they will be hacking a video. On the Popcorn page, click the "Start from Scratch" button. If you need an introduction to Popcorn Maker, check out the<a href="https://wiki.mozilla.org/Webmaker/Teach/WebmakingResources#WikiHow_Guides_on_Popcorn" target="_blank"> WikiHow tutorials!</a></p>
-    </li>
-    <li class="right"><img src="../static/su_popcorn/step02_groupPopcorn.png" alt="step02_groupPopcorn" width="121" height="136" class="right">
-      <p>Demo the Popcorn Maker interface, then allow learners to work individually or together. You might also allow learners to choose the Beginner Popcorn Maker project they would like to work  with.</p>
-    </li>
-    <li> <img src="../static/su_popcorn/step03_PopcornInterface.png" alt="step03_PopcornInterface" width="165" height="116">
-      <p> Float around to help learners that get stuck. In the Hands on Hacking hacktivity, learners will have a specific task to complete, so for now, allow them to play with Popcorn and get used to the interface.</p>
-    </li>
-    <li class="right">
-    <p>Have learners publish their projects and post them to a blog or save links in an Etherpad.</p>
-    </li>
-    <li class="examples">
-    <h4>Examples</h4>
-    <ul>
-<li><a href="http://popcorn.webmadecontent.org/bmf"><img src="../static/ex_justus.png"/>Born this Way - Just Us ATL</a></li>
-    <li><a href="http://popcorn.webmadecontent.org/mtd"><img src="../static/ex_garbage.png"/>The Pacific Garbage Patch</a></li>
-    <li><a href="http://popcorn.webmadecontent.org/h3p"><img src="../static/ex_history.png"/>10 Major Events in the Timeline of 1565 to 1865</a></li>
-    </ul>
-    </li>
+    <div class="wrapper">
+        <header id="header">
+            <div class="note-paper-side"></div>
 
-  </ol>
-</section>
-<section class="two">
-  <div class="materials">
-    <h1>Materials</h1>
-    <ul>
-      <li>Computer</li>
-      <li>Web Access</li>
-      <li>Projector</li>
-      <li>A blog or <a href="http://etherpad.mozilla.org">Etherpad</a> for posting work and/or links</li>
-      <li><a href="../../CrashCourses/cs_popcorn.html">Popcorn Maker Cheatsheet</a></li>
-    </ul>
-  </div>
-</section>
-<section class="two">
-  <div class="discussion">
-    <h1>Discussion</h1>
-    <p>Have participants talk about their films. Ask them what they had to do to make a story of their own. Reinforce the idea that Popcorn allows them to pull in dynamic data. Ask learners what the difference between a traditional film and a web native film is.</p><p>
-Following  the presentations, facilitators should direct participants to other resources in their community or online to learn more about storytelling, user participation and interactivity. Provide individual constructive feedback during presentations.</p>  </div>
-</section>
-<footer>
-<a class="tag" title="Tell us what you think, tag your story with #teachtheweb." href="https://twitter.com/search?q=%23teachtheweb"><img src="../../images/converse_icon.png" width="30px"></a>
-<a class="add" title="Add your own resources." href="https://wiki.mozilla.org/Webmaker/Teach"><img src="../../images/resources_icon.png" width="30px"></a>
-<a class="follow" title="Follow @MozTeach" href="https://twitter.com/mozteach"><img src="https://abs.twimg.com/a/1363285036/images/resources/twitter-bird-blue-on-white.png" width="30px"></a>
+            <div class="note-paper"></div>
 
-</footer>
+            <div id="teachingkit-banner">
+                Activity
+            </div>
+
+            <div id="header-img"><img alt="Header Image" height="180" src="https://stuff.webmaker.org/teach-assets/kits/images/icebreaker.png" width="180"></div>
+
+            <div id="header-content">
+                <hgroup id="header-group">
+                    <h1>Hack Video on the Web: with Popcorn Maker</h1>
+
+                    <h2>The goal of this activity is for participants to create their first interactive video by hacking and tinkering with Popcorn Maker</h2>
+                </hgroup>
+
+                <div id="metadata">
+                    <span id="made-by">Made by <a href="https://webmaker.org/u/mozteach" id="author">MozTeach</a></span>
+                </div>
+            </div>
+        </header>
+
+        <div id="content">
+            <div id="left-side">
+                <section class="step-section">
+                    <h1 class="big-green-title">Steps for the Activity</h1>
+
+                    <ol>
+                        <li>
+                            <p>If you haven’t already, visit <a href="https://popcorn.webmaker.org/">Popcorn Maker</a>. Tell participants that they will be hacking a video. If you need an introduction to Popcorn Maker, check out the <a href="https://support.mozilla.org/en-US/products/webmaker/popcorn-maker" target="_blank">Popcorn Maker support articles.</a></p>
+                        </li>
+
+                        <li>
+                            <p>Demo the Popcorn Maker interface, then allow learners to work individually or together. You might also allow learners to remix a Popcorn Maker project they would like to work with.</p>
+                        </li>
+
+                        <li>
+                            <p>Float around to help learners that get stuck and encourage them to help each other. In the <a href="https://mozteach.makes.org/thimble/cultural-heritage">next activity</a>, learners will have a specific task to complete, so for now, allow them to play with Popcorn and get used to the interface.</p>
+                        </li>
+
+                        <li>
+                            <p>Have learners publish their projects and post them to a blog or save links in an Etherpad.</p>
+                        </li>
+                    </ol>
+                </section>
+
+                <section class="examples">
+                    <h1>Examples</h1>
+
+                    <ul>
+                        <li>
+                            <a href="http://popcorn.webmadecontent.org/bmf"><img src="https:///stuff.webmaker.org/teach-assets/kits/storycamp/static/ex_justus.png"><br>
+                            Born this Way - Just Us ATL</a>
+                        </li>
+
+                        <li>
+                            <a href="http://popcorn.webmadecontent.org/mtd"><img src="https:///stuff.webmaker.org/teach-assets/kits/storycamp/static/ex_garbage.png"><br>
+                            The Pacific Garbage Patch</a>
+                        </li>
+
+                        <li>
+                            <a href="http://popcorn.webmadecontent.org/h3p"><img src="https:///stuff.webmaker.org/teach-assets/kits/storycamp/static/ex_history.png"><br>
+                            10 Major Events in the Timeline of 1565 to 1865</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <div id="right-side">
+                <section class="small-checkbox-section">
+                    <h1>Materials</h1><!--What is needed to run this activity? Replace the example materials with those your activity needs!-->
+
+                    <div>
+                        <ul>
+                            <li><input id="r4" type="checkbox"><label for="r4"></label> Computer</li>
+
+                            <li><input id="r5" type="checkbox"><label for="r5"></label> Web Access</li>
+
+                            <li><input id="r6" type="checkbox"><label for="r6"></label> Projector</li>
+
+                            <li>
+                                <input id="r7" type="checkbox"><label for="r7"></label> <a href="http://etherpad.mozilla.org">Etherpad</a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="attention-section">
+                    <h1>Discussion</h1>
+
+                    <div>
+                        <p>Have participants talk about their films. Ask them what they had to do to make a story of their own. Reinforce the idea that Popcorn allows them to pull in dynamic data. Ask learners what the difference between a traditional film and a web native film is.</p>
+
+                        <p>Following the presentations, facilitators should direct participants to other resources in their community or online to learn more about storytelling, user participation and interactivity. Provide individual constructive feedback during presentations.</p>
+                    </div>
+                </section><!-- ADDITIONAL RESOURCES -->
+
+                <section class="teach-list">
+                    <h1>Related Activities</h1>
+
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="https://mozteach.makes.org/thimble/popcorn-teaching-kit">Popcorn Teaching Kit</a>
+                            </li>
+
+                            <li>
+                                <a href="https://mozteach.makes.org/thimble/write-the-rules-procedural-storytelling">Write the Rules: Procedural Storytelling</a>
+                            </li>
+
+                            <li>
+                                <a href="https://mozteach.makes.org/thimble/remixathon-cultural-heritage">Remix-a-thon: Cultural Heritage</a>
+                            </li>
+                        </ul>
+                    </div>
+                </section><!-- =============================== -->
+                <!-- TAGS 
+Help others know what skills and competencies your activity helps teach by tagging it! You'll have the opportunity to add tags upon publish. If your kit teaches Web Skills, consider using the Web Literacy Standard to tag it! Here's a helpful resource: https://support.mozilla.org/en-US/kb/how-tag-webmaker-makes-web-literacy-standard
+-->
+                <!-- =============================== -->
+            </div>
+        </div>
+    </div>
 </body>
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-12156376-8']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script></html>
+</html>

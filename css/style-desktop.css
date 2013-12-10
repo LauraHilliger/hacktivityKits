@@ -1,0 +1,389 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  color: #4c4c4c;
+  background-color: #2aabe1;
+}
+
+a {
+  color: #27aae1;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0092cf;
+  text-decoration: underline;
+}
+
+section {
+  line-height: 22px;
+  margin-bottom: 40px;
+}
+
+section h1 {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+li {
+  margin: 5px 0 5px;
+}
+
+.wrapper {
+  width: 1020px;
+  margin: 20px auto 40px;
+}
+
+#content {
+  background-color: #fff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0 3px 3px -2px rgba(0,0,0,0.2);
+}
+
+#header-group {
+  width: 650px;
+}
+
+#teachingkit-banner {
+  position: absolute;
+  top: 30px;
+  text-align: center;
+  width: 200px;
+  left: -60px;
+  color: #686868;
+  padding: 10px;
+  background-color: #ffcd36;
+  font-size: 18px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  z-index: 2;
+}
+
+#header {
+  margin: 0 auto;
+  position: relative;
+  color: #fff;
+  background-color: #3fb58e;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  overflow: hidden;
+  min-height: 230px;
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  align-items: center;
+  -webkit-box-align: center;
+  -ms-justify-content: center;
+}
+
+#header-content {
+  position: relative;
+  left: 125px;
+}
+
+#metadata {
+  margin-top: 15px;
+}
+
+#header a.print {
+  color: white;
+  text-decoration: none;
+}
+
+.print {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  padding: 7px;
+  font-size: 11px;
+  background-color: #328f70;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.print:hover {
+  background-color: #20795b;
+}
+
+.print i {
+  font-size: 16px;
+}
+
+.print span {
+  top: 2px;
+  position: relative;
+}
+
+#header a {
+  text-decoration: underline;
+}
+
+#header-img {
+  display: inline-block;
+  position: relative;
+  width: 180px;
+  height: 180px;
+}
+
+#header-img img {
+  position: absolute;
+  left: 105px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+}
+
+#header h1 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+#header h2 {
+  margin: 7px 0 0;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+#header h2 a {
+  color: #fff;
+}
+
+#made-by {
+  font-size: 15px;
+}
+
+#author {
+  color: #fff;
+}
+
+#made-date {
+  font-size: 13px;
+}
+
+#left-side {
+  padding: 40px 0 0 105px;
+  vertical-align: top;
+  width: 650px;
+  display: inline-block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+#left-side section {
+  padding-left: 20px;
+}
+
+#left-side > section > h1 {
+  font-size: 28px;
+  color: #00be7a;
+  font-weight: 300;
+}
+
+.teach-checklist input[type=checkbox],
+#review input[type=checkbox] {
+  visibility: hidden;
+  position: absolute;
+}
+
+.teach-checklist input[type=checkbox] + label:after,
+#review input[type=checkbox] + label:after {
+  position: relative;
+  display: inline-block;
+  font-family: "FontAwesome";
+  content: '\f096';
+  font-size: 24px;
+  color: #3fb58e;
+  margin-right: 12px;
+  width: 15px;
+  top: 4px;
+}
+
+.teach-checklist input[type=checkbox]:hover + label:after,
+#review input[type=checkbox]:hover + label:after {
+  content: '\f046';
+}
+
+.teach-checklist input[type=checkbox]:checked + label:after,
+#review input[type=checkbox]:checked + label:after {
+  content: '\f046';
+}
+
+.teach-checklist ul,
+#review ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.teach-checklist div,
+#review div {
+  padding: 15px 12px;
+  background-color: #e3eaee;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 5px;
+}
+
+#right-side {
+  padding: 45px 105px 0 20px;
+  vertical-align: top;
+  width: 365px;
+  display: inline-block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.teach-tag-list,
+#tags {
+  overflow: hidden;
+}
+
+.teach-tag-list ul,
+#tags ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tag-item {
+  display: block;
+  float: left;
+  color: #fff;
+  padding: 5px 15px; 
+  margin: 0 5px 5px 0;
+  background-color: #3fb58e;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.tag-item:hover {
+  background-color: #20795b;
+}
+
+.tag-item a {
+  color: #fff;
+}
+
+.tag-item a:hover {
+  text-decoration: none;
+}
+
+#agenda {
+  overflow: hidden;
+  position: relative;
+}
+
+#agenda ol {
+  font-size: 1.2em;
+  counter-reset: item;
+  padding-left: 10px;
+  background-color: #fff2cc;
+  border-bottom: 1px dotted #ccc;
+  position: relative;
+  margin: 0;
+}
+
+#agenda ol li {
+  list-style-type: none;
+  border-bottom: 1px dotted #ccc;
+  padding: 10px 10px 10px 0;
+  margin: 0;
+  margin-left: 30px;
+}
+
+#agenda ol li:last-child {
+  border-bottom: none;
+}
+
+#agenda ol li:before {
+  position: absolute;
+  left: 20px;
+  font-weight: 600;
+  color: #777777;
+  content: counter(item, decimal) ')';
+  counter-increment: item;
+}
+
+.line {
+  position: absolute;
+  border-left: 1px solid #ffaa9f;
+  border-right: 1px solid #ffaa9f;
+  width: 2px;
+  float: left;
+  height: 100%;
+  display: inline-block;
+  margin-left: 10px;
+  z-index: 1;
+}
+
+.teach-list,
+#resources {
+  overflow: hidden;
+}
+
+.teach-list ul,
+#resources ul {
+  font-size: 10px;
+  padding-left: 15px;
+}
+
+.teach-list ul li,
+#resources ul li {
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+
+.teach-list ul li a,
+#resources ul li a {
+  font-size: 15px;
+}
+
+#about h1,
+#review h1 {
+  font-size: 28px;
+  color: #00be7a;
+  font-weight: 300;
+  line-height: 1;
+}
+
+#about,
+#resources {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* desktop @ 1520px */
+@media (min-width: 1520px) {
+  .wrapper {
+    width: 1520px;
+    margin: 20px auto;
+  }
+
+  #header-group {
+    width: auto;
+    max-width: 1050px;
+  }
+
+  #left-side {
+    width: 850px;
+    margin-right: 140px;
+  }
+
+  #right-side {
+    width: 400px;
+  }
+}

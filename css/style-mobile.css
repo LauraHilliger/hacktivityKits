@@ -1,0 +1,172 @@
+section {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1;
+  margin-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+section h1 {
+  margin-top: 0;
+  font-size: 32px;
+}
+
+.wrapper {
+  margin: 10px 10px 40px 10px;
+  width: 620px;
+}
+
+#header {
+  padding: 30px;
+  text-align: center;
+  -webkit-box-orient: vertical;
+}
+
+#header-content {
+  left: auto;
+}
+
+#header-img img {
+  left: 0;
+}
+
+#header-group {
+  width: auto;
+}
+
+#header-group h1 {
+  font-size: 54px;
+}
+
+#header-group h2 {
+  font-size: 32px;
+}
+
+#teachingkit-banner {
+  display: none;
+}
+
+#metadata {
+  display: none;
+}
+
+.print {
+  display: none;
+}
+
+#content {
+  display: table;
+  padding: 0 5px 30px 5px;
+}
+
+#left-side {
+  padding: 0;
+  width: auto;
+  display: table-row-group;
+}
+
+#left-side section {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+#review div {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+#review ul {
+  font-size: 26px;
+  font-weight: 400;
+}
+
+#review input[type=checkbox] + label:after {
+  position: relative;
+  display: inline-block;
+  font-family: "FontAwesome";
+  content: '\f096';
+  font-size: 40px;
+  color: #3fb58e;
+  margin-right: 32px;
+  width: 15px;
+  top: 7px;
+}
+
+#right-side {
+  padding: 0;
+  width: auto;
+  display: table-header-group;
+}
+
+#agenda ol {
+  font-size: 30px;
+  line-height: 55px;
+  font-weight: 300;
+}
+
+#about p:first-of-type {
+  margin-top: 0;
+}
+
+#agenda ol li {
+  margin-left: 45px;
+  font-weight: 400;
+}
+
+#agenda a {
+  display: inline-block;
+  line-height: 1.2;
+}
+
+#agenda ol li:before {
+  font-size: 26px;
+}
+
+#resources ul {
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+
+#resources ul li:before {
+}
+
+#resources ul li {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+#resources ul li:last-of-type {
+  margin-bottom: 0;
+}
+
+#resources ul li a {
+  font-size: 30px;
+  vertical-align: middle;
+}
+
+#tags {
+  padding-top: 30px;
+  margin-bottom: 20px;
+}
+
+#tags ul {
+  position: relative;
+}
+
+.tag-item {
+  font-size: 30px;
+  font-weight: 300;
+  padding: 30px 25px;
+  margin: 0 10px 10px 0;
+}
+
+#about h1,
+#review h1 {
+  font-size: 48px;
+  line-height: 1;
+  margin-bottom: 22px;
+}
