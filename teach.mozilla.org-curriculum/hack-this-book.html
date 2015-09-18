@@ -1,0 +1,132 @@
+<!DOCTYPE html><html><head>
+    <!-- Webmaker metas -->
+    
+	<meta content="keepcalm" name="webmaker:tags">
+    
+    <!-- 
+        Prior Knowledge
+        ***************
+        This project requires no prior knowedlege to complete
+        
+        What you'll Learn
+        ******************
+        - You'll be changing the heading text.
+        - You'll understand how to force a new line in text with the <br /> tag.
+        - You'll learn how to change the background-color.
+        - You'll be changing font size of text.
+        
+        Task List
+        ****************
+        TASK 1) - Change the heading text to make this you own 'keep calm' poster
+        TASK 2) - Understand how the <br /> tag works when placed in between words.
+        TASK 3) - Change the background colour of the page to a different colour.
+        TASK 4) - Changing font size of your poster.
+    -->
+  
+    <!-- This is the title of the page - notice how what's written here appears at the top of the browser window -->
+    <title>Hack this Book</title>
+    
+
+<base target="_blank">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <!--
+            This is the crown image used at the top of the poster
+        -->
+        
+
+        <!--
+            TASK 1 -  Change the heading text to make this you own 'keep calm' poster
+            ****************************************
+            The <h1> is a heading tag and this is where you want to put your text for the poster.
+            Try changing the text to something a little silly like "Keep Calm and Dance On".
+        -->
+        <h1>
+            Hack<br> this 
+        
+            <span></span> 
+
+            Book
+        </h1>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/H_Hoffmann_Struwwel_08.jpg/300px-H_Hoffmann_Struwwel_08.jpg" width="300">
+      <p>
+       Struwwelpeter is a book designed to teach children certain life-lessons. Like don't play with matches or be respectful to your elders. It was written in 1861, and...
+      </p>
+        <h1>It is<br>
+          horrific
+      </h1>
+      <p>
+        So horrific that it makes cats cry.
+      </p>
+
+        <!--
+            TASK 2 - Understand how the <br /> tag works.
+            ******************************************************
+            Notice the <br /> tags in the heading?  These force a new line break (get it 'br' stands for 'break').  
+            Try removing the <br /> tag in between the 'Keep Calm' text to see how they now sit on one line.
+         -->
+
+
+    </div>
+  <p>Random make after wanting to help Dogtrax with 
+  <a href="http://dogtrax.edublogs.org/2013/07/18/hackingremixing-the-stories-of-richard-scarry/">Hacking/Remixing the Stories of Richard Scarry</a>
+</p>
+    <style>
+    /*
+        We are now inside a <style> tag.  Everything inside a <style> tag is called CSS (Cascading Style Sheets) and is used to define the look and feel of the webpage.
+        Notice how the comments are written slightly differnt in CSS compared to HTML using different characters at the beginning and end of a comment.
+    */
+
+
+    /*  
+        TASK 3 - Change the background colour of the page to a different colour.
+        ****************************************************
+        The poster currently has a red background set on the <body> but there's nothing stopping you from changing it to another colour.
+        You can use keywords for colours such as 'darkred', 'blue', 'green' etc, or for finer control you can HEX colours such as '#275a97'. 
+        Try changing the background color from darkred to blue.
+    */
+    body {
+        background-color: #9CB45C; 
+        color:white;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+        text-align:center;     
+        padding:0; 
+    }
+    .wrapper {
+        margin:40px auto;
+        max-width:600px;
+        padding:30px;
+        border:4px double white;
+    }
+    
+     /* 
+        TASK 4 - Changing font size of your poster
+        *****************************************
+        The text size is one of the simplest things you can change in CSS.  
+        Below you can see that we have the font-size set at 150px.  If you change that number to say 100px you will see the text get small.
+        Try changing the 
+    */
+
+    h1 {
+        font-size:121px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-weight: normal;
+        margin-top:30px;
+        margin-bottom:0;
+    }
+    /* 
+        The css below is selecting the span thats inside the heading <h1> which is the small 'and'.
+        Notice that this text size is 50% - which means it'll always be half the size of what ever you pick for the heading (h1) font size 
+    */
+    h1 span {
+        display: block;
+        font-size: 50%;
+    }
+    </style>
+
+</body></html>

@@ -1,0 +1,88 @@
+
+<html>
+
+<head>
+	<title>XOXO</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Laura Hilliger" />
+  <link href="https://s3-us-west-2.amazonaws.com/makerstrap/makerstrap.complete.min.css" rel="stylesheet">
+	<style type="text/css">
+      h1 {
+		color: #c13832;
+        font-weight:bold;
+        position:absolute;
+        top:50%;
+        left:2%;
+	}
+      .container{
+        width: 600px;
+        margin-left:auto;
+        margin-right:auto;
+      }
+</style>
+	
+<script type="text/javascript">
+
+
+flag=1
+function f1()
+{
+  alert("The only words I have for how I feel about you are: I love you. And those words don't even begin to express how deep that goes.")
+}
+function f()
+{
+	if(flag==1)
+		{
+			Bn.style.top=110
+			Bn.style.left=600
+			flag=2
+		}
+	else if(flag==2)
+		{
+			Bn.style.top=70
+			Bn.style.left=50
+			flag=3
+		}
+	else if(flag==3)
+		{
+			Bn.style.top=235
+			Bn.style.left=360
+			flag=1
+		}
+      
+}
+
+</script>
+<script>(function fixExternalLinks() {
+              function pointToBlank(a) {
+                var href = a.getAttribute("href");
+                if (href && href.indexOf("//") > -1) {
+                  // this is an external link.
+                  if(!a.getAttribute("target")) {
+                    a.setAttribute("target", "_blank");
+                  }
+                }
+              }
+              function fixLinks() {
+                document.removeEventListener("DOMContentLoaded", fixLinks);
+                var anchors = document.querySelectorAll("a");
+                var asArray = Array.prototype.slice.call(anchors);
+                asArray.forEach(function(a) {
+                  pointToBlank(a);
+                });
+              }
+              document.addEventListener("DOMContentLoaded", fixLinks);
+            }())</script>
+</head>
+  <body style="background-image:url('http://valentineday2014wishes.com/wp-content/uploads/2014/02/Funny-Valentines-Day-Cards-Lustuous-Expressions-ValentineDay2014Wishes.com_.jpg');background-repeat:no-repeat; margin:5% 0;">
+  <h1>Will you be my valentine?</h1>
+<div id="By" style="position:absolute; left:5%; top:65%;">
+	<input type="button" class="btn btn-danger" value=" YES " onclick="f1()" />
+</div>
+<div ID="Bn"  style="position:absolute; left:15%; top:65%;">
+	<input type="button" class="btn btn-danger" value="  NO  " onmouseover="f()" />
+</div>
+</body>
+  
+
+</html>

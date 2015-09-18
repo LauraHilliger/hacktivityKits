@@ -1,0 +1,250 @@
+<!DOCTYPE html><!-- ================================================================
+WELCOME TO THE WEBMAKER TEACHING KIT TEMPLATE!
+Use this template to create your own teaching kit, lesson plan or educational resource. 
+Edit the HTML below to add your own content, links and images.
+Code comments like these will help with hints and guides. 
+Need help? Start here: http://mzl.la/teachingkit-tips
+================================================================ -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta content="teach-kit" name="webmaker:tags">
+  <link href="https://stuff.webmaker.org/webmaker-kits/v2/css/style.css" media="all" rel="stylesheet" type="text/css">
+<!-- =============================== -->
+<!-- ADD YOUR TITLE HERE -->
+  <title>Telefonica + Mozilla Training</title>
+<!-- =============================== -->
+<style>
+ol.agenda ul li:before {
+	content:none;
+}
+ol.agenda ul li:last-child {
+	margin-bottom:-10px;
+}
+ol.agenda ul li {
+	font-size:.8em;
+	padding:5px;
+}
+.small{
+	font-size:.8em;
+}
+header{
+	background:none repeat scroll center center;
+}
+</style>
+<script>(function fixExternalLinks() {
+              function pointToBlank(a) {
+                var href = a.getAttribute("href");
+                if (href && href.indexOf("//") > -1) {
+                  // this is an external link.
+                  if(!a.getAttribute("target")) {
+                    a.setAttribute("target", "_blank");
+                  }
+                }
+              }
+              function fixLinks() {
+                document.removeEventListener("DOMContentLoaded", fixLinks);
+                var anchors = document.querySelectorAll("a");
+                var asArray = Array.prototype.slice.call(anchors);
+                asArray.forEach(function(a) {
+                  pointToBlank(a);
+                });
+              }
+              document.addEventListener("DOMContentLoaded", fixLinks);
+            }())</script>
+</head>
+<body>
+  <div id="ribbon">Teaching Kit</div>
+<!-- =============================== -->
+<!-- HEADER IMAGE -->
+<!-- Just paste the URL for your image in the "src" attribute below. -->
+  <header style="background-image:url(https://stuff.webmaker.org/teach-assets/laurarandom/kitheader.png)">
+ <!-- =============================== -->
+    <hgroup style="background:rgba(16, 65, 106, 0.8);padding-top:25px; padding-bottom:25px;padding-right:50px;padding-left:50px;border-radius:3px;text-shadow:2px 2px 4px #000;">
+<!-- =============================== -->
+<!-- TITLE AND SUMMARY -->
+      <h1>Telefonica + Mozilla Training</h1>
+      <h2>This kit documents the agenda we'll use at the Telefonica + Webmaker Training event November 3rd and 4th in London. Participants are encouraged to complete some <a href="https://laura.makes.org/thimble/LTE1MDE4MjI3MjA=/prepare-for-your-in-person-webmaker-training">preparation work</a> before we meet.</h2>
+<!-- =============================== -->
+<!-- Add your name here -->
+      <h3 id="made-by">Made by <a href="http://twitter.com/epilepticrabbit">Laura</a></h3>
+<!-- =============================== -->
+    </hgroup>
+  </header>
+  <div class="wrapper">
+    <div class="row">
+      <main>
+<!-- =============================== -->
+<!-- DESCRIPTION -->
+        
+        <h2>Description</h2>
+        <p>During the first day of training we will collectively document what we want to learn and dive into pedagogies and toolsets that can support our work. We'll use participatory methods to critically examine our individual situations while developing resources and methods to improve how we train Think Big program managers and mentors. Our aim is to help them apply open practices and participatory pedagogies into their programs. We will learn about openness and collaboration by being open and collaborative. Then we will reflect on what we've accomplished in a single day.</p>
+        <p>On the second day of training, we'll further strengthen our understanding of collaborative works and repurposing previously existing methods and content. We'll work with Mozilla's Open Education Resource model, and start thinking about how we can apply what we've learned in various Telefonica situations. Then we'll reflect (through making) on the training and determine where we go from here.</p>
+        <h2>Photos!</h2>
+        <p>We ran this workshop and it was fantastic. You can see the stuff we made (well, the digital stuff anyway) <a href="https://webmaker.org/en-US/search?type=tags&q=telefonicaTTT">here</a>.</p>
+        <center> <iframe src="https://www.flickr.com/photos/101911923@N04/15701290222/in/set-72157648702395338/player/" width="640" height="480" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe></center>
+<!-- =============================== -->
+<!-- AGENDA --> 
+        <h2>Monday</h2>
+        <ol class="agenda">
+          <li><a href="https://laura.makes.org/thimble/ttt-introductions-and-setup">Introductions & Documenting this Training 10:00 to 10:30 (30 mins)</a>	<ul>
+              <li><a href="http://mozillians.org">Mozillians</a> are online (Getting in touch)</li>
+			  <li><a href="https://teach.etherpad.mozilla.org/telefonica-training-notes">Our etherpad</a></li>
+			  <li>Tagging with #teachtheweb on Twitter and Flickr</li>
+			  <li>Follow up blogging</li>
+			  <li><a href="http://discourse.webmakerprototypes.org">Discourse!</a></li>
+          	</ul>
+          </li>
+          <li><a href="https://laura.makes.org/thimble/sort-yourselves-icebreaker">Sort yourselves Icebreaker</a> 10:30 - 10:45 (15 mins)</li>
+          <li><a href="https://laura.makes.org/thimble/setting-learner-centric-objectives">Setting Learner Centric Objectives</a> 10:45 - 11:20 (35 mins)</li>
+          <li><a href="https://laura.makes.org/thimble/LTExNjY1MTUy/collaborative-mindmapping-defining-the-problem">Collaborative Mindmapping: Defining the Problem</a> 11:20 - 11:50 (30 mins)<p class="small">This exercise will help each group of participants find similarities in the problems they're trying to solve with their individual ThinkBig programs. By outlining the problems, we can work more effectively on solutions.</p></li>
+           <li>Understanding the Web's Building Blocks 11:50 - 12:05 (15 min)
+	          <ul>
+	          	<li><a href="https://mozteach.makes.org/thimble/hack-the-web-with-the-goggles">X-Ray Goggles Demo</a></li>
+	          	<li><a href="http://thimble.webmaker.org/">Thimble Demo</a></li>
+	          </ul>
+          </li>
+          <li>Lunch 12:05 - 1:05 (1 hour)</li>
+          <li><a href="https://mousemeredith.makes.org/thimble/LTE2Mjc5Nzk3NzY=/tag-tag-revolution-activity">Tag Tag Revolution</a> 1:05 - 1:20 (15 mins)</li>
+         
+          <li><a href="https://laura.makes.org/thimble/making-learner-profiles">What learners do we have to design for?</a> 1:20 - 1:50 (30 mins)</li>
+          <li>Discussion 1:50 - 2:25 (35 mins) 
+          <p class="small">What it means to work openly, teach openly and spread openness. We'll use the mindmaps from earlier in the day to focus the discussion on solutions. Open tools, documentation, communication - Designing for Collaboration. What's hard about getting youth to collaborate in a ThinkBig event and afterwards? How can Telefonica and Mozilla work together to have more impact? Let's share solutions!</p>
+		  <p class="small">Open Questions for Discussion: What kind of Think Big events are we talking about? Can we even "handle" it, when 20 young people collaborate...? sometimes this can be more work. </p></li>
+         <li>Break 2:25 - 2:40 (15 mins)</li>
+          <li>Temperature check 2:40 - 2:55 (15 mins): How are we doing so far?</li>
+          <li><a href="https://mozteach.makes.org/thimble/create-a-script-shell-use-visual-mindmapping-to-create-a-story">Creating a script shell</a> 2:55 - 3:30 (35 mins)</li>
+          <li><a href="http://apps.webmaker.org">Appmaker</a> Intro 3:30 - 3:45 (15 mins)</li>
+          
+          <li><a href="https://right-amount-190.webmak.es/app">Remixing with Appmaker</a> 4:00 - 5:00 (1 hour) <p class="small">Choose your own adventure storymaking. Use your group's script shell to form the basis of a new app. You can <a href="https://right-amount-190.webmak.es/app">remix this</a> or <a href="http://apps.webmaker.org">start from scratch</a>.</p></li>
+          <li>Closing circle 5:00 - 5:30 (30 mins)
+	          <ul>
+	          	<li>How can you reuse some of the things we did today in your own contexts?</li>
+			  	<li>What was the biggest lesson for you today?</li>
+	          </ul>
+          </li>
+        </ol>
+        
+        <h2>Tuesday</h2>
+       <ol class="agenda">
+          <li><a href="https://laura.makes.org/thimble/spectrogram-exploring-pedagogy">Spectrogram</a> 9:30 - 9:45 (15 mins)
+         <ul>
+           <li>We can teach digital skills with no digital tools. // <em>Podemos enseñar las habilidades digitales sin las herramientas digitales.</em></li>
+           <li>Telefonica <em>should</em> be an open organization like Mozilla. // <em>Telefonica debería ser una institución abierta como Mozilla.</em></li>
+           <li>Telefonica <em>could</em> be an open organization like Mozilla. // <em>Telefonica podría ser una institución abierta. </em></li>
+           <li>In the digital world, we should start assessing failures rather than successes. // <em>En el mundo digital, deberíamos evaluar los fracasos (errores) en lugar de los éxitos.</em></li>
+            </ul>
+         </li>
+          <li>Reviewing our objectives 9:45 - 10:00 (15 mins)<p class="small">What do we need to focus on today?</p></li>
+          <li>Teaching Kit Demo 10:00 - 10:15 (15 mins)
+	          <ul>
+	          	  <li><a href="https://webmaker.org/make-your-own">Teaching Kits</a></li>
+	          	  <li><a href="http://kitbuilder.webmakerprototypes.org/">Kit Builder</a></li>
+	          	  <li><a href="http://weblitmapper.webmakerprototypes.org">The Web Lit Mapper</a></li>
+                <li><a href="http://discourse.webmaker.org/t/net-neutrality-teaching-kit-v1-feedback-wanted/608">Discourse with the Community</a></li>
+	          </ul>
+          </li>
+          <li>Defining Situations 10:15 - 10:30 (15 mins)
+	          <ul>
+	        	  <li>define real world Telefonica situations like retail stores / schools and match with learner profiles</li>
+				  <li>assign one group for each situation</li>
+				  <li>discuss how we will encourage cross-organizational collaboration</li>
+	          </ul>
+	          
+          </li>
+          <li>Break 10:30 - 10:45 (15 mins)</li>
+          <li>Agenda building for Telefonica Initiatives 10:45 - 12:00 (1.15 hour)
+	          <ul>
+	          	<li>find existing activities that you would like to try or work specifically for your situation</li>
+	          	<li>Plan with ongoing collaboration in mind. <a href="https://keyboardkat.makes.org/thimble/LTU0ODUzNjMy/prototyping-with-a-teaching-kit-design-canvas">Paper prototype a Teaching Kit</a> that aims to keep participants collaborating online after your event is over</li>
+			  	<li>15 mins - shareouts + feedback</li>
+	          </ul> 
+          </li>
+         <li>Lunch 12:00 - 1:00 (1 hour): Brownbag on Mobile Webmaker
+         	<ul>
+              <li><a href="http://webmaker-app.mofodev.net/sign-in">Webmaker App</a></li>
+              <li><a href="http://webmaker.org/appmaker">Appmaker Starter page</a></li>
+              <li><a href="https://jess.makes.org/thimble/LTEwMjUzMTA3MjA=/paper-prototype-mobile-apps">Paper Prototyping Mobile Apps</a></li>
+           </ul>
+         </li>
+          <li>Temperature check 1:00 - 1:15 (15 mins): What's on your mind?</li>
+          <li><a href="https://laura.makes.org/thimble/evolution-for-geeks">Evolution for Geeks</a> 1:15 - 1:30 (15 mins)</li>
+          <li><a href="https://webmaker.org/make-your-own">Digital Teaching Kit &amp; Activity Production</a> 1:30 - 2:30 (1 hour)</li>
+          <li>Break 2:30 - 2:45 (15 mins)</li>
+         <li>Production Wrap Up 2:45 - 3:00 (15 mins)</li>
+          <li>Share outs 3:00 - 3:45 (45 mins)</li>
+          <li>Closing Circle and Reflecting on Facilitation 3:45 - 4:15 (30 mins)</li>
+          <li>Spontaneous Yoga 4:30 - 4:45 (15 mins)
+         </li>
+        </ol>
+        
+<!-- =============================== -->
+<!-- REVIEW & ASSESSMENT -->
+        <h2>Assessment and review</h2>
+        <ul>
+          <li><strong>Discussion questions</strong>: How will we take our learning forward? What skills will we embed in our programs? What does it mean to run a participatory program? Why is it advisable to focus on the learner's interests? Why is it ok to fail? How can you get in touch with the Mozilla community? Where should you go for help?</li>
+          <li><strong>Peer Assessment</strong>: Look at one another's work and give each other constructive feedback. Hold each other accountable for participation, and encourage open discussion with one another.</li>
+          <li><strong>Sharing</strong>. If you use twitter, use the <a href="https://twitter.com/search?q=%23teachtheweb&src=hash">#TeachTheWeb</a> hashtag to share what you're making and doing. Otherwise, post and respond in Discourse.</li>
+        </ul>
+<!-- =============================== -->
+      </main>
+
+      <aside>
+<!-- =============================== -->
+<!-- TAGS 
+Help others know what skills and competencies your teaching kit helps teach by tagging it! You'll have the opportunity to add tags upon publish. If your kit teaches Web Skills, consider using the Web Literacy Standard to tag it! Here's a helpful resource: https://support.mozilla.org/en-US/kb/how-tag-webmaker-makes-web-literacy-map
+-->
+<!-- =============================== -->
+       <section class="tags" id="magicTags">
+          <h2>Tags</h2>
+          <p id="magicNotice" class="well yellow"><em>This section will automagically be populated with this kits tags.</em></p>
+        </section>
+<!-- =============================== -->
+<!-- WHAT YOU'LL MAKE TOGETHER -->		
+        <h2>What you'll make together</h2>
+        <p>
+          Over the course of two days, we'll make mindmaps, paper prototypes, teaching kits, apps and more.</p>
+<!-- =============================== -->
+<!-- LEARNING OBJECTIVES -->
+        <h2>Learning objectives</h2>
+         <p>At the end of the workshop, we will understand how to:</p>
+		 	<ul>
+			 	<li>recognize opportunities to strengthen bridges between Telefonica / Think Big and Mozilla.</li>
+			 	<li>work in the open, and we will know why it's important in our contexts</li>
+				<li>facilitate participatory workshops and use learner-centric design</li>
+				<li>collaborate in an online environment and facilitate offline collaboration</li>
+				<li>build curriculum with the intention of sharing and remix </li>
+				<li>remix content that aligns with the <a href="http://webmaker.org/literacy">Web Literacy Map</a></li>
+				<li>use the <a href="http://webmaker.org/tools">Webmaker tools</a>, including Appmaker</li>
+				<li>accept one another as a valuable ally and feel confident in reaching out to ask for or provide feedback</li>
+				<li>stay connected and accountable to one another</li>
+		 	</ul>    
+<!-- =============================== -->
+<!-- ADDITIONAL RESOURCES -->       
+        <section class="teach-list">
+          <h2>Additional Resources</h2>
+          <ul>
+            <li><a href="https://laura.makes.org/thimble/LTE1MDE4MjI3MjA=/prepare-for-your-in-person-webmaker-training">Workshop Preparation</a></li>
+            <li><a href="https://laura.makes.org/thimble/LTE2MjA1NzM5NTI=/appmaker-for-storytellers-kit">Appmaker for Storytellers Teaching Kit</a></li>
+            <li><a href="https://mozilla.github.io/webmaker-whitepaper/">Why Mozilla cares about Web Literacy</a> (whitepaper)</li>
+            <li><a href="http://discourse.webmakerprototypes.org">Community forum</a></li>
+          </ul>
+        </section>
+<!-- =============================== -->
+<!-- TIPS and TRICKS -->
+        <section class="teach-list">
+          <h2>Tips and tricks</h2>
+          <ul>
+            <li><a href="https://support.mozilla.org/en-US/kb/top-tips-creating-great-teaching-kits">Tips for creating great teaching kits</a></li>
+            <li><a href="https://support.mozilla.org/en-US/kb/pro-tips-webmaker-teaching-kits">Pro Tips for great teaching kits</a></li>
+            <li><a href="https://webmaker.org/event-guides">Event Guides</a></li>
+          </ul>
+        </section>
+
+      </aside>
+    </div>
+  </div>
+  <script src="https://stuff.webmaker.org/webmaker-kits/v2/js/main.min.js"></script>
+</body>
+</html>

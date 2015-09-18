@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<!-- ================================================================
+WELCOME TO THE WEBMAKER TEACHING KIT TEMPLATE!
+Use this template to create your own teaching kit, lesson plan or educational resource. 
+Edit the HTML below to add your own content, links and images.
+Code comments like these will help with hints and guides. 
+Need help? Start here: http://mzl.la/teachingkit-tips
+================================================================ -->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=640px" name="viewport">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet" type="text/css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.0/normalize.css" rel="stylesheet" type="text/css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://stuff.webmaker.org/teach-assets/css/style-desktop.css" media="all" rel="stylesheet" type="text/css">
+    <link href="https://stuff.webmaker.org/teach-assets/css/style-mobile.css" media="screen and (max-device-width: 640px)" rel="stylesheet" type="text/css">
+    <link href="https://stuff.webmaker.org/teach-assets/css/style-print.css" media="print" rel="stylesheet" type="text/css"><!-- =============================== -->
+    <!-- ADD YOUR TITLE HERE -->
+
+    <title>Event Kit Template</title><!-- =============================== -->
+
+    <style>
+#left-side > section > h1{
+    color:#27AAE1;
+    }
+    [type="radio"] {
+    display: none;
+    }
+    [type="radio"] + label:before {
+    content: "\f10c";
+    font-family: "FontAwesome";
+
+    }
+    [type="radio"]:checked + label:before {
+    content: "\f111";
+    font-family: "FontAwesome";
+
+    }
+    .eventtype{
+    width:31%;
+    height:275px;
+    float:left;
+    margin:1%;
+    }
+    .eventtype ul li{
+    font-size: .8em;
+    }
+    .eventtype ul li img{
+    float: left;
+    margin-right: 10px;
+    position: relative;
+    top: 5px;
+    }
+    .calendar:before{
+    color: #6C6D70;
+    content: "";
+    font-family: "FontAwesome";
+    font-size: 1.6em;
+    margin-left: 2px;
+    margin-right: 10px;
+    }
+    .notSelected{
+    opacity: .5;
+    }
+    .teach-list ul li, #resources ul li {
+    font-size: 14px;
+    margin-bottom: 0;
+    }
+    .imageStrip img{
+    width:32.8%;
+        margin-bottom:10px;
+
+    }
+    .two img{
+    width:49%;
+    }
+    </style>
+</head>
+
+<body style="background-color:#FFF2CC">
+    <div class="wrapper">
+        <header id="header" style="background-color:#4D4E53;">
+            <div id="teachingkit-banner" style="background-color:#27AAE1;color:white;">
+                Event Kit
+            </div>
+
+            <div id="header-img">
+                <!-- =============================== -->
+                <!-- HEADER IMAGE -->
+                <!-- Just paste the URL for your image in the "src" attribute below -->
+                <img alt="Header Image" height="180px" src="https://farm8.staticflickr.com/7437/9757973882_83db2a7b5d.jpg" width="180px"> <!-- =============================== -->
+            </div>
+
+            <div id="header-content">
+                <hgroup id="header-group">
+                    <!-- =============================== -->
+                    <!-- TITLE AND SUMMARY -->
+
+                    <h1>Your event title goes here</h1>
+
+                    <h2>Give it a one-line summary here. What will participants make or learn?</h2><!-- =============================== -->
+                </hgroup>
+
+                <div id="metadata">
+                    <!-- =============================== -->
+                    <!-- Add your name here -->
+                    <span id="made-by">Made by: <a href="http://webmaker.org/u/mozteach" id="author">MozTeach</a></span> <!-- =============================== -->
+                </div>
+            </div>
+        </header>
+
+        <div id="content">
+            <div id="left-side">
+                <!-- =============================== -->
+                <!-- EVENT TYPE -->
+
+                <section class="teach-checklist">
+                    <h1>Sure you want to plan a Hackjam?</h1>
+
+                    <div class="eventtype notSelected">
+                        <h1>Kitchen Party</h1>
+
+                        <ul>
+                            <li><img src="http://stuff.webmaker.org/icons/numberofpeople.png">1 - 5 participants</li>
+
+                            <li><img src="http://stuff.webmaker.org/icons/duration.png">15 minutes duration</li>
+
+                            <li>no preparation</li>
+
+                            <li><img src="http://stuff.webmaker.org/icons/location.png">In your kitchen or living room</li>
+                        </ul>
+                    </div>
+
+                    <div class="eventtype">
+                        <h1>Hack Jam</h1>
+
+                        <ul>
+                            <li><img src="http://stuff.webmaker.org/icons/numberofpeople.png">10 - 50 participants</li>
+
+                            <li><img src="http://stuff.webmaker.org/icons/duration.png">4 hours or longer</li>
+
+                            <li>1 - 2 weeks</li>
+
+                            <li><img src="http://stuff.webmaker.org/icons/location.png">At a school, library or flexible space</li>
+                        </ul>
+                    </div>
+
+                    <div class="eventtype notSelected">
+                        <h1>Hive Pop-up</h1>
+
+                        <ul>
+                            <li><img src="http://stuff.webmaker.org/icons/numberofpeople.png">2 - 10 organizations</li>
+
+                            <li><img src="http://stuff.webmaker.org/icons/duration.png">4 hour duration</li>
+
+                            <li>2 - 4 weeks</li>
+
+                            <li><img src="http://stuff.webmaker.org/icons/location.png">At a school, library or large, flexible space</li>
+                        </ul>
+                    </div>
+                </section><!-- =============================== -->
+                <!-- DESCRIPTION -->
+
+                <section>
+                    <div>
+                        <p>A Hack Jam is a great way to team up people with different skill-sets to explore an interesting challenge, collaboratively build something new or improve something that already exists, learn and teach new hacking skills. Replace this description with your own!</p>
+                    </div>
+                </section><!-- =============================== -->
+                <!-- Venue -->
+
+                <section>
+                    <h1>Before your Event</h1>
+
+                    <h2>Find a partner</h2>Who do you know that might want to help you organize this hackjam? Are there other <a href="http://mozillians.org">Mozillians</a> in your area?
+                </section>
+
+                <section>
+                    <h2>Find a Venue</h2>
+
+                    <div class="imageStrip">
+                        <img src="https://lh6.googleusercontent.com/-Szb-c9fs-KE/UUA9tkIipZI/AAAAAAAAGUI/251Ms9QoHO4/w1512-h1008-no/IMG_2473.JPG" width="500"> <img src="https://farm4.staticflickr.com/3829/11238887244_e3a63d47da.jpg" width="500"><!--image attribution: https://secure.flickr.com/photos/madpixelist/11238887244/sizes/m/in/photostream/-->
+                         <img src="https://farm8.staticflickr.com/7437/9757973882_83db2a7b5d.jpg" width="500">
+                    </div>
+Reserve a comfortable venue where you can move the chairs and sit together in a circle. Be creative—maybe try a cafe, library or a hackerspace? Ensure there is Internet, power and good lighting. And don't forget snacks!
+
+                    <h3>We'll host the Hackjam at:</h3><a href="#">Enter the name of the venue that said yes.</a> Be sure to include a description of the venue and a thank you in this space.
+                </section><!-- =============================== -->
+                <!-- =============================== -->
+                <!-- Participants -->
+
+                <section>
+                    <h2>Who will you invite? How will you promote?</h2>
+
+                    <p>Invite people with diverse skills. Talk to participants beforehand about what they're interested in making and what motivates them. Share your planning process with the <a href="http://mzl.la/gpluswebmaker">Webmaker Community</a>, where you can ask for help and feedback.</p>
+                </section><!-- =============================== -->
+                <!-- =============================== -->
+
+                <section>
+                    <h2>Find an Agenda</h2>
+
+                    <p><a href="http://webmaker.org/teach">Find or remix a teaching kit</a> to use as the base of your agenda, or <a href="http://webmaker.org/teach-templates">make your own</a> from the beginning!</p>
+                </section><!-- =============================== -->
+                <!-- =============================== -->
+                <!-- PREPARATION -->
+
+                <section>
+                    <h1>During your Event</h1>
+
+                    <h2>Get to know your participants</h2>
+
+                    <p>How will you welcome the group and invite them to introduce themselves? Will you can do a quick go-around in a circle and afterward try this fun icebreaker, the <a href="https://mozteach.makes.org/thimble/how-to-run-a-spectrogram-icebreaker">Spectrogram</a>?</p>
+
+                    <div class="example-div">
+                        <ul>
+                            <li>Recommended time: 20 minutes</li>
+
+                            <li>Discuss short, controversial statements that helps introduce participants and the event's themes.</li>
+                        </ul>
+                    </div>
+                </section><!-- =============================== -->
+                <!-- =============================== -->
+                <!-- AGENDA -->
+
+                <section>
+                    <h2>Set Up</h2>What do participants need to set up? List it here!
+
+                    <div class="teach-checklist">
+                        <ul>
+                            <li>
+                                <input id="r13" type="checkbox"> <a href="http://login.persona.org">Persona</a>
+                            </li>
+
+                            <li>
+                                <input id="r14" type="checkbox"> <a href="webmaker.org/login">Webmaker Account</a>
+                            </li>
+
+                            <li>
+                                <input id="r15" type="checkbox"> <a href="https://backpack.openbadges.org/backpack/login">Badge Backpack</a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Run through your Agenda</h2>
+
+                    <div class="imageStrip"><img src="https://lh4.googleusercontent.com/-8PN06dbfzwk/UUA7n1JDydI/AAAAAAAAGRY/ylZiAkB_0no/w1512-h1008-no/IMG_2402.JPG" width="500"> <img src="https://lh4.googleusercontent.com/-YHtWe_Bf55c/UUA7_SndGwI/AAAAAAAAGTM/0S6AoSbUyeQ/w1512-h1008-no/IMG_2334.JPG" width="500"> <img src="https://lh6.googleusercontent.com/-ZfmOODxMXOs/UUA8Hk12hJI/AAAAAAAAGT0/7-PF291Xm5k/w1512-h1008-no/IMG_2308.JPG" width="500"></div>
+
+                    <ul>
+                        <li>Allow participants to hack your agenda</li>
+
+                        <li>Cluster ideas and build teams</li>
+
+                        <li>Hack in Small Groups: Form small groups based on the participants' chosen projects. Adjust group sizes as needed; 5 people or less is best. Float around to make sure each group is on track.</li>
+
+                        <li>Make Something: Prompt the groups to draw, write and code as much as they can. Don't let tech troubles distract you. Paper is just as useful for prototyping as code, and drawing is just as fun.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Share and Celebrate!</h2>
+
+                    <div class="two">
+                        <img src="https://lh5.googleusercontent.com/-iUiHlc_aMZA/UUA7o7IA9FI/AAAAAAAAGRc/CtrVDiOVqy4/w1512-h1008-no/IMG_2397.JPG" width="500"> <img src="https://lh5.googleusercontent.com/-ifSBL7tEcBs/UUA92rVVbYI/AAAAAAAAGUo/EJ2kjSY7v8Q/w1512-h1008-no/IMG_2533.JPG" width="500">
+
+                        <p>Ask the groups to wrap up and prepare the room for presentations. Invite each group to share what they made. Reflect on the event, the projects and what everyone would like to do next.</p>
+
+                        <p>Publish notes about the event where participants can find it, and add to it, after the event. Then do something fun together! Grab a drink or something to eat together. Go bowling. Take a silly photo and share it with <a href="https://twitter.com/search?q=%23makerparty&src=typd">#makerparty</a>.</p>
+                    </div>
+                </section><!-- =============================== -->
+
+                <section>
+                    <h1>After your Event</h1>
+
+                    <h2>Share with the World!</h2>
+
+                    <div class="two"><img src="http://www.zythepsary.com/wp-content/uploads/2013/08/aug22-mentorcall-500x281.jpg"> <img src="http://www.zythepsary.com/wp-content/uploads/2013/09/mentorcall-sept-500x284.jpeg"></div>
+
+                    <p>Collect the things you've made and write a quick blog post about your event. You can hack this guide to document your event by adding photos, text and links. Once you've documented everything, share your story with the <a href="https://plus.google.com/u/0/communities/106022863174952221205/events">Webmaker community.</a></p>
+
+                    <h2>Plan your next event</h2>
+
+                    <p>Send a follow up email to your participants and ask them what they thought of your event. You might also ask if they would like to collaborate on another event.</p>
+                </section><!-- =============================== -->
+            </div>
+
+            <div id="right-side">
+                <!-- =============================== -->
+                <!-- AGENDA -->
+
+                <section id="agenda">
+                    <h1>List links</h1>
+
+                    <div class="line"></div>
+
+                    <div>
+                        <ol>
+                            <li>
+                                <a href="#">to your teaching kit</a>
+                            </li>
+
+                            <li>
+                                <a href="http://etherpad.mozilla.org">to your etherpad</a>
+                            </li>
+
+                            <li>
+                                <a href="#">to your event photos</a>
+                            </li>
+
+                            <li>
+                                <a href="#">to your blog post</a>
+                            </li>
+                        </ol>
+                    </div>
+                </section><!-- =============================== -->
+                <!-- =============================== -->
+                <!-- ADDITIONAL RESOURCES -->
+
+                <section id="resources">
+                    <h1>I plan to ask:</h1>
+
+                    <div class="teach-checklist">
+                        <ul>
+                            <li><input id="r1" type="checkbox"><label for="r1"></label> Possible Venue 1</li>
+
+                            <li><input id="r2" type="checkbox"><label for="r2"></label> Possible Venue 2</li>
+
+                            <li><input id="r3" type="checkbox"><label for="r3"></label> Possible Venue 3</li>
+                        </ul>
+                    </div>
+                </section><!-- =============================== -->
+                <!-- =============================== -->
+                <!-- TIPS & TRICKS -->
+
+                <section id="resources">
+                    <h1>We need to bring:</h1>
+
+                    <div class="teach-checklist">
+                        <ul>
+                            <li><input id="r4" type="checkbox"><label for="r4"></label> Snack</li>
+
+                            <li><input id="r5" type="checkbox"><label for="r5"></label> Beverage</li>
+
+                            <li><input id="r6" type="checkbox"><label for="r6"></label> Material</li>
+
+                            <li><input id="r7" type="checkbox"><label for="r7"></label> Equipment</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="resources">
+                    <h1>I plan to invite:</h1>
+
+                    <div class="teach-checklist">
+                        <ul>
+                            <li><input id="r8" type="checkbox"><label for="r8"></label> Possible Participant 1</li>
+
+                            <li><input id="r9" type="checkbox"><label for="r9"></label> Possible Participant 2</li>
+
+                            <li><input id="r10" type="checkbox"><label for="r10"></label> Possible Participant 3</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="resources">
+                    <h1>For promotion I have:</h1>
+
+                    <div class="teach-checklist">
+                        <ul>
+                            <li>
+                                <input id="r11" type="checkbox"><label for="r11"></label> <a href="https://mozteach.makes.org/thimble/maker-party-invitation">my event invitation</a>
+                            </li>
+
+                            <li>
+                                <input id="r12" type="checkbox"><label for="r12"></label> <a href="http://twitter.com/mozteach">spread the word on social media</a>
+                            </li>
+                        </ul>
+                    </div>
+                </section><!-- =============================== -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Net Neutrality Maker Party Event Reporter Tutorial</title>
+    <!-- this stylesheet provides default styles for tutorials -->
+    <link href="//thimble.webmaker.org/learning_projects/tutorial/tutorial.css" rel="stylesheet">
+    <link href="https://s3-us-west-2.amazonaws.com/makerstrap/makerstrap.complete.min.css" rel="stylesheet">
+    <!-- these scripts turn your make into a tutorial -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//thimble.webmaker.org/learning_projects/tutorial/tutorial.js"></script>
+    <script>
+      jQuery(document).ready(function($){
+        $('body').tutorial();
+      });
+    </script>
+    <style>
+      .arrow {
+        font-size: 160%;
+        font-weight: 800;
+        color: #808080;
+        font-family: "Open Sans", Helvetica, sans-serif;
+        line-height: 0;
+        vertical-align: sub;
+      }
+      img {
+        max-width: 100%;
+      }
+      
+      p
+      {
+        font-family:"Open Sans", sans-serif;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      
+      h1, h2
+      {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top:15px;
+      }
+      
+      .highlight
+      {
+        color: #c13832;
+        font-weight: bold;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    </style>
+<script>(function fixExternalLinks() {
+              function pointToBlank(a) {
+                var href = a.getAttribute("href");
+                if (href && href.indexOf("//") > -1) {
+                  // this is an external link.
+                  if(!a.getAttribute("target")) {
+                    a.setAttribute("target", "_blank");
+                  }
+                }
+              }
+              function fixLinks() {
+                document.removeEventListener("DOMContentLoaded", fixLinks);
+                var anchors = document.querySelectorAll("a");
+                var asArray = Array.prototype.slice.call(anchors);
+                asArray.forEach(function(a) {
+                  pointToBlank(a);
+                });
+              }
+              document.addEventListener("DOMContentLoaded", fixLinks);
+            }())</script>
+</head>
+  <body>
+    <!--
+      enclose each tutorial step in its own section tag
+
+    if you want to attach this tutorial to another make:
+      first publish this make
+      then tag the other make with prefix "tutorial-" followed by the url for this make
+
+    Note on this tutorial
+    ----------------------
+    This is more or less the original starter make instructions. Minor wording changes were done
+    to accomodate the structure of the tutorial.
+    -->
+
+    <section>
+      <p></p><br /><p></p>
+      <p><a href="https://party.webmaker.org"><img src="https://farm4.staticflickr.com/3837/14623198715_837fa0ae6d_b.jpg"></a></p><h2>Hi! I'm a tutorial!</h2>
+      <p>Thanks for coming by! My name is @<a href="https://twitter.com/codekat">codekat</a>, and I'll stick around to help you <strong>learn through making in a structured way</strong>, but if you'd rather play around without me as a distraction, feel free to click on the grey [<span class="arrow">&lt;</span>] arrow icon above.</p>
+      
+            <h2>What you'll learn</h2>
+      <p>This tutorial will lead you through the necessary steps to <strong>customize, create and curate your own Maker Party event report</strong> for the web by achieving the following skills outlined on the Web Literacy Map's "<a href="https://webmaker.org/en-US/literacy/building">Building</a>" strand:</p>
+<ul>
+<li>Inserting hyperlinks into your webpage</li>
+<li>Combining and embedding multimedia content</li>
+<li>Identifying and using HTML tags</li>
+<li>Structuring and publishing your own webpage</li>
+<li>Using CSS tags to change your webpage's style and layout</li>
+</ul>                                                                                                                                              
+            <h2>Let's get started!</h2>
+      <p>Click on the blue arrow above to move to the next page and <strong>start your adventure</strong> like <a href="https://www.flickr.com/photos/cycloidsystem/9691823943/in/gallery-mozilladrumbeat-72157643962655534/">these young learners</a> at a Maker Party in Bangalore last year!</p>
+      <p><a href="https://www.flickr.com/photos/cycloidsystem/9691823943/in/gallery-mozilladrumbeat-72157643962655534/"><img src="https://farm4.staticflickr.com/3807/9691823943_96a0938457_z.jpg"></a></p>
+    </section>
+
+    <section>
+      <h2>First, let's change page titles...</h2>
+           <p><img src="http://is.gd/9kzA3p" alt="Hello my name is!"></p>
+      <p><strong>Meta name:</strong> Let's start by changing the name of your webpage on line 5. Because this title sits within your page's 'meta' tags, it is a part of the <a href="http://www.techterms.com/definition/metadata"><strong>metadata</strong></a> which ensures your page has its own identity across the web.</p>
+      <p><strong>Title and subtitle:</strong> While you're at it, you'll also want to change the <strong>title and subtitle of your event report</strong> on the webpage itself. Head out of the page's metadata section to its <a href="http://www.techterms.com/definition/css">CSS styling section</a> on line 65 and line 69, and make those your own, too.</p>
+      <h2>And insert a link to your Net Neutrality Maker Party event page.</h2>
+      <p><img src="http://farm6.staticflickr.com/5320/14096828058_5aa87b424f_b.jpg"></p>
+        <p><strong>Link it up:</strong> A big feature of <a href="https://party.webmaker.org">Maker Party</a> is the amazing events database which highlights Maker Parties from all over the world, big and small. Don't forget to <a href="https://events.webmaker.org/#!/">create a page for your event</a> <strong>before</strong> it happens, to help with promotion and attendance! Already finished? Link it on line 117 after the 'br' tag.</p>
+      <h2>Bonus!</h2>
+      <p>Want to learn more about the <strong>metadata</strong> on your page?</p>
+      <p>Try clicking on the other 'meta' element visible on line 6. If you click on the <strong>yellow question mark</strong> that appears, it'll take you to the <a href="https://developer.mozilla.org/en-US/">Mozilla Developer Network</a>, which keeps a set of openly-licensed documents to explain the many elements of the web in detail.</p>
+       
+    </section>
+    
+    <section>
+      <h2>Let's give your page a header + background.</h2>
+      <p><img src="https://farm4.staticflickr.com/3837/14623198715_837fa0ae6d_b.jpg"></p>
+      <p><strong>Logo:</strong> If you go to line 113, you'll notice another image URL under the 'header' element. This is where you can place your own baner or header image. We've included this <strong>Maker Party</strong> banner to get you started.</p>
+      <p><img src="https://farm6.staticflickr.com/5514/14622713252_df78d2e8b7_b.jpg"></p>
+      <p><strong>Background:</strong> On line 12 you'll also see the URL which allows the webpage to <strong>display your own event photo</strong> for the background. We've chosen <strong><a href="http://party.webmaker.org/party-resources/MakerPartyWallpaper-2-1920x1200.jpg">this image</a></strong> from the <a href="http://party.webmaker.org/resources">Maker Party Resources</a> page, but feel free to replace it with an image from your event!</p>
+    </section>
+    
+    <section>
+      <h2>Next, let's customize the rest!</h2>
+      <p><img src="https://farm6.staticflickr.com/5032/14271882373_25df9d53b3_b.jpg"></p>
+      <p>Check out line 110. This is where <strong>CSS styling</strong> meets your own <strong>HTML content</strong> to make it all come alive. We'll <strong>leave you here</strong> to do some of <em>your own</em> learning by making, so go ahead and try putting in your own event agenda, slideshow, images, and text. Don't worry to mess things up and play around; just hit 'Save' first! </p>
+        <h2>Bonus!</h2>
+      <p>We've put some helpful headings in <strong>black, bold text</strong> as 'code comments' for help figuring out which section is which. And <a href="http://stackoverflow.com/questions/184618/what-is-the-best-comment-in-source-code-you-have-ever-encountered">here</a> is a post about funny code comments for those who want a bit of a laugh.</p>
+    </section>
+    
+    <section>
+      <h2>Last steps, and then publish!</h2>
+      <p><img src="https://farm4.staticflickr.com/3804/14282693374_f196c1f956_b.jpg"></p>
+      <p>Once you've customized to your liking, decide how you'd like your content to be <strong>attributed</strong> (<a href="http://creativecommons.org/choose/">here are details</a> on Creative Commons licenses) and hit 'Save' one last time so your creation is published for the world to <strong>view and remix!</strong></p>
+      <p><img src="http://media1.giphy.com/media/mEOjrcTumos80/giphy.gif"></p>
+      <p><strong>There, you did it</strong>. We're all proud of you! Don't forget to tag your creation with "<strong>makerparty</strong>" so it shows up in the global <a href="https://party.webmaker.org/en-US/live-updates">Maker Party Quilt</a> for all to see!</p>
+        <h2>Help!</h2>
+       <p>Need help, or not making sense? <a href="mailto:kat@mozillafoundation.org">Email me</a> or tweet @<a href="https://twitter.com.codekat">codekat</a> to get in touch. Until then, <strong>long live the party!</strong></p>
+
+    </section>
+    
+  </body>
+</html>

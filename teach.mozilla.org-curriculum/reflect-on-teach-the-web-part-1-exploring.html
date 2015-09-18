@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <!-- Hello! This is a remixable template to reflect on Teach the Web content. Visit the course at the School of Webmaking-->
+  
+    <!-- This is where you put the title for your page (it helps your browser name tabs, etc.-->
+
+    <title>Reflect on Part 1: EXPLORING</title>
+<script>(function fixExternalLinks() {
+              function pointToBlank(a) {
+                var href = a.getAttribute("href");
+                if (href && href.indexOf("://") > -1) {
+                  // this is an external link.
+                  if(!a.getAttribute("target")) {
+                    a.setAttribute("target", "_blank");
+                  }
+                }
+              }
+              function fixLinks() {
+                document.removeEventListener("DOMContentLoaded", fixLinks);
+                var anchors = document.querySelectorAll("a");
+                var asArray = Array.prototype.slice.call(anchors);
+                asArray.forEach(function(a) {
+                  pointToBlank(a);
+                });
+              }
+              document.addEventListener("DOMContentLoaded", fixLinks);
+            }())</script>
+</head>
+
+<body>
+    <!-- The div below is the box around the image, text and calendar. You can change what it looks like by editing the CSS further down. Look for "div.box"!  -->
+
+    <div class="box">
+        <!-- This is a Webmaker badge I'm pulling in. Again, I'm using CSS to style it - change the width, add a border and make it 'float' to the left. Look for "img.badge"--><img class="badge" src="https://backpack.openbadges.org/images/badge/81c55c897223c367407e0f8d85f044c9ec869d8efc202f2fcb6b675638da2209.png" alt="Webmaker Mentor badge"> <!-- Here's the title. You can change the font, colour, and almost anything about it by messing around with the "h1" and "h2" sections in the CSS. -->
+
+        <h1>Reflect on Part 1: EXPLORING</h1><!-- This bit is for the text itself - "h3" is for the headers and the "p" tags are for paragraphs. You can change this in the CSS. -->
+
+        <p class="URL">Course: <a href="https://p2pu.org/en/courses/1140/teach-the-web/">https://p2pu.org/en/courses/1140/teach-the-web/</a></p>
+
+        <div class="tldr">
+            <h3>What have you learned?</h3>
+
+            <p>Reflecting on our experiences and creations leads us down the path to life-long learning. Write a blog post, make something to show your reflections or start a conversation with your peers. Make sure to share your reflections with the <a href="http://mzl.la/gpluswebmaker">#teachtheweb community</a> (also on <a href="https://twitter.com/search?q=%23teachtheweb&src=typd">Twitter</a>!).</p>
+        </div>
+
+        <h3>Making as Learning</h3>
+
+        <ul>
+            <li>What do you value about making, and how can you contribute to the building of the knowledge base that is the #teachtheweb community?</li>
+
+            <li>What is the advantage of making as learning over traditional “forward facing” pedagogies? Disadvantages?</li>
+
+            <li>What kind of thinking is involved when you make?</li>
+
+            <li>How transferable are coding skills to other domains? Why is learning a little code important?</li>
+
+            <li>How can webmaking help discovery and wonder be valued in formal learning spaces?</li>
+        </ul>
+
+        <div class="alternate">
+            <h3>Connected Learning</h3>
+
+            <ul>
+                <li>How do you connect, collaborate, and network with people around the world?</li>
+
+                <li>What kinds of connected learning networks exist in your area?</li>
+
+                <li>How do you expand your knowledge and skills through the input of others?</li>
+
+                <li>How do your online connections influence your offline life?</li>
+
+                <li>How is your participation in #teachtheweb connected learning?</li>
+            </ul>
+        </div>
+
+        <h3>Open Web</h3>
+
+        <ul>
+            <li>What competencies and skills are necessary for working in the open?</li>
+
+            <li>Who's the author in the open?</li>
+
+            <li>What control do you have with your content?</li>
+
+            <li>How do you add creative commons or other copyright to your work?</li>
+
+            <li>Why might sharing and publishing in the open be advantageous?</li>
+
+            <li>What are the benefits of inviting people to remix ideas?</li>
+
+            <li>How is "open" different from "free"?</li>
+
+            <li>Why do some "free" tools leave a watermark on the finished product?</li>
+
+            <li>What are some possible ways "free" tools aren't really free? Or make money?</li>
+
+            <li>How can I find an open community/project that best suits my skills/ambitions/goals?</li>
+
+            <li>Why is collaboration a better option than a number of people trying to accomplish similar things?</li>
+
+            <li>How does openness drive innovation ?</li>
+        </ul>
+
+        <p class="footer">Background photo CC BY <a href="http://www.flickr.com/photos/davegray/5727055242/">davegray</a></p>
+    </div><!-- This is where the interesting stuff happens - the CSS (Cascading Style Sheets). You can style each element that you've defined above. 
+
+It's all pretty self-explanatory and, because you've got a preview window to the left and an undo button above, it's worth just tinkering around until you get what you want.
+
+One final thing: if you click on an element (e.g. "iframe") a yellow question mark will pop up. Click on that and it'll take you to the Mozilla Developer Network where you can find out more about that element.
+
+Have fun!
+
+Doug
+http://dougbelshaw.com
+
+-->
+    <style>
+
+    body {
+      background:url(http://farm4.staticflickr.com/3396/5727055242_cc69590241_o.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: top center;
+    }
+
+    div.tldr {
+      background-color:rgba(146,223,249,0.7); 
+      padding-bottom:10px;
+    }
+
+    div.alternate {
+      background-color:rgba(255,255,255,0.9);    
+      padding-top:10px;
+      padding-bottom:50px;
+    }
+
+    iframe {
+      text-align:center; 
+      padding-left:15px;
+    }
+        
+    div.box {
+      background-color:rgba(255,255,255,0.9);
+      padding-top:20px;
+      padding-bottom:10px;
+      min-width:250px;
+      max-width:650px;
+      margin:70px auto 30px;
+      position: relative;
+      border: 1px white solid;
+    }
+
+    h1 {
+      font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size:1.6em;
+      padding-right:20px;
+    }
+
+    h2 {
+      font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size:1.4em;
+      padding-right:20px;
+    }
+
+    h3 {
+      font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size:1.2em;
+      padding-right:20px;
+      padding-left:20px;
+      padding-top:20px;
+      
+    }
+
+    p {
+      font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+      padding-right:20px;
+      padding-left:20px;      
+      color:#333;
+      font-size:16px;
+      vertical-align:text-top;
+    }
+
+    p.footer {
+      font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+      padding-right:10px;
+      padding-left:10px;      
+      color:#333;
+      font-size:12px;
+      text-align:center;
+    }
+
+    a {
+      color:#333; 
+    }
+
+    p.URL {
+      margin-bottom:50px;
+      font-size:0.9em;
+    }
+
+    blockquote
+    {
+      font-family:Courier, fixed;
+      background-color:rgba(255,255,255,0.9);
+      padding:10px;
+    }
+
+    ul
+    {
+      font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+      padding-right:20px;
+      padding-left:50px;      
+      color:#333;
+      font-size:16px;
+      vertical-align:text-top;  
+      line-height:1.4em;
+    }
+    li{
+      padding-bottom:10px; 
+    }
+
+    img.badge {
+      width:100px;
+      float:left;
+      margin-right:20px;
+      margin-left:10px;
+      margin-bottom:10px;
+      border:none;
+    }
+    </style>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  
+  <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/makerstrap/makerstrap.complete.min.css"> 
+  
+  <style>
+  .navbar-static-top + .jumbotron { margin-top: -20px; }
+  .navbar img { max-height: 20px; }
+
+  body > section {
+    background-size: cover;
+    background-position: center;
+  }
+
+  img.pull-right {
+    margin: 0 0 1em 1em;
+  }
+  img.pull-left {
+    margin: 0 1em 1em 0;
+  }
+  .avatar {
+    max-width: 8em;
+  }
+
+  #about-me {
+    padding: 30px 0;
+      background-color: #ff33cc;
+    margin-top: -30px;
+  }
+  #about-me section::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  #about-me section:nth-child(odd) {
+    text-align: right;
+  }
+  </style>
+
+  <title>A little about me.</title>
+<script>(function fixExternalLinks() {
+              function pointToBlank(a) {
+                var href = a.getAttribute("href");
+                if (href && href.indexOf("//") > -1) {
+                  // this is an external link.
+                  if(!a.getAttribute("target")) {
+                    a.setAttribute("target", "_blank");
+                  }
+                }
+              }
+              function fixLinks() {
+                document.removeEventListener("DOMContentLoaded", fixLinks);
+                var anchors = document.querySelectorAll("a");
+                var asArray = Array.prototype.slice.call(anchors);
+                asArray.forEach(function(a) {
+                  pointToBlank(a);
+                });
+              }
+              document.addEventListener("DOMContentLoaded", fixLinks);
+            }())</script>
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="#" class="navbar-brand">A little about us</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="jumbotron">
+    <hgroup class="container">
+      <h1>Introducing Live Session Participants of #TeachTheWeb</h1>
+      <p>Here's little about us.</p>
+      
+      <a href="https://goggles.webmaker.org" id="gogglesbtn" class="btn btn-default btn-lg pull-right"><i class="fa fa-code-fork"></i> Remix with X-Ray Goggles</a>
+    </hgroup>
+  </header>
+ <div class="container">
+  <section id="about-me">
+   
+      	<h2>Hey, nice to meet you.</h2>
+        <h3>My name is Laura, what;s yours?</h3>
+   
+      </section>
+
+      <section>
+        <h3>Our special powers revolve around ...</h3>
+        <p><em><a href="http://webmaker.org/literacy">Web Literacy</a></em></p>
+      </section>
+
+      <section>
+        <h3>I want to learn how to...</h3>
+        <p><em>Tell us about what you'd like to learn at the event </em></p>
+      </section>
+
+      <section>
+        <h3>I'm most excited about...</h3>
+        <p><em>Tell us what on the web makes you excited </em></p>
+        <p> The clicking on the preview is not taking me to the right section 
+        
+      </section>
+    
+</div>
+
+  <footer class="wm-footer">
+    <div class="container">
+      <div class="footer-license">
+        <p>Unless otherwise noted, this work is licensed under a <a href="//creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0 International License (CC BY)</a>.<br>
+          Find out more about Creative Commons licenses <a href="//creativecommons.org/about">here</a>.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- super magical goggles code, lets not play here -->
+  <script>
+    var jumbo = document.querySelector('#gogglesbtn');
+    jumbo.addEventListener('click', function(e){
+      e.preventDefault();
+      var script=document.createElement('script')
+      script.src='https://goggles.webmaker.org/en-US/webxray.js';
+      script.className='webxray';script.setAttribute('data-lang','en-US');
+      script.setAttribute('data-baseuri','https://goggles.webmaker.org/en-US');
+      document.body.appendChild(script);
+      return false;
+    });
+  </script>
+</body>
+</html>

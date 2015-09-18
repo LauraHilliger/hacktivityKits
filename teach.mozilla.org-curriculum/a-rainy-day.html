@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+  <head>
+    <title>A Rainy Day in Dresden</title>
+    <style>
+      html, body { 
+        margin: 0; 
+        padding: 0;
+        overflow: hidden;
+      }
+      img { 
+        display: none; 
+      }
+    </style>
+    <script src="https://s3.amazonaws.com/assets.webmaker.org/rainyday.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var width = window.innerWidth,
+            height = window.innerHeight,
+            imgUrl = "http://i.imgur.com/1jMWJD9.png",
+            image = document.getElementById('background');
+
+        function loaded() {
+          var engine = new RainyDay('canvas',
+                                    'background',
+                                    width,
+                                    height);
+		  engine.rain([
+            	        engine.preset(5, 3, 0.88),
+           				engine.preset(2, 1, 0.68),
+                      ],
+                      190);
+          //add more variables here
+		}
+        
+    	image.onload = loaded;
+        image.crossOrigin = "anonymous";
+    	image.src = imgUrl;
+      }, false);
+    </script>
+  <script>(function fixExternalLinks() {
+              function pointToBlank(a) {
+                var href = a.getAttribute("href");
+                if (href && href.indexOf("://") > -1) {
+                  // this is an external link.
+                  if(!a.getAttribute("target")) {
+                    a.setAttribute("target", "_blank");
+                  }
+                }
+              }
+              function fixLinks() {
+                document.removeEventListener("DOMContentLoaded", fixLinks);
+                var anchors = document.querySelectorAll("a");
+                var asArray = Array.prototype.slice.call(anchors);
+                asArray.forEach(function(a) {
+                  pointToBlank(a);
+                });
+              }
+              document.addEventListener("DOMContentLoaded", fixLinks);
+            }())</script>
+</head>
+  <body>
+    <img id="background">
+    <canvas id="canvas"></canvas>
+  </body>
+</html>

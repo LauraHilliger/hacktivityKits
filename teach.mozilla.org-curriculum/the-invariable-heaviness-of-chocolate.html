@@ -1,0 +1,343 @@
+<!doctype html>
+<!-- =======================================================================
+As part of a series called "Make a Beautiful ..." the National Writing Project wants to help you create a beautiful animated poem while learning the HTML, CSS and Javascript that goes into making the page.   
+
+Remix the animations here ... or Write your own poem! Or remix someone else's (You can find one new poem everday at Poetry 180 (http://www.loc.gov/poetry/180/).
+
+Special thanks to Rehan Dalal for his scripting expertise on this project. 
+
+========================================================================= --><!--
+Let's get started.
+
+1) READ THROUGH THE COMMENTS. This is a comment. For this project, the comments will give you instructions, hints and guides to completing the project. Everything inside of the tag, <!--, for HTML or the tag, '/*' for CSS, is comment text. That means that the text is not processed as code that affects the actual website but instead provides additional information intended to help you do the project. 
+
+Begin by skimming down through the comments to get an understanding of what you are being asked to do before getting started.
+
+2) GET ORIENTED IN THE CODE. 
+
+HTML (Hypertext Markup Language) is made up of tags that look like this <p> </p>. The tags tell you something about the information contained between them. Click on the tags in the code on this side of the editor to get a description of what each tag is for. (You can learn more about HTML by working on a quick starter make like Keep Calm and Carry On, https://webmaker.makes.org/thimble/keep-calm).
+
+Everything inside a <style> tag is called CSS (Cascading Style Sheets) and is used to define the look and feel of the webpage. This project also includes CSS animations with comments to walk you through how they work and can be edited. (You can learn more about CSS via the Make a Beautiful Six-Word Memoir template, https://nwp.makes.org/thimble/make-a-beautiful-sixword-memoir).
+
+Everything inside the <script> tag on this project is javascript. Javascript helps makes webpages interactive. (You can learn more about javascript by working on the Hack the Holiday Card activity: https://techkim.makes.org/thimble/hack-the-holiday-card).
+
+3) REMIX. You are welcome to play with the animations in this poem. Or, find a new poem to and add your own animations (Poetry 180 is one source we recommend: http://www.loc.gov/poetry/180/). Or, write your very own!
+
+4) SHARE. We encourage you to share your work via social media with the tags #hourofcode and #webmaker.
+
+You can also share via http://code.org/api/hour/finish and receive a certificate and have your work included on a leaderboard.
+
+-->
+<html>
+  <head>
+    <title>the Invariable Heaviness of Chocolate</title>
+    <link href="//people.mozilla.org/~williamd/assets/css/animations.css" rel="stylesheet">
+    <link href='//fonts.googleapis.com/css?family=Monofett' rel='stylesheet' type='text/css'>
+    <!-- The following are the styles related to animations -->
+    <style>
+      
+      .balloon{
+        font-family: 'Monofett';
+        text-decoration:none;
+        font-size:50px;
+        position:relative;
+        top:10px;
+        color: #EC008C;
+      }
+      
+      .animated {
+        color: #000;
+        cursor: pointer;
+        /*
+        This is used to assign simple transitional animation to 'all'
+        animatable CSS properties for an element.
+        
+        SYNTAX FOR TRANSITIONS:
+        transition: <duration> <delay> <css-properties> <easing-function>;
+        
+        See MDN for more info:
+        https://developer.mozilla.org/en-US/docs/Web/CSS/transition
+        */
+        transition: 1s 0s all ease;
+      }
+            
+      .hang {
+        display: inline-block;
+        position: relative;
+        top: 0;
+        transform: rotate(0);
+        top: 0;
+      }
+      
+      .hang.start {
+        top: 10px;
+        transform: rotate(5deg);
+      }
+      
+      .drop {
+        display: inline-block;
+        position: relative;
+        top: 0;
+      }
+      
+      .drop.start {
+        top: 300px;
+      }
+      
+      .squish {
+        display: inline-block;
+        position: relative;
+        top: 0;
+        transform: scaleY(1);
+      }
+      
+      .gangly.start {
+        top: -4px;
+        transform: scaleY(0.5);
+      }
+      
+      .green.start {
+        color: #ae9c1c;
+      }
+      
+      .spin {
+        display: inline-block;
+        transform: rotate(0);
+      }
+      
+      .spin.start {
+        transform: rotate(5turn);
+      }
+      h1{
+        font-family:'Open Sans';
+        font-size:20px;
+      }
+      
+      .slideLeft {
+        display: inline-block;
+      }
+      .slideLeft:not(.start) {
+        animation-name: none;
+        -webkit-animation-name: none;
+      }
+      
+      .tossing {
+        display: inline-block; 
+      }
+      .tossing:not(.start) {
+        animation-name: none;
+		-webkit-animation-name: none;
+      }
+    </style>
+    
+    <!-- Below is all the scripting related to trigger the animations -->
+    <script>
+      // Check that the page has loaded and run script when it has
+      document.addEventListener('DOMContentLoaded', function() {
+        
+        // Get the list of animated elements on the page
+        var animatedElements = document.getElementsByClassName('animated');
+        
+        // Iterate through the list of animated elements on the page 
+        // and assign a click event handler to each
+        Array.filter(animatedElements, function(element) {
+          
+          element.addEventListener('click', function() {
+            
+            // Toggle the class "start" on the clicked element
+            this.classList.toggle('start');
+            
+          });
+          
+        });
+        
+        // Add click event handlers to the "Play All" and "Reset All"
+        // buttons
+        var playAllButton = document.getElementById('play-all');
+        var resetAllButton = document.getElementById('reset-all');
+        
+        playAllButton.addEventListener('click', function() {
+          
+          // Iterate through the list of animated elements on the page
+          // and add the "start" class
+          Array.filter(animatedElements, function(element) {
+            element.classList.add('start');
+          });
+          
+        });
+        
+        resetAllButton.addEventListener('click', function() {
+          
+          // Iterate through the list of animated elements on the page
+          // and remove the "start" class
+          Array.filter(animatedElements, function(element) {
+            element.classList.remove('start');
+          });
+          
+        });
+        
+      }, false);
+    </script>
+  <script>(function fixExternalLinks() {
+              function pointToBlank(a) {
+                var href = a.getAttribute("href");
+                if (href && href.indexOf("://") > -1) {
+                  // this is an external link.
+                  if(!a.getAttribute("target")) {
+                    a.setAttribute("target", "_blank");
+                  }
+                }
+              }
+              function fixLinks() {
+                document.removeEventListener("DOMContentLoaded", fixLinks);
+                var anchors = document.querySelectorAll("a");
+                var asArray = Array.prototype.slice.call(anchors);
+                asArray.forEach(function(a) {
+                  pointToBlank(a);
+                });
+              }
+              document.addEventListener("DOMContentLoaded", fixLinks);
+            }())</script>
+</head>
+  <body>
+    <nav>
+      <button id="play-all">Play All</button>
+      <button id="reset-all" class="reset-story">Reset All</button>
+    </nav>
+    
+    <!-- 
+        Animating text is easy. Simply put it within a 'span' tag and then
+        assign it the 'animated' class and the other relevant class with
+        the correct animation styles.
+    -->
+    
+    <div class="page">
+       
+            <!-- Your poem goes in between these comments -->
+      <h1>The Invariable Heaviness of Chocolate</h1>
+      <p>&ldquo;Millicent Mouse!&rdquo; Chelsea, the pirate captain shouted,<br> &ldquo;my <a href="http://en.wikipedia.org/wiki/Bloomers_%28clothing%29" class="balloon pulse"><span class="pulse1">b</span>loomers</a> are stuffed with <a href="http://en.wikipedia.org/wiki/Battenberg_cake"><br>battenberg</a>!&rdquo;</p>
+      <img src="http://ichef.bbci.co.uk/food/ic/food_16x9_448/recipes/battenburg_cake_60878_16x9.jpg">
+      <p>My little ones hadn't had sweets since they were born. Sugar rations had left our sugar resources meager. And my friend the captain had been saving some of the battenburg for us! Now it was a little <span class="animated squish">squashed</span> and soggy.</p>
+      <p>
+        When Parker, the ship's pastry chef, asked Captain Chelsea for a piece of the battenburg, Chelsea said &ldquo;This battenburg is for Millicent! And give her your chocolate, battenburg is better with chocolate.&rdquo;</p>
+      <p>Miffed, Parker threw the chocolate bar at me, and I promptly <span class="animated slideLeft">flew</span> into the water. Thinking quickly, I hopped upon the chocolate bar&hellip;</p>
+      <div id="make-choice">
+        <p>Does the bar <a href="#" id="sink" class="animated drop">sink</a> or <a href="#" id="float" class="animated tossing">float</a>?</p>
+      </div>
+      <div id="choose-sink" style="display: none">
+        <p>The bar sinks!</p>
+        <img src="http://stream1.gifsoup.com/view6/20131212/4921693/mouse-in-the-soup-o.gif">
+        <nav><button class="reset-story">Reset Story</button></nav>
+      </div>
+      <div id="choose-float" style="display: none">
+        <p>The bar floats!</p>
+        <img src="http://3.bp.blogspot.com/_TBDZJH3YgJo/TMCKXIa9_8I/AAAAAAAAAMc/v9yZ25p5Qw8/s1600/HelpUsDrownTheRats.JPG">
+        <nav><button class="reset-story">Reset Story</button></nav>
+      </div>
+     <!-- Information about your poem's original author and remixer can go here -->
+      
+      <span class="small">
+        <p>
+          <i>Original by <a href="https://twitter.com/EmilyEDickinson">Emily Dickinson</a><br/>
+        	Remix by <a href="https://twitter.com/epilepticrabbit">Laura Hilliger</a>, 
+        	<a href="https://twitter.com/toolness">Atul Varma</a>, 
+      	    <a href="https://twitter.com/fuzzyfox0">William Duyck</a>, 
+            <a href="https://twitter.com/pauljamesmorgan">Paul Morgan</a>, 
+            <a href="https://twitter.com/newtonstreetwit">Pam Moore</a></i></p></span>
+      <!-- Your poem goes in between comments -->
+    </div>
+    
+          <!-- You can change the footer here -->
+  
+<div align="center">
+  <p><i><a href="https://thimble.webmaker.org/project/26846/remix">Remix</a> to add your own animation or pick a new poem to animate!</i></p>
+    <a href="http://www.loc.gov/poetry/180/"><img width="80" src="http://www.loc.gov/loc/lcib/0201/images/poems180_1.jpg"></a>
+    
+    </div>
+  
+    <!-- These are the basic styles for the page itself they do not affect the animations -->
+    <style>
+      /* Basic page styles */
+      
+      html, 
+      body {
+        background: #e0e0e0;
+        font-family:'Open Sans';
+        font-size: 10px;
+      }
+      
+      button {
+        background: #557d9b;
+        border: 0;
+        border-bottom: 3px solid #28557d;
+        border-radius: 6px;
+        color: transparent;
+        cursor: pointer;
+        display: inline-block;
+        padding: 10px 25px;
+        text-shadow: 0 0 0 #fff;
+      }
+      
+      button:active {
+        border-bottom-width: 1px;
+        padding-bottom: 12px;
+        text-shadow: 0 2px 0 #fff;
+      }
+      
+      nav {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      
+      p {
+        line-height: 150%;
+      }
+      
+      .page {
+        border: 10px solid rgba(255, 255, 255, 0.25);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        color: #666;
+        font-size: 18px;
+        margin: 0 auto;
+        padding: 20px;
+        position: relative;
+        text-align: center;
+        width: 500px;
+        z-index: 0;
+      }
+      
+      .page:before {
+        background: #fff;
+        bottom: 0;
+        content: '';
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+      }
+      
+      .small {
+        font-size:14px;
+      }
+      
+    </style>
+    <script src="https://httpsify.herokuapp.com/toolness.github.io/fancy-friday/example/jquery-2.0.3.js"></script>
+    <script>
+      $("#make-choice a").click(function() {
+        var speed = (document.readyState == "loading") ? 0 : 500;
+        $("#choose-" + this.id).slideDown(speed);
+        $("#make-choice").slideUp(speed);
+        sessionStorage.choice = this.id;
+        return false;
+      });
+
+      $(".reset-story").click(function() {
+        sessionStorage.choice = null;
+        location.reload();
+      });
+      
+      if (sessionStorage.choice) $('#' + sessionStorage.choice).click();
+    </script>
+  </body>
+</html>

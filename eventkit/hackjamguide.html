@@ -1,0 +1,228 @@
+<!DOCTYPE html><!-- ======================================================================
+Welcome to the Webmaker How to Run a Hackjam Guide!
+
+Once you've run your Hackjam, you can remix this page to document your event! Swap out images and text and make this page your own.
+
+This page requires a unique blend of HTML agility, CSS wizardry and mental firepower. There are people who are on the web, and then there are people who MAKE the web. Your goal in this project is to MAKE your very own Webmaker Event Documentation page. Add images, links and content to this page to explain your event and help others teach the web.
+============================================================================ --><!--
+Let's get started.
+
+1) READ THROUGH THE COMMENTS. This is a comment. Everything inside of this tag for HTML or '/*' for CSS, is not processed as code, but instead is just text comments about the code. For this project, the comments will give you instructions, hints and guides to completing the project, so skim down through the comments to get an understanding of what you are being asked to do.
+
+2) GET ORIENTED IN THE CODE. HTML is made up of tags that look like this <p> </p>. The tags tell you something about the information contained between them. Click on the tags in the code on this side of the editor to get a description of what each tag is for.
+-->
+<html>
+<head>
+<meta charset="utf-8">
+<!--Thanks to https://secure.flickr.com/photos/othree/ for providing this thumbnail photo!-->
+<meta name="webmaker:thumbnail" content="https://lh6.googleusercontent.com/-ZfmOODxMXOs/UUA8Hk12hJI/AAAAAAAAGT0/7-PF291Xm5k/w1512-h1008-no/IMG_2308.JPG">
+<meta name="webmaker:description" content="A Hack Jam is great for teaming up people with different skill-sets to explore an interesting challenge, collaboratively building something new or improving something that already exists, learning and teaching new hacking skills.">
+<meta name="webmaker:tags" content="guide">
+<meta name="webmaker:tags" content="webmaker:featured">
+<meta name="webmaker:tags" content="webmaker:recommended">
+<title>How to Host a Hack Jam</title>
+
+<!--/* 
+Everything contained within this <style> tag is called CSS and it is used to define the presentational components of the page, like fonts, colors, containers, positioning, etc. Remember that in CSS, comments are enclosed in '/*'. You can edit this CSS.
+*/-->
+
+<style>
+body {
+	font-family:Open Sans, "Helvetica Neue", Helvetica, sans-serif;
+	width:1000px;
+	margin:0 auto;
+}
+h2 a {
+	color: inherit;
+	text-decoration: inherit;
+	display: block;
+}
+h2 a:hover {
+	background: #f0f0f0;
+}
+.header {
+	height:90px;
+}
+.text {
+	position:absolute;
+	left:0;
+}
+.photos {
+	position:absolute;
+	right:0;
+	padding-top:5px;
+}
+.content {
+	position:relative;
+}
+.column {
+	width:470px;
+}
+.subtitle {
+	color:gray;
+	font-size:.8em;
+}
+.docname {
+	color: gray;
+	display:inline-block;
+	padding-top:25px;
+	height:30px;
+	vertical-align:top;
+}
+.nav {
+	display:inline-block;
+	font-size:.8em;
+	float:right;
+	position:relative;
+	top:-1em;
+}
+.badges {
+	list-style-type: none;
+	margin-left:-20px;
+}
+.badges li {
+	display:inline;
+}
+.note {
+	font-style:italic;
+}
+ol p img {
+	float:left;
+}
+li {
+	list-style-type: none;
+	padding: 0.5em 0px 0.5em 40px;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+.numbers {
+	background: url("https://webmaker.org/media/img/icons/numberofpeople.png") no-repeat scroll 0px 0.5em transparent;
+}
+.duration {
+	background: url("https://webmaker.org/media/img/icons/duration.png") no-repeat scroll 0px 0.5em transparent;
+}
+.venue {
+	background: url("https://webmaker.org/media/img/icons/location.png") no-repeat scroll 0px 0.5em transparent;
+}
+  .make-details-page {
+    text-align: left;
+  }
+  .make-bar-link:link, .make-bar-link:visited {
+    font-weight: normal;
+    border-bottom: medium none;
+  }
+</style>
+</head>
+  <body>
+<div class="header"> 
+  <!--Replace the Webmaker logo and link with your logo and home page.-->
+  <p> <img height="64" src="http://stuff.webmaker.org/teach-assets/kits/images/webmaker_logo.png"> <img height="64" src="http://stuff.webmaker.org/teach-assets/kits/images/MakerPartyLogo.png"> <img src="http://i.imgur.com/fZqjmHw.png"> 
+    <!--Change the tagline to be the title of your event. --> 
+    <span class="docname">How to Host a Hack Jam</span> 
+    <span class="nav">
+  Other event types: 
+      <a href="https://webmaker.makes.org/thimble/how-to-host-a-kitchen-party">Kitchen Party</a>
+      <a href="https://webmaker.makes.org/thimble/host-a-hive-popup">Pop Up</a>
+      </span>
+    
+    </p>
+  <hr>
+  <div class="content">
+    <div class="text column">
+      <h2><a>How to Host a Hack Jam <br>
+        <span class="subtitle">
+        <ul>
+          <!--Hack this to include information about your own event.-->
+          <li class="numbers">10 - 50 participants</li>
+          <li class="duration">4hr duration, 2 weeks prep</li>
+          <li class="venue">At a school, library or flexible space</li>
+        </ul>
+        </span></a></h2>
+      <!--
+Now share a few things about your event such as where it was, who came, what you made or links from projects or pictures. The <ul> tag is used for bulleted, or unordered lists (versus <ol> for ordered lists). Each <li> tag is a separate list item, or bullet. You can change the text between each <li> tag. 
+
+You can also link out to stuff your participants made with the <a> tag which is used for hyperlinks. The <a> tag has a very important attribute: href, which defines the URL you want to point to. The text you put between the open <a> tag and the close </a> tag will hyperlink the text that shows up on the page, linking to the URL you specify. Try it out!
+--> 
+      <a href="http://imgur.com/h0qS4Bv"><img src="http://i.imgur.com/h0qS4Bv.png?1"></a> 
+      <!--Use this section to talk about your collaborators, how you planned, the venue you reserved, any issues you ran into before the event, etc.-->
+      <h3>1. Before your event </h3>
+      <img src="https://lh6.googleusercontent.com/-Szb-c9fs-KE/UUA9tkIipZI/AAAAAAAAGUI/251Ms9QoHO4/w1512-h1008-no/IMG_2473.JPG" width="424">
+      <p> Reserve a comfortable venue where you can move the chairs and sit together in a circle. Be creative—maybe try a cafe, library or a hackerspace? Ensure there is Internet, power and good lighting. And don't forget snacks! </p>
+      <p> Invite people with diverse skills. Talk to participants beforehand about what they're interested in making and what motivates them. </p>
+      <!--Include links to your event invitation, webpages and social media callouts!-->
+      <p> Give yourself enough time to promote your event. Consider making an <a href="#">event invitation</a> and <a href="http://twitter.com/mozteach">spreading the word</a> to local communities.</p>
+      <!--Share the Agenda you made!-->
+      <p><a href="https://mozteach.makes.org/thimble/hackable-facilitation-guide">This detailed agenda template</a> explains the ins and outs of facilitating an event, and can help you plan your hackjam.</p>
+      <p></p>
+      <h3>2. During your event</h3>
+      <!--Replace these images with pictures from your event.--> 
+      <img src="https://lh6.googleusercontent.com/-Cl4ZJm4lQjw/UUA7tLpQV5I/AAAAAAAAGR4/yZY10EXDIN8/w1512-h1008-no/IMG_2387.JPG" width="424"> 
+      <!--Use this space to talk about the people who came to your event-->
+      <h4>Get to know your participants</h4>
+      <p>Welcome the group and invite them to introduce themselves. You can do a quick go-around in a circle and afterward try this fun icebreaker, the <a href="http://hivenyc.org/PopcornPrototype/ib_spectrogram_popcorn.html">Spectrogram</a>: </p>
+      <ul>
+        <li>Recommended time: 20 minutes</li>
+        <li>Discuss short, controversial statements that helps introduce participants and the event's themes.</li>
+      </ul>
+      <p></p>
+      <h4>Reserve time for setting up</h4>
+      <p>Get everyone to set up <a href="http://login.persona.org">Persona</a> and their <a href="https://backpack.openbadges.org/backpack/login">Badge Backpack</a>.
+        Set up note-taking using collaborative tools like <a href="https://etherpad.mozilla.org/"> etherpad</a>.</p>
+      <p></p>
+      <!--What surprised you at your event? How did participants react to your different activities? What kind of discussions took place?-->
+      <h4>Allow participants to hack your agenda</h4>
+      <img src="https://lh5.googleusercontent.com/-GfI88ZFzjxE/UUA7yvmFuLI/AAAAAAAAGSU/AobcsLhMlnI/w1512-h1008-no/IMG_2360.JPG" width="424">
+      <p>In small groups, brainstorm what you want to make. Consider who the target users of your project will be. Write out as many ideas as you want on post-its. Summarize each idea in simple language. </p>
+      <h4>Cluster ideas and build teams</h4>
+      <img src="https://lh4.googleusercontent.com/-8PN06dbfzwk/UUA7n1JDydI/AAAAAAAAGRY/ylZiAkB_0no/w1512-h1008-no/IMG_2402.JPG" width="424">
+      <p>Invite everyone to post their ideas on a wall. Facilitate the group to cluster related posts. Discuss emerging trends and categories. Have people write their name next to projects they want to work on. <br>
+      </p>
+    </div>
+    <div class="photos column">
+      <h4>Hack in small groups</h4>
+      <img src="https://lh4.googleusercontent.com/-YHtWe_Bf55c/UUA7_SndGwI/AAAAAAAAGTM/0S6AoSbUyeQ/w1512-h1008-no/IMG_2334.JPG" width="424">
+      <p> Form small groups based on the participants' chosen projects. Adjust group sizes as needed; 5 people or less is best.  Float around to make sure each group is on track. You can guide them with this activity, <a href="http://hivenyc.org/GenOpen/su_genOpen_parse.html">Parsing Ideas</a>: </p>
+      <ul>
+        <li>Recommended time: 30 minutes</li>
+        <li>Write down all the requirements needed to build your idea. Then prioritize them, deciding on what pieces you could make today.</li>
+      </ul>
+      <p></p>
+      <!--Use this section to share what you made-->
+      <h4>Make something</h4>
+      <img src="https://lh6.googleusercontent.com/-ZfmOODxMXOs/UUA8Hk12hJI/AAAAAAAAGT0/7-PF291Xm5k/w1512-h1008-no/IMG_2308.JPG" width="424">
+      <p>Prompt the groups to draw, write and code as much as they can. Don't let tech troubles distract you. Paper is just as useful for prototyping as code, and drawing just as fun. You can use activities like <a href="http://hivenyc.org/storycamp/week03/su_popup_popcorn.html">Remix Content with Popcorn Maker</a> to quickly develop ideas: </p>
+      <ul>
+        <li>Recommended time: 1 hour</li>
+        <li>Annotate online videos to tell an interactive story. Add web elements like images, audio, text and more to improve the project.</li>
+      </ul>
+      <p></p>
+      <!--Next, talk about what participants said at the end of the event. Did they have fun? Did they learn something?-->
+      <h4>Share what you made</h4>
+      <img src="https://lh5.googleusercontent.com/-iUiHlc_aMZA/UUA7o7IA9FI/AAAAAAAAGRc/CtrVDiOVqy4/w1512-h1008-no/IMG_2397.JPG" width="424">
+      <p>Ask the groups to wrap up and prepare the room for presentations. Invite each group to share what they made. Reflect on the event, the projects and what everyone would like to do next. </p>
+      <h4>Celebrate!</h4>
+      <p>Publish notes about the event where participants can find it, and add to it, after the event. Then do something fun together! Grab a drink or something to drink together. Go bowling. Take a silly photo and share it with <a href="https://twitter.com/search?q=%23makerparty&src=typd">#makerparty</a>. <br>
+      </p>
+      <h3>3. After your event</h3>
+      <img src="https://lh5.googleusercontent.com/-ifSBL7tEcBs/UUA92rVVbYI/AAAAAAAAGUo/EJ2kjSY7v8Q/w1512-h1008-no/IMG_2533.JPG" width="424">
+      <h4>Share with the World!</h4>
+      <p>Collect the things you've made and write a quick blog post about your event. You can hack this guide to document your event by adding photos, text and links. Once you've documented everything, share your story with the Webmaker community.</p>
+      <h4>Plan your next event</h4>
+      <p>Send a follow up email to your participants and ask them what they thought of your event. You might also ask if they would like to collaborate on another event.</p>
+      <hr>
+      <!--What other activities do you suggest?-->
+      <h3>Suggested Activities for Hack Jams</h3>
+      <a href="http://hivenyc.org/PopcornPrototype/ib_spectrogram_popcorn.html"><img height="100" src="http://stuff.webmaker.org/teach-assets/kits/PopcornPrototype/static/ib_popcorn/step04_spectrogram.png" width=""></a> <img height="100" src="http://i.imgur.com/fZqjmHw.png"> <a href="http://hivenyc.org/GenOpen/su_genOpen_parse.html"><img height="100" src="http://stuff.webmaker.org/teach-assets/kits/GenOpen/static/ib/step03_writetheRules.png" width=""></a> <img height="100" src="http://i.imgur.com/fZqjmHw.png"> <a href="http://hivenyc.org/storycamp/week03/su_popup_popcorn.html"><img height="100" src="http://stuff.webmaker.org/teach-assets/kits/PopcornPrototype/static/hh_popcorn/step04_remixathonCultural.png" width=""></a>
+      <p style="text-align:right;padding-right:1em;font-size:.7em;"> <a href="http://hivenyc.org/hacktivityGrid/html" target="_blank">See more activities</a></p>
+      <hr>
+      <p> <em>Read our <a href="https://webmaker.org/en-US/events/legal/content-guidelines/">guidelines</a> on planning safe events. </em> </p>
+      <p><em> Remix this resource by adding /edit to the URL. Share your improvements with the <a href="https://plus.google.com/u/0/communities/106022863174952221205">Mozilla Webmaker community.</a> </em></p>
+      <p><em> Thanks to <a href="http://aspirationtech.org/">Aspiration Tech</a> for their mentorship in developing these event formats! </em></p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+<!-- 
+Congrats on completing your event documentation! You can still go back and change things - that's the beauty of the Web. You might have missed it, but you actually learned some stuff in this project. You now know how to do comments in HTML and CSS, manipulate some CSS, work with headers (the <h1> tag), use lists (<ul> and <ol>) and bullets (<li>), add hyperlinks to text (<a> tag) and even a little about open educational resources. Way to go, Webmaker Mentor!
+-->

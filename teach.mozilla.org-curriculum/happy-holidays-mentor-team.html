@@ -1,0 +1,309 @@
+<!DOCTYPE html><html><head>
+
+    <meta content="comicmake" name="webmaker:tags">
+
+    <!--
+
+      Lessons to be covered:
+        - Changing images
+        - Changing text
+        - Changing classes
+        - Copying nodes
+    -->
+
+    <!-- 
+    In this project you can create your own comic strip using and square photos you have - so why not use the photos from your Instagram account?  You'll
+    be able to add images, add copy in speech bubbles and captions.  You'll also learn how to make more scenes by adding more comic boxes.
+    -->
+
+  <!--
+    Let's get started.
+
+    1) READ THROUGH THE COMMENTS. This is a comment. Everything inside of this tag for HTML or '/*' for CSS, is not processed as code, but instead is just text comments about the code. For this project, the comments will give you instructions, hints and guides to completing the project, so skim down through the comments to get an understanding of what you are being asked to do.
+    2) GET ORIENTED IN THE CODE. HTML is made up of tags that look like this <p> </p>. The tags tell you something about the information contained between them. Click on the tags in the code on this side of the editor to get a description of what each tag is for.
+  -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+<script src="//techkimweb.weebly.com/files/theme/jquery.snow.js"></script>
+
+
+    <title>Happy Holidays Community Team!</title>
+
+  <!-- This is the styles for the comic -->
+  <style>
+    body {
+     background-color:black;
+background-image:
+radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
+background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+      font-family: "Open Sans Light", sans-serif;
+      line-height:1.2;
+      text-align: center;
+      padding: 40px 0 0 20px;
+    }
+    h1, h2 {
+      text-transform: uppercase;
+      text-shadow: 2px 2px 0px #aaa;
+      font-size:50px;
+      color:#fff;
+    }
+    h2{
+      font-size:30px; 
+    }
+    .comic {
+      max-width:826px;
+      margin:60px auto 0;
+    }
+    .scene {
+      width: 250px;
+      height:250px;
+      border:3px solid #015367;
+      background: #fff;
+      margin:8px;
+      display: inline-block;
+      position: relative;
+    }
+    .scene img {
+      width:100%;
+      height:100%;
+      display: block;
+    }
+    .caption {
+      padding:10px;
+      margin:0;
+      position: absolute;
+      left:0;
+      right:0;
+      background:#F2BB6C;
+      text-align:left;
+      top:0;
+    }
+    .caption.bottom {
+      bottom:0;
+      top:auto;
+      border-top:2px solid #015367;
+    }
+    .caption.top {
+      top:0;
+       border-bottom:2px solid #015367;
+    }
+    .speech {
+      width:40%;
+      border-radius:50%;
+      border:2px solid #015367;
+      margin:0;
+      position: absolute;
+      z-index:1;
+      background: Snow ;
+      padding:20px;
+      top:-15px;
+      text-align: center;
+    }
+    /* Advanced CSS for the speech pointer */
+    .speech:after {
+      border-color: snow transparent;
+      border-style: solid;
+      border-width: 13px 13px 0;
+      bottom: -11px;
+      content: "";
+      display: block;
+      left: 50%;
+      margin-left:-14px;
+      position: absolute;
+      width: 0;
+    }
+    .speech:before {
+      border-color: black transparent;
+      border-style: solid;
+      border-width: 16px 16px 0;
+      bottom: -15px;
+      content: "";
+      display: block;
+      left: 50%;
+      margin-left:-17px;
+      position: absolute;
+      width: 0;
+    }
+    .speech.left {
+      left:-15px;
+    }
+    .speech.right {
+      right:-15px;
+    }
+
+    footer {
+      clear:both;
+    }
+  </style>
+
+<script>(function fixExternalLinks() {
+              function pointToBlank(a) {
+                var href = a.getAttribute("href");
+                if (href && href.indexOf("://") > -1) {
+                  // this is an external link.
+                  if(!a.getAttribute("target")) {
+                    a.setAttribute("target", "_blank");
+                  }
+                }
+              }
+              function fixLinks() {
+                document.removeEventListener("DOMContentLoaded", fixLinks);
+                var anchors = document.querySelectorAll("a");
+                var asArray = Array.prototype.slice.call(anchors);
+                asArray.forEach(function(a) {
+                  pointToBlank(a);
+                });
+              }
+              document.addEventListener("DOMContentLoaded", fixLinks);
+            }())</script>
+</head>
+<body>
+<script>
+$(document).ready( function(){
+        $.fn.snow();
+});
+</script>
+  <!-- 
+    Task 1: 
+    First why not change the header <h1> to give your comic a better name.  Any text that goes inbetween the <h1></h1> tags will become the heading.
+  -->
+  <h1>Happy Holidays Community Team!</h1>
+
+  <p></p>
+
+  <!-- 
+    This is where the comic starts. 
+    The 'comic' <div> wraps around each comic 'scene' to contain them all.
+  -->
+  <div class="comic">
+
+      <!--
+        Task 2:
+        The below HTML is one scene of out comic.
+        Start by changing the images in the scene to one of your own photos.  
+        As the scene is square a square photo will work best. Why not get the image url of one of your Instagram photos?  
+      -->
+      <div class="scene">
+        <p class="caption bottom">Each of you has given me something this year.</p>
+        <p class="speech left">I thought I'd say thanks</p>
+      <img alt="" src="http://educonphilly.org/thumbnail/578/400x400" style="width:200px;margin-left:19%;">
+      </div>
+
+       <!-- 
+        Great! Now lets look at getting some speech bubbles and captions into other scenes.
+
+        Task 3:
+        Look at the 1st scene above.  It has both a caption and a speech bubble.
+        By copying the speech paragraph <p>,  try adding a speech bubble to the 2nd scene below and then change its text.
+      -->
+      <div class="scene">
+        <p class="caption bottom">Amira - your positivity, <a href="http://www.zythepsary.com/techie/august-mentor-community-call/">despite having to be photoshopped in sometimes</a>, brightens people's day.</p>
+        <img alt="" src="http://media.giphy.com/media/mdStjhHuiHpyo/giphy.gif" style="height:150px;">
+      </div>
+
+      <!-- 
+        Depending on the photo you use you might want to move the captions to either the 'top' or 'bottom',
+        or the speech bubble either 'left or 'right'.
+
+        Task 4:
+        Look at the 4th scene below.  It has a speech bubble on the left side.
+        Change the class name 'left' to 'right' to make the speech bubble move to the right side.
+        If you want a caption to be at the top make sure it has the class 'top', if you want it at the bottom makes sure it has the class 'bottom'.
+      -->
+      <div class="scene">
+        <p class="caption bottom">Atul - thanks for pinging me every day to brainstorm and share ideas. And for pointing out bad ones.</p>
+        <img alt="" src="http://media.giphy.com/media/TFb70E6Awp1Ek/giphy.gif" style="height:152px">
+      </div>
+
+     <div class="scene">
+        <p class="caption bottom">Chris - your guidance has helped me grow in more ways than I can summarize.</p>
+        <img alt="" src="http://media.giphy.com/media/CHDdxk3oO3KqQ/giphy.gif" style="height:170px">
+      </div>
+      
+      <div class="scene">
+        <p class="caption bottom"> Doug - Your competency in animated gifing inspired this comic. Thanks for all our thoughtful talks.</p>
+        <img alt="" src="http://media.giphy.com/media/YMoSv0jkic5J6/giphy.gif" style="height:170px">
+      </div>
+     <div class="scene">
+        <p class="caption bottom"> Elsa - I &lt;3'd our brief interactions at Mozfest. Looking forward to getting to know you better in 2014.</p>
+        <img alt="" src="http://media.giphy.com/media/GraeU4b5ZJflC/giphy.gif" style="height:170px">
+      </div>
+    <div class="scene">
+        <p class="caption bottom"> Fuzzy - You've been an incredible addition. The failed game show we ran together is one of my favorite memories from the Summit.</p>
+        <img alt="" src="http://media.giphy.com/media/NmuxhW6SZ7PR6/giphy.gif" style="height:170px">
+      </div>
+
+      <div class="scene">
+        <p class="caption bottom"> Julia - Our bedroom brainstorm at the Jan. workweek led to some fantastic iterations. +1 to mindmelding!</p>
+        <img alt="" src="http://media.giphy.com/media/lELRD773cY7Sg/giphy.gif" style="height:170px">
+      </div>
+    <div class="scene">
+        <p class="caption bottom"> Karen - At the Hive Toronto training, you were such a helpful participant. Glad you're now on board.</p>
+        <img alt="" src="http://media.giphy.com/media/114zHVyFImDQu4/giphy.gif" style="height:170px">
+      </div>
+     <div class="scene">
+       <p class="caption bottom"> Kat - Your epicness cannot be understated. SO HAPPY you're on the team. (You still owe me a beer, I think :)</p>
+        <img alt="" src="http://media.giphy.com/media/jZvXnairpienm/giphy.gif" style="height:170px">
+      </div>
+     <div class="scene">
+        <p class="caption bottom"> Kathryn - Boat talk + random check ins = happier, more productive Laura.</p>
+        <img alt="" src="http://media.giphy.com/media/iTz66c4fOM5he/giphy.gif" style="height:170px">
+      </div>
+    <div class="scene">
+        <p class="caption bottom"> Lainie - The CoCoBanBro changed my life, the way you frame things (all NYey) is totes fantastic and your helpful guidance has been amazing.</p>
+        <img alt="" src="http://media.giphy.com/media/PgLcd1Wdsmq4M/giphy.gif" style="height:170px">
+      </div>
+     <div class="scene">
+       <p class="caption bottom"> Leah - The talk we had outside the Gladstone helped w/ work/life balance. I no longer use "really" in emails, either ;)</p>
+        <img alt="" src="http://media.giphy.com/media/1cug3qATUuVuE/giphy.gif" style="height:170px">
+      </div>
+ <div class="scene">
+   <p class="caption bottom"> Matt - Your grilling showed me the power of zucchini. It's now tied with hokkaido for my favorite squash.  I'm so excited you're doing PM next year.</p>
+        <img alt="" src="http://media.giphy.com/media/r7h3q7EmKasKs/giphy.gif" style="height:170px">
+      </div>
+     <div class="scene">
+    <p class="caption bottom"> Melissa - Thanks for sharing that "borrowed" bottle of wine and all the conversations we had at MozFest.</p>
+        <img alt="" src="http://media.giphy.com/media/a4FdmoQp39Dna/giphy.gif" style="height:190px">
+      </div>
+    <div class="scene">
+    <p class="caption bottom"> Michelle (partner in crime) - I've told you all the things a million times, but like Chris, I can't summarize in a comic. Thank you.</p>
+        <img alt="" src="http://media.giphy.com/media/qny3OpfMUrmjC/giphy.gif" style="height:190px">
+      </div>
+
+     
+    <div class="scene">
+        <p class="caption bottom"> Puja - Jaywalking with you during MozFest solidified my assumption that you are indeed most smart and awesome.</p>
+        <img alt="" src="http://media.giphy.com/media/vyKO8EWiD29hu/giphy.gif" style="height:170px">
+      </div>
+     <div class="scene">
+       <p class="caption bottom"> Robert - Two words: Space MOOC. Hanging with you at MozFest was great. Looking forward to getting to know you next year too!</p>
+        <img alt="" src="http://media.giphy.com/media/1IccUZwJ7HfZ6/giphy.gif" style="height:170px">
+      </div>
+     <div class="scene">
+        <p class="caption bottom"> Sam - Your clarification seeking questions in meetings helped not only your understandings, but mine as well. Thanks for that.</p>
+        <img alt="" src="http://media.giphy.com/media/US0y4X7FONHaM/giphy.gif" style="height:170px">
+      </div>
+    <div class="scene">
+        <p class="caption bottom"> Will - Using pictures of Bhau to manipulate my mood has been appreciated. Thanks for being such a friend.</p>
+        <img alt="" src="http://media.giphy.com/media/MD9rVXU7c1hGU/giphy.gif" style="height:170px">
+      </div>
+     <h2>I'm so pleased to continue working with each of you. Enjoy your time off and see you in 2014!</h2>
+       <!-- 
+        This is the end of the comic :(
+        Want to create a larger comic?
+
+        Task 5:
+        Copy the HTML for a 'scene' and paste it below this comment...you now have 3 more scenes in your comic ;)
+      -->
+
+  </div>
+
+
+  <!-- Disclaimer for images -->
+ 
+
+
+</body></html>

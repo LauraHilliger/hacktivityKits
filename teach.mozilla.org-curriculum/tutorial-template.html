@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MDN Tutorial Template</title>
+    <!-- this stylesheet provides default styles for tutorials -->
+    <link href="//thimble.webmaker.org/learning_projects/tutorial/tutorial.css" rel="stylesheet">
+    
+    <!-- these scripts turn your make into a tutorial -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//thimble.webmaker.org/learning_projects/tutorial/tutorial.js"></script>
+    <script>
+      jQuery(document).ready(function($){
+        $('body').tutorial();
+      });
+      
+    </script>
+    <style>
+    .example-div {
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: #e3eaee;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-top: 15px;
+}
+
+.example-div ul {
+  padding-left: 10px;
+  text-indent: -1em;
+  list-style-position: inside;
+  list-style-type: disc;
+}
+
+.example-div ul li {
+  margin: 0;
+}
+
+    </style>
+  <script>(function fixExternalLinks() {
+              function pointToBlank(a) {
+                var href = a.getAttribute("href");
+                if (href && href.indexOf("//") > -1) {
+                  // this is an external link.
+                  if(!a.getAttribute("target")) {
+                    a.setAttribute("target", "_blank");
+                  }
+                }
+              }
+              function fixLinks() {
+                document.removeEventListener("DOMContentLoaded", fixLinks);
+                var anchors = document.querySelectorAll("a");
+                var asArray = Array.prototype.slice.call(anchors);
+                asArray.forEach(function(a) {
+                  pointToBlank(a);
+                });
+              }
+              document.addEventListener("DOMContentLoaded", fixLinks);
+            }())</script>
+</head>
+  <body>
+    <!--
+      enclose each tutorial step in its own section tags
+      you can include images 
+to attach this tutorial to another make, publish it and tag the other make with the prefix: "tutorial-" url
+    -->
+
+      <section>
+      <!--section-->
+      <h1>Let's get started!</h1>
+      <h3>Users can click the blue arrows above to go through the tutorial</h3>
+    </section>
+    
+    <section>
+      <!--section-->
+      <h1>You can use styles from MakerStrap :)</h1>
+      <p>And the code tag, of course: <b><code>&lt;img&gt;</code></b> tag.</p> 
+      
+      <div class="example-div">
+        <ul><li><a href="http://mozilla.github.io/makerstrap/demo/#/">MakerStrap</a> is great!</li></ul>
+          </div>
+          
+  </section>
+     
+    
+    <!--section-->
+    <section>
+      <h1>Using "line" and the line number will allow the user to highlight the code</h1>
+      <p><b>Here's an example</b> Write lots of paragraphs on line 12 and line 14.</p>
+     
+      <div class="example-div">
+        <ul><li>here's the pretty example div again</li>  
+          </ul>
+      </div>
+    </section>
+
+     <!--section-->
+    <section>
+      <h1>If you need help, <a href="http://mzl.la/Webmaker_Newsgroup">email us!</a></h1>
+      
+     
+      <div class="example-div">
+        <ul><li><b>Happy Webmaking</b></li> 
+          
+          </ul>
+      </div>
+    </section>
+    
+    
+      <section>
+      <!--section-->
+      <h1>Done!</h1>
+        <b>That's it!</b> Now log in and hit "save" to publish and share your work. 
+        
+      
+    
+       </section>  
+  </body>
+</html>

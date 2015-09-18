@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8">
+
+	<meta content="http://dl.dropboxusercontent.com/u/7467121/monkeys-at-work.jpg" name="webmaker:thumbnail">
+	<meta content="hackertraits" name="webmaker:tags">
+	<meta content="teachtheweb" name="webmaker:tags">
+	<meta content="mozfest" name="webmaker:tags">
+
+	<!-- name this make! -->
+<title>A Hacker is...</title>
+
+	<!-- stylizing -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css">
+	<style>
+      /* Set the background for the page */
+	html { height: 100%; }
+	body {
+		/* Why not change the background to something you love? */
+		background: #3fb58e url('http://farm9.staticflickr.com/8204/8175049476_cf851fa2d0_h.jpg') center center no-repeat fixed;
+		background-size: cover;
+		height: 100%;
+	}
+	/* Set the font, background, and more for the quote */
+	.container {
+		background-color: white;
+		color: #4d4e53;
+		font: 15.5px/1.2 "Fira", "Open Sans", "Helvetica Neue", Helvetica Arial, Sans-Serif;
+		max-width: 400px;
+		min-width: 200px;
+		padding: 45px;
+		margin: 3em;
+		position: relative;
+        float:left
+	}
+	/*
+		This is a little bit more complex css 
+		than normal. I'll detail it a little 
+		more in a future make.
+
+		What this does in short. Is make the 
+		down point on .container
+	 */
+	.container::after {
+		content: "";
+		position: absolute;
+		bottom: -1.99em;
+		right: 2em;
+		width: 0;
+		height: 0;
+		border-left: 2em solid transparent;
+		border-right: 2em solid transparent;
+		
+		/* 
+			small note: if you change the background colour 
+			of .container set the colour of this border to 
+			be the same
+		*/
+		border-top: 2em solid white;
+	}
+	.container a {
+		color: #3fb58e;
+		text-decoration: none;
+	}
+	.container a:hover { text-decoration: underline; }
+
+    .avatar {
+        border-radius: 100%;
+        border: 4px solid white;
+        background: white;
+        position: absolute;
+        bottom: -7em;
+        right: 1em;
+        width: 6em;
+    }
+	
+	.container p { margin: 0 0 0 10px; }
+	.container > p:first-child { font-weight: 300; }
+    .container blockquote { margin: 10px 0; }
+	.container blockquote > p:first-child { font-size: 2em; }
+	.container blockquote > p:first-child::before { content: open-quote; }
+	.container blockquote > p:first-child::after { content: close-quote; }
+	.container blockquote > footer { text-align: right; }
+	</style>
+<script>(function fixExternalLinks() {
+              function pointToBlank(a) {
+                var href = a.getAttribute("href");
+                if (href && href.indexOf("://") > -1) {
+                  // this is an external link.
+                  if(!a.getAttribute("target")) {
+                    a.setAttribute("target", "_blank");
+                  }
+                }
+              }
+              function fixLinks() {
+                document.removeEventListener("DOMContentLoaded", fixLinks);
+                var anchors = document.querySelectorAll("a");
+                var asArray = Array.prototype.slice.call(anchors);
+                asArray.forEach(function(a) {
+                  pointToBlank(a);
+                });
+              }
+              document.addEventListener("DOMContentLoaded", fixLinks);
+            }())</script>
+</head>
+<body>
+	<div class="container">
+      <p>For me a Hacker/Maker is someone who...</p>
+		<blockquote>
+			<p data-pledge>
+              What are the characteristics and traits of a hacker to you? List them here!
+          </p>
+             <ul>
+               <li>Trait 1</li>
+               <li>Trait 2</li>
+               <li>Trait 3</li>
+          </ul>
+			<footer>
+				— <a href="//mozillians.org/">Your Name</a>
+              	<img class="avatar" src="http://farm7.staticflickr.com/6037/6352662561_6b193724c5.jpg">
+			</footer>
+		</blockquote>
+  </div>
+ <div class="container">
+   <p>Disciplines that I think fall under the umbrella terms, "hacker" or "maker"...</p>
+		<blockquote>
+          <!--Knowing this is important in making sure the core members of the new hacker/maker  space are on the same page. Not agreeing in this fundamental area has  caused a lot of inclusivity debates in local hackerspaces.-->
+			<p data-pledge> List the disciplines you consider "hacker" or "maker" disciplines, OR list the ones that don't.
+          </p>
+          <ul>
+               <li>Discipline 1</li>
+               <li>Discipline 2</li>
+               <li>Discipline 3</li>
+          </ul>
+			<footer>
+				— <a href="//mozillians.org/">Your Name</a>
+              	<img class="avatar" src="http://farm7.staticflickr.com/6037/6352662561_6b193724c5.jpg">
+			</footer>
+		</blockquote>
+  </div>
+
+</body></html>

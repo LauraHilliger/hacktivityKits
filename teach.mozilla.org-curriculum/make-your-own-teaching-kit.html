@@ -1,0 +1,155 @@
+<!DOCTYPE html><!-- ================================================================
+WELCOME TO THE WEBMAKER TEACHING KIT TEMPLATE!
+Use this template to create your own teaching kit, lesson plan or educational resource. 
+Edit the HTML below to add your own content, links and images.
+Code comments like these will help with hints and guides. 
+Need help? Start here: http://mzl.la/teachingkit-tips
+================================================================ -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta content="teach-kit" name="webmaker:tags">
+  <link href="https://stuff.webmaker.org/webmaker-kits/v2/css/style.css" media="all" rel="stylesheet" type="text/css">
+<!-- =============================== -->
+<!-- ADD YOUR TITLE HERE -->
+  <title>Teaching Kit Template</title>
+<!-- =============================== -->
+<script>(function fixExternalLinks() {
+              function pointToBlank(a) {
+                var href = a.getAttribute("href");
+                if (href && href.indexOf("//") > -1) {
+                  // this is an external link.
+                  if(!a.getAttribute("target")) {
+                    a.setAttribute("target", "_blank");
+                  }
+                }
+              }
+              function fixLinks() {
+                document.removeEventListener("DOMContentLoaded", fixLinks);
+                var anchors = document.querySelectorAll("a");
+                var asArray = Array.prototype.slice.call(anchors);
+                asArray.forEach(function(a) {
+                  pointToBlank(a);
+                });
+              }
+              document.addEventListener("DOMContentLoaded", fixLinks);
+            }())</script>
+</head>
+<body>
+  <div id="ribbon">Teaching Kit</div>
+<!-- =============================== -->
+<!-- HEADER IMAGE -->
+<!-- Just paste the URL for your image in the "src" attribute below -->
+  <header style="background-image:url(https://s3-us-west-2.amazonaws.com/webmaker-kits/learning%402x.jpg)">
+ <!-- =============================== -->
+    <hgroup>
+<!-- =============================== -->
+<!-- TITLE AND SUMMARY -->
+      <h1>Your title goes here</h1>
+      <h2>Give it a one-line summary here. What will participants make or learn?</h2>
+<!-- =============================== -->
+<!-- Add your name here -->
+      <h3 id="made-by">Made by <a href="http://example.com">your name</a></h3>
+<!-- =============================== -->
+    </hgroup>
+  </header>
+  <div class="wrapper">
+    <div class="row">
+      <main>
+<!-- =============================== -->
+<!-- DESCRIPTION -->
+        <h2>Description</h2>
+        <p>What is your teaching kit all about? What does it help people make or learn? What was your inspiration for creating it?</p>
+<!-- =============================== -->
+<!-- LEARNING OBJECTIVES -->
+        <h2>Learning objectives</h2>
+        <p>What specific skills will participants learn? What new knowledge will they come away with? You might want to list these individually, like this:</p>
+        <ul>
+          <li>Skill 1</li>
+          <li>Skill 2</li>
+          <li>Skill 3</li>
+        </ul>
+        <p>
+          Not sure? Have a look at our new <a href="https://webmaker.org/literacy">Web Literacy Map</a>.
+        </p>
+<!-- =============================== -->
+<!-- AGENDA --> 
+        <h2>Agenda</h2>
+        <ol class="agenda">
+          <li><a href="#">Activity 1</a></li>
+          <li><a href="#">Activity 2</a></li>
+          <li><a href="#">Activity 3</a></li>
+          <li><a href="#">Activity 4</a></li>
+        </ol>
+<!-- =============================== -->
+<!-- REVIEW & ASSESSMENT -->
+        <h2>Assessment and review</h2>
+        <p>How can participants assess and reflect on their work once it's complete? Feel free to add here if you have suggestions for...</p>
+        <ul>
+          <li><strong>Discussion questions</strong>. Any suggested topics or questions for follow-up discussion?</li>
+          <li><strong>Assessment</strong>. Is there a specific standard or rubric you'd suggest using?</li>
+          <li>Are there ways learners can assess each others' work? (Peer assessment?)</li>
+          <li><strong>Sharing</strong>. What are some good ways participants can publish and share what they made?</li>
+        </ul>
+<!-- =============================== -->
+<!-- ASSESSMENT CRITERIA -->
+        <h2>Assessment criteria</h2>
+        <div class="well checklist">
+          <p>Got a check-list of criteria, or things to look for in a great completed project? Feel free to list them here:</p>
+          <ul>
+            <li>Criteria 1</li>
+            <li>Criteria 2</li>
+            <li>Criteria 3</li>
+          </ul>
+        </div>
+      </main>
+
+      <aside>
+<!-- =============================== -->
+<!-- TAGS 
+Help others know what skills and competencies your teaching kit helps teach by tagging it! You'll have the opportunity to add tags upon publish. If your kit teaches Web Skills, consider using the Web Literacy Standard to tag it! Here's a helpful resource: https://support.mozilla.org/en-US/kb/how-tag-webmaker-makes-web-literacy-map
+-->
+<!-- =============================== -->
+       <section class="tags" id="magicTags">
+          <h2>Tags</h2>
+          <p id="magicNotice" class="well yellow"><em>This section will automagically be populated with this kits tags.</em></p>
+        </section>
+<!-- =============================== -->
+<!-- WHAT YOU'LL MAKE TOGETHER -->		
+        <h2>What you'll make together</h2>
+        <p>
+          What will participants make? What's the end result or finished product? A web page? Video? Paper prototype? Dancing robots? :)
+        </p>
+<!-- =============================== -->
+<!-- PREPARATION -->  
+        <h2>Preparation</h2>
+        <p>
+          Are any special materials required? What tools will participants need? Should anything be set up in advance? Is there any software to install, or specific technical requirements?
+        </p>
+<!-- =============================== -->
+<!-- ADDITIONAL RESOURCES -->       
+        <section class="teach-list">
+          <h2>Additional Resources</h2>
+          <ul>
+            <li><a href="http://foo.org/">You can include LINKS...</a></li>
+            <li><a href="http://foo.org/">...to supporting pages and helpful resources...</a></li>
+            <li><a href="http://foo.org/">...in this section</a></li>
+          </ul>
+        </section>
+<!-- =============================== -->
+<!-- TIPS and TRICKS -->
+        <section class="teach-list">
+          <h2>Tips and tricks</h2>
+          <ul>
+            <li><a href="https://support.mozilla.org/en-US/kb/top-tips-creating-great-teaching-kits">Tips for creating great teaching kits</a></li>
+            <li><a href="https://support.mozilla.org/en-US/kb/pro-tips-webmaker-teaching-kits">Pro Tips for great teaching kits</a></li>
+            <li><a href="https://webmaker.org/event-guides">Event Guides</a></li>
+          </ul>
+        </section>
+      </aside>
+    </div>
+  </div>
+  <script src="https://stuff.webmaker.org/webmaker-kits/v2/js/main.min.js"></script>
+</body>
+</html>

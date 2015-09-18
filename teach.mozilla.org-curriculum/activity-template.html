@@ -1,0 +1,549 @@
+<!DOCTYPE html><!-- ======================================================================
+Welcome to the Webmaker Activity Template!
+
+Use this template to create activities and resources for your goals. Use a new template for each activity. Haven't thought about your goals? Try this template: Teaching Kit Template
+
+This page requires a unique blend of HTML agility, CSS wizardry and mental firepower. There are people who are on the web, and then there are people who MAKE the web. Your goal in this project is to MAKE your very own Webmaker activity page. Add images, links and content to this page to create your very own activity page and help others teach the web.
+============================================================================ --><!--
+Let's get started.
+
+1) READ THROUGH THE COMMENTS. This is a comment. Everything inside of this tag for HTML or '/*' for CSS, is not processed as code, but instead is just text comments about the code. For this project, the comments will give you instructions, hints and guides to completing the project, so skim down through the comments to get an understanding of what you are being asked to do.
+
+2) GET ORIENTED IN THE CODE. HTML is made up of tags that look like this <p> </p>. The tags tell you something about the information contained between them. Click on the tags in the code on this side of the editor to get a description of what each tag is for.
+--><html><head>
+<meta charset="utf-8">
+<title>Activity Template</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet" type="text/css">
+<link href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.0/normalize.css" rel="stylesheet" type="text/css">
+<link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+<!--/* 
+Everything contained within this <style> tag is called CSS and it is used to define the presentational components of the page, like fonts, colors, containers, positioning, etc. Remember that in CSS, comments are enclosed in '/*'. You can edit this CSS.
+*/-->
+<style media="all" type="text/css">
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	color: #4c4c4c;
+	background-color: #2aabe1;
+}
+a {
+	color: #27aae1;
+	text-decoration: none;
+}
+a:hover {
+	color: #0092cf;
+	text-decoration: underline;
+}
+li {
+	margin: 5px 0 5px;
+}
+section {
+	line-height: 22px;
+	margin-bottom: 40px;
+}
+section h1 {
+	font-size: 20px;
+	font-weight: 300;
+}
+#content {
+	background-color: #fff;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	box-shadow: 0 3px 3px -2px rgba(0,0,0,0.2);
+}
+.wrapper {
+	width: 1020px;
+	margin: 20px auto 40px;
+}
+#header-group {
+	width: 650px;
+}
+#teachingkit-banner {
+	position: absolute;
+	top: 30px;
+	text-align: center;
+	width: 200px;
+	left: -60px;
+	color: #686868;
+	padding: 10px;
+	background-color: #ffcd36;
+	font-size: 18px;
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	z-index: 2;
+}
+#header-img {
+	position: absolute;
+	display: inline;
+	bottom: 30px;
+	left: 0;
+	border-radius: 100px;
+}
+#header {
+	margin: 0 auto;
+	padding: 35px 0 30px 125px;
+	position: relative;
+	color: #fff;
+	background-color: #3fb58e;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	overflow: hidden;
+}
+#metadata img {
+	position: relative;
+	top: 15px;
+	margin-right: 10px;
+}
+#header a.print {
+	color: white;
+	text-decoration: none;
+}
+.print {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 45px;
+	height: 45px;
+	text-align: center;
+	padding: 7px;
+	font-size: 11px;
+	background-color: #328f70;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+.print:hover {
+	background-color: #20795b;
+}
+.print i {
+	font-size: 16px;
+}
+.print span {
+	top: 2px;
+	position: relative;
+}
+#header-img {
+	position: relative;
+	margin-right: 10px;
+	top: 15px;
+}
+#header-img img {
+	border-radius: 100px;
+}
+#header a {
+	text-decoration: underline;
+}
+#header h1 {
+	margin: 0;
+	font-size: 40px;
+	font-weight: 300;
+	line-height: 1.2;
+}
+#header h2 {
+	margin: 7px 0 0;
+	font-size: 18px;
+	font-weight: 300;
+}
+#made-by {
+	font-size: 15px;
+}
+#author {
+	color: #fff;
+}
+#made-date {
+	font-size: 13px;
+}
+#left-side {
+	padding: 40px 0 0 105px;
+	vertical-align: top;
+	width: 650px;
+	display: inline-block;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+#left-side section {
+	padding-left: 20px;
+}
+#review input[type=checkbox] {
+	visibility: hidden;
+	position: absolute;
+}
+#review input[type=checkbox] + label:after {
+	position: relative;
+	display: inline-block;
+	font-family: "FontAwesome";
+	content: '096';
+	font-size: 24px;
+	color: #3fb58e;
+	margin-right: 15px;
+	width: 15px;
+	top: 4px;
+}
+#review input[type=checkbox]:hover + label:after {
+	content: '046';
+}
+#review input[type=checkbox]:checked + label:after {
+	content: '046';
+}
+#review ul {
+	list-style: none;
+	padding-left: 0;
+	font-size: 14px;
+	font-weight: 400;
+	margin-bottom: 0;
+}
+#review div {
+	padding: 15px 10px;
+	background-color: #e3eaee;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	margin-bottom: 10px;
+	font-size: 18px;
+	font-weight: 300;
+	border-radius: 5px;
+}
+#right-side {
+	padding: 45px 105px 0 20px;
+	vertical-align: top;
+	width: 365px;
+	display: inline-block;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+#tags {
+	overflow: hidden;
+}
+#tags ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.tag-item {
+	display: block;
+	float: left;
+	color: #fff;
+	padding: 5px 15px;
+	margin: 0 5px 5px 0;
+	background-color: #3fb58e;
+	text-align: center;
+	font-size: 14px;
+	cursor: pointer;
+}
+.tag-item:hover {
+	background-color: #20795b;
+}
+.tag-item a {
+	color: #fff;
+}
+.tag-item a:hover {
+	text-decoration: none;
+}
+#agenda {
+	overflow: hidden;
+	position: relative;
+}
+#agenda ol {
+	font-size: 1.2em;
+	counter-reset: item;
+	padding-left: 10px;
+	background-color: #fff2cc;
+	border-bottom: 1px dotted #ccc;
+	position: relative;
+	margin: 0;
+}
+#agenda ol li {
+	list-style-type: none;
+	border-bottom: 1px dotted #ccc;
+	padding: 10px 10px 10px 0;
+	margin: 0;
+	margin-left: 30px;
+}
+#agenda ol li:last-child {
+	border-bottom: none;
+}
+#agenda ol li:before {
+	position: absolute;
+	left: 20px;
+	font-weight: 600;
+	color: #777777;
+	content: counter(item, decimal) ')';
+	counter-increment: item;
+}
+.line {
+	position: absolute;
+	border-left: 1px solid #ffaa9f;
+	border-right: 1px solid #ffaa9f;
+	width: 2px;
+	float: left;
+	height: 100%;
+	display: inline-block;
+	margin-left: 10px;
+	z-index: 1;
+}
+#resources {
+	overflow: hidden;
+}
+#resources ul {
+	font-size: 10px;
+	padding-left: 15px;
+}
+#resources ul li {
+	font-size: 10px;
+}
+#resources ul li a {
+	font-size: 13px;
+}
+#about h1, #review h1 {
+	font-size: 28px;
+	color: #00be7a;
+	font-weight: 300;
+}
+ @media (min-width: 1520px) {
+.wrapper {
+	width: 1520px;
+	margin: 20px auto;
+}
+#header-group {
+	width: auto;
+}
+#left-side {
+	width: 850px;
+	margin-right: 140px;
+}
+#right-side {
+	width: 400px;
+}
+}
+ @media print {
+a:after {
+	content: " (" attr(href) ") ";
+}
+body {
+	color: #000;
+	background-color: #fff;
+}
+* {
+	overflow: visible;
+}
+section {
+	margin-bottom: 10px;
+}
+#teachingkit-banner {
+	display: none;
+}
+#header {
+	color: #000;
+	background-color: #fff;
+	padding: 35px 0 30px 20px;
+	overflow: hidden;
+}
+#header h1 {
+	font-size: 26px;
+}
+#author {
+	color: #000;
+}
+.tag-item a {
+	color: #27aae1;
+}
+.print {
+	display: none;
+}
+.wrapper {
+	width: 100%;
+	margin: 0;
+}
+.tag-item {
+	color: #27aae1;
+	background-color: #fff;
+	padding: 0;
+	margin: 0;
+	text-align: left;
+}
+#header {
+	page-break-after: avoid;
+}
+#content {
+	border-radius: none;
+	box-shadow: none;
+	page-break-inside: always;
+}
+#left-side {
+	padding: 0;
+	width: 55%;
+}
+#review div {
+	color: #000;
+	background-color: #fff;
+	padding: 0
+}
+#about h1,  #review h1 {
+	font-size: 22px;
+	color: #00be7a;
+	font-weight: 300;
+}
+#right-side {
+	padding: 10px 0 0 20px;
+	width: 44%;
+}
+.tag-item:not(:last-child):after {
+	content: ', ';
+	margin-right: 3px;
+}
+.tag-item:hover {
+	background-color: #fff;
+}
+#agenda ol {
+	background-color: #fff;
+	padding-left: 0;
+	border-bottom: none;
+}
+#agenda ol li {
+	list-style-type: none;
+	border-bottom: none;
+	margin: 0;
+}
+#agenda ol li:before {
+	font-weight: 400;
+	color: #000;
+	content: counter(item, decimal) ')';
+	counter-increment: item;
+	left: 0px;
+	margin-right: 5px;
+	position: relative;
+}
+.line {
+	display: none;
+}
+}
+</style>
+<base target="_blank">
+</head>
+<body>
+<div class="wrapper">
+  <header id="header">
+    <div id="teachingkit-banner"> Activity </div>
+    <div>
+      <hgroup id="header-group">
+        <h1>Name your activity</h1>
+        <h2>Write a super short description of the activity, its purpose, and what participants will learn. For example, is this an introductory activity? A game? A tutorial? A project? A practical activity? Giving a brief description of the type of activity will help others quickly understand what this resource is.</h2>
+      </hgroup>
+      <div id="metadata"> 
+        <!--You can replace the Webmaker logo with an image of your own by swapping out the URL in the "src" attribute.--> 
+        <img alt="Logo" src="https://secure.gravatar.com/avatar/bf8989e824a53fe30cb60e7bc3a57fdc?s=40d=https%3A%2F%2Fstuff.webmaker.org%2Favatars%2Fwebmaker-avatar-44x44.png"> <span id="made-by">Made by <a href="#" id="author">your name here</a></span> <span id="made-date">1 month ago</span> </div>
+    </div>
+    <a class="print"> <i class="icon-print"></i> <span>Print</span> </a> </header>
+  <div id="content">
+    <div id="left-side">
+      <section id="about"> 
+        <!--
+You can change the text within the different <h> tags. <h1> is used for headings - the "h" stands for header and the "1" stands for most important (versus h2, h3, etc.). Try different headlines for your kit sections.
+-->
+        <h1>Step by Step</h1>
+        <!--You can also rewrite or delete text from between the <p> tags. <p> stands for paragraph.-->
+        <p>  Explain each step of the activity so that others can repeat it in their learning situations. Replace the example text and find images that help you explain your steps!</p>
+        <ol>
+   <li>
+     <p>An <strong>introductory activity</strong> gets the blood pumping, forms connections between learners, and introduces a topic. There are thousands of different ways to introduce a topic and get learners interacting with each other. Choose one and hack it to be your own!</p>
+    </li>
+    <li>
+      <p>A good second activity is an <strong>explanatory activity</strong>, one that allows participants to get used to tools or procedures. An example would having very little design constraints and inviting the participants make something with Thimble or Popcorn. Before learners can practically apply new skills to solve a problem, they need to be comfortable with the tools they'll be using and have developed basic understandings of the skills they'll be sharpening.</p>
+    </li>
+    <li>
+      <p>A practical, project based <strong>exploratory activity</strong> allows learners to delve deeper into the essential questions of your session. This activity should tie the introduction and explanation together, allowing the learner to develop deeper understandings. Go back to thinking of the results: what will your learners MAKE when they are done? What research do they need to do? What text, images, videos, sound clips do they need to gather? </p>
+    </li>
+    <li>
+      <p>Make sure and find or create any resources your learners might need on creating content. Create a project that gives learners enough time to explore and tinker while working towards the completion of the activity.</p>
+    </li>
+  </ol>
+
+      </section>
+      <section id="review">
+        <h1>Materials and Resources</h1>
+        <div> What is needed to run this activity?
+          <ul>
+            <li>
+              <input id="r1" type="checkbox">
+              <label></label>
+              Item 1</li>
+            <li>
+              <input id="r2" type="checkbox">
+              <label></label>
+             Item 2</li>
+            <li>
+              <input id="r3" type="checkbox">
+              <label></label>
+              Item 3</li>
+          </ul>
+        </div>
+        <div> What other resources or links are helpful for mentors?
+          <ul>
+            <li>
+              <input id="r4" type="checkbox">
+              <label></label>
+              link to <a href="#">Cheatsheets</a></li>
+            <li>
+              <input id="r5" type="checkbox">
+              <label></label>
+              <a href="#"> Readings</a></li>
+            <li>
+              <input id="r6" type="checkbox">
+              <label></label>
+              <a href="#">Websites</a></li>
+            <li>
+              <input id="r7" type="checkbox">
+              <label></label>
+              <a href="#">Videos</a></li>
+            <li>
+              <input id="r8" type="checkbox">
+              <label></label>
+             Other resources to support learning</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <div id="right-side">
+      <section id="tags">
+        <h1>Tags</h1>
+        <ul>
+          <li class="tag-item"><a href="#">#tag</a></li>
+          <li class="tag-item"><a href="#">#tag</a></li>
+          <li class="tag-item"><a href="#">#tag</a></li>
+          <li class="tag-item"><a href="#">#tag</a></li>
+          <li class="tag-item"><a href="#">#tag</a></li>
+        </ul>
+      </section>
+      <section id="agenda">
+        <h1>Related Activies &amp; Makes</h1>
+        <p>Are there activities elsewhere on the web that relate to this topic or method? Are there makes that are good for pairing with this activity? List them here!
+        </p><div class="line"></div>
+        <ol>
+          <li><a href="#">Activity 1</a></li>
+          <li><a href="#">Activity 2</a></li>
+          <li><a href="#">Make: Example</a></li>        </ol>
+      </section>
+      <section id="resources">
+        <h1>Discussion</h1>
+         <p>What are the essential questions your learners should be able to discuss and reflect upon after this activity?</p>
+        <ul>
+          <li>Essential Question 1</li>
+         <li>Essential Question 2</li>
+          <li>Essential Question 3</li>
+         <li>Essential Question 4</li>
+          <li>Essential Question 5</li>
+        </ul>
+      </section>
+     
+      <section>
+        <h1>Anything else?</h1>
+        <p>Add any additional thoughts, quotes or inspirations here...</p>
+      </section>
+    </div>
+  </div>
+</div>
+
+
+</body></html><!-- 
+Congrats on completing your activity! You can still go back and change things - that's the beauty of the Web. You might have missed it, but you actually learned some stuff in this project. You now know how to do comments in HTML and CSS, manipulate some CSS, work with headers (the <h1> tag), use lists (<ul> and <ol>) and bullets (<li>), add hyperlinks to text (<a> tag) and even a little about open educational resources. Way to go, Webmaker!
+-->

@@ -1,0 +1,240 @@
+<!DOCTYPE html><html><head>
+
+    <meta content="comicmake" name="webmaker:tags">
+
+    <!--
+
+      Lessons to be covered:
+        - Changing images
+        - Changing text
+        - Changing classes
+        - Copying nodes
+    -->
+
+    <!-- 
+    In this project you can create your own comic strip using and square photos you have - so why not use the photos from your Instagram account?  You'll
+    be able to add images, add copy in speech bubbles and captions.  You'll also learn how to make more scenes by adding more comic boxes.
+    -->
+
+  <!--
+    Let's get started.
+
+    1) READ THROUGH THE COMMENTS. This is a comment. Everything inside of this tag for HTML or '/*' for CSS, is not processed as code, but instead is just text comments about the code. For this project, the comments will give you instructions, hints and guides to completing the project, so skim down through the comments to get an understanding of what you are being asked to do.
+    2) GET ORIENTED IN THE CODE. HTML is made up of tags that look like this <p> </p>. The tags tell you something about the information contained between them. Click on the tags in the code on this side of the editor to get a description of what each tag is for.
+  -->
+
+
+
+    <title>Don't diss UNIX</title>
+
+  <!-- This is the styles for the comic -->
+  <style>
+    body {
+      background-color:#EFEFEF;
+      font-family:"Arial", sans-serif;
+      font-size:.8em;
+      line-height:1.2;
+      text-align: center;
+      padding: 40px 0 0 20px;
+    }
+    h1 {
+      text-transform: uppercase;
+      text-shadow: 4px 4px 0px black;
+      font-size:40px;
+      color:#d02626;
+    }
+    .comic {
+      max-width:826px;
+      margin:60px auto 0;
+    }
+    .scene {
+      width: 250px;
+      height:250px;
+      border:3px solid black;
+      background: #fff;
+      margin:8px;
+      display: inline-block;
+      position: relative;
+    }
+    .scene img {
+      width:100%;
+      height:100%;
+      display: block;
+    }
+    .caption {
+      padding:10px;
+      margin:0;
+      position: absolute;
+      left:0;
+      right:0;
+      background:#e2e971;
+      text-align:left;
+      top:0;
+    }
+    .caption.bottom {
+      bottom:0;
+      top:auto;
+      border-top:2px solid black;
+    }
+    .caption.top {
+      top:0;
+       border-bottom:2px solid black;
+    }
+    .speech {
+      width:40%;
+      border-radius:50%;
+      border:2px solid black;
+      margin:0;
+      position: absolute;
+      z-index:1;
+      background: Snow ;
+      padding:20px;
+      top:-15px;
+      text-align: center;
+    }
+    /* Advanced CSS for the speech pointer */
+    .speech:after {
+      border-color: snow transparent;
+      border-style: solid;
+      border-width: 13px 13px 0;
+      bottom: -11px;
+      content: "";
+      display: block;
+      left: 50%;
+      margin-left:-14px;
+      position: absolute;
+      width: 0;
+    }
+    .speech:before {
+      border-color: black transparent;
+      border-style: solid;
+      border-width: 16px 16px 0;
+      bottom: -15px;
+      content: "";
+      display: block;
+      left: 50%;
+      margin-left:-17px;
+      position: absolute;
+      width: 0;
+    }
+    .speech.left {
+      left:-15px;
+    }
+    .speech.right {
+      right:-15px;
+    }
+
+    footer {
+      clear:both;
+    }
+  </style>
+
+<base target="_blank">
+</head>
+<body>
+
+  <!-- 
+    Task 1: 
+    First why not change the header <h1> to give your comic a better name.  Any text that goes inbetween the <h1></h1> tags will become the heading.
+  -->
+  <h1>a Brief History of Operating Systems</h1>
+  <h2>or: Why you shouldn't diss UNIX</h2>
+
+  <p></p>
+
+  <!-- 
+    This is where the comic starts. 
+    The 'comic' <div> wraps around each comic 'scene' to contain them all.
+  -->
+  <div class="comic">
+
+      <!--
+        Task 2:
+        The below HTML is one scene of out comic.
+        Start by changing the images in the scene to one of your own photos.  
+        As the scene is square a square photo will work best. Why not get the image url of one of your Instagram photos?  
+      -->
+      <div class="scene">
+        <p class="caption bottom">In the beginning, every computer model had <strong>it's own Operating System (OS)</strong></p>
+        <p class="speech left">We're not compatible AT ALL!</p>
+        <a href="https://secure.flickr.com/photos/andrein/6371408193/"><img alt="" src="https://farm7.staticflickr.com/6093/6371408193_17ce0646c9_o.jpg"></a>
+      </div>
+
+       <!-- 
+        Great! Now lets look at getting some speech bubbles and captions into other scenes.
+
+        Task 3:
+        Look at the 1st scene above.  It has both a caption and a speech bubble.
+        By copying the speech paragraph <p>,  try adding a speech bubble to the 2nd scene below and then change its text.
+      -->
+      <div class="scene">
+        <p class="caption top">and then came DOS, while <a href="https://en.wikipedia.org/wiki/CP/M">CP/M</a> was busy failing.</p>
+        <img alt="" src="https://upload.wikimedia.org/wikipedia/commons/b/b6/StartingMsdos.png">
+      </div>
+
+      <!-- 
+        Depending on the photo you use you might want to move the captions to either the 'top' or 'bottom',
+        or the speech bubble either 'left or 'right'.
+
+        Task 4:
+        Look at the 4th scene below.  It has a speech bubble on the left side.
+        Change the class name 'left' to 'right' to make the speech bubble move to the right side.
+        If you want a caption to be at the top make sure it has the class 'top', if you want it at the bottom makes sure it has the class 'bottom'.
+      -->
+      <div class="scene">
+        <p class="speech left">I will school y'all!</p>
+        <img alt="" src="https://upload.wikimedia.org/wikipedia/commons/1/11/Unix-history.svg">
+        <p class="caption bottom">A short time later, UNIX was mature enough for the everyday man to use. He was friendly, <strong>partially open source</strong> and the only viable competitor to DOS.</p>
+      </div>
+
+      <div class="scene">
+        <p class="caption bottom">Without Steve, Apple made a few OSs, including OS9, which was ultimately doomed.</p>
+        <a href="https://secure.flickr.com/photos/slopjop/3087200063/"> <img alt="" src="https://farm4.staticflickr.com/3137/3087200063_aa42b24f11_o.jpg"></a>
+      </div>
+      
+      <div class="scene">
+        <p class="caption bottom">And <a href="https://en.wikipedia.org/wiki/Be_Inc">BeOS</a> tried to take on OS9 and DOS predesessor Windows 3.1, but then Steve Jobs came back to Apple.</p>
+        <img alt="" src="https://farm9.staticflickr.com/8224/8328542034_542cfc4fee_o.jpg">
+      </div>
+      <div class="scene">
+        <p class="speech right">Tim Berners Lee invented the Web on a NeXT</p>
+        <p class="caption bottom">UNIX based OpenStep, created at <a href="https://en.wikipedia.org/wiki/NeXT">NeXT</a>, was considered as the replacement to OS9. It eventually became OSX.</p>
+        <img alt="" src="https://farm3.staticflickr.com/2156/2452446385_087a6c6862_o.jpg">
+      </div>
+
+           <div class="scene">
+             <p class="caption top">Meanwhile, other UNIX based operating systems were coming out. Ever heard of <a href="https://upload.wikimedia.org/wikipedia/commons/9/9a/Gldt1009.svg">Linux</a>?</p>
+             <a href="https://upload.wikimedia.org/wikipedia/commons/7/77/Unix_history-simple.svg"> <img alt="" src="https://upload.wikimedia.org/wikipedia/commons/7/77/Unix_history-simple.svg"></a>
+      </div>
+      <div class="scene">
+        <p class="caption bottom">Linux begat Android, Ubuntu, Fedora, CentOS and FirefoxOS</p>
+        <img alt="" src="https://farm9.staticflickr.com/8158/7412653220_4c67248501_b.jpg">
+      </div>
+          <div class="scene">
+        <p class="caption bottom">Microsoft was still doing it's own thing with Windows 95 leading to Windows NT – effectively killing DOS. Everything closed source.</p>
+        <img alt="" src="https://upload.wikimedia.org/wikipedia/commons/6/64/Microsoft_Windows_logo_%28Pre-XP%29.svg">
+      </div>
+      <div class="scene">
+        <p class="caption bottom">It's been UNIX vs Windows for a long, long time. But UNIX has always had more play, probably because it was at least partially open.</p>
+        <img alt="" src="https://farm6.staticflickr.com/5040/7050697671_e6cf3cfc21_o.jpg">
+      </div>
+        <div class="scene">
+        <p class="caption bottom">Of course, HTML5 came out of nowhere to change how we even think of "Operating Systems".</p>
+        <img alt="" src="https://upload.wikimedia.org/wikipedia/commons/0/00/HTML5_logo_black.svg">
+      </div>
+      <div class="scene">
+        <p class="caption bottom">Perhaps HTML5 and other 100% <strong>open technologies</strong> will completely uproot both UNIX and Windows operating systems? <a href="http://tiptoes.ca/mooc_open_web/">Open matters.</a></p>
+        <a href="https://secure.flickr.com/photos/opensourceway/6956020057/"> <img alt="" src="https://farm8.staticflickr.com/7049/6956020057_02dcbe2a21_o.png"></a>
+      </div>
+
+  </div>
+
+
+  <!-- Disclaimer for images -->
+  <footer>
+    Many images taken from <a href="http://flickr.com">flickr.com</a>, others from wikimedia commons.
+  </footer>
+
+
+
+</body></html>

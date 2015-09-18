@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Remix of Bug Hunt #9</title>
+    
+    <link href='https://fonts.googleapis.com/css?family=Eater' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Rokkitt' rel='stylesheet' type='text/css'>
+
+
+    
+    <style>
+      
+      #bg{
+        position: fixed;
+        top:0px;
+        left: 0px;
+        height:100%;
+        width:100%;
+        opacity: .75;
+          z-index: -1;        
+      }
+      
+      #banner{
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        height: 95px;
+        width: 365px;
+        background-color: #fff;
+        border: 4px solid #6c3;
+          border-radius: 10px;
+        padding: 5px;
+        opacity: .8;
+      }
+      
+      #bannerText{
+        font-family: Eater, monospace;
+        font-size: 48px;
+        color: #036;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      
+      #buggySentenceBox{
+         position: fixed;
+        top: 150px;
+        left: 10px;
+        height: 150px;
+        width: 600px;
+        background-color: #fff;
+        border: 4px solid #6c3;
+          border-radius: 10px;
+        padding: 5px;
+        opacity: .8;
+      }
+      
+         #buggySentenceText{
+        font-family: Rokkitt, monospace;
+        font-size: 36px;
+        color: #036;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      
+      #license{
+        position: fixed;
+        top: 342px;
+        left: 10px;
+        font-family: monospace;
+        font-size: 12px;
+        color: #fff;
+      }
+      
+      a{
+        text-decoration: underline;
+        color: #fff;
+      }
+    
+    </style>
+  <script>(function fixExternalLinks() {
+              function pointToBlank(a) {
+                var href = a.getAttribute("href");
+                if (href && href.indexOf("://") > -1) {
+                  // this is an external link.
+                  if(!a.getAttribute("target")) {
+                    a.setAttribute("target", "_blank");
+                  }
+                }
+              }
+              function fixLinks() {
+                document.removeEventListener("DOMContentLoaded", fixLinks);
+                var anchors = document.querySelectorAll("a");
+                var asArray = Array.prototype.slice.call(anchors);
+                asArray.forEach(function(a) {
+                  pointToBlank(a);
+                });
+              }
+              document.addEventListener("DOMContentLoaded", fixLinks);
+            }())</script>
+</head>
+  <body>
+    <div id="banner"><div id="bannerText">I'm Laura</div></div>
+    <div id="bg"><img src="http://img.gawkerassets.com/img/18xignlx475cygif/ku-xlarge.gif"height="100%" width="133%"></div>
+    <div id="buggySentenceBox"><div id="buggySentenceText">At the end of the Movie Vic said i'm totally seeing that again</div></div>
+    <div id="license">Design <a href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by/3.0/80x15.png" style="border-width: 0;"></a> Chad Sansing</div>
+    
+    <!--Image credit: Image from http://gifmovie.tumblr.com/post/23849270027/bbcinsects3 by Valentin. Be aware that not everything on his site is school-appropriate.-->
+    
+  </body>
+</html>

@@ -1,0 +1,411 @@
+<!DOCTYPE html><html><head>
+
+<title>MDN Tutorials
+
+</title>
+<script>(function fixExternalLinks() {
+              function pointToBlank(a) {
+                var href = a.getAttribute("href");
+                if (href && href.indexOf("//") > -1) {
+                  // this is an external link.
+                  if(!a.getAttribute("target")) {
+                    a.setAttribute("target", "_blank");
+                  }
+                }
+              }
+              function fixLinks() {
+                document.removeEventListener("DOMContentLoaded", fixLinks);
+                var anchors = document.querySelectorAll("a");
+                var asArray = Array.prototype.slice.call(anchors);
+                asArray.forEach(function(a) {
+                  pointToBlank(a);
+                });
+              }
+              document.addEventListener("DOMContentLoaded", fixLinks);
+            }())</script>
+</head>
+  <body>
+    <div class="head-wrap">
+      	<div class="head">
+          <div class="moz-image">
+          </div>
+          <div class="text">
+            <img height="40" id="moz" src="http://www.triumphproperties.com/images/transparent.gif"/>
+           tutorials
+          </div>
+      </div>
+    </div>
+   <div class="body-wrap">
+     <div class="notice">
+       <p>I was thinking of ways that MDN tutorials / active learning projects could be branded if they're built with thimble, and  I made this ^^ header for you. It uses a transparent gif, for which I apologize. But you guys can fix it!</p>
+     <p>
+       If you hit REMIX on this, you will see a tutorial in the left pane. Clicking save will show you the tag that attaches the tutorial to the project. Namely "tutorial-the-url-of-the-tutorial-make". <a href="https://laura.makes.org/thimble/LTE2NzkxNjMzOTI=/tutorial-for-mdn">You can remix the tutorial here.</a>
+       </p>
+       <!-- 
+				Sign it if you wish.
+		-->
+       - Laura Hilliger
+     </div>
+     
+    </div>
+    <style>
+      body {
+      	margin:0;
+        padding:0;
+        font: 12px/21px 'Open Sans',tahoma;
+        font-weight:400;
+        background: url("https://support.cdn.mozilla.net/static/img/grain.png") #f5f5f5;
+      }
+      .head-wrap {
+      	width:100%;
+        position:fixed;
+        top:0;
+        left:0;
+        min-height:80px;
+        background:linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0.8));
+        background:-webkit-linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0.8));
+        background:-ms-linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0.8));
+        background:-o-linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0.8));
+        border-bottom:1px solid #ccc;
+        box-shadow:0 0 8px rgba(0,0,0,0.5);
+      }
+      .head {
+      	margin:0 auto;
+        padding:3px;
+        display:block;
+        width:600px;
+      }
+      .moz-image {
+        margin-top:10px;
+        float:left;
+      	background: url("https://mozorg.cdn.mozilla.net/media/img/home/about-icons.png") repeat-x;
+        background-position:0px 15px;
+        width:80px;
+        height:64px;
+        transition-property:background-position;
+        -webkit-transition-property:background-position;
+        -o-transition-property:background-position;
+        -ms-transition-property:background-position;     
+        transition-duration:500ms;
+        -ms-transition-duration:500ms;
+        -o-transition-duration:500ms;
+        -webkit-transition-duration:500ms;
+        transition-timing-function:ease-out;
+        cursor:pointer;
+      }
+      .moz-image:hover {
+      	background-position:80px 15px;
+        transition-property:background-position;
+        -webkit-transition-property:background-position;
+        -o-transition-property:background-position;
+        -ms-transition-property:background-position;    
+        transition-duration:500ms;
+        -ms-transition-duration:500ms;
+        -o-transition-duration:500ms;
+        -webkit-transition-duration:500ms;
+        transition-timing-function:ease-out;
+      }
+      .text {
+      	padding:25px 25px;
+        float:left;
+        font-size:43px;
+        color:#555;
+        text-shadow:0 0 1px rgba(0,0,0,0.3);
+      }
+      .body-wrap {
+      	padding:10%;
+        padding-top:30px;
+        margin:0 auto;
+        margin-bottom:160px;
+        width:80%;
+        height:397px;
+        margin-top:80px;
+      }
+      .block-wrap {
+      	width:100%;
+        height:100%;
+      }
+      .center-line-wrap {
+      	width:60px;
+        margin:0 auto;
+        background:#fff;
+        border:1px solid #ccc;
+        box-shadow:0 0 5px #c3d1ec;
+        border-radius:3px;
+      }
+      .inline-block {
+      	display:inline-block;
+        padding:4px;
+        cursor:pointer;
+      	transform: scale(1) rotateY(0deg);
+        -ms-transform: scale(1) rotateY(0deg);
+        -webkit-transform: scale(1) rotateY(0deg);
+        -o-transform: scale(1) rotateY(0deg);
+        transition-property: transform;
+        -webkit-transition-property: transform;
+        -ms-transition-property: transform;
+        -o-transition-property: transform;
+        transition-duration:630ms;
+        -webkit-transition-duration:630ms;
+        -ms-transition-duration:630ms;
+        -o-transition-duration:630ms;
+      }
+      .inline-block:hover {
+      	transform: scale(1.4) rotateY(-180deg);
+        -ms-transform: scale(1.4) rotateY(-180deg);
+        -o-transform: scale(1.4) rotateY(-180deg);
+        -webkit-transform: scale(1.4) rotateY(-180deg);
+        transition-property: transform;
+        -webkit-transition-property: transform;
+        -ms-transition-property: transform;
+        -o-transition-property: transform;
+        transition-duration:530ms;
+        -ms-transition-duration:530ms;
+        -o-transition-duration:530ms;
+        -webkit-transition-duration:530ms;
+      }
+       #moz {
+        transform: scale(0.9) rotateX(0deg);
+        -webkit-transform: scale(0.9) rotateX(0deg);
+        -ms-transform: scale(0.9) rotateX(0deg);
+        -o-transform: scale(0.9) rotateX(0deg);
+        transition-property: transform;
+        -webkit-transition-property: transform;
+        -o-transition-property: transform;
+        -ms-transition-property: transform;
+        transition-duration:530ms;
+        -webkit-transition-duration:530ms;
+        -ms-transition-duration:530ms;
+        -o-transition-duration:530ms;
+        width:205px;
+        cursor:pointer;
+        background-image:url("https://developer.cdn.mozilla.net/media/redesign/img/logo_sprite.svg?2014-01");
+      }
+      #moz:hover {
+        transform: scale(1.1) rotateX(360deg);
+        -webkit-transform: scale(1.1) rotateX(360deg);
+        -o-transform: scale(1.1) rotateX(360deg);
+        -ms-transform: scale(1.1) rotateX(360deg);
+        transition-property: transform;
+        -webkit-transition-property: transform;
+        -ms-transition-property: transform;
+        -o-transition-property: transform;
+        transition-duration:530ms;
+        -webkit-transition-duration:530ms;
+        -o-transition-duration:530ms;
+        -ms-transition-duration:530ms;
+      }
+      .ul-nostyle{
+      	list-style:none;
+        margin:0;
+        padding:3px 1px;
+      }
+      .ul-nostyle li {
+      	padding:10px 3px;
+        border:1px solid #fff;
+        border-bottom:1px solid #f5f5f5;
+        border-radius:3px;
+      }
+      .ul-nostyle li:hover {
+      	background:#f5f5f5;
+        cursor:pointer;
+        border-color:#f5f5f5;
+      }
+      .ul-nostyle li:active {
+      	border:1px solid #ddd;
+        background:#dff;
+      }
+      .ul-nostyle img {
+      	width:50px;
+        min-height:20px;
+      }
+      #no-border{
+      	border-bottom:none;
+      }
+      .ul-nostyle li:hover .flyout-wrap {
+        /*
+	        TODO 8: You can add more animation to the flyout arrow box, you can add
+        		roatateX(180deg),rotateY(180deg) or roatateZ(360deg)
+        		to see more fascinating animation
+        */
+      	transform:scale(1);
+        -webkit-transform:scale(1);
+        -o-transform:scale(1);
+        -ms-transform:scale(1);
+        opacity:1;
+        transition-property:transform, opacity;
+        -ms-transition-property:transform, opacity;
+        -webkit-transition-property:transform, opacity;
+        -o-transition-property:transform, opacity;
+        transition-duration:400ms;
+        -webkit-transition-duration:400ms;
+        -ms-transition-duration:400ms;
+        -o-transition-duration:400ms;
+      }
+      .ul-nostyle li:hover img {
+      	transform:rotateY(360deg);
+        -webkit-transform:rotateY(360deg);
+        -ms-transform:rotateY(360deg);
+        -o-transform:rotateY(360deg);
+        transition-property:transform;
+        -webkit-transition-property:transform;
+        -ms-transition-property:transform;
+        -o-transition-property:transform;
+        /*
+        	TODO 8: Change the timing here to speed up the coin spin of the showcase 
+        			image
+        */
+        transition-duration:800ms;
+        -webkit-transition-duration:800ms;
+        -ms-transition-duration:800ms;
+        -o-transition-duration:800ms;
+      }
+      .footer-wrap {
+      	position:fixed;
+        bottom:0;
+        left:0;
+        width:100%;
+      }
+      .footer-wrap .footer {
+      	width:100%;
+        height:30px;
+        background:rgba(0,0,0,0.5);
+        border-top:1px solid #555;
+        box-shadow:0 0 5px rgba(0,0,0,0.4);
+        opacity:1;
+        margin-top:0;
+        transition-property:opacity;
+        -webkit-transition-property:opacity;
+        -ms-transition-property: opacity;
+        -o-transition-property:opacity;
+        transition-duration:400ms;
+        -webkit-transition-duration:400ms;
+        -o-transition-duration:400ms;
+        -ms-transition-duration:400ms;
+      }
+      .footer-wrap:hover .footer{
+      	opacity:0.2;
+        cursor:pointer;
+         transition-property:opacity;
+        -webkit-transition-property:opacity;
+        -ms-transition-property: opacity;
+        -o-transition-property:opacity;
+        transition-duration:400ms;
+        -webkit-transition-duration:400ms;
+        -o-transition-duration:400ms;
+        -ms-transition-duration:400ms;
+      }
+      
+      .footer-text {
+      	width:410px;
+        margin:0 auto;
+        padding:4px;
+        color:#fff;
+        text-shadow:0 0 3px rgba(0,0,0,0.8);
+      }
+      .rfloat-arrow {
+      	background:url("https://thimble.webmaker.org/friendlycode/img/indicator-arrow.png") no-repeat;
+        width:40px;
+        height:23px;
+        position:absolute;
+        z-index:222;
+        margin-left:-4px;
+        transform:rotate(-90deg);
+        -webkit-transform:rotate(-90deg);
+        -ms-transform:rotate(-90deg);
+        -o-transform:rotate(-90deg);
+      }
+      .flyout-wrap {
+        position:absolute;
+      	margin-left:-412px;
+        transform:scale(0);
+        opacity:0;
+       transition-property:opacity, transform;
+        -webkit-transition-property:opacity, transform;
+        -ms-transition-property: opacity, transform;
+        -o-transition-property:opacity, transform;
+        transition-duration:400ms;
+        -webkit-transition-duration:400ms;
+        -o-transition-duration:400ms;
+        -ms-transition-duration:400ms;
+        width:410px;
+        height:150px;
+        margin-top:-60px;
+        cursor:default;
+      }
+      .flyout {
+      	background:#fff;
+        width:380px;
+        display:inline-block;
+        min-height:120px;
+        padding:5px;
+        border:1px solid #ddd;
+        box-shadow:0 0 5px #c3d1ec;
+        border-radius:5px;
+      }
+      .flyout-head {
+      	width:100%;
+        display:inline-block;
+        border-bottom:1px solid #f5f5f5;
+      }
+      .flyout-rfloat {
+      	float:right;
+        display:inline-block;
+      }
+      .flyout-lfloat {
+      	float:left;
+        font-size:18px;
+        font-weight:lighter;
+        padding:4px;
+        padding-top:0px;
+        color:#888;
+        display:inline-block;
+      }
+      .left-wrap {
+      	margin-left:68px;
+      }
+      .left-wrap .flyout-rfloat {
+      	float: left;
+        transform: rotate(-180deg);
+        -webkit-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+        -o-transform: rotate(-180deg);
+        margin-top: 40px;
+      }
+      .left-wrap .flyout-lfloat {
+      	float:right;
+      }
+      .flyout-lfloat img{
+      	width:30px;
+        padding:3px;
+        float: left;
+      }
+      .left-wrap img {
+      	float:right;
+      }
+      .fx-text {
+      	padding-top:5px;
+        padding-left:5px;
+        display: inline-block;
+        font-weight:lighter;
+      }
+      .fx-tip {
+      	font-weight: lighter;
+        padding:5px;
+        color:#666;
+      }
+     .fx-tip a {
+      	text-decoration:none;
+        color:#444;
+        font-weight:400;
+      }
+     .fx-tip a:hover {
+      	text-decoration: underline;
+        color:#333;
+      }
+      .notice {
+      	padding:1px 5px;
+      }
+    </style>
+ 
+</body></html>

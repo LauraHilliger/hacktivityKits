@@ -1,0 +1,201 @@
+<!doctype html>
+
+<html>
+
+<!--With thanks to http://davidwalsh.name/css-cube for the cube tutorial.-->
+
+ <head>
+
+  <link href='https://fonts.googleapis.com/css?family=Londrina+Outline' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+
+  <style>
+
+   body {
+    background-color: #006;
+   }
+
+   h1 {
+    font-family: 'Londrina Outline', cursive;
+    font-size: 64px;
+    color: #aaf;
+   }
+
+   ul {
+    font-family: 'Amatic SC', cursive;
+    font-size: 28px;
+    color: #aaf;
+   }
+
+   p {
+    font-family: 'Amatic SC', cursive;
+    font-size: 28px;
+    color: #aaf;
+   }
+
+   #banner {
+    position: fixed;
+    top: 0px;
+    left: 25px;
+    display: inline;
+   }
+
+   #myPlan {
+    padding: 10px;
+    position: fixed;
+    top: 175px;
+    left: 400px;
+    width: 400px;
+    border: 3px solid #aaf;
+    border-radius: 10px;
+   }
+
+    /*Here are the animation stylings for the cube. As you remix your make, mess around with a number or two to see what's happening!*/
+    
+   .wrap {
+        position: fixed;
+        top: 175px;
+        left: 100px;
+	perspective: 800px;
+	perspective-origin: 50% 100px;
+   }
+
+   .cube {
+	position: relative;
+	width: 200px;
+	transform-style: preserve-3d;
+   }
+
+   .cube div {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+        border: 3px solid #aaf;
+   }
+
+   .back {
+	transform: translateZ(-100px) rotateY(180deg);
+   }
+
+   .right {
+	transform: rotateY(-270deg) translateX(100px);
+	transform-origin: top right;
+   }
+
+   .left {
+	transform: rotateY(270deg) translateX(-100px);
+	transform-origin: center left;
+   }
+
+   .top {
+	transform: rotateX(-90deg) translateY(-100px);
+	transform-origin: top center;
+        background-color: #fff;
+   }
+
+   .bottom {
+	transform: rotateX(90deg) translateY(100px);
+	transform-origin: bottom center;
+        background-color: #fff;
+   }
+   
+   .front {
+	transform: translateZ(100px);
+   }
+
+   @keyframes spin {
+	from { transform: rotateY(0); }
+	to { transform: rotateY(360deg); }
+   }
+
+   .cube {
+	animation: spin 8s infinite linear;
+   }
+    
+    /*That's the end of the animation styling. If you change the '8s' just above this comment, you can speed up or slow down the rate at which the cube spins.*/
+    
+   a {
+    color: #aaf;
+    text-decoration: underline;
+   }
+
+  #license {
+   position: fixed;
+   top: 500px;
+   left: 25px;
+   width: 300px;
+   font-family: monospace;
+   color: black;
+   font-size: 12px;
+   color: #fff;
+  }
+
+  </style>
+
+ <script>(function fixExternalLinks() {
+              function pointToBlank(a) {
+                var href = a.getAttribute("href");
+                if (href && href.indexOf("//") > -1) {
+                  // this is an external link.
+                  if(!a.getAttribute("target")) {
+                    a.setAttribute("target", "_blank");
+                  }
+                }
+              }
+              function fixLinks() {
+                document.removeEventListener("DOMContentLoaded", fixLinks);
+                var anchors = document.querySelectorAll("a");
+                var asArray = Array.prototype.slice.call(anchors);
+                asArray.forEach(function(a) {
+                  pointToBlank(a);
+                });
+              }
+              document.addEventListener("DOMContentLoaded", fixLinks);
+            }())</script>
+</head>
+
+ <body>
+
+  <h1 id="banner">My Connected Learning Blueprint</h1>
+
+  <div class="wrap">
+	<div class="cube">
+      
+      <!--Task 2 here!-->
+      
+		<div class="front"><img src="http://micromages.files.wordpress.com/2014/03/hackjam.jpg" height="100%" width="100%"></div>
+		<div class="back"><img src="http://farm4.staticflickr.com/3738/11210179835_396dbfa60c_z.jpg" height="100%" width="100%"></div>
+		<div class="top"><img src="http://micromages.files.wordpress.com/2014/03/webmaker_logo.png" height="100%" width="100%"></div>
+		<div class="bottom"><img src="http://micromages.files.wordpress.com/2014/03/webmaker_logo.png" height="100%" width="100%"></div>
+		<div class="left"><img src="https://lh5.googleusercontent.com/-anZU8kZskC8/UyF3RNSbPoI/AAAAAAAAByM/VvlpDphj7Js/w426-h266/CLMOOC%2BEmergent%2BBranches.png" height="100%" width="100%"></div>
+		<div class="right"><img src="https://i1.ytimg.com/vi/d6Z9ndpjztM/0.jpg" height="100%" width="100%"></div>
+	</div>
+</div>
+
+  <div id="myPlan">
+
+   <p>My plan to make Connected Learning real:</p>
+
+    <!--Task 1 here!-->
+    
+   <ul>
+
+    <li>Run a <a href="https://mozteach.makes.org/thimble/hack-a-board-game">board game hack jam</a> for local youth.</li>
+    <li>Join <a href="http://digitalis.nwp.org/resource/5957">#clmooc</a> and the <a href="https://plus.google.com/communities/106022863174952221205">Mozilla Webmakers</a> this summer.</li>
+    <li>Run a <a href="http://blog.nwp.org/educatorinnovator/2013/12/06/hack-your-notebook-and-illuminate-your-thinking-an-educator-innovator-webinar/">'hacking the notebook'</a> workshop for area teachers.</li>
+    <li>Run a kitchen-table a <a href="https://togetherjs.com/">together.js</a> session on <a href="http://webmaker.org">Thimble</a>.</li>
+
+   </ul>
+
+  </div>
+
+  <div id="license">
+  Unless otherwise noted or encoded, this page is licensed <a href="http://creativecommons.org/licenses/by/3.0/">CC-BY</a>.<br><br>Developed by <a href="http://twitter.com/chadsansing">Chad Sansing</a> for <a href="http://webmaker.org">Mozilla Webmaker</a>. Best viewed in Firefox.
+    
+    <br><br><!--Task 3 here! Erase this comment and replace it with a line like 'Remixed by [your name].'-->
+
+  </div>
+
+ </body>
+
+</html>

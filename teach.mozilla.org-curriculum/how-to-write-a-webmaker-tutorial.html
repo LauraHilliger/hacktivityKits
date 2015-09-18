@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>How to write a Webmaker Tutorial</title>
+    <!-- this stylesheet provides default styles for tutorials -->
+    <link href="//thimble.webmaker.org/learning_projects/tutorial/tutorial.css" rel="stylesheet">
+    
+    <!-- these scripts turn your make into a tutorial -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//thimble.webmaker.org/learning_projects/tutorial/tutorial.js"></script>
+    <script>
+      jQuery(document).ready(function($){
+        $('body').tutorial();
+      });
+      
+    </script>
+    <style>
+    .example-div {
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: #e3eaee;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-top: 15px;
+}
+
+.example-div ul {
+  padding-left: 10px;
+  text-indent: -1em;
+  list-style-position: inside;
+  list-style-type: disc;
+}
+
+.example-div ul li {
+  margin: 0;
+}
+
+    </style>
+  <script>(function fixExternalLinks() {
+              function pointToBlank(a) {
+                var href = a.getAttribute("href");
+                if (href && href.indexOf("//") > -1) {
+                  // this is an external link.
+                  if(!a.getAttribute("target")) {
+                    a.setAttribute("target", "_blank");
+                  }
+                }
+              }
+              function fixLinks() {
+                document.removeEventListener("DOMContentLoaded", fixLinks);
+                var anchors = document.querySelectorAll("a");
+                var asArray = Array.prototype.slice.call(anchors);
+                asArray.forEach(function(a) {
+                  pointToBlank(a);
+                });
+              }
+              document.addEventListener("DOMContentLoaded", fixLinks);
+            }())</script>
+</head>
+  <body>
+    <!--
+      enclose each tutorial step in its own section tags
+      you can include any sort of markup, including images
+      you can also add more sections
+
+      if you want to attach this tutorial to another make,
+      first publish this make
+      then tag the other make with prefix "tutorial-" followed by the url for this make
+    -->
+
+    <section>
+      <!--Introduce your Tutorial-->
+      <h1>Your title goes here</h1>
+      <p>Change the h1 tag above and give your tutorial a title, then use this space to say who this tutorial is for.</p>
+      <h1>Description</h1>
+      <p>What is your tutorial about? What does it help people make? What was your inspiration for creating it? Be sure to include a sentence or two about what your learner will make.</p>
+      <h1>Learning Objectives</h1>
+      <p>What specific skills will participants learn? What new knowledge will they come away with? You might want to list these individually, like this:</p>
+<ul>
+  <li>Skill 1</li>
+    <li>Skill 2</li>
+   	<li>Skill 3</li>
+      </ul>
+      <div class="example-div">
+        <em>Example:</em>
+        <h1>Get off my lawn!</h1>
+        <p>This tutorial is designed for learners who know a little HTML and would like to improve their CSS skills.</p>
+        <h4>Description:</h4>
+        <p>In this project, you will use CSS positioning to block the zombies and stop them from taking over. Good thing you have a lot of old things sitting on your lawn for you to block them with!</p>
+         <h4>Learning Objectives:</h4>
+        <em>Learners will know how to use:</em>
+        <ul>
+          <li>Basic CSS Positioning</li>
+          <li>the em and % units in CSS</li>
+          <li>HTML comments</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <!--Explain your learning objectives-->
+      <h1>Explain your learning objectives</h1>
+      <p>Next, give background information on the learning objectives you set. </p>
+     <div class="example-div">
+        <em>Example:</em>
+        <h1>So what are CSS positions?</h1>
+       <p>Well a <strong>CSS position</strong> is a way of placing something on the screen in a specific place. <strong>We will be focusing on absolute positions.</strong> These are absolutely where we say they are. We have also fixed the size of the game to a set size (800px x 600px) to make life a little easier for you.</p>
+        <h1>What's the difference between em and percents?</h1>
+        <p>An em is a multiple of a predefined size. The predefined size is the current font size, so 1em equals the current font size. In this case, the font size is 20px, so an em is 20px. That means 2em is 40px, and so on.</p>
+       <p>You can also use percentages for positioning...the %, as you would expect, represents a percentage of the page. So the distance the item moves will depend on the size of the screen.</p>
+         <h1>How do I use HTML comments?</h1>
+       <p>The comment tags look like &lt;!-- and --&gt;. You can make comments in HTML to let people know things about your code. Hit the remix button at the top right of this tutorial and look for bold, black text surrounded by &lt;!-- and --&gt; in the code editor, those are HTML comments.</p>
+      </div>
+    </section>
+
+    <section>
+      <h1>Help learners explore your learning objectives by making something!</h1>
+      <p>Create a new section tag for each step in the tutorial.</p>
+      <div class="example-div">
+        <em>Example:</em>
+         <h1>Now time to play...</h1>
+      <p>Try and block the zombies by positioning the items on top of them. Imagine that the webpage is a graph: you can move the objects (like the fridge) up from the bottom or in from the left in small increments called pixels (px).</p>
+      <p>Let's move the cooker.</p>
+      <p>In line 10 and line 11, try changing the bottom and left values for the cooker to <code>100px</code>.</p>
+      </div>
+    </section>
+    
+    <section>
+      <h1>Help learners explore your learning objectives by making something!</h1>
+      <p>Create a new section tag for each step in the tutorial.</p>
+      <div class="example-div">
+        <em>Example:</em>
+        <h1>Try positioning with em</h1>
+      <p>Now let's try another positioning option: em. Remember that an em is a multiple of the current font size. </p>
+      <p>Let's move the sofas using em. Try changing the bottom value (line 20) to 20em and the left value (line 21) to 15em.</p>
+      </div>
+    </section>
+    
+    <section>
+      <h1>Help learners explore your learning objectives by making something!</h1>
+      <p>Create a new section tag for each step in the tutorial.</p>
+      <div class="example-div">
+        <em>Example:</em>
+        <h1>Positioning with percents!</h1>
+      <p>Try changing the wardrobe's bottom and left values to 70% in line 30 and line 31.</p>
+      </div>
+    </section>
+    
+      <section>
+      <h1>Help learners explore your learning objectives by making something!</h1>
+      <p>Create a new section tag for each step in the tutorial.</p>
+      <div class="example-div">
+        <em>Example:</em>
+       <h1>Reveal a new person</h1>
+      <p>So we now know how to defeat the zombies, but why not make them be other people?</p>        
+      <p>Try removing the comment tags on the image in line 53 to reveal a new person. As a reminder, the comment tags look like &lt;!-- and --&gt;.</p>
+      </div>
+    </section>
+    
+     <section>
+      <h1>Help learners explore your learning objectives by making something!</h1>
+      <p>Create a new section tag for each step in the tutorial.</p>
+      <div class="example-div">
+        <em>Example:</em>
+       <h1>Block her too!</h1>
+      <p>She doesn't look that scary but one can never be too careful, better block her with the bin on line 35 and line 36!</p>
+      </div>
+    </section>
+    
+     <section>
+      <h1>The Ending Step</h1>
+       <p>End your tutorial with some positive reinforcement and a quick review of what was learned. Include other projects the learner could try and additional resources to help them take their learning further.</p>
+      <div class="example-div">
+        <em>Example:</em>
+       <h1>Congrats on conquering the zombies and making the game your own!</h1>
+       <p>Did you realize you were also learning a few things in the process? You actually learned a bunch about CSS positioning - and that's something that stumps a lot of people. Plus, you know how to wrangle images in HTML as well.</p>
+      <p>Way to go! Maybe you want to share your game with others! Before doing so, you might want to go back to the top and move all of the barricades back to the bottom of the screen. Don't remember what they were before? That's okay, you are a CSS wizard now, just play around a bit and you'll surprise yourself with how much you know!</p>
+        <p>Now that you know some CSS, perhaps you would like to <a href="https://mozteach.makes.org/thimble/principles-of-design-page-elements">try fixing this ugly page.</a></p>
+        <p>Learn more about <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position">CSS positioning at the MDN!</a></p>
+      </div>
+    </section>
+    
+  </body>
+</html>

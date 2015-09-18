@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!-- ================================================================
+WELCOME TO THE WEBMAKER ACTIVITY TEMPLATE!
+Use this template to create your own activity for learners, educational resource or lesson. 
+Edit the HTML below to add your own content, links and images.
+Code comments like these will help with hints and guides. 
+Need help? Start here: http://mzl.la/teachingkit-tips
+================================================================ -->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta content="activity" name="webmaker:tags">
+    <link href="https://stuff.webmaker.org/webmaker-kits/v2/css/style.css" media="all" rel="stylesheet" type="text/css">
+    <!-- =============================== -->
+    <!-- ADD YOUR TITLE HERE -->
+
+    <title>Mobile Basics</title>
+    <style>
+      body.activity header{
+      /*Thanks to the http://blog.ketchum.com/mobile-world-congress-recap/ for this fine header image fair use */
+	      background-image: url('https://mozillawebmakerproxy.net/16432895752640aa30b448a6c57c8865441723ce?url=http://blog.ketchum.com/wp-content/uploads/2014/03/mobile-phones.jpg');
+	      background-size:auto;
+	      background-color: #ee8950;
+      }
+      #header-group{
+	      background-color:rgba(0, 0, 0, 0.6);
+	      padding-top:25px; 
+	      padding-bottom:25px;
+	      padding-right:50px;
+	      padding-left:50px;
+	      border-radius:3px;
+	      color:white;
+      }
+      .feature{
+	      background-image: url('https:///stuff.webmaker.org/teach-assets/appmaker-images/featurevssmart.png');
+	      background-size: contain;
+	      background-repeat: no-repeat;
+	      background-position: left top;
+	      min-height: 460px;
+      }
+      .feature div{
+	      position: relative;
+		  top: 200px;
+		  left: 145px;
+		  width: 60%;
+      }
+      .attribution{
+	      font-style: italic;
+	      font-size:.8em;
+	      text-align: right;
+	      right:7%;
+	      position:relative;
+      }
+    </style>
+<script>(function fixExternalLinks() {
+              function pointToBlank(a) {
+                var href = a.getAttribute("href");
+                if (href && href.indexOf("//") > -1) {
+                  // this is an external link.
+                  if(!a.getAttribute("target")) {
+                    a.setAttribute("target", "_blank");
+                  }
+                }
+              }
+              function fixLinks() {
+                document.removeEventListener("DOMContentLoaded", fixLinks);
+                var anchors = document.querySelectorAll("a");
+                var asArray = Array.prototype.slice.call(anchors);
+                asArray.forEach(function(a) {
+                  pointToBlank(a);
+                });
+              }
+              document.addEventListener("DOMContentLoaded", fixLinks);
+            }())</script>
+</head>
+
+<body class="activity">
+    <div id="ribbon">
+        Activity
+    </div>
+
+    <header>
+        <hgroup id="header-group">
+            <h1>Mobile Basics</h1>
+
+            <h2>Use this to activity to start your workshop and introduce mobile concepts and apps. Learners will introduce themselves and the group will talk about the basics of mobile devices.</h2>
+
+            <p id="made-by">Made by <a href="http://webmaker.org/u/laura">Laura</a></p>
+        </hgroup>
+    </header>
+
+    <div class="wrapper">
+        <div class="row">
+            <section class="step-section">
+            	<main>
+            	<ol>
+            		<li>
+	            		<p>First things first, gather participants into a circle and invite each person to introduce themselves. 
+	            		<div class="well blue">
+							<ul>
+								<li>Say your name</li>
+								<li>Say "I'm from _____"</li>
+								<li>Say, "If you really knew me well, you’d know that _____.” 
+								</li>
+							</ul>
+						</div>
+	            		<p>Let people know they are welcome to discuss, ask questions and share ideas. This activity is designed to be:
+						</p>
+						<div class="well blue">
+							<ul>
+								<li><strong>Participatory:</strong> Engaging and activating participants from the beginning and getting them making and doing, rather than listening and watching.</li>
+								<li><strong>Purposeful:</strong> Working toward meaningful goals.
+								</li>
+								<li><strong>Productive:</strong> Well-planned so that concrete outcomes are achieved in the allotted time, and participants feel time was well spent.</li>
+							</ul>
+						</div>
+						<p>You'll facilitate a guided discussion around the concepts and questions below.</p>
+	            		
+            		</li>
+            		<li>
+						<h2>What's the difference between feature phones and smart phones?</h2>
+            			<div class="feature">
+							<div>
+                              <p>Many feature phones can make calls, send text messages, take pictures, browse the web and more, so what exactly is the difference between a feature phone and a smart phone? This image illustrates the major difference - a feature phone has apps made by a select group of developers, while any developer can write a smart phone app. Most apps are "<strong>third-party apps</strong>."</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<h2>What's a third-party app?</h2>
+						<p>What you get a new phone, some apps are already installed. On <strong>a feature phone</strong>, the service provider and/or manufacturer choose which apps work on your phone by using a closed system for app development. They choose the developers, and they choose which apps you can use.</p>
+						<p><strong>A smart phone</strong>, on the other hand, has more computing power and is built with at least some degree of open source. Any developer can build apps for a smart phone, provided they follow the rules of the market where the apps are stored.</p>
+					</li>
+					<li>
+						<h2>How do you know if it's safe to install an app?</h2>
+						<p>Lots of people do not like downloading apps and prefer to use a browser instead. However, apps are not inherently affected with malware or viruses. Like any other piece of technology, we use "Trust Models" to determine what's safe.
+						<a href="http://carlacasilli.files.wordpress.com/2012/08/components.gif"><img src="http://carlacasilli.files.wordpress.com/2012/08/components.gif"></a></p>
+						<p class="attribution">
+						Image via <a href="http://carlacasilli.wordpress.com/">Carla Casilli</a>
+						</p>
+					</li>
+					<li>
+						<h2>Is an app from your friend also a third-party app? Is that more trust-worthy?</h2>
+						<p>Chances are your friend's app is, indeed a third-party app. If you trust your friend's app development skills, then you're likely to trust the app itself as well.</p> 
+					</li>
+					<li>
+						<h2>How do you begin to trust someone?</h2>
+						<p>Introducing the concept of trust between people will help learners reflect on their critical thinking skills. You can then use metaphors and analogies to talk about trust in technology.</p>
+					</li>
+                	<li>
+						<h2>Next Steps: Start Exploring Apps</h2>
+						<p>Once your learners have a basic understanding of some of the concepts behind mobile technology, help them think critically about the bits of technology they use on a regular basis. The <a href="https://jess.makes.org/thimble/LTE1NDU1MzU0ODg=/storytime-on-the-go">Storytime on the Go activity</a> is a great follow up.</p>
+                    </li>
+                </ol>
+              </main>
+            </section>
+        	
+       <!--What is needed to run this activity? Replace the example materials with those your activity needs!-->
+<aside>
+            <section class="materials">
+                <h2>Materials</h2>
+
+                <div class="well checklist">
+                    <ul>
+                        <li>Chairs</li>
+						<li>Paper</li>
+						<li>Pen</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="discussion">
+                <h2>Discussion</h2>
+
+                <div class="well yellow">
+                   If you'd like, take notes on the discussion. Documenting your session is valuable to the community at large because we can start to see how different groups think about mobile technology. With this knowledge, we can begin to fill the gap in educating people about mobile concepts and technologies.
+                </div>
+            </section>
+
+            <section class="teach-list">
+                <h2>Related Activities</h2>
+
+                <div>
+                    <ul>
+                    	<li>
+                    		<a href="https://jess.makes.org/thimble/MTY3NTY4OTk4NA==/mobile-design-ideation-kit">Mobile Design Ideation Kit</a>
+                    	</li>
+                        <li>
+                            <a href="https://jess.makes.org/thimble/MTMyMzM2ODQ0OA==/mobile-design-kit">Mobile Design Kit</a>
+                        </li>
+
+                      
+                    </ul>
+                </div>
+            </section>
+</aside>
+    </div>
+    </div>
+    <script src="//stuff.webmaker.org/webmaker-kits/v2/js/main.min.js">
+</script>
+</body>
+</html>

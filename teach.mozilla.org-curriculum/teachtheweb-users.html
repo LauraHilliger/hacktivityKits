@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/makerstrap/makerstrap.complete.min.css">
+    <title>All about my learners</title>
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        background: lightgrey;
+      }
+
+      body {
+        height: 480px;
+        width: 2800px;
+        margin: 0px 0;
+      }
+
+      body > header, body > div {
+      }
+      
+      .tile{
+        height: 680px;
+        width: 480px;
+        float: left;
+        margin-right: 2px;
+        margin-left: 0px;
+        padding: 0 0px;
+        background: white;
+      }
+
+      .banner {
+        height: 4em;
+        margin-right: 0px;
+        margin-left: 0px;
+        background: rgb(1, 62, 95);
+        padding: 0em 0em 0em 5em
+      }
+
+      .nametitle {
+        background: rgba(81, 186, 151, 1); 
+        padding: 1em 2em;
+      }
+      
+      .bio {
+        background: rgba(255, 255, 255, 0.67); 
+        padding: 0.5em 2em 0.5em 1em;
+      }
+      
+      .filler{
+        background: rgba(255, 255, 255, 0); 
+        padding: 15em 0em 1em 0em;
+      }
+      
+      .fullbio {
+        background: rgba(255, 255, 255, 0.5); 
+        padding: 0.5em 2em 0.5em 1em; 
+        float: bottom;
+      }
+
+    </style>
+  <script>(function fixExternalLinks() {
+              function pointToBlank(a) {
+                var href = a.getAttribute("href");
+                if (href && href.indexOf("//") > -1) {
+                  // this is an external link.
+                  if(!a.getAttribute("target")) {
+                    a.setAttribute("target", "_blank");
+                  }
+                }
+              }
+              function fixLinks() {
+                document.removeEventListener("DOMContentLoaded", fixLinks);
+                var anchors = document.querySelectorAll("a");
+                var asArray = Array.prototype.slice.call(anchors);
+                asArray.forEach(function(a) {
+                  pointToBlank(a);
+                });
+              }
+              document.addEventListener("DOMContentLoaded", fixLinks);
+            }())</script>
+</head>
+
+  <body>
+    <!-- BANNER -->
+    <div class="banner">
+        <p class="text-light" style="font-size: 1.5em; color: white; padding: 0.5em">
+          <a style="color: white" href="https://omnignorant.makes.org/thimble/teachtheweb-users">#teachtheweb Learner Profiles</a> 
+          &nbsp; &nbsp; &nbsp; 
+          <a style="color: white; font-size: 0.75em;" href="https://webmaker.org/en-US/gallery">Want to See It All?</a> 
+          &nbsp; &nbsp; &nbsp; 
+          <a style="color: white; font-size: 0.75em;" href="https://laura.makes.org/thimble/all-about-my-learners/remix/">Don't See Yourself Here?</a>
+          <a href="https://goggles.webmaker.org" id="gogglesbtn" class="btn btn-default btn-lg pull-right"><i class="fa fa-code-fork"></i> Remix with X-Ray Goggles</a>
+        </p>
+      
+      </div>
+    
+    
+    
+    
+    <!-- A Profile Tile -->
+    <div class="tile" style="background: white url(http://upload.wikimedia.org/wikipedia/commons/c/cf/Louis_Janmot_-_Portrait_de_l%27artiste.jpg) no-repeat center center;background-size:cover; " >
+      <!-- The name & title --> 
+      <div class="nametitle"><h2>Julia, Artiste<a href="https://mozteach.makes.org/thimble/make-your-own-teaching-kit" class="btn btn-secondary" style="float: right">Thats Me!</a></h2></div>
+      <!-- Bio block -->
+      <div class="bio"><h5>Julia is more pencils and less pixels but her high school students use the web for curationand research.</h5></div>
+      <!-- Filler block -->
+      <div class="filler"></div>
+      <!-- More details block -->
+      <div class="fullbio">
+        <p><img src="http://matters.madisoncollege.edu/sites/default/files/field/image/mozillaopenbadges.png" style="float: right; width: 75px;"><strong>Needs:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse suscipit dui ac hendrerit dapibus. Etiam ut libero et purus venenatis aliquam eget sed mauris. Fusce pellentesque tortor non orci pharetra, id viverra orci tincidunt. Proin tortor libero, tincidunt id quam sed, tempus fringilla lorem.</p>
+        <p><strong>Dependencies:</strong> Nullam tincidunt elit non dui laoreet, ac mollis ligula feugiat. Nulla sed tempus tortor. Praesent vehicula sodales feugiat. Aliquam arcu sem, lobortis sed pellentesque dictum, cursus eu felis.</p>
+        <p><strong>Communities I engage:</strong> Nullam tincidunt elit non dui laoreet, ac mollis ligula feugiat. Nulla sed tempus tortor. Praesent vehicula sodales feugiat. Aliquam arcu sem, lobortis sed pellentesque dictum, cursus eu felis.</p>
+      </div>
+    </div>
+
+    
+    
+    
+    <!-- A Profile Tile -->
+    <div class="tile" style="background: white url(http://farm1.staticflickr.com/107/314298636_e85fc894c1_o.jpg) no-repeat center center;background-size:cover;">
+      
+      <!-- The name & title --> 
+      <div class="nametitle"><h2>Robert, STEM Teacher<a href="https://mozteach.makes.org/thimble/make-your-own-teaching-kit"class="btn btn-secondary" style="float: right">Thats Me!</a></h2></div>
+      <!-- Bio block -->
+      <div class="bio"><h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse suscipit dui ac hendrerit dapibus. </h5></div>
+      <!-- Filler block -->
+      <div class="filler"></div>
+      <!-- More details block -->
+      <div class="fullbio"><p><img src="http://matters.madisoncollege.edu/sites/default/files/field/image/mozillaopenbadges.png" style="float: right; width: 75px;"><strong>Needs:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse suscipit dui ac hendrerit dapibus. Etiam ut libero et purus venenatis aliquam eget sed mauris. Fusce pellentesque tortor non orci pharetra, id viverra orci tincidunt. Proin tortor libero, tincidunt id quam sed, tempus fringilla lorem.
+</p>
+        <p><strong>Dependencies:</strong> Nullam tincidunt elit non dui laoreet, ac mollis ligula feugiat. Nulla sed tempus tortor. Praesent vehicula sodales feugiat. Aliquam arcu sem, lobortis sed pellentesque dictum, cursus eu felis.</p>
+          <p><strong>Communities I engage:</strong> Nullam tincidunt elit non dui laoreet, ac mollis ligula feugiat. Nulla sed tempus tortor. Praesent vehicula sodales feugiat. Aliquam arcu sem, lobortis sed pellentesque dictum, cursus eu felis.</p>
+        <p></p>
+      </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    <!-- A Profile Tile -->
+    <div class="tile" style="background: white url(http://farm9.staticflickr.com/8319/7979932951_c891c42d7a_o.jpg) no-repeat center center;background-size:cover;">
+      <!-- The name & title --> 
+      <div class="nametitle"><h2>Heather, Nature Lover <a href="https://mozteach.makes.org/thimble/make-your-own-teaching-kit" class="btn btn-secondary" style="float: right">Thats Me!</a></h2></div>
+      <!-- Bio block -->
+      <div class="bio"><h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse suscipit dui ac hendrerit dapibus. </h5></div>
+      <!-- Filler block -->
+      <div class="filler"></div>
+      <!-- More details block -->
+      <div class="fullbio"><p><img src="http://matters.madisoncollege.edu/sites/default/files/field/image/mozillaopenbadges.png" style="float: right; width: 75px;"><strong>Needs:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse suscipit dui ac hendrerit dapibus. Etiam ut libero et purus venenatis aliquam eget sed mauris. Fusce pellentesque tortor non orci pharetra, id viverra orci tincidunt. Proin tortor libero, tincidunt id quam sed, tempus fringilla lorem.
+</p>
+        <p><strong>Dependencies:</strong> Nullam tincidunt elit non dui laoreet, ac mollis ligula feugiat. Nulla sed tempus tortor. Praesent vehicula sodales feugiat. Aliquam arcu sem, lobortis sed pellentesque dictum, cursus eu felis.</p>
+        <p><strong>Communities I engage:</strong> Nullam tincidunt elit non dui laoreet, ac mollis ligula feugiat. Nulla sed tempus tortor. Praesent vehicula sodales feugiat. Aliquam arcu sem, lobortis sed pellentesque dictum, cursus eu felis.</p>
+        <p></p>
+      </div>
+    </div>
+   
+    
+    <!-- Some Javascript magic to size the page -->
+    <script>
+      var body = document.body;
+      var blocks = document.querySelectorAll('.tile');
+      
+      body.style.width = blocks.length * 482 + 'px';
+    
+      var banner = document.querySelector('.banner');
+      
+      banner.style.width = body.style.width;
+    </script>
+      <!-- super magical goggles code, lets not play here -->
+  <script>
+    var jumbo = document.querySelector('#gogglesbtn');
+    jumbo.addEventListener('click', function(e){
+      e.preventDefault();
+      var script=document.createElement('script')
+      script.src='https://goggles.webmaker.org/en-US/webxray.js';
+      script.className='webxray';script.setAttribute('data-lang','en-US');
+      script.setAttribute('data-baseuri','https://goggles.webmaker.org/en-US');
+      document.body.appendChild(script);
+      return false;
+    });
+  </script>
+  </body>
+</html>

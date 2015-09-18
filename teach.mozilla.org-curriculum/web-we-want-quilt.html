@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="//s3-us-west-2.amazonaws.com/makerstrap/makerstrap.complete.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css">
+	<link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
+
+	<title>Web We Want Quilt</title>
+	<style>
+	/* basic styles */
+	html, body {
+		background: #e3eaee;
+		margin: auto;
+		overflow-x: hidden;
+	}
+	header, main {
+		margin: auto;
+	}
+
+	/* Header styles */
+	header {
+		padding: 1em;
+		text-align: center;
+	}
+
+	header h1 {
+		color: #3fb58e;
+		font: 300 45px/1.2 "Open Sans", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+		height: 140px;
+		padding: 0;
+		margin: 20px auto 0;
+		display: inline-block;
+		position: relative;
+		width: auto;
+	}
+	header h1::before, header h1::after {
+		content: '';
+		display: block;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		position: absolute;
+		top: -10px;
+		height: 150px;
+		width: 150px;
+	}
+	header h1::before {
+		background-image: url(//stuff.webmaker.org/webwewant2014/birthdayhatballoon.png);
+		left: -150px;
+	}
+	header h1::after {
+		background-image: url(//stuff.webmaker.org/webwewant2014/birthdaycake_for_banner.png);
+		right: -150px;
+	}
+	header .mozilla {
+		display: block;
+		text-indent: -9999px;
+		height: 40px;
+		width: 260px;
+		background: url(//stuff.webmaker.org/webwewant2014/mozilla_wordmark.png) center left no-repeat;
+		background-size: contain;
+	}
+
+	/* Thumbnail styles */
+	#thumbnails {
+		display: block;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		margin: auto;
+	}
+	#thumbnails li {
+		width: 160px;
+		height: 160px;
+		display: block;
+		overflow: hidden;
+		/*float: left;*/
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+		filter: alpha(opacity=100);
+		opacity: 1;
+		cursor: pointer;
+
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		background-repeat: none;
+		background-position: center center;
+
+		-webkit-transition: opacity 0.6s ease;
+		-moz-transition: opacity 0.6s ease;
+		-o-transition: opacity 0.6s ease;
+		-ms-transition: opacity 0.6s ease;
+		transition: opacity 0.6s ease;
+	}
+
+	#thumbnails:hover li:hover,#thumbnails li.active {
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+		filter: alpha(opacity=100);
+		opacity: 1;
+	}
+
+	#thumbnails li img {
+		display: none;
+	}
+	
+	/*Call To Action styles*/
+	#cta {
+		width: 480px;
+		height: 320px;
+		background: #3fb58e;
+		color: white;
+		opacity: 1;
+		padding: 20px 30px;
+		font: lighter 18px/1.4 "Open Sans", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+	}
+	#cta strong {
+		font-weight: 400;
+		font-style: italic;
+		font-size: 16px;
+	}
+	.white-button {
+		color: #3fb58e;
+		background: none repeat scroll 0% 0% #FFF;
+		display: block;
+		border: medium none;
+		border-radius: 2px;
+		padding: 16px 35px;
+		font-family: inherit;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 16px;
+		cursor: pointer;
+		display: inline-block;
+		margin: 20px auto 10px;
+		text-align: center;
+		box-sizing: border-box;
+		border-bottom: 4px solid #ABE2D0;
+	}
+	.white-button:hover {
+		text-decoration: none;
+		color: #3fb58e;
+	}
+	
+	/* preview styles */
+	#preview {
+		width: 720px;
+		height: 720px;
+		border: none;
+		margin: 0;
+		padding: 0;
+		display: block;
+		background: white;
+
+		-webkit-transform: scale(0.666666);
+		-moz-transform: scale(0.666666);
+		-o-transform: scale(0.666666);
+		-ms-transform: scale(0.666666);
+		transform: scale(0.666666);
+
+		-webkit-transform-origin: 0 0;
+		-moz-transform-origin: 0 0;
+		-o-transform-origin: 0 0;
+		-ms-transform-origin: 0 0;
+		transform-origin: 0 0;
+		margin-right: -240px;
+		margin-bottom: -240px;
+	}
+	</style>
+<script>(function fixExternalLinks() {
+              function pointToBlank(a) {
+                var href = a.getAttribute("href");
+                if (href && href.indexOf("//") > -1) {
+                  // this is an external link.
+                  if(!a.getAttribute("target")) {
+                    a.setAttribute("target", "_blank");
+                  }
+                }
+              }
+              function fixLinks() {
+                document.removeEventListener("DOMContentLoaded", fixLinks);
+                var anchors = document.querySelectorAll("a");
+                var asArray = Array.prototype.slice.call(anchors);
+                asArray.forEach(function(a) {
+                  pointToBlank(a);
+                });
+              }
+              document.addEventListener("DOMContentLoaded", fixLinks);
+            }())</script>
+</head>
+<body>
+	<header>
+		<a href="//mozilla.org" class="mozilla">mozilla</a>
+		<h1>Happy 25th Birthday,<br> World Wide Web!</h1>
+	</header>
+
+	<main>
+		<iframe src="//mozilla.makes.org/thimble/the-web-we-want_" frameborder="0" id="preview" class="msnry"></iframe>
+		
+		<div id="cta" class="msnry">
+			<p>The web has become an integral part of all our lives, shaping how we learn, how we connect and how we communicate. Looking ahead, the web is faced with new opportunities and new challenges. As we celebrate its 25th birthday, let's all take a moment to imagine the future of the open web.</p>
+			<p><strong>Remix this page and tell the world about the web you want.</strong></p>
+			<p style="text-align: center;"><a href="https://mozilla.makes.org/thimble/the-web-we-want/remix" class="white-button"><i class="fa fa-code-fork"></i> Remix</a></p>
+		</div>
+		
+		<ul id="thumbnails"></ul>
+	</main>
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/masonry/3.1.2/masonry.pkgd.min.js"></script>
+	<script src="//webmaker.org/bower_components/makeapi-client/src/make-api.js"></script>
+	<script>
+		// Set some basic options defaults
+		// Note: can still be overidden by query string
+		var config = {
+			tags: ['webwewant', 'web25'],
+			execution: 'or',
+			limit: 100,
+			interval: 7000
+		};
+
+		// create a new make api instance
+		var makeapi = new Make({
+			apiURL: 'https://makeapi.webmaker.org'
+		});
+
+		// utility function to parse/use query strings
+		window.query = document.query = (function(window, document, undefined){
+			var pairs = window.location.search.slice(1).split('&'),
+				result = {};
+
+			pairs.forEach(function(pair){
+				pair = pair.split('=');
+				result[pair[0]] = decodeURIComponent(pair[1] || '');
+			});
+
+			return JSON.parse(JSON.stringify(result));
+		})(this, this.document);
+
+		// Does an inplace shuffle of an array in O(n) time. Uses the Fisher-Yates Shuffle.
+		if(!Array.prototype.shuffle) Array.prototype.shuffle = function(){
+			for(var j, x, i = this.length; i; j = parseInt(Math.random() * i), x = this[--i], this[i] = this[j], this[j] = x);
+		};
+
+		// wait till DOM ready before runing search + adding content
+		$(function(){
+			// check if tags specified and turn into array if so
+			if(query.tags) { query.tags = query.tags.split(','); }
+			// if no tags default to supportopen tag
+			var searchTags = query.tags || config.tags;
+			
+			// number of makes to display
+			var numMakes = 0;
+			// order to display them in
+			var displayOrder = [];
+
+			// run the search on the make api
+			makeapi
+				.tags({
+					tags: searchTags,
+					execution: query.execution || config.execution
+				})
+				.sortByField('updatedAt', 'desc')
+				.limit(query.limit || config.limit)
+				.then(function(err, makes){
+					// check if search failed...
+					if(err){
+						// let users know we failed, but devs know why
+						console.log(err);
+						document.querySelector('#thumbnails').innerHTML = '<h1 style="color:white">failed to load :(</h1>';
+						return;
+					}
+
+					// shuffle the order of the response
+					makes.shuffle();
+
+					// add each make to the display
+					makes.forEach(function(make){
+						if(make.contentType == "application/x-thimble"){
+							var thumb = document.createElement('li'),
+								img = document.createElement('img');
+
+							thumb.dataset.make = make.url;
+							thumb.classList.add('msnry');
+							thumb.style.backgroundImage = 'url(https://secure.gravatar.com/avatar/' + make.emailHash + '?s=200&d=' + make.thumbnail + ')';
+							img.src = 'https://secure.gravatar.com/avatar/' + make.emailHash + '?s=200&d=' + make.thumbnail;
+
+							thumb.appendChild(img);
+							document.querySelector('#thumbnails').appendChild(thumb);
+
+							numMakes++;
+
+							for(var i = 0, j = query.limit || numMakes; i < j; i++){
+								displayOrder[i] = i;
+							}
+							displayOrder.shuffle();
+						}
+					});
+					// init masonary
+					var container = document.querySelector('main');
+					var msnry = new Masonry( container, {
+						// options
+						itemSelector: '.msnry',
+						columnWidth: 160,
+						transitionDuration: 0.7
+					});
+				});
+
+			// show next make function
+			var showNext = function(){
+				var $thumbnails = $('#thumbnails li'),
+					selection = displayOrder.shift();
+					displayOrder.push(selection);
+
+				$thumbnails.each(function(){
+					$(this).removeClass('active');
+				});
+
+				$thumbnails.eq(selection).addClass('active');
+				document.querySelector('#preview').src = $thumbnails.eq(selection).data('make') + "_";
+				return false;
+			};
+			// run show next on a timer
+			var displayInterval = setInterval(showNext, query.interval || config.interval);
+			
+			// reload page after all makes shown, essensially searching for the newest makes
+			setTimeout(function(){
+				window.location.reload();
+			}, ((query.limit || config.limit) * (query.interval || config.interval)));
+
+			// when a make is clicked laod it in a new tab/window
+			$(document).on('click', '#thumbnails li', function(e){
+				document.querySelector('#preview').src = this.dataset.make + '_';
+
+				// restart the autmoated timer calling showNext
+				clearInterval(displayInterval);
+				displayInterval = setInterval(showNext, query.interval || config.interval);
+			});
+
+			// handle page resizes better
+			var setBodyWith = function(){
+				$('main').width(160 * Math.floor(($(window).width() / 160)));
+				$('header').eq(0).width(160 * Math.floor(($(window).width() / 160)));
+			};
+			setBodyWith();
+			$(window).resize(setBodyWith);
+		});
+</script>
+<!-- bust-frame -->
+<script>
+var MAKE_RE = /^https:\/\/([A-Za-z0-9_\-]+).makes.org\/thimble\/([A-Za-z0-9_\-]+)_$/;
+if (MAKE_RE.test(location.href)) {
+	try {
+		if (location.href == top.location.href + '_') {
+			// Bust out of the iframe.
+			top.location.href = location.href;
+		}
+	} catch (e) {
+		if (window.console) window.console.error(e);
+	}
+}
+</script>
+<!-- Mozilla Tabzilla -->
+<script src="//mozorg.cdn.mozilla.net/tabzilla/tabzilla.js"></script>
+</body>
+</html>

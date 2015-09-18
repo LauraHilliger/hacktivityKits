@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Webmaker metas -->
+    <meta name="webmaker:description" content="Create your own book cover">
+    <meta name="webmaker:thumbnail" content="http://stuff.webmaker.org.s3.amazonaws.com/thumbnails/6_book.jpg">
+
+
+    <!--
+        Prior Knowledge
+        ***************
+        If might find it useful to complete the 'Gig Poster' or 'Movie Poster' project before attempting this project.
+        
+
+         What you'll Learn
+        ******************
+        - You'll be editing various text elements on both the front and back cover of the book.
+        - You'll be switching out (and potentially positioning) background images.
+        - You'll be changing colors and the opacity of an element behind some paragraph text using rgba colors.
+        - You'll be tweaking some animation properties to change how the book flips.
+        
+        Tasks
+        ******************
+        TASK 1) Change the text throughout the HTML to personalise the book.
+        TASK 2) Change how fast the book flips by changing the speed of the transition.
+        TASK 3) Change the direction in which the book flips by changing the rotate value of the transition.
+        TASK 4) Change the background images for both the front and back of the book.
+        TASK 5) Change colors in the CSS so that text is readable on the new background images.
+        TASK 6) Change the opacity in the CSS so that the blurb is easily readable.
+    -->
+
+    <!--         
+        A good place to start is with the title. Personalize the title of your
+        page by changing the text within the <title>Remix of </title> tags. This title appears at the top of the browser in the tab.
+    -->
+    <title>My Book Cover</title>
+    
+<script>(function fixExternalLinks() {
+              function pointToBlank(a) {
+                var href = a.getAttribute("href");
+                if (href && href.indexOf("://") > -1) {
+                  // this is an external link.
+                  if(!a.getAttribute("target")) {
+                    a.setAttribute("target", "_blank");
+                  }
+                }
+              }
+              function fixLinks() {
+                document.removeEventListener("DOMContentLoaded", fixLinks);
+                var anchors = document.querySelectorAll("a");
+                var asArray = Array.prototype.slice.call(anchors);
+                asArray.forEach(function(a) {
+                  pointToBlank(a);
+                });
+              }
+              document.addEventListener("DOMContentLoaded", fixLinks);
+            }())</script>
+</head>
+<body>
+
+<div class="wrapper">
+
+    <!-- The 'book' <div> wraps around both the front and back sides -->
+    <div class="book">
+
+       <!-- 
+            TASK 1) -  Change the text throughout the HTML to personalise the book.
+            *****************************************************
+            As this is a more advanced Thimble, you should be comfortable changing content by now. If this is your first Thimble, simply go through the HTML and change the text to personalise the content of your book.
+
+            Below is a <h1> element, as well as a <h2>, <h3> and <h4> element. These are headings, the lower the number, the more important the heading (the numbers go from 1 to 6). Of course the book name is the most important, hence why it is enclosed in <h1></h1> tags.
+        -->
+      <div class="front face">
+        <h1>#TeachTheWeb went Viral</h1>
+        <h2 class="author">by Laura Hilliger, Michelle Thorne, Doug Belshaw, <br/>Kat Braybrooke &amp; William Duyck</h2>
+        <div class="bottom-section">
+            <h3 class="subtitle">how we grew, strengthened and empowered the Mozilla community
+              by teaching the web</h3>
+            <h4 class="bestseller">An Internet Bestseller</h4>
+        </div>
+      </div>
+
+      <!-- The back of the book - you only see it when the book flips -->
+      <div class="back face">
+
+        <div class="review-container">
+
+            <!-- 
+                The <q> tag is used for short quotes (the <blockquote> tag is used for longer quotes). When we use a <q> tag, speech marks are automatically added by the browser. 
+
+                The <cite> tag is often used in conjunction with quotes to cite where the quote came from.
+            -->
+            <q>Pedagogically Revolutionary!</q>
+            <cite>Edsurge Review</cite>
+          
+          <q>The gap between technology and education is virtually non-existent because of the #teachtheweb team. You <span style="text-decoration:underline;">have</span> to read how they did it.</q>
+            <cite>Sir Tim Berners Lee</cite>
+        </div>
+
+        
+        <p class="blurb">
+          <img src="http://i.imgur.com/UVJuwTB.png" width="200px">
+          In 2014 the #teachtheweb team at Mozilla set out to design and initiate a comprehensive training program that could be easily remixed and reproduced and content to support any one who wanted to teach the web. They planned to run sprints to make content that aligned with the Web Literacy Standard and worked to co-design resources and agendas with communities worldwide.
+ <br/><br/>
+            Their work inspired a swift moving educational and technological revolution. From Bratislava to Bangkok, schools, museums, universities and other cultural institutions are running #teachtheweb to level up skills of their employees and constituents. 
+  <br/><br/>
+            In this brilliant reflection, the #teachtheweb Team talks about the trials and tribulations that inevitably led to the time of Teach the Web. They show us how working in community can change the world, and how their often hilarious journey led them to entirely new pedagogical and technological models.
+        </p>
+        
+      </div> <!-- /end of back -->
+
+    </div> <!-- /end of book -->
+
+</div> <!-- /end pf wrapper -->
+
+
+<!--
+    The links below are for Google Web Fonts. We use these links to obtain the fonts, and then use the 'font-family' property in CSS to tell the browser which elements the new fonts should be applied to.
+-->
+<link href='//fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700,400' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+    
+<style>
+
+    /*
+        This is the start of the pages CSS. Feel free to go through and change values to personalise the look of your book. Start with things such as colors, padding and font-sizes to get a feel for how the page is built.
+    */
+
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+     body {
+        background:url(https://farm8.staticflickr.com/7420/9249000595_f0df0ca337_k.jpg)no-repeat center center;
+        background-size:cover;
+        color:#000;
+        font-family: 'Georgia', serif;
+        font-size:18px;
+        line-height:1;
+        padding: 20px 20px;
+        text-align: right;
+     }
+  
+  
+
+    .wrapper {
+        -webkit-perspective:1000px;
+        perspective: 1000px;
+        display: inline-block;
+        margin:0px auto;
+    }
+
+    .book {
+        width: 800px;
+        height: 1200px;
+        margin: 0 auto;
+        cursor:pointer;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+
+        /*  
+            TASK 2) -  Change how fast the book flips by changing the speed of the transition.
+            *****************************************************
+            CSS transition is a powerful property as it allows us to animate elements of a webpage.
+
+            The first digit represents the duration of the animation (the 's' stands for seconds). Change the 1s to something like 3s to make the flip last 3 seconds instead of 1 second.
+            The last digit is the 'delay' - if you change 0s to say '4s' the flip wont happen for 4 seconds. You'll have to change the numbers on each transition property...
+
+            ...The reason it takes quite a few lines of code to achieve just one animation is because 'transition' is relatively new and different browsers are still working out to how to interpret and render the property. We include these 'vendor-prefixes' so that our site looks good in as many browsers as possible. -moz- is for Mozilla Firefox, -webkit- is for Google Chrome and Safari who use the Webkit rendering engine, -o- is for Opera etc.
+        */
+        -webkit-transition: all 1s easeout 0s;
+        -moz-transition: all 1s ease-in-out 0s;
+        -o-transition: all 1s ease-in-out 0s;
+        -ms-transition: all 1s ease-in-out 0s;
+        transition: all 1s ease-in-out 0s;
+        -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+    }
+
+    .wrapper:hover .book {
+
+        /*  
+            TASK 3) - Change the direction in which the book flips by changing the rotate value of the transition.
+            *****************************************************************************
+            The CSS transform property is responsible for how the book flips when we hover over it. Try changing rotateY to rotateX or rotateZ and see what difference that makes to the book when you hover. You can also change the number of degrees if you like. Note that by changing these values you may not be able to see the back of the book.
+        */
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+    }
+
+    .face {
+        position: absolute;
+        width: 100%;
+        height:100%;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    /*  
+        TASK 4) - Change the background images for both the front and back of the book.
+        *****************************************************************************
+        Both the .front and .back CSS selectors below have a 'background-image' property. Change the URL to images that you want on the front and back cover of your book. It's a good idea to use images from Flickr, as you can often get large photos which are big enough to fill the full cover without leaving any white-space.
+
+        If the image isn't aligning where you want it to on the cover, you can use the 'background-position' property. Currently the both the front and back covers have the background positioned so that the cats are on show. The first value represents the x-axis, and the second value represents the y-axis. In this case, we only want to change the position of the x-axis, which is why the y-axis value is set to '0'.
+
+        Try changing the values to change the position of the images. You can use px's or %'s in order to achieve your desired effect.
+    */
+    .front {
+        background-color: white;
+        background-image: url('https://farm8.staticflickr.com/7356/10497286676_69cdb3795e_b.jpg');
+        background-position:-50px 0;
+        background-size: cover;
+        color:white;
+    }
+
+    .back {
+        background-color: white;
+        background-image: url('https://farm3.staticflickr.com/2872/10515777355_0774c260b9_b.jpg');
+        background-position:60% 0;
+        background-repeat: no-repeat;
+        background-size:cover;
+        font-size: 18px;
+        padding:0 100px;
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+    }
+
+    /*
+        TASK 5) Change colors and opacity in the CSS so that text is readable on the new background images.
+        *****************************************************************************
+        The problem with changing background images is that sometimes the content on the top of the image becomes hard to read. Having nice images is nice but text should always be the most important thing on the page, and you should make it as easy to read as possible.
+
+        If you need to change the color of the text use the 'color' property. The first h1 selector has the property already written down, but if you need to change the color of other elements such as the the author's name, simply add the color property to the selector and select your color.
+    */
+    h1 {
+        color:white;
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        font-size:140px; 
+    line-height:120px;
+        font-weight:bold;
+        margin:40px 0 20px;
+        max-width:90%;
+        display: inline-block;
+    }
+
+    .author {
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        font-size:40px;
+    	padding-left:50%;
+    	width:80%;
+        font-weight:normal;
+        margin:0;
+    }
+
+    .bottom-section {
+        bottom:20px;
+        position:absolute;
+        width:100%;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .subtitle {
+        font-family: 'Dancing Script', cursive;
+        font-size:40px;
+        font-weight:normal;
+    }
+
+    .bestseller {
+        font-size:36px;
+        font-weight:normal;
+        margin:0;
+        text-transform:uppercase;
+    }   
+
+    .back:after {
+        background:url('http://farm9.staticflickr.com/8399/8694929416_845f8f0540_b.jpg') no-repeat;
+        background-position:-251px -870px;
+        bottom:50px;
+        content:'';
+        display:block;
+        height:69px;
+        left:50%;
+        margin-left:-77px;
+        position:absolute;
+        width:144px;
+    }
+
+    .review-container {
+        padding:50px 0;
+    }
+
+    q {
+        display:block;
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        font-size:30px;
+        font-weight:bold;
+        padding:60px 0 20px;
+    color:white;
+    text-align:center;
+    }
+
+    cite {
+        font-size:18px;
+        font-style:normal;
+        font-weight:bold;
+      color:white;
+    }
+
+    /*
+        TASK 6) Change the opacity in the CSS so that the blurb is easily readable.
+        *****************************************************************************
+        Below is the CSS written to put a white box around the blurb on the back of the book. The background-color property specifies the color of this box. Instead of using the word 'white', the RGBa color model is used. The 'RGB' stands for 'red, green and blue'. The 'a' specifies the opacity. 
+
+        The numbers range from 0 (black) to 255 (white). Change the three 255's below to 0's and the box will change to black. The last number ranges from 0 (fully transparent) to 1 (opaque). Change this number to 1 for the box to be a solid color with no opacity.
+
+        The difference between using the RGBa color model in conjuntion with a background property and simply using the 'opacity' property is that opacity effects the entire element, whereas the RGBa model only changes the background color. If we were to use opacity on this .blurb element the text would also be transparent, which would make the text harder to read.
+    */
+    .blurb {
+        background-color:rgba(255,255,255,0.6);
+        border-radius:2px;
+        margin:0;
+        padding:50px;
+    text-align:left;
+    }
+  .blurb img{
+    padding:20px; 
+    float:left;
+  }
+
+</style>
+    
+</body>
+</html>

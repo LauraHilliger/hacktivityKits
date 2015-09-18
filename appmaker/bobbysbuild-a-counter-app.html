@@ -1,0 +1,298 @@
+
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Making a simple Appmaker counter app</title>
+    <link rel="stylesheet" href="//stuff.webmaker.org/makerstrap/latest/makerstrap.complete.min.css" type="text/css">
+    <link rel="stylesheet" href="//webmaker.org/css/style.ltr.css" type="text/css">
+    <style>
+      html, body {
+        font-family: 'Open Sans', sans-serif;
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
+
+      @media (min-width: 1200px) {
+        .container {
+          width: 1000px;
+        }
+      }
+
+      section {
+        clear: both;
+        width: 100%;
+        -webkit-box-sizing: initial;
+        -moz-box-sizing: initial;
+        box-sizing: initial;
+        margin-bottom: 5em;
+        margin: 3px;
+        padding: 10px;
+        margin-left: -5px;
+        border-radius: 15px;
+        background-color: #fff;
+        margin-bottom: 2em;
+      }
+
+      section::after {
+        display: block;
+        content: ' ';
+        clear: both;
+      }
+
+      #form-iframe {
+        width: 100%;
+      }
+
+      .tutorial-image-container {
+        width: 250px;
+        font-size: .8em;
+        text-align: center;
+      }
+
+      .tutorial-image {
+        width: 250px;
+        margin: 3px;
+        border-radius: 8px;
+        display: block;
+      }
+
+      .tutorial-image-group {
+        clear: both;
+        width: 100%;
+        text-align: center;
+        margin-top: 2em;
+      }
+
+      .tutorial-image-group::after {
+        display: block;
+        content: ' ';
+        clear: both;
+      }
+
+      .tutorial-image-group .tutorial-image-container {
+        margin-right: 25px;
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      .right {
+        float: right;
+        clear: right;
+      }
+
+      .left {
+        float: left;
+        clear: left;
+      }
+
+      a.highlight-link {
+        color: coral;
+      }
+
+      *[data-highlight] {
+        position: relative;
+        opacity: 0.5;
+        transition: all 0.5s;
+      }
+
+      *[data-highlight].highlight {
+        opacity: 1.0;
+        transform: scale(1.5);
+        -o-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        box-shadow: 0 0 20px #ddd, 0 0 200px #000;
+        z-index: 1000;
+      }
+
+      #app-iframe-container {
+        border-radius: 5px;
+        margin: 0 auto;
+        display: block;
+        width: 320px;
+        height: 570px;
+        background: black;
+      }
+
+      #app-iframe {
+        width: 300px;
+        height: 500px;
+        border: none;
+        margin-left: 10px;
+        margin-top: 10px;
+        background: rgb(181,189,200);
+        background: -moz-linear-gradient(-45deg,  rgba(181,189,200,1) 0%, rgba(130,140,149,1) 36%, rgba(40,52,59,1) 100%);
+        background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(181,189,200,1)), color-stop(36%,rgba(130,140,149,1)), color-stop(100%,rgba(40,52,59,1)));
+        background: -webkit-linear-gradient(-45deg,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%);
+        background: -o-linear-gradient(-45deg,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%);
+        background: -ms-linear-gradient(-45deg,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%);
+        background: linear-gradient(135deg,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=1 );
+      }
+    </style>
+  </head>
+  <body>
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Let's make an app!</h1>
+        <p>An introduction to app-making with Appmaker</p>
+      </div>
+    </div>
+    <div class="container">
+      <section>
+        <div class="tutorial-image-container right">
+          
+        </div>
+        <h1>Ready?</h1>
+        <p>We're going to build a <a class="highlight-link" data-related="counter app">simple counter app</a>. The goal of this tutorial is to understand how Appmaker Bricks and the Appmaker Design work. </p>
+        <p>A finished version of the app is available for reference (and remixing!) <a href="https://apps.webmaker.org/designer?remix=http%253A%252F%252Flike-cat-745.appalot.me%252Findex.html">here</a>.</p>
+        <h3>Let's get started.</h3>
+        <p>Open the Appmaker Designer at <a href="http://apps.webmaker.org/designer">apps.webmaker.org/designer</a>.</p>
+      </section>
+      <section>
+        <h1>Step 1: Add a Button</h1>
+        <p><a class="highlight-link" data-related="button">Click "Button" in the Brick tray</a> on the left side of the screen to add a Button brick.</p>
+        <p>Go head. <a class="highlight-link" data-related="click">Click the button</a> a few times on the phone that's displayed. Notice that it's ready to use right away. Also, note that <a class="highlight-link" data-related="click message">whenever the button is clicked</a>, it sends out a "Click!" message. That will be useful later on to make this Button Brick do something useful.</p>
+        <div class="tutorial-image-group">
+          <div class="tutorial-image-container inline">
+            <img class="tutorial-image" data-highlight="button"  src="https://s3.amazonaws.com/cubbyhole.robothaus.org/appmaker-tutorials/Screenshot+2014-05-09+11.07.51.png">
+            <p>The Button option in the Brick tray.</p>
+          </div>
+          <div class="tutorial-image-container inline">
+            <img class="tutorial-image" data-highlight="click" src="https://s3.amazonaws.com/cubbyhole.robothaus.org/appmaker-tutorials/Screenshot+2014-05-09+13.26.53.png">
+            <p>A Button Brick inside our mobile app.</p>
+          </div>
+          <div class="tutorial-image-container inline">
+            <img class="tutorial-image" data-highlight="click message"  src="https://s3.amazonaws.com/cubbyhole.robothaus.org/appmaker-tutorials/Screenshot+2014-05-09+11.49.09.png">
+            <p>The "Click" message being sent from the Button Brick whenever it's clicked.</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h1>Step 2: Add a Counter</h1>
+        <p>Now, click "Counter" in the Brick tray. Your app should now have a <a class="highlight-link" data-related="stack">Button Brick stacked on top of a Counter Brick</a>.</p>
+        <p><strong>Here's where the magic happens.</strong> Click on the Button Brick a few more times, and watch what happens. Do you see the "Click!" message <a class="highlight-link" data-related="connect">travel from the Button Brick to the Counter Brick</a>? When the Button's message is received by the Counter, the Counter responds by increasing its Sprocket count.</p>
+        <p>The Button and Counter bricks are <strong>connected</strong>!</p>
+        <div class="tutorial-image-group">
+          <div class="tutorial-image-container">
+            <img class="tutorial-image" data-highlight="stack" src="https://s3.amazonaws.com/cubbyhole.robothaus.org/appmaker-tutorials/Screenshot+2014-05-09+13.41.34.png">
+            <p>An app with two Bricks: a Button and a Counter.</p>
+          </div>
+          <div class="tutorial-image-container">
+            <img class="tutorial-image" data-highlight="connect" src="https://s3.amazonaws.com/cubbyhole.robothaus.org/appmaker-tutorials/Screenshot+2014-05-09+13.50.50.png">
+            <p>The Counter Brick receiving a message from the Button Brick.</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h1>Step 3: Add another Button</h1>
+        <p>Counting up is fun, but what about counting <i>down</i>?</p>
+        <p>Click on "Button" in the Brick tray again, and <a class="highlight-link" data-related="another button">another Button will be added</a> to our app. Unfortunately, though, both Buttons have the same effect: they both cause the Counter to count up. <strong>Let's change some logic!</strong></p>
+        <p>With your mouse, <a class="highlight-link" data-related="right edge">hover over the right edge</a> of the second Button Brick, and click on the menu that pops up. When the <a class="highlight-link" data-related="colour picker">colour picker</a> appears, choose <strong><span style="color: orange;">orange</span></strong>.</p>
+        <div class="tutorial-image-group">
+          <div class="tutorial-image-container">
+            <img class="tutorial-image" data-highlight="another button" src="https://s3.amazonaws.com/cubbyhole.robothaus.org/appmaker-tutorials/Screenshot+2014-05-09+16.33.02.png">
+            <p>Another Button!</p>
+          </div>
+          <div class="tutorial-image-container">
+            <img class="tutorial-image" data-highlight="right edge" src="https://s3.amazonaws.com/cubbyhole.robothaus.org/appmaker-tutorials/Screenshot+2014-05-09+16.37.28.png">
+            <p>Hovering over the right edge of a Button Brick.</p>
+          </div>
+          <div class="tutorial-image-container">
+            <img class="tutorial-image" data-highlight="colour picker" src="https://s3.amazonaws.com/cubbyhole.robothaus.org/appmaker-tutorials/Screenshot+2014-05-09+18.00.02.png">
+            <p>The message colour picker.</p>
+          </div>
+        </div>
+        <p>Notice that clicking on the second Button Brick has <strong>no effect</strong> on the Counter Brick now! Why? Because we have to tell the Counter Brick to listen for <strong><span style="color: orange;">orange</span></strong> messages.</p>
+        <p>This time, use your mouse to <a class="highlight-link" data-related="counter listeners">hover over the <strong>left</strong> side of the <strong>Counter</strong> Brick</a>. Click on "Count Down" to reveal the colour picker, and choose <strong><span style="color: orange;">orange</span></strong> again. Notice that there are now two colour pipes attached to the Counter Brick: <a class="highlight-link" data-related="counter orange">blue for "Count Down", and orange for "Count Up"</a>.</p>
+        <div class="tutorial-image-group">
+          <div class="tutorial-image-container">
+            <img class="tutorial-image" data-highlight="counter listeners" src="https://s3.amazonaws.com/cubbyhole.robothaus.org/appmaker-tutorials/Screenshot+2014-05-09+18.06.10.png">
+            <p>Counter Brick's message colour picker.</p>
+          </div>
+          <div class="tutorial-image-container">
+            <img class="tutorial-image" data-highlight="counter orange" src="https://s3.amazonaws.com/cubbyhole.robothaus.org/appmaker-tutorials/Screenshot+2014-05-09+18.10.41.png">
+            <p>Two coloured messages for the Counter Brick.</p>
+          </div>
+        </div>
+        <p>Now, clicking on the second Button Brick <a class="highlight-link" data-related="counting down">sends an <strong><span style="color: orange;">orange</span></strong> message to the Counter Brick</a> telling it to "Count Down". Meanwhile, clicking on the first Button Brick still <a class="highlight-link" data-related="counting up">sends a <strong><span style="color: blue;">blue</span></strong> message to the Counter Brick</a> telling it to "Count Up".</p>
+        <div class="tutorial-image-group">
+          <div class="tutorial-image-container">
+            <img class="tutorial-image" data-highlight="counting down" src="https://s3.amazonaws.com/cubbyhole.robothaus.org/appmaker-tutorials/Screenshot+2014-05-09+18.23.52.png">
+            <p>Counting <strong>down</strong> furiously!</p>
+          </div>
+          <div class="tutorial-image-container">
+            <img class="tutorial-image" data-highlight="counting up" src="https://s3.amazonaws.com/cubbyhole.robothaus.org/appmaker-tutorials/Screenshot+2014-05-09+18.30.18.png">
+            <p>Counting <strong>up</strong> furiously!</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h1>Bonus Round</h1>
+        <p>Click on the "Sign In" button in the top-right of Appmaker Designer. If you already have a Persona-enabled account, this process will be familiar to you. Otherwise, when a window pops up, follow the instructions to sign up for a Persona account or connect an existing account (e.g. GMail). Once you've signed in, you can save and publish your app. Click on the "App" menu, and choose "Save As". When prompted, type in a name for your app. Notice the title of your app appear on the phone display. Next, click on the same menu and choose "Publish".</p>
+        <p>Copy and paste the link here: <input style="width: 100%;" type="text" id="published-url"></p>
+        <div id="app-iframe-container"><iframe id="app-iframe"></iframe></div>
+        <script>
+          (function () {
+            var oldValue = '';
+
+            var textbox = document.querySelector('#published-url');
+            var iframe = document.querySelector('#app-iframe');
+
+            function setupIframe (url) {
+              iframe.src = url;
+            }
+
+            textbox.onkeyup = textbox.onchange = function (e) {
+              var value = textbox.value.trim();
+
+              if (value === oldValue) return;
+              oldValue = value;
+
+              var match = value.match(/^(https?:\/\/\w+-\w+-\d+\.appalot\.me\/)(index|install)(\.html)$/);
+              if (match) {
+                if (match[2] === 'install') {
+                  textbox.value = match[1] + 'index' + match[3];
+                  setupIframe(textbox.value);
+                }
+                else if (match[2] === 'index') {
+                  setupIframe(value);
+                }
+              }
+              else {
+                //bad url
+              }
+            };
+          })();
+        </script>
+      </section>
+      <section>
+        <h1>Congratulations!</h1>
+        <p>You've just created your first Appmaker app.</p>
+        <p>Please take some time to fill out the survey below to tell us about your experience.</p>
+        <iframe id="form-iframe" src="https://docs.google.com/forms/d/1wLC3Mf4Sm1qvIkowoCzpLpdG0jDnthvvHXunB9W8QEQ/viewform?embedded=true" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+      </section>
+    </div>
+    <script>
+      (function () {
+        Array.prototype.forEach.call(document.querySelectorAll('.highlight-link'), function (e) {
+          var relatedKey = e.getAttribute('data-related');
+          var relatedElements = document.querySelectorAll('*[data-highlight="' + relatedKey + '"]');
+          if (relatedKey && relatedElements.length > 0) {
+            e.onmouseover = function () {
+              Array.prototype.forEach.call(relatedElements, function (l) {l.classList.add('highlight')});
+            };
+            e.onmouseout = function () {
+              Array.prototype.forEach.call(relatedElements, function (l) {l.classList.remove('highlight')});
+            };
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>
+
+

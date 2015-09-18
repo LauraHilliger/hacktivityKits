@@ -1,0 +1,239 @@
+<!DOCTYPE html><html><head>
+
+    <meta content="comicmake" name="webmaker:tags">
+
+    <!--
+
+      Lessons to be covered:
+        - Changing images
+        - Changing text
+        - Changing classes
+        - Copying nodes
+    -->
+
+    <!-- 
+    In this project you can create your own comic strip using and square photos you have - so why not use the photos from your Instagram account?  You'll
+    be able to add images, add copy in speech bubbles and captions.  You'll also learn how to make more scenes by adding more comic boxes.
+    -->
+
+  <!--
+    Let's get started.
+
+    1) READ THROUGH THE COMMENTS. This is a comment. Everything inside of this tag for HTML or '/*' for CSS, is not processed as code, but instead is just text comments about the code. For this project, the comments will give you instructions, hints and guides to completing the project, so skim down through the comments to get an understanding of what you are being asked to do.
+    2) GET ORIENTED IN THE CODE. HTML is made up of tags that look like this <p> </p>. The tags tell you something about the information contained between them. Click on the tags in the code on this side of the editor to get a description of what each tag is for.
+  -->
+
+
+
+    <title>Some CSS Cheats I like</title>
+
+  <!-- This is the styles for the comic -->
+  <style>
+    body {
+      background-color: hsl(34, 53%, 82%);
+background-image: repeating-linear-gradient(45deg, transparent 5px, hsla(197, 62%, 11%, 0.5) 5px, hsla(197, 62%, 11%, 0.5) 10px,                  
+  hsla(5, 53%, 63%, 0) 10px, hsla(5, 53%, 63%, 0) 35px, hsla(5, 53%, 63%, 0.5) 35px, hsla(5, 53%, 63%, 0.5) 40px,
+  hsla(197, 62%, 11%, 0.5) 40px, hsla(197, 62%, 11%, 0.5) 50px, hsla(197, 62%, 11%, 0) 50px, hsla(197, 62%, 11%, 0) 60px,                
+  hsla(5, 53%, 63%, 0.5) 60px, hsla(5, 53%, 63%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 80px,
+  hsla(35, 91%, 65%, 0) 80px, hsla(35, 91%, 65%, 0) 90px, hsla(5, 53%, 63%, 0.5) 90px, hsla(5, 53%, 63%, 0.5) 110px,
+  hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 120px, hsla(197, 62%, 11%, 0.5) 120px, hsla(197, 62%, 11%, 0.5) 140px       
+  ),
+repeating-linear-gradient(135deg, transparent 5px, hsla(197, 62%, 11%, 0.5) 5px, hsla(197, 62%, 11%, 0.5) 10px, 
+  hsla(5, 53%, 63%, 0) 10px, hsla(5, 53%, 63%, 0) 35px, hsla(5, 53%, 63%, 0.5) 35px, hsla(5, 53%, 63%, 0.5) 40px,
+  hsla(197, 62%, 11%, 0.5) 40px, hsla(197, 62%, 11%, 0.5) 50px, hsla(197, 62%, 11%, 0) 50px, hsla(197, 62%, 11%, 0) 60px,                
+  hsla(5, 53%, 63%, 0.5) 60px, hsla(5, 53%, 63%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 80px,
+  hsla(35, 91%, 65%, 0) 80px, hsla(35, 91%, 65%, 0) 90px, hsla(5, 53%, 63%, 0.5) 90px, hsla(5, 53%, 63%, 0.5) 110px,
+  hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 140px, hsla(197, 62%, 11%, 0.5) 140px, hsla(197, 62%, 11%, 0.5) 160px       
+);
+      font-family: "Open Sans Light", sans-serif;
+      line-height:1.2;
+      text-align: center;
+      padding: 40px 0 0 20px;
+    }
+    h1 {
+      text-transform: uppercase;
+      text-shadow: 4px 4px 0px #414D4F;
+      font-size:50px;
+      color:#f2bb6c;
+    }
+    .comic {
+      max-width:826px;
+      margin:60px auto 0;
+    }
+    .scene {
+      width: 250px;
+      height:250px;
+      border:3px solid #015367;
+      background: #fff;
+      margin:8px;
+      display: inline-block;
+      position: relative;
+    }
+    .scene img {
+      width:100%;
+      height:100%;
+      display: block;
+    }
+    .caption {
+      padding:10px;
+      margin:0;
+      position: absolute;
+      left:0;
+      right:0;
+      background:#F2BB6C;
+      text-align:left;
+      top:0;
+    }
+    .caption.bottom {
+      bottom:0;
+      top:auto;
+      border-top:2px solid #015367;
+    }
+    .caption.top {
+      top:0;
+       border-bottom:2px solid #015367;
+    }
+    .speech {
+      width:40%;
+      border-radius:50%;
+      border:2px solid #015367;
+      margin:0;
+      position: absolute;
+      z-index:1;
+      background: Snow ;
+      padding:20px;
+      top:-15px;
+      text-align: center;
+    }
+    /* Advanced CSS for the speech pointer */
+    .speech:after {
+      border-color: snow transparent;
+      border-style: solid;
+      border-width: 13px 13px 0;
+      bottom: -11px;
+      content: "";
+      display: block;
+      left: 50%;
+      margin-left:-14px;
+      position: absolute;
+      width: 0;
+    }
+    .speech:before {
+      border-color: black transparent;
+      border-style: solid;
+      border-width: 16px 16px 0;
+      bottom: -15px;
+      content: "";
+      display: block;
+      left: 50%;
+      margin-left:-17px;
+      position: absolute;
+      width: 0;
+    }
+    .speech.left {
+      left:-15px;
+    }
+    .speech.right {
+      right:-15px;
+    }
+
+    footer {
+      clear:both;
+    }
+  </style>
+
+<base target="_blank">
+</head>
+<body>
+
+  <!-- 
+    Task 1: 
+    First why not change the header <h1> to give your comic a better name.  Any text that goes inbetween the <h1></h1> tags will become the heading.
+  -->
+  <h1>Some Cheats I like</h1>
+
+  <p></p>
+
+  <!-- 
+    This is where the comic starts. 
+    The 'comic' <div> wraps around each comic 'scene' to contain them all.
+  -->
+  <div class="comic">
+
+      <!--
+        Task 2:
+        The below HTML is one scene of out comic.
+        Start by changing the images in the scene to one of your own photos.  
+        As the scene is square a square photo will work best. Why not get the image url of one of your Instagram photos?  
+      -->
+      <div class="scene">
+        <p class="caption bottom">I like to #teachtheweb...</p>
+        <p class="speech left">I am going to practice my webmaking!</p>
+        <img alt="" src="http://connecting.pearson.com/wp-content/uploads/2012/02/michelle.png">
+      </div>
+
+       <!-- 
+        Great! Now lets look at getting some speech bubbles and captions into other scenes.
+
+        Task 3:
+        Look at the 1st scene above.  It has both a caption and a speech bubble.
+        By copying the speech paragraph <p>,  try adding a speech bubble to the 2nd scene below and then change its text.
+      -->
+      <div class="scene">
+        <p class="caption top">so when my colleague <a href="https://michelle.makes.org/thimble/webmaker-in-a-year">said she wanted to level up</a>,</p>
+        <img alt="" src="https://nerdfitness.s3.amazonaws.com/wp-content/uploads/2012/11/mario-concrete-wall-590x442.jpeg">
+      </div>
+
+      <!-- 
+        Depending on the photo you use you might want to move the captions to either the 'top' or 'bottom',
+        or the speech bubble either 'left or 'right'.
+
+        Task 4:
+        Look at the 4th scene below.  It has a speech bubble on the left side.
+        Change the class name 'left' to 'right' to make the speech bubble move to the right side.
+        If you want a caption to be at the top make sure it has the class 'top', if you want it at the bottom makes sure it has the class 'bottom'.
+      -->
+      <div class="scene">
+        <p class="speech right">Maybe I can help a little.</p>
+        <p class="caption bottom"> I thought I could share some of my favorite cheats</p>
+        <img alt="" src="http://educonphilly.org/thumbnail/578/400x400" style="width: 210px; margin-left: auto; margin-right: auto;">
+      </div>
+
+     <div class="scene">
+        <p class="caption bottom">Knowing what to copy and paste is learning too!</p>
+        <p class="speech left">Cheats!? Noooo!!!!</p>
+        <img alt="" src="http://connecting.pearson.com/wp-content/uploads/2012/02/michelle.png">
+      </div>
+      
+      <div class="scene">
+        <p class="speech right">Try <a href="http://css3generator.com/">CSS Generator</a></p>
+        <p class="caption bottom"> CSS Generator helps with borders, shadows, transitions and more!</p>
+        <img alt="" src="http://www.blogsdb.com/blog/wp-content/uploads/2012/02/simple-web-page-code.png">
+      </div>
+     <div class="scene">
+        <p class="speech right"><a href="http://lea.verou.me/css3patterns/">CSS Patterns are awesome</a>!</p>
+        <p class="caption bottom"> I used this resource for the background!</p>
+        <img alt="" src="http://i.imgur.com/udIAQyc.png">
+      </div>
+
+      <div class="scene">
+        <p class="caption bottom">Finally, some <a href="http://html5snippets.com/">HTML5 Snippets</a>. You're already a webmaker @thornet!</p>
+        <img alt="" src="http://mozillavenezuela.org/wp-content/uploads/2012/05/mozilla-webmaker_logo-only_RGB1.png">
+      </div>
+
+       <!-- 
+        This is the end of the comic :(
+        Want to create a larger comic?
+
+        Task 5:
+        Copy the HTML for a 'scene' and paste it below this comment...you now have 3 more scenes in your comic ;)
+      -->
+
+  </div>
+
+
+  <!-- Disclaimer for images -->
+ 
+
+
+</body></html>

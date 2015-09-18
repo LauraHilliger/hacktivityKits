@@ -1,0 +1,87 @@
+<!doctype html>
+<html style="overflow: auto;">
+    <head>
+        <meta charset="utf-8">
+        <title>Get off my lawn!!!</title>
+        <link href="//s3.amazonaws.com/thimble/zombies.css" rel="stylesheet">
+        <style type="text/css">
+
+            #cooker {
+                bottom: 0px;
+                left: 0px;
+            }
+            
+            #fridge {
+                bottom: 0px;
+                left: 100px;
+            }
+          
+            #snow-sofa {
+                bottom: 0em;
+                left: 10em;
+            }
+
+            #sofa {
+                bottom: 0em;
+                left: 14em;
+            }
+      
+            #wardrobe {
+                bottom: 0%;
+                left: 50%;
+            }
+
+            #bin {
+                bottom: 0%;
+                left: 60%;
+            }
+
+         </style>
+    <script>(function fixExternalLinks() {
+              function pointToBlank(a) {
+                var href = a.getAttribute("href");
+                if (href && href.indexOf("://") > -1) {
+                  // this is an external link.
+                  if(!a.getAttribute("target")) {
+                    a.setAttribute("target", "_blank");
+                  }
+                }
+              }
+              function fixLinks() {
+                document.removeEventListener("DOMContentLoaded", fixLinks);
+                var anchors = document.querySelectorAll("a");
+                var asArray = Array.prototype.slice.call(anchors);
+                asArray.forEach(function(a) {
+                  pointToBlank(a);
+                });
+              }
+              document.addEventListener("DOMContentLoaded", fixLinks);
+            }())</script>
+</head>
+
+    <body>
+
+        <section id="barricades">
+            <img src="http://thomaspark.me/project/webmaker/zombies/cooker.png" alt="cooker" id="cooker" />
+            <img src="http://thomaspark.me/project/webmaker/zombies/fridge.png" alt="fridge" id="fridge" />
+            <img src="http://thomaspark.me/project/webmaker/zombies/snofa.png" alt="snow-sofa" id="snow-sofa" />
+            <img src="http://thomaspark.me/project/webmaker/zombies/sofa.png" alt="sofa" id="sofa" />
+            <img src="http://thomaspark.me/project/webmaker/zombies/wardrobe.png" alt="wardrobe" id="wardrobe" />
+            <img src="http://thomaspark.me/project/webmaker/zombies/bin.png" alt="bin" id="bin" />
+        </section>
+
+        <!-- <img src="/zombies/supergirl.png" alt="" class="zombie" id="zombie1"> -->
+
+
+        <section id="house">
+            <img src="http://thomaspark.me/project/webmaker/zombies/zombie.png" alt="zombie" class="zombie" id="zombie2" />
+            <img src="http://thomaspark.me/project/webmaker/zombies/zombie.png" alt="zombie" class="zombie" id="zombie3" />
+            <img src="http://thomaspark.me/project/webmaker/zombies/zombie.png" alt="zombie" class="zombie" id="zombie4" />
+            <img src="http://thomaspark.me/project/webmaker/zombies/zombie.png" alt="zombie" class="zombie" id="zombie5" />
+            <img src="http://thomaspark.me/project/webmaker/zombies/zombie.png" alt="zombie" class="zombie" id="zombie6" />
+
+            <img src="http://thomaspark.me/project/webmaker/zombies/zombie-house-inside.png" alt="House" />
+        </section>
+
+    </body>
+</html>

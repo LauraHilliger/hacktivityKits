@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>The "E" is not the Internet</title>
+    <!-- this stylesheet provides default styles for tutorials -->
+    <link href="//thimble.webmaker.org/learning_projects/tutorial/tutorial.css" rel="stylesheet">
+    
+    <!-- these scripts turn your make into a tutorial -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//thimble.webmaker.org/learning_projects/tutorial/tutorial.js"></script>
+    <script>
+      jQuery(document).ready(function($){
+        $('body').tutorial();
+      });
+      
+    </script>
+    <style>
+    .example-div {
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: #e3eaee;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-top: 15px;
+}
+
+.example-div ul {
+  padding-left: 10px;
+  text-indent: -1em;
+  list-style-position: inside;
+  list-style-type: disc;
+}
+
+.example-div ul li {
+  margin: 0;
+}
+
+    </style>
+  <script>(function fixExternalLinks() {
+              function pointToBlank(a) {
+                var href = a.getAttribute("href");
+                if (href && href.indexOf("//") > -1) {
+                  // this is an external link.
+                  if(!a.getAttribute("target")) {
+                    a.setAttribute("target", "_blank");
+                  }
+                }
+              }
+              function fixLinks() {
+                document.removeEventListener("DOMContentLoaded", fixLinks);
+                var anchors = document.querySelectorAll("a");
+                var asArray = Array.prototype.slice.call(anchors);
+                asArray.forEach(function(a) {
+                  pointToBlank(a);
+                });
+              }
+              document.addEventListener("DOMContentLoaded", fixLinks);
+            }())</script>
+</head>
+  <body>
+    <!--
+      enclose each tutorial step in its own section tags
+      you can include any sort of markup, including images
+      you can also add more sections
+
+      if you want to attach this tutorial to another make,
+      first publish this make
+      then tag the other make with prefix "tutorial-" followed by the url for this make
+    -->
+
+    <section>
+      <!--Introduce your Tutorial-->
+      <h1>The "E" is not the Internet</h1>
+      <p>This make is designed for people who are very novice web users. It's designed to be done with a more advanced user. You can use this make to explain a little bit about the history of web browsers and how to navigate.</p>
+      <h4>Description:</h4>
+      <p>Lots of people click on the Internet Explorer icon thinking that that IS the Internet. This make is designed to help someone understand what a browser is, and learn a little bit of HTML and CSS in the process. Together, you'll make a new webpage!</p>
+      <h4>Learning Objectives</h4>
+<ul>
+  	<li>Accessing the web using the common features of web browsers</li>
+	<li>Using hyperlinks to access a range of resources on the web</li>
+    <li>Understanding the difference between the Internet, the Web and a Browser</li>
+  <li>What HTML is and how to remix content</li>
+      </ul>
+    </section>
+
+    <section>
+      <h1>Give your page a witty title</h1>
+      <p>Start by changing the <code>title</code> element on line 8 to a witty one for your webpage. Typically, the title will show up at the top of your browser window and will be searchable in search engines like Google. In Thimble, the title shows up in the tab above the pane on the right side of the editor.</p>
+    </section>
+    
+    <section>
+      <h1>Change the Browser icon</h1>
+      <p>Now change out the image on line 10 with a different browser icon. Images are defined in HTML with the <code>img</code> tag. <code>img</code> is one of the few weird tags that you don't have to close. Every <code>img</code> tag has a src attribute where you include the URL to the image you want to use. To change the image on line 10, replace the content within the quotes with a url of another image.</p> 
+      <p>If you are looking for images a good place to start is http://search.creativecommons.org/. Here you can find images that are available under the Creative Commons license. To get the URL of an image, right click or CTRL-click and select "Copy Image Address", or within Flickr, select Share, the copy the image URL.</p>
+    </section>
+    
+    <section>
+      <h1>Show what you know</h1>
+      <p>Line 11 is styled with an <code>h1</code> tag, where "h" stands for header and "1" means most important, followed by h2, h3, etc. It is used to build an outline or hierarchy into your page. Make a NEW header about the browser image your chose.</p>
+      <p>Line 12 is the subheader, use this to expand on your header statement</p>
+    </section>
+    
+      <section>
+      <h1>Change the look of your page</h1>
+       <p>You've played with HTML, now try tinkering with the look of your page. To do so we will use CSS, which stands for Cascading Style Sheets,and lets you add a touch of style to your pages. All of the stuff within the <code>style</code> tags is CSS. You can look for the name of the corresponding HTML tag to change how it is styled. For example, to change the style of <code>h1</code>, look for "h1" below line 16.</p>
+    </section>
+    
+     <section>
+      <h1>Don't be afraid to play!</h1>
+      <p>Try tinkering with the different kinds of style attributes. Maybe you want to change the formatting of the page by upping the size of the margins, or perhaps you are more interested in reducing the font size. Be playful and remember that things can easily be undone or redone by pressing the undo and redo buttons on the top of the editor.</p>
+       <p>Finally, let's fine tune at line 43. Change the position of the headings by adjusting the numbers in "padding-top" attribute. Here they are listed as px- which stands for pixels. Make incremental changes to see how the headings move. You can also change the colors, fonts, etc.</p>
+    </section>
+    
+     <section>
+      <h1>The end!</h1>
+       <p>You've learned a little about the difference between the Internet, the Web and a browser AND you learned things like: how to set the title of a webpage (<code>title</code> tag), work with images (<code>img</code> tag), organize your text with headers (<code>h1</code>, <code>h2</code>, etc.) and start to get down and dirty in CSS to change the look and feel of your page. Good Webmaking my friend! </p>
+    </section>
+    
+  </body>
+</html>

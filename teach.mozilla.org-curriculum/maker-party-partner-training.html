@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Webmaker metas -->
+    <meta name="webmaker:description" content="Create your own Interactive Poster">
+    <meta name="webmaker:thumbnail" content="http://stuff.webmaker.org.s3.amazonaws.com/thumbnails/7_my_life.jpg">
+
+
+    <!--
+        Prior Knowledge
+        ***************
+        This is an advanced tutorial, and it tackles some more advanced CSS. It would be good to learn from other tutorials such as the 'Keep Calm...' poster or the 'Book Cover' poster before attempting this one.
+        
+
+         What you'll Learn
+        ******************
+        - You'll be editing various text and image elements to create interesting content for your reader.
+        - You'll be transition properties to customize how the hover animations look.
+        - You'll learn how useful the :hover psuedo-class is for styling elements.
+        -You'll be learning about the transform property, and how this ties in with the transition property to create beautiful animations.
+        - You'll be learning about more advanced psuedo-selectors to change the colors of the circles.
+        
+        Tasks
+        ******************
+        TASK 1) -  Change the text throughout the HTML to personalise the interactive poster
+        TASK 2) -  Change the transition properties to customize the hover animations 
+        TASK 3) -  Learn how the :hover psuedo-class works
+        TASK 4) -  Change the transform properties to customize how the images scale when hovered
+        TASK 5) -  Change the colors of the circles using more pseudo-classes
+    -->
+
+    <!--         
+        A good place to start is with the title. Personalize the title of your
+        page by changing the text within the <title>Remix of </title> tags. This title appears at the top of the browser in the tab.
+    -->
+    <title>Maker Party Partner Training</title>
+    
+<script>(function fixExternalLinks() {
+              function pointToBlank(a) {
+                var href = a.getAttribute("href");
+                if (href && href.indexOf("//") > -1) {
+                  // this is an external link.
+                  if(!a.getAttribute("target")) {
+                    a.setAttribute("target", "_blank");
+                  }
+                }
+              }
+              function fixLinks() {
+                document.removeEventListener("DOMContentLoaded", fixLinks);
+                var anchors = document.querySelectorAll("a");
+                var asArray = Array.prototype.slice.call(anchors);
+                asArray.forEach(function(a) {
+                  pointToBlank(a);
+                });
+              }
+              document.addEventListener("DOMContentLoaded", fixLinks);
+            }())</script>
+</head>
+<body>
+
+<div class="wrapper">
+
+
+    <div class="header">
+
+        <!--
+            Change the main page heading to something that is relevant to the poster you want to create. What about 'My Favorite Sports' or 'My Top 10 Actors'?
+        -->
+      <h1><img src="http://stuff.webmaker.org/teach-assets/teachtheweb/images/training-logo.png" width="300px">Videos</h1>
+      <br/>
+      <h6>Don't forget to check out the <a href="http://training.webmakerprototypes.org">Webmaker Training</a> site!</h6>
+    </div>
+
+    <!-- 
+        This 'col-2' <div> is used to set a width on the 'column-container' <div>'s. Change this to 'col-1' to have only one image per row (although this will also stretch the images, which can look strange, unless you pick very wide images). 
+
+        Find the 'col-2 > div' and 'col-1 > div' selectors in the CSS to see how this is done.
+    -->
+    <div class="col-2 clearfix">
+
+        <!--
+            TASK 1) -  Change the text throughout the HTML to personalise the interactive poster
+            *****************************************************
+            Below is one block of HTML which creates each 'tile' on the page. You should by now be familiar with changing content such as headings, parapgraphs and images.
+
+            Try going through each tile and changing the images (using Flickr is a good choice), the headings and the parapraph text. If you haven't spotted it already, the paragraph text is hidden until the user hovers over the tile. Give it a try.
+        -->
+        <div class="tile-container">
+            <div class="interest-box">
+                <img src="http://party.webmaker.org/img/collage/2.jpg" alt="A Maker Party in Japan.">
+                <div class="circle">
+                  <h2 style="top:45%;">Introduction</h2>
+                  <h3>(56 sec)</h3>
+                  <p class="hidden-text"><a href="https://laura.makes.org/popcorn/22rn">Click here for a brief overview on what the other videos contain, as well as some easy access links for more information.</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tile-container">
+            <div class="interest-box">
+                <img src="http://stuff.webmaker.org/teach-assets/teachtheweb/images/connectedlearninggraphic.png" alt="Connected Learning.">
+                <div class="circle">
+                    <h2>Background and Learning Methodologies</h2>
+                  <h3>(3 min 45 sec)</h3>
+                  <p class="hidden-text" style="top:-15%;"><a href="https://laura.makes.org/popcorn/22s3">This video explains the Mozilla community and why we care about making, learning and web literacy.</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tile-container">
+            <div class="interest-box">
+                <img src="http://party.webmaker.org/img/collage/3.jpg" alt="Maker Party table">
+                <div class="circle">
+                    <h2>What IS Maker Party?</h2>
+                  	<h3>(3 min 7 sec)</h3>
+                  <p class="hidden-text" style="top:-5%;"><a href="https://laura.makes.org/popcorn/22ze">Find out what exactly a Maker Party is and the types of organizations that are participating.</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tile-container">
+            <div class="interest-box">
+                <img src="http://zythepsary.com/mozilla/presentations/images/legowall.jpg" alt="the web is made of legos!">
+                <div class="circle">
+                    <h2>What are the Webmaker Tools?</h2>
+                  <h3>(3 min 25 sec)</h3>
+                  <p class="hidden-text" style="top:-8%;"><a href="https://laura.makes.org/popcorn/233l">Learn how the Webmaker tools can be used to teach complex concepts,  get a brief intro to our newest tool, and find links to more in depth tutorials.</a></p>
+                  
+                </div>
+            </div>
+        </div>
+      
+      <div class="tile-container">
+            <div class="interest-box">
+                <img src="http://party.webmaker.org/party-resources/MakerPartyButtons.png" alt="the web is made of legos!">
+                <div class="circle">
+                    <h2>Getting the most from Webmaker Events</h2>
+                  <h3>(2 min 43 sec)</h3>
+                  <p class="hidden-text" style="top:-8%;"><a href="https://www.youtube.com/watch?v=xHJ-Er7obZI&feature=youtu.be">Learn how the Webmaker Event platform can help you document your Maker Party and broadcast your actions globally.</a></p>
+                  
+                </div>
+            </div>
+        </div>
+      
+<div class="tile-container">
+            <div class="interest-box">
+                <img src="https://webmaker.org/img/img-teach-template-kit-preview.png" alt="Teaching Kits and Resources">
+                <div class="circle">
+                    <h2>Teaching Kits and Resources</h2>
+                  	<h3>(3 min 5 sec)</h3>
+                  <p class="hidden-text" style="top:-11%;"><a href="https://laura.makes.org/popcorn/23j8">Learn about the open educational resources the Webmaker community has been making and why the OER Ecosystem of Webmaker is so innovative.</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tile-container">
+            <div class="interest-box">
+                <img src="https://farm3.staticflickr.com/2833/10559727713_1f9aeb0a01_z.jpg" alt="Connect with others.">
+                <div class="circle">
+                    <h2>Facilitating, Sharing and Connecting</h2>
+                  <h3>(3 min 5 sec)</h3>
+                  <p class="hidden-text" style="top:-17%;"><a href="https://laura.makes.org/popcorn/23jn">This training video will give you practical tips to help you facilitate an open learning experience and connect your work into the global community.</a></p>
+                </div>
+            </div>
+        </div>
+      
+      <div class="tile-container">
+            <div class="interest-box">
+              <img src="https://s3.amazonaws.com/org.webmaker.appmaker/static_assets/branding/appmaker-logo-phone-large.png" style="left:-45px; position:relative;" alt="Connect with others.">
+                <div class="circle">
+                  <h2>Appmaker: Music-Making Tutorial
+</h2>
+                  <h3>(6 min 24 sec)</h3>
+                  <p class="hidden-text" style="top:-7%;"><a href="https://www.youtube.com/watch?v=sX1XOZBEpEM&feature=youtu.be">A step-by-step video-based tutorial that will show you how to make a Music Mobile App using Webmaker's newest tool, Appmaker!</a></p>
+                </div>
+            </div>
+        </div>
+      
+      <div class="tile-container">
+            <div class="interest-box">
+              <img src="https://stuff.webmaker.org/thumbnails/thumb-toolkit-xray-goggles-inside.png" alt="Connect with others.">
+                <div class="circle">
+                  <h2>X-Ray Goggles: KQED Tutorial
+</h2>
+                  <h3>(7 min 18 sec)</h3>
+                  <p class="hidden-text" style="top:-6%;"><a href="https://www.youtube.com/embed/siQMnr2yzBE">A step-by-step video-based tutorial from KQED Eduation that will show you how to use the X-Ray Goggles.</a></p>
+                </div>
+            </div>
+        </div>
+      
+      <div class="tile-container">
+            <div class="interest-box">
+              <img src="http://stuff.webmaker.org.s3.amazonaws.com/thumbnails/thumb-toolkit-popcorn-inside.png" alt="Connect with others.">
+                <div class="circle">
+                  <h2>Popcorn Maker: KQED Tutorial
+</h2>
+                  <h3>(11 min 22 sec)</h3>
+                  <p class="hidden-text" style="top:-7%;"><a href="https://www.youtube.com/embed/0wiqG8C6s1k">A step-by-step video-based tutorial from KQED Eduation that will show you all the features Popcorn Maker has to offer.</a></p>
+                </div>
+            </div>
+        </div>
+      
+      
+      <div class="tile-container">
+            <div class="interest-box">
+                <img src="http://party.webmaker.org/img/makerparty_bullhorn@2x.png" alt="Connect with others.">
+                <div class="circle">
+                  <h2>Maker Party Question/Answer</h2>
+                  <h3>(Session 1)</h3>
+                  <p class="hidden-text" style="top:-5%;"><a href="https://plus.google.com/u/0/events/cihccklkdaft7v2ujdo1neu79o8">This interactive video allows you to click on questions and skip to where the moderators answer that question.</a></p>
+                </div>
+            </div>
+        </div>
+      
+       <div class="tile-container">
+            <div class="interest-box">
+                <img src="http://party.webmaker.org/img/makerparty_bullhorn@2x.png" alt="Connect with others.">
+                <div class="circle">
+                  <h2>Maker Party Question/Answer</h2>
+                  <h3>(Session 2)</h3>
+                  <p class="hidden-text" style="top:-5%;"><a href="https://plus.google.com/u/0/events/cs2dmhamjofb2mmunehivn10m94">This interactive video allows you to click on questions and skip to where the moderators answer that question.</a></p>
+                </div>
+            </div>
+        </div>
+      
+       <div class="tile-container">
+            <div class="interest-box">
+                <img src="http://party.webmaker.org/img/makerparty_bullhorn@2x.png" alt="Connect with others.">
+                <div class="circle">
+                  <h2>Maker Party Question/Answer</h2>
+                  <h3>(Session 3)</h3>
+                  <p class="hidden-text" style="top:-5%;"><a href="https://plus.google.com/u/0/events/cnusa45jd897u5828jjkm397ik8">This interactive video allows you to click on questions and skip to where the moderators answer that question.</a></p>
+                </div>
+            </div>
+        </div>
+        <!--
+            At the minute there are only 4 columns. If you want to add more columns, simply copy one of the blocks of code beginning and ending with the .tile-container <div> and paste it just above this comment. Do this as many times as you like to create new tiles.
+        -->
+    </div>
+
+</div> <!-- /end of wrapper -->
+
+<!--
+    The links below are for Google Web Fonts. We use these links to obtain the fonts, and then use the 'font-family' property in CSS to tell the browser which elements the new fonts should be applied to.
+-->
+<link href='//fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
+    
+<style>
+
+    /*
+        This is the start of the pages CSS. Feel free to go through and change values to personalise the look of your book. Start with things such as colors, padding and font-sizes to get a feel for how the page is built.
+  
+  Below you'll also see that we've applied a background image to this website. The image is actually an old map taken from the Flickr Commons, which is a great resource for cultural assets that are publicly available from a wide variety of sources around the world. Original map found here: http://www.flickr.com/photos/mississippi-dept-of-archives-and-history/8513127301/in/photostream/ 
+  
+    */
+
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    body {
+    background:url(https://mozillawebmakerproxy.net/6462a2ac01bf34d1dca4f752af8a95f516fbc53d?url=http://stuff.webmaker.org/teach-assets/teachtheweb/images/makerparty_headerwordmark.png)repeat top center;
+        color:#333;
+        font-family: 'Helvetica Neue', sans-serif;
+        font-size:18px;
+        font-weight:normal;
+        line-height:1;
+        margin:0;
+    }
+
+    .wrapper {
+        display: block;
+        margin:0px auto 40px;
+        width: 800px;
+    }
+
+    h1,h2,h3,h4,h5,h6 {
+        font-weight:normal;
+        margin:0;
+    color:#55575C;
+    }
+
+    .header {
+        font-family: 'Oleo Script', cursive;
+        font-size:40px;
+        padding:40px;
+        text-align: center;
+    }
+
+    .tile-container {
+        overflow:hidden;
+    }
+
+    .interest-box {
+        cursor:pointer;
+        height:400px;
+        position:relative;
+    }
+  a:link, a:visited{
+    color:#333333;
+    text-decoration:none;
+  }
+  a:hover,a:active{
+    color: #666666;
+    text-decoration: none;
+  }
+    /*
+        TASK 2) -  Change the transition properties to customize the hover animations 
+        *****************************************************
+        The code below controls the transition properties. Using these transition properties allows us to animate changes. In this case we are telling the browser to animate all of the elements that are changing for 0.5 seconds and to use the 'ease-out' timing function.
+
+        Change the '0.5s' to a higher number to see how this alters the animation speed.
+    */
+    .interest-box img {
+        height:100%;
+        -webkit-transition: all 0.5s ease-out;
+        -moz-transition: all 0.5s ease-out;
+        -o-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out;
+        width:100%;
+    }
+
+    .circle {
+        background-color:rgba(193,55,44,0.9);
+        border-radius:50%;
+        height:300px;
+        left:50%;
+        margin-left:-150px;
+        margin-top:-150px;
+        padding:20px;
+        position:absolute;
+        top:50%;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        width:300px;
+    }
+
+     h2, h3 {
+        color:white;
+        display:block;
+        font-family: 'Julius Sans One', sans-serif;
+        position:relative;
+        text-align:center;
+        text-transform: lowercase;
+        top:35%;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+  h3{
+    top:50%;
+  }
+
+    .hidden-text {
+        font-size:22px;
+        font-weight:300;
+        opacity:0;
+        position:relative;
+        text-align:center;
+        top:5%;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+    }
+
+
+    /*
+        TASK 3) -  Learn how the :hover psuedo-class works
+        *****************************************************
+        ':hover' is a pseudo-class. Psuedo classes are great as they allow us to select elements based on a variety of factors. As you have probably worked out, ':hover' allows us to style an element for when it is hovered over. Hover states are good as they allow us to give some visual feedback to the user when they have hovered over something. Hover states are often used to style links.
+
+        The example below tells the browser to change the opacity of the <h2> elements to 0 when the user hovers on the .interest-box element.
+    */
+    .interest-box:hover h2 {
+        opacity:0;
+    }
+
+    .interest-box:hover .hidden-text {
+        opacity:1;
+    }
+
+    .tile-container .interest-box:hover .circle {
+        background-color:rgba(255,255,255,0.95);
+    }
+
+    /*
+        TASK 4) -  Change the transform properties to customize how the images scale when hovered
+        *****************************************************
+        Now that we know that 'transitions' control the animation properties, we should learn what 'transforms' do. They control which element should change (or transform) and in which way. Without this transform, there would be nothing to animate, which is why the two proeprties work well together.
+
+        In the example below, we are telling the browser to scale images up slightly when a user hovers over the .interest-box element (as long as the images in question are contained inside this .interest-box element). Try changing the '1.05' integer to something smaller to make the images shrink in size when you hover, or a bigger number to make the images blow-up in size when you hover (e.g. changing it to 0.5 is quite a cool effect).
+    */
+    .interest-box:hover img {
+        -ms-transform:scale(1.05); /* IE 9 */
+        -moz-transform:scale(1.05); /* Firefox */
+        -webkit-transform:scale(1.05); /* Safari and Chrome */
+        -o-transform:scale(1.05); /* Opera */
+        transform:scale(1.05);
+    }
+
+    /* Column Layout */
+
+    .col-2 > div {
+        float:left;
+        width:50%;
+    }
+
+    .col-1 > div {
+        width:100%;
+    }
+
+    /*
+        TASK 5) -  Change the colors of the circles using more pseudo-classes
+        *****************************************************
+        The blue circles can be targeted in a variety of ways. We could add different classes to each circle element in the HTML and then style them that way, (which is a good way).
+
+        Sometimes adding classes is not suitable or efficient, especially if you have lots of elements on the page in a grid type layout, as individually adding classes can take a long time. Psuedo-classes are a way of targeting specific elements on the page and styling them.
+
+        The example below targets each of the four circles and gives it a background-color. The :first-child selector does just that - it selects the first child element. The nth-child(2) selects the 2nd child and so on...
+
+        These types of pseudo-selectors can be hard to get your head around, so don't worry if they don't make sense. Have a play around with the code below to see how each one can change individual elements on the page.
+    */
+
+    .tile-container:first-child .circle {
+        background-color:rgba(193,55,44,0.9);
+    }
+    .tile-container:nth-child(2) .circle {
+        background-color:rgba(193,55,44,0.9);
+    }
+    .tile-container:nth-child(3) .circle {
+        background-color:rgba(193,55,44,0.9);
+    }
+    .tile-container:last-child .circle {
+        background-color:rgba(193,55,44,0.9);
+    }
+
+    .clearfix:after { 
+        visibility: hidden; 
+        display: block; 
+        font-size: 0; 
+        content: " "; 
+        clear: both; 
+        height: 0; 
+    }
+    
+
+</style>
+    
+</body>
+</html>

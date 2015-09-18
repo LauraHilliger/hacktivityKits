@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+ <!--
+        Prior Knowledge
+        ***************
+        If might find it useful to complete the 'Gig Poster' or 'Movie Poster' project before attempting this project.
+        
+
+         What you'll Learn
+        ******************
+        - You'll be editing copy on a postcard
+        - You'll be tweaking some animation properties to change how the postcard flips.
+        
+        Tasks
+        ****************
+        TASK 1) Change the heading on the front of the card.
+        Task 2) Change the message on the back of the card.
+        Task 3) Change the speed at which the card flips.
+        TASK 4) Change how the card flips by changing the speed of the transition.
+        
+    -->
+
+     <!--         
+        A good place to start is with the title. Personalize the title of your
+        page by changing the text within the <title></title> tags. 
+    -->
+    <title>Mentor Thank You</title>
+  <!--this bit of JavaScript pulls in the Grand Hotel font-->
+    <script type="text/javascript">
+WebFontConfig = {
+    google: { families: [ 'Grand+Hotel::latin' ] }
+    };
+    (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+    })(); 
+    </script>
+   
+<script>(function fixExternalLinks() {
+              function pointToBlank(a) {
+                var href = a.getAttribute("href");
+                if (href && href.indexOf("://") > -1) {
+                  // this is an external link.
+                  if(!a.getAttribute("target")) {
+                    a.setAttribute("target", "_blank");
+                  }
+                }
+              }
+              function fixLinks() {
+                document.removeEventListener("DOMContentLoaded", fixLinks);
+                var anchors = document.querySelectorAll("a");
+                var asArray = Array.prototype.slice.call(anchors);
+                asArray.forEach(function(a) {
+                  pointToBlank(a);
+                });
+              }
+              document.addEventListener("DOMContentLoaded", fixLinks);
+            }())</script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- The 'card' <div> wraps around both the front and back sides -->
+
+        <div class="card">
+            <!-- 
+            Task 1) -  Change the heading on the front of the card.
+            *****************************************************
+            Write what you want to say on the front of the card.
+            Use the css to change the  size and colours.
+        -->
+
+            <div class="front face">
+                <h1>I wouldn't be who I am if it weren't for you.</h1>
+            </div>
+          <!-- The back of the card -  you only see it when the cards flips -->
+
+            <div class="back face">
+                <!-- 
+            Task 2) -  Change the message and address on the back of the card.
+            *****************************************************
+            Write what you want to say on the back of the. 
+        -->
+
+                <div class="message">
+                    <p>To my Mentor,</p>
+
+                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula. Nullam quis risus eget urna mollis ornare vel eu leo. Donec sed odio dui.</p>
+
+                    <p>Donec sed odio dui Donec ullamcorper nulla non metus auctor fringilla. Donec ullamcorper nulla non metus auctor fringilla.</p>
+
+                    <p>From someone XXX</p>
+                </div><!-- The address on the back of the card -->
+
+              
+            </div><!-- /end of back -->
+        </div><!-- /end of card -->
+    </div><!-- /end pf wrapper -->
+   <style>
+  body{
+        font-family: 'Grand Hotel', cursive;      
+        font-size:36px;
+        margin-top:5%;
+        background:
+    radial-gradient(#071c71 15%, transparent 16%) 0 0,
+    radial-gradient(#071c71 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color:#1533ad;
+    background-size:16px 16px;
+      }
+    .wrapper {
+        position: relative;
+        padding-top:50px;
+        z-index: 1;
+        -webkit-perspective:1000px;
+        perspective: 1000px;
+        display: inline-block;
+        margin:50px auto;
+    }
+
+
+    .card {
+        width: 750px;
+        height: 475px;
+        margin: 0 auto;
+        border:8px solid white;
+        cursor:pointer;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+
+        /*  
+            Task 4) -  Change the speed at which the card flips
+            *****************************************************
+            The css transition property allows animations to hapen with just css. 
+            Change the 1s to something like 3s to make the flip last 3 seconds instead of 1 second.
+            The last digit is the 'delay' - if you change 0s to say '4s' the flip wont happen for 4 seconds.
+        */
+        -webkit-transition: all 1s linear 0s;
+        -moz-transition: all 1s linear 0s;
+        -o-transition: all 1s linear 0s;
+        -ms-transition: all 1s linear 0s;
+        transition: all 1s linear 0s;
+        -webkit-box-shadow: 0px 0px 10px #aaa;
+        box-shadow: 0px 0px 10px #aaa;
+    }
+
+
+    .wrapper:hover .card {
+        /*  
+            Task 5) - Lets change how the card flips - change rotateY to rotateX or rotateZ
+            *****************************************************************************
+            The css transform porperty is repsponsable for how the card when we hover over it.  Try changing rotateY to rotateX or rotateZ
+            and see what difference that makes to the card when you hover
+        */
+      -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+        
+    }
+    .face {
+        position: absolute;
+        width: 100%;
+        height:100%;
+       -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+        backface-visibility: hidden;
+
+    }
+      /*  
+            Task 3) - Change the background images for  the front of the card.
+            *****************************************************************************
+            The front image can be anything you like - maybe a pic from yoour holiday?
+            The image for the back is a photo of a real postcard so you might want to keep that one as it is.
+        */
+    .front {
+        background-color: #ffd573;
+    }
+    .back {
+        background-color: #ffb300;
+        color: white;
+        font-size: 28px;
+         -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+    }
+    h1 {
+        color:white;
+       text-shadow:
+   -1px -1px 0 #071c71,  
+    1px -1px 0 #071c71,
+    -1px 1px 0 #071c71,
+     1px 1px 0 #071c71;
+        font-size:50px;
+        text-align:center;
+        font-weight:normal;
+        letter-spacing:-1px;
+        max-width:90%;
+        display: inline-block;
+       width:50%;
+       margin:20% 20%;
+    }
+    .message {
+        float:left;
+        text-align: left;
+        width:92%;
+        margin:30px 0 0 40px;
+    }
+   
+    </style>
+</body>
+</html>

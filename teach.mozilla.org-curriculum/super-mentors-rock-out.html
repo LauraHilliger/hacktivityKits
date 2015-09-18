@@ -1,0 +1,294 @@
+<!DOCTYPE html><html><head>
+    <!-- Webmaker metas -->
+    
+	<meta content="gigposter" name="webmaker:tags">
+<meta content="http://stuff.webmaker.org.s3.amazonaws.com/sam2/thumbnails/StarterMakeGigPoster.jpg" name="webmaker:thumbnail">
+<meta content="Make a gig poster" name="webmaker:description">
+    
+
+    <!--
+        Prior Knowledge
+        ***************
+        If might find it useful to complete the 'Movie Poster' project before attempting this project.
+
+        What you'll Learn
+        ******************
+        - You'll be editing both an ordered and unordered list.
+        - You'll be Changing background images
+        - You'll be adding new images 
+        - You'll get introduced to how floats can alter a page.
+        
+        Tasks
+        ****************
+        TASK 1) Change the gig name text then tweak the font-size, letter-spacing and colour to match your band.
+        TASK 2) Pick a big background image that suits your band. Try repeating the image if its small.
+        TASK 3) If you have any photos of your band put them into the photos list.
+        TASK 4) Lets make the gig heading and gig line up switch sides by using floats.
+    -->
+
+    
+    
+    <!--         
+        A good place to start is with the title. Personalize the title of your
+        page by changing the text within the <title></title> tags. For example,
+        'Come see our band play!' might be one way to go. 
+    -->
+    <title>Super Mentors Rock Out</title>
+    
+<base target="_blank">
+</head>
+<body>
+        
+    <div class="wrapper">
+
+        <!-- 
+            Task 1 - Change the gig name text, font-size, letter-spacing
+            ************************************************************
+            As you want the poster headline to be big and bold we have set the font size quite large in the CSS.
+            Change the heading text to say what you want  - it might not quite right once you change the text so you might want to 
+            tweak the font size & letter spacing in the CSS.
+            Remember you can add a <br /> to force a new line to get something you like.
+        -->
+
+        <!-- Think of a <div> as a wrapping container that holds the inner html together -->
+        <div class="gig-heading">
+            <h1>Webmaker Super Mentors</h1>
+        </div>
+        
+        <div class="gig-lineup">
+            <!-- 
+                This is a <h2> Heading.  It is an important tag on the page but not as important as the main <h1>.
+                The heading order goes from <h1> being the most important to <h6> being the least important.
+            -->
+            <h2>The Lineup</h2>
+
+            <!--
+                The gig lineup is inside an ordered list (ol), because the content follows a natural order.
+                
+                Here were some more html entities (remember the stars in the 'Movie Poster' project).  For example the '&iexcl;' is an upside-down '!'.
+                So if you have a band that has a weird symbol in its name you might have to look up what the html entity is for that character.
+                You can find more example of html entities at http://www.w3schools.com/tags/ref_entities.asp
+            -->
+            <ol class="line-up">
+                <li>Michelle</li>
+                <li>Sook</li>
+                <li>Alex</li>
+                <li>Jeannie</li>
+                <li>Laura</li>
+              	<li>Guillermo</li>
+              	<li>Christos</li>
+              	<li>Ankit</li>
+              	<li>Kevin</li>
+            </ol>
+
+        </div>
+        
+       
+        
+        <!--
+            The date and venue information are inside a paragraph tag (p), this is a very commonly used tag in HTML to write standard text.  
+            We need to use CSS to give it a unique style. Adding a class attribute lets us do that.
+        -->
+      <p class="date-and-venue">When: 20/06/2013 @ <a href="https://teach.etherpad.mozilla.org/SuperMentorCall">This Etherpad.</a> </p>
+        
+        <!--
+            Photos from the gig are inside an unordered list (ul). 
+            It behaves much like an ordered list but is more appropriate here because the order of the photos is unimportant.
+            The photos (from Flickr) are placed inside individual list items (li).
+            As the images are wrapped inside a link <a> tag they are clickable.  When clicked they will go to the address in the 'href' of the <a> tag.
+
+            Task 3) - If you have any photos of your band put them into the photos list.
+            ****************************************************************************
+            Change the images in the list to the images of your band, or your favourite band.
+            You'll need to change the URL in the src attribute of the <img> tag.  
+            Also change the where the link goes to for each image by changing the 'href' on the <a> tag.
+
+        -->
+        <ul class="photos">
+            <li>
+                <a href="https://pbs.twimg.com/media/BOm6ar7CcAA_4d1.png" title="Super Mentor Sunglasses">
+                    <!-- On each image we specify the source of the image 'src', the width, height and some alternative text which shows if the image fails to load -->
+                    <img alt="Super Mentor Sunglasses" src="https://pbs.twimg.com/media/BOm6ar7CcAA_4d1.png:large">
+                </a>
+            </li>
+             <li>
+                <a href="http://www.flickr.com/photos/rafton/4875484383/" title="Live at the Press Club by rafton, on Flickr">
+                    <img alt="Finger glasses" src="https://pbs.twimg.com/media/BNzDrhmCQAA0EYg.png:large">
+                </a>
+            </li>
+           
+            <li>
+                <a href="http://www.flickr.com/photos/psicodrops/7873883458/" title="THE BUDOS BAND @ SESC POMPEIA by cássio abreu, on Flickr">
+                 wish i had a photo
+                </a>
+            </li>
+            
+            <li>
+                <a href="http://www.flickr.com/photos/psicodrops/7873858918/" title="THE BUDOS BAND @ SESC POMPEIA by cássio abreu, on Flickr">
+                    <img alt="THE BUDOS BAND @ SESC POMPEIA" height="213" src="http://farm9.staticflickr.com/8423/7873858918_502de10b21_n.jpg" width="320">
+                </a>
+            </li>
+            <li>
+                <a href="http://www.flickr.com/photos/aresauburnphotos/4540139954/" title="Frank Hannon Band- The Boardwalk- 4.17.10 by aresauburn™, on Flickr">
+                    <img alt="Frank Hannon Band- The Boardwalk- 4.17.10" height="213" src="http://farm5.staticflickr.com/4013/4540139954_1b9757acb4_n.jpg" width="320">
+                </a>
+            </li>
+            <li>
+                <a href="http://www.flickr.com/photos/thecabaretvoltaire/204420086/" title="Maria McKee (Support Band) by Cabaret Voltaire, on Flickr">
+                    <img alt="Maria McKee (Support Band)" height="213" src="http://farm1.staticflickr.com/57/204420086_1f71dc85d1_n.jpg" width="320">
+                </a>
+            </li>
+           
+        </ul>
+        
+    </div>
+    
+    <style media="screen" type="text/css">
+        
+        /*
+            TASK 2 - Pick a big background image that suits your band.
+            ************************************************************
+            This background image will need changing to an image of your own band.
+            A large background image will work best - something around 1200px wide.
+            If you only have a smaller image the background-repeat property will mean you can repeat 
+            the image across the screen.
+        */
+        body {
+            padding:10px;
+            background-color:black;
+            background-image:url('http://farm4.staticflickr.com/3358/3516244642_029df9bf14_b.jpg');
+            background-position:top center;
+            background-size: cover;
+            background-repeat: no-repeat;
+         
+            font-family:Arial, sans-serif;
+            color:yellow;
+        }
+         .wrapper {
+            position:relative;
+            max-width:700px;
+            margin:0 auto;
+        }
+         /*
+            Task 4) Lets make the gig heading and gig line up switch sides by using floats
+            ************************************************************
+            The .gig-header and .gig-lineup are both <div> containers that container the heading and lineup text.
+            You can see that the heading is floated left and the lineup is floated right.
+            Try switching the floats around so the heading in on the right and the lineup is on the left.
+        */
+        .gig-heading {
+            float:left;
+            width:55%;
+        }
+        .gig-lineup {
+            float:right;
+            width: 40%
+        }
+       
+        h1 {
+            font-size:65px;
+            word-wrap:break-word;
+            line-height:85px;
+            border-top-width:20px;
+            border-top-style:solid;
+            border-top-color:yellow;
+            text-transform:uppercase;
+            letter-spacing:-3px;
+            margin:0;
+            margin-bottom:30px;
+            padding-top:15px;
+    
+        }
+        h2 {
+            font-size:30px;
+            text-transform: uppercase;
+            border-width:0px;
+            border-top-width:20px;
+            border-bottom-width:1px;
+            border-style:solid;
+            border-color:yellow;
+            margin:0;
+            padding:15px 0 10px 0;
+            text-align:right;
+        }
+
+         /* The LINEUP - These are the styles for ordered lists */
+        .line-up {
+            /* normally the list items in an ordered list are numbered, we can hide these numbers by setting the list-style to none */
+            list-style:none;
+            font-size:30px;
+            line-height:30px;
+            margin:0 0 30px;
+            padding:0px 5px;
+            text-align:right;
+            letter-spacing:-1px;
+        }
+        
+        /* These styles are for individual list items in the lineup */
+        .line-up li {
+            border-bottom-width:1px;
+            border-bottom-style:solid;
+            border-bottom-color:yellow;
+            padding-top:10px;
+            padding-bottom:10px;
+            margin-bottom:0;
+        }
+
+        /* THE DATE AND VENUE We're using the class name to target the styles here */
+        .date-and-venue {
+            background-color:yellow;
+            font-size:24px;
+            color:#333;
+            clear:both;
+            padding:7px 15px;
+            font-weight:bold;
+            margin:0;
+            letter-spacing:-1px;
+        }
+        
+        /* Photos - These are the styles for unordered lists */
+        .photos {
+            list-style:none; /* Normally the list items in an unordered list have bullet points, we can hide these by setting the list-style to none */
+            border-top-width:10px;
+            border-top-style:solid;
+            border-top-color:yellow;
+            margin-top: 10px;
+            padding: 20px 0 0;
+            text-align: center;
+        }
+
+        .photos li {
+            width: 32%;
+            display:inline-block;
+            margin-bottom:5px;
+        }
+        .photos img {
+            display: inline-block;
+            height: auto;
+            margin: 0 auto;
+            vertical-align: middle;
+            width: 100%;
+            -webkit-transition: all 0.2s;
+            -moz-transition:    all 0.2s;
+            -ms-transition:     all 0.2s;
+            -o-transition:      all 0.2s;
+        }
+        .photos img:hover {
+            -webkit-transform:scale(1.2);
+            -moz-transform:scale(1.2);
+            -ms-transform:scale(1.2);
+            transform:scale(1.2);
+            
+            box-shadow:0 30px 20px 10px rgba(0,0,0,0.5);
+        }
+        a, a img {
+            border:none;
+        }
+        
+
+    </style>
+    
+  
+    
+
+</body></html>

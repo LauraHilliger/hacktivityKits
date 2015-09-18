@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>How to make a comic with Thimble</title>
+    <!-- this stylesheet provides default styles for tutorials -->
+    <link href="//thimble.webmaker.org/learning_projects/tutorial/tutorial.css" rel="stylesheet">
+    
+    <!-- these scripts turn your make into a tutorial -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//thimble.webmaker.org/learning_projects/tutorial/tutorial.js"></script>
+    <script>
+      jQuery(document).ready(function($){
+        $('body').tutorial();
+      });
+      
+    </script>
+    <style>
+    .example-div {
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: #e3eaee;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-top: 15px;
+}
+
+.example-div ul {
+  padding-left: 10px;
+  text-indent: -1em;
+  list-style-position: inside;
+  list-style-type: disc;
+}
+
+.example-div ul li {
+  margin: 0;
+}
+
+    </style>
+  <script>(function fixExternalLinks() {
+              function pointToBlank(a) {
+                var href = a.getAttribute("href");
+                if (href && href.indexOf("//") > -1) {
+                  // this is an external link.
+                  if(!a.getAttribute("target")) {
+                    a.setAttribute("target", "_blank");
+                  }
+                }
+              }
+              function fixLinks() {
+                document.removeEventListener("DOMContentLoaded", fixLinks);
+                var anchors = document.querySelectorAll("a");
+                var asArray = Array.prototype.slice.call(anchors);
+                asArray.forEach(function(a) {
+                  pointToBlank(a);
+                });
+              }
+              document.addEventListener("DOMContentLoaded", fixLinks);
+            }())</script>
+</head>
+  <body>
+    <!--
+      enclose each tutorial step in its own section tags
+      you can include any sort of markup, including images
+      you can also add more sections
+
+      if you want to attach this tutorial to another make,
+      first publish this make
+      then tag the other make with prefix "tutorial-" followed by the url for this make
+    -->
+
+    <section>
+      <!--Introduce your Tutorial-->
+      <h1>How to make a comic with Thimble</h1>
+      <p>This is a quick and easy introduction to HTML and CSS as you make your own comic using Thimble. </p>
+      <h1>Description</h1>
+      <p>In this project you can create your own comic strip using and square photos you have - so why not use the photos from your Instagram account?  You'll
+    be able to add images, add copy in speech bubbles and captions.  You'll also learn how to make more scenes by adding more comic boxes.</p>
+      <h1>Learning Objectives</h1>
+      <p>What specific skills will participants learn? What new knowledge will they come away with? You might want to list these individually, like this:</p>
+<ul>
+  <li>Changing images</li>
+    <li>Changing text</li>
+    <li>Changing classes</li>
+    <li>Copying nodes</li>
+      </ul>
+    </section>
+
+    <section>
+      <!--Explain your learning objectives-->
+      <h1>Change some headers</h1>
+      <p>First why not change the header &lt;h1&gt; to give your comic a better name.  Any text that goes inbetween the &lt;h1&gt;&lt;/h1&gt; tags will become the heading.</p>
+    </section>
+
+    <section>
+      <h1>Understand the HTML structure</h1>
+      <p>The &lt;div&gt; with the class 'comic' wraps around each comic 'scene' to contain them all.</p>
+    </section>
+    
+    <section>
+      <h1>Swap images</h1>
+      <p> Start by changing the images in the scene to one of your own photos. As the scene is square a square photo will work best. Why not get the image url of one of your Instagram photos?  </p>
+     
+    </section>
+    
+    <section>
+      <h1>Add Captions</h1>
+      <p> Look at the 1st scene.  It has both a caption and a speech bubble. By copying the speech paragraph &lt;p&gt;,  try adding a speech bubble to the 2nd scene below and then change its text.</p>
+     
+    </section>
+    
+      <section>
+      <h1>Reassign classes</h1>
+        <p>Depending on the photo you use you might want to move the captions to either the 'top' or 'bottom', or the speech bubble either 'left or 'right'.</p> 
+        <p>Look at the 4th scene.  It has a speech bubble on the left side. Change the class name 'left' to 'right' to make the speech bubble move to the right side.</p>
+        <p>If you want a caption to be at the top make sure it has the class 'top', if you want it at the bottom makes sure it has the class 'bottom'.</p>
+    
+    </section>
+    
+     <section>
+      <h1>Want to create a larger comic?</h1>
+      <p>Copy the HTML for an entire 'scene' and paste it below the last scene...you now have 3 more scenes in your comic ;)</p>
+    
+    </section>
+    
+     <section>
+      <h1>Congrats! You just made a comic!</h1>
+      <p>Did you realize you were also learning a few things in the process? You actually learned a bunch about HTML structures. Plus, you know how to wrangle images in HTML as well.</p>
+    </section>
+    
+  </body>
+</html>

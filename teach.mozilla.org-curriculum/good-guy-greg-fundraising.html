@@ -1,0 +1,117 @@
+<!DOCTYPE html><!-- ==========================================================================
+Remix the HTML below to swap in your own photo and add your own captions. These code comments will help walk you through it. It's easy! 
+============================================================================ 
+--><html><head>
+    <meta charset="utf-8">
+	<meta content="teach-project" name="webmaker:tags">
+<meta content="https://stuff.webmaker.org/teach-assets/learning-projects/meme/meme_thumb.png" name="webmaker:thumbnail">
+
+<!-- 
+Give it a title here
+-->
+    <title>Goog Guy Greg on Webmaker Contributions</title>
+  <script>(function fixExternalLinks() {
+              function pointToBlank(a) {
+                var href = a.getAttribute("href");
+                if (href && href.indexOf("://") > -1) {
+                  // this is an external link.
+                  if(!a.getAttribute("target")) {
+                    a.setAttribute("target", "_blank");
+                  }
+                }
+              }
+              function fixLinks() {
+                document.removeEventListener("DOMContentLoaded", fixLinks);
+                var anchors = document.querySelectorAll("a");
+                var asArray = Array.prototype.slice.call(anchors);
+                asArray.forEach(function(a) {
+                  pointToBlank(a);
+                });
+              }
+              document.addEventListener("DOMContentLoaded", fixLinks);
+            }())</script>
+</head>
+  <body>
+    
+    <div id="meme">
+<!--
+Now swap out the image here. Paste in the address for the new image you want to use. 
+ -->      
+      <img src="http://www.iywib.com/good_guy_greg_69.jpg">
+
+<!-- 
+Your top caption goes here
+-->
+      <h1>Fixes 237 bugs on Webmaker</h1>       
+<!--
+And the bottom caption goes here. 
+-->
+      <h2>then donates $128 just to have 365 contributions for 2013. </h2>
+    </div>
+    
+    
+    <style>
+/*
+You've played with HTML, now try tinkering with the look of your page. 
+To do that, you'll need to edit the "CSS," which stands for Cascading Style Sheets.
+Let's start by changing the color, below.
+*/
+
+      body {
+        background-color: #660000;
+      }
+      
+/*
+You can also change the size of the margins, text and image.
+*/
+      
+      #content {
+        margin: 0px auto;
+      }
+      
+      #meme {
+        position: relative;
+        margin: 0px auto;
+      }
+      
+      #meme, img {
+        width: 560px;
+      }
+
+      h1, h2 {
+        position: relative;
+        z-index: 100;
+        text-align: center;
+        margin: 0 auto;
+        text-shadow: 5px 5px 0px #000000;
+        filter: dropshadow(color=#000000, offx=5, offy=5);
+      }
+      
+/*
+You can change the position of the headings by adjusting the numbers in the "padding-top" attribute. Here they are listed as "px," which stands for pixels. 
+*/     
+      
+      h1 {
+        color: white;
+        font-family: Impact;
+        font-size: 47px;
+        padding-top: 20px;
+      }
+      
+      h2 {
+        color: white;
+        font-family: Impact;
+        font-size: 45px;
+        padding-top: 385px;
+      }
+      
+      img {
+        border: 10px solid #000;
+        margin: 20px auto;
+        position: absolute;
+      }
+    </style>
+    <!--========================================================================= Hey you're done! Nice work! :) 
+============================================================================ --> 
+</body>
+</html>

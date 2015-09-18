@@ -1,0 +1,177 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+  <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+  <meta charset="utf-8">
+  <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
+  <!--[if IE]><meta content='IE=8' http-equiv='X-UA-Compatible'/><![endif]-->
+  <title>Webmaker Prototypes </title>
+  <meta name="description" content="Learning for everyone, by everyone, about almost anything.">
+  <meta name="author" content="Mozilla">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/img/favicon.ico">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <link href="https://stuff.webmaker.org/makerstrap/latest/makerstrap.complete.min.css" rel="stylesheet">
+   <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
+  <!--link href="/css/landing.css" rel="stylesheet"-->
+  
+    <link href="https://mozillawebmakerproxy.net/12ed872894ee1a6e69a72c339b9317fda07868e6?url=http://training.webmakerprototypes.org/css/modules.landing.css" rel="stylesheet">
+  
+
+<script>(function fixExternalLinks() {
+              function pointToBlank(a) {
+                var href = a.getAttribute("href");
+                if (href && href.indexOf("//") > -1) {
+                  // this is an external link.
+                  if(!a.getAttribute("target")) {
+                    a.setAttribute("target", "_blank");
+                  }
+                }
+              }
+              function fixLinks() {
+                document.removeEventListener("DOMContentLoaded", fixLinks);
+                var anchors = document.querySelectorAll("a");
+                var asArray = Array.prototype.slice.call(anchors);
+                asArray.forEach(function(a) {
+                  pointToBlank(a);
+                });
+              }
+              document.addEventListener("DOMContentLoaded", fixLinks);
+            }())</script>
+</head>
+<body >
+  
+<div id="wrap">
+  
+  
+<nav class="navbar navbar-webmaker">
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#id-collapsable-navbar" >
+        <span class="sr-only">Toggle navigation</span>
+        <span class="fa fa-bars fa-lg"></span>
+      </button>
+      
+      <img src="http://stuff.webmaker.org/teach-assets/laurarandom/webmakerprototypes-logo.png" style="top:10px;position:relative;" width="200px">      
+    </div>
+      <a href="https://www.mozilla.org/" id="tabzilla">mozilla</a>
+
+  </div>
+</nav>
+
+  <!-- BEGIN HEADER JUMOBTRON
+	emmet:
+	header.jumbotron>.container>(.row>.col-md-10.col-md-offset-1.title>h1{Getting Started}+p>lipsum)+(.row>.col-md-2.col-md-offset-10>a[href=#signup].btn.btn-default.btn-lg.btn-block)
+-->
+<header class="jumbotron">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1 title">
+				<h1>Welcome to Webmaker Prototypes</h1>
+				<p>A collection of stuff we're building. <a href="http://discourse.webmakerprototypes.org/category/building">Tell us what you think!</a></p>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- END HEADER JUMBOTRON -->
+
+<!-- BEGIN MAIN CONTENT -->
+<main>
+	<!-- BEGIN MODULES
+		emmet:
+		section.modules>.container>.row>.module.col-md-3*4>(.well>(h1>lipsum2)+(p>lipsum20))+a.module-fork.btn.btn-default.btn-lg[href=#module-$]>i.fa.fa-code-fork{ fork}
+	-->
+	<section class="modules">
+		<div class="container">
+			<div class="row">
+				<div class="module col-md-3">
+					<div class="well exploringBanner">
+						<h3>Webmaker Training</h3>
+						
+						<p>Join anytime. Learn at your own pace. Connect with our global community helping one another teach web literacy, digital skills and open practices. Learn how to #TeachTheWeb.</p>
+					</div>
+					<a href="http://training.webmakerprototypes.org/" class="module-fork btn btn-default btn-lg"><i class="fa fa-rocket"> Go</i></a>
+				</div>
+				<div class="module col-md-3">
+					<div class="well buildingBanner">
+						<h3>Discussion Forum</h3>
+						
+						<p>Find interesting people and ideas, ask questions, start discussions and engage with a global community in our new forum.</p>
+					</div>
+					<a href="http://training.webmakerprototypes.org/" class="module-fork btn btn-default btn-lg"><i class="fa fa-rocket"> Go</i></a>
+				</div>
+				<div class="module col-md-3">
+					<div class="well facilitatingBanner">
+						<h3>WebLitMapper</h3>
+						
+						<p>The WebLitMapper is a bookmarklet that allows users to tag content around  the web with the competencies that make up the Web Literacy Map. It's a  similar idea to social bookmarking, but with a controlled set of tags.</p>
+					</div>
+					<a href="http://weblitmapper.webmakerprototypes.org/" class="module-fork btn btn-default btn-lg"><i class="fa fa-rocket"> Go</i></a>
+				</div>
+				<div class="module col-md-3">
+					<div class="well connectingBanner">
+						<h3>Kit Builder</h3>
+						
+						<p>The Kit Builder prototype aims to change the way we think about and make learning materials by making inherent remixability, modern assessment and web friendliness part of the curriculum itself.</p>
+					</div>
+					<a href="http://kitbuilder.webmakerprototypes.org/" class="module-fork btn btn-default btn-lg"><i class="fa fa-rocket"> Go</i></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END MODULES -->
+			
+</main>
+<!-- END MAIN CONTENT -->
+
+</div>
+
+
+  
+  <footer id="footer" class="wm-footer">
+  <div class="container">
+    <ul class="nav nav-pills">
+      <li><a href="https://webmaker.org?ref=training" target="_blank">Webmaker.org</a></li>
+      <li><a href="https://webmaker.org/about?ref=training">About Webmaker.org</a></li>
+      <li><a href="http://mzl.la/gpluswebmaker"><i class="fa fa-google-plus"></i></a></li>
+      <li><a href="https://twitter.com/search?q=%23teachtheweb&src=typd"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="https://github.com/p2pu/school-of-webmaking" target="_blank"><span class="fa fa-github"></span></a></li>
+      <li><a href="https://p2pu.org" target="_blank">P2PU</a></li>
+    </ul>
+    <hr/>
+    <p>
+      <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+    </p>
+    <p>Webmaker Prototypes are part of Mozilla's non-profit mission to promote openness, innovation and opportunity on the Web. It's all free to use and open-source. Prototypes are built and moderated by expert volunteers around the world and is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/deed.en_US">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+  </div>
+</footer>
+
+
+  <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script> 
+  <script src="//mozorg.cdn.mozilla.net/tabzilla/tabzilla.js"></script>
+  <!-- Google Analytics -->
+  
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48377627-2', 'training.webmakerprototypes.org');
+  ga('send', 'pageview');
+
+</script>
+
+  
+  
+</body>
+</html>

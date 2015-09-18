@@ -1,0 +1,169 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>How to Participate in Webmaker Training</title>
+  <link rel="stylesheet" href="https://stuff.webmaker.org/makerstrap/v0.1.7/makerstrap.complete.min.css" />
+  <style>
+    body {
+      background-color: #013E5F;
+    }
+
+    #header {
+      color: white;
+    }
+    .green {
+      background-color: #3FB58E;
+      color: white;
+    }
+    .yellow {
+      background-color: #ffcd36;
+    }
+    .red {
+      background-color: #c13832;
+      color: white;
+    }
+    .blue {
+      background-color: #27aae1;
+      color: white;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 300;
+    }
+
+    a:link,
+    a:visited {
+      color: white;
+      text-decoration: underline;
+    }
+    a:hover,
+    a:active{
+      color: #eee;
+    }
+
+    .yellow a:link,
+    .yellow a:visited {
+      color: #333;
+    }
+    .yellow a:hover,
+    .yellow a:active {
+      color: #666;
+    }
+
+    .btn {
+      margin: 20px auto;
+      display: block;
+      white-space: normal;
+    }
+    .col-sm-4>h1{
+      margin-top:30px; 
+      margin-left:20px;
+      margin-right:20px;
+    }
+    p{
+       margin-left:20px;
+      margin-right:20px;
+    }
+  </style>
+<script>(function fixExternalLinks() {
+              function pointToBlank(a) {
+                var href = a.getAttribute("href");
+                if (href && href.indexOf("//") > -1) {
+                  // this is an external link.
+                  if(!a.getAttribute("target")) {
+                    a.setAttribute("target", "_blank");
+                  }
+                }
+              }
+              function fixLinks() {
+                document.removeEventListener("DOMContentLoaded", fixLinks);
+                var anchors = document.querySelectorAll("a");
+                var asArray = Array.prototype.slice.call(anchors);
+                asArray.forEach(function(a) {
+                  pointToBlank(a);
+                });
+              }
+              document.addEventListener("DOMContentLoaded", fixLinks);
+            }())</script>
+</head>
+<body>
+  <div id="header" class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>How to Participate in Webmaker Training</h1>
+      </div>
+    </div>
+  </div>
+
+  <div id="content" class="container">
+    <div class="row eqCols">
+      <div class="col-xs-6 col-sm-4 green">
+        <h1>
+          <i class="fa fa-question"></i>
+          1. Review the Topics
+        </h1>
+
+        <p>Check out the brief descriptions of each of the  <a href="http://training.webmakerprototypes.org">Webmaker Training</a> courses. You can also visit the <a href="http://training.webmakerprototypes.org/en/start-here/">Start Here</a> page for more details about how the training works!</p>
+      </div>
+
+      <div class="col-xs-6 col-sm-4 yellow">
+        <h1>
+          <i class="fa fa-user"></i>
+          2. Sign Up
+        </h1>
+
+        <p>Click the big <a href="https://sendto.mozilla.org/page/s/webmaker-training">signup button</a>. Courses are modular so you can take one or take them all! Each explores a new topic and is supported by opportunities to create content including open educational resources.</p>
+
+        <a class="btn btn-default" style="text-decoration:none;" href="https://sendto.mozilla.org/page/s/webmaker-training">Sign up for training!</a>
+      </div>
+
+      <div class="col-xs-6 col-sm-4 red">
+        <h1>
+          <i class="fa fa-random"></i>
+          3. Read and Make
+        </h1>
+
+        <p>When you're ready to start, click the selected course from the <a href="http://training.webmakerprototypes.org">homepage</a>. Read the introduction, then click "Make" for hands-on and web-based activities that support the course theme and help you gain new technical and creative skills.</p>
+      </div>
+
+      <div class="col-xs-6 col-sm-4 red">
+        <h1>
+          <i class="fa fa-comments"></i>
+          4. Discuss
+        </h1>
+
+        <p>Log into <a href="http://discourse.webmakerprototypes.org">Discourse</a>. This is the online forum where you can connect with the Mozilla Webmaker team as well as other participants to co-design, make connections and find support. It's peer-based learning, so engaging with other participants <a href="http://chronicle.com/blogs/wiredcampus/passive-mooc-students-dont-retain-new-knowledge-study-finds/52295">is key</a>! </p>
+      </div>
+
+      <div class="col-xs-6 col-sm-4 green">
+        <h1>
+          <i class="fa fa-share-square-o"></i>
+          5. Share
+        </h1>
+
+        <p>The more you share with the community, the more the community will share with you, thus the more everyone learns! Post things you make or write into the <a href="http://discourse.webmakerprototypes.org">discussion forum</a>, share them via Facebook, <a href="https://twitter.com/search?q=%23teachtheweb&src=typd">Twitter</a>, or anywhere, and tag them with #TeachTheWeb.</p>
+      </div>
+
+      <div class="col-xs-6 col-sm-4 blue">
+        <h1>
+          <i class="fa fa-users"></i>
+          6. Join us in real time
+        </h1>
+
+        <p>This training enables you to move at your own pace, but we'll also offer real-time help and the opportunity to connect with the #teachtheweb community every week with <a href="https://beta.homago.com/category/webmaking">live video sessions</a> on Mondays and <a href="https://wiki.mozilla.org/Webmaker/TeachTheWeb/Calls">community calls</a> on Thursdays. </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- small amount of magical JavaScript to keep columns the same height all the time -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/equalize.js/1.0.1/equalize.min.js"></script>
+  <script>
+    $('.eqCols').equalize('outerHeight');
+    $(window).resize(function(){
+      $('.eqCols').equalize({reset:true});
+      $('.eqCols').equalize('outerHeight');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html><!-- ==========================================================================
+Use your HTML and CSS swagger to share your opinion of Digital Rights Management.  
+============================================================================ --><!--
+Let's get started.
+
+1) READ THROUGH THE COMMENTS. This is a comment. Everything inside of this tag for HTML or '/*' for CSS, is not processed as code, but as text comments about the code. For this project the comments will give you instructions, hints and guides to completing the project, so skim down through the comments to get an understanding of what you are being asked to do.
+
+2) GET ORIENTED IN THE CODE. HTML is made up of tags that look like this <p> </p>. The tags tell you something about the information contained between them. Click on the tags in the code on this side of the editor to get a description of what each tag is for.
+
+--><html><head>
+    <meta charset="utf-8">
+	<meta content="teach-project" name="webmaker:tags">
+<meta content="https://stuff.webmaker.org/teach-assets/learning-projects/meme/meme_thumb.png" name="webmaker:thumbnail">
+<!-- 
+Start by changing the <title>Remix of Remix of  element to a witty one for your webpage. Typically, the title will show up at the top of your browser window and will be searchable in search engines like Google. In Thimble, the title shows up in the tab above the pane on the right side of the editor.
+-->
+    <title>The Thing About DRM is...</title>
+  <script>(function fixExternalLinks() {
+              function pointToBlank(a) {
+                var href = a.getAttribute("href");
+                if (href && href.indexOf("://") > -1) {
+                  // this is an external link.
+                  if(!a.getAttribute("target")) {
+                    a.setAttribute("target", "_blank");
+                  }
+                }
+              }
+              function fixLinks() {
+                document.removeEventListener("DOMContentLoaded", fixLinks);
+                var anchors = document.querySelectorAll("a");
+                var asArray = Array.prototype.slice.call(anchors);
+                asArray.forEach(function(a) {
+                  pointToBlank(a);
+                });
+              }
+              document.addEventListener("DOMContentLoaded", fixLinks);
+            }())</script>
+</head>
+  <body>
+    
+    <div id="meme">
+<!--
+Now change out the image below with an image of your choice. Images are defined in HTML with the <img> tag. <img> is one of the few weird tags that you don't have to close. Every <img> tag has a src attribute where you include the URL to the image you want to use. To change the image below, replace the content within the quotes with a url of another image. If you are looking for images a good place to start is http://search.creativecommons.org/. Here you can find images that are available under the Creative Commons license. To get the URL of an image, right click or CTRL-click and select "Copy Image Address", or within Flickr, select Share, the copy the image URL.
+ -->      
+      <img src="https://farm4.staticflickr.com/3749/10343929933_3226dbc4a6_b.jpg">
+
+<!-- 
+The following text is styled with an <h1> tag, where "h" stands for header and "1" means most important, followed by h2, h3, etc. It is used to build an outline or hierarchy into your page. Think about changing the text in the <h1> tag to something that will really grab your readers' attention.
+-->
+      <h1>The thing about <span>DRM</span> is...</h1>       
+<!--
+Now that you are a master of header tags, give your meme a sub-header by editing the text of the <h2> tag below. 
+-->
+      <h2>I can't find anything to play these on, how long before my digital files are useless as well?</h2>
+    </div>
+    
+    
+    <style>
+/*
+You've played with HTML, now try tinkering with the look of your page. To do so we will use CSS, which stands for Cascading Style Sheets,and lets you add a touch of style to your pages. All of the stuff within the <style> tags is CSS. You can look for the name of the corresponding HTML tag to change how it is styled. For example, to change the style of <h1>, look for "h1" below.
+*/
+
+      body {
+        background:
+		radial-gradient(black 15%, transparent 16%) 0 0,
+		radial-gradient(black 15%, transparent 16%) 8px 8px,
+		radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+		radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+		background-color:#282828;
+		background-size:16px 16px;
+      }
+      
+/*
+Try tinkering with the different kinds of style attributes. Maybe you want to change the formatting of the page by upping the size of the margins, or perhaps you are more interested in reducing the font size. Be playful and remember that things can easily be undone or redone by pressing the undo and redo buttons on the top of the editor.
+*/
+      
+      #content {
+        margin: 0px auto;
+      }
+      
+      #meme {
+        position: relative;
+        margin: 0px auto;
+      }
+      
+      #meme, img {
+        width: 560px;
+      }
+
+      h1, h2 {
+        position: relative;
+        z-index: 100;
+        text-align: right;
+        margin: 0;
+        position: relative;
+      }
+      
+/*
+Finally, let's fine tune your meme. Change the position of the headings by adjusting the numbers in "padding-top" attribute. Here they are listed as px- which stands for pixels. Make incremental changes to see how the headings move. You can also change the colors, fonts, etc.
+*/     
+      h1 {
+        color: white;
+        font-family: "Courier";
+        font-size: 38px;
+        padding-top: 40px;
+        width:350px;
+        text-shadow: 5px 5px 0px #000000;
+        filter: dropshadow(color=#000000, offx=5, offy=5);
+		left:35%;
+      }
+      
+      span{
+        font-size:50px;
+        font-weight:bold;
+        font-family:"Courier"
+      }
+      
+      h2 {
+        color: white;
+        font-family: "Courier";
+        font-size: 14px;
+        padding-top:10px;
+        width:240px;
+        left:55%;
+      }
+      
+      img {
+        box-shadow: 0 0 45px #666;
+        margin: 20px auto;
+        position: absolute;
+      }
+    </style>
+<!--========================================================================= And with that, you've created your meme! Watch out Internet! Here are a few things you learned while building your meme: how to set the title of a webpage (<title> tag), work with images (<img> tag), organize your text with headers (<h1>, <h2>, etc.) and start to get down and dirty in CSS to change the look and feel of your page. Good Webmaking my friend! 
+============================================================================ -->
+ 
+ 
+</body><!-- 
+Credits: The image of the Trash Can was taken by Laura Hilliger on a sad street in NYC. It was published to help David Bruant and Alan Kligman make a Public Service Campaign about Digital Rights Management at MozFest 2013
+ --></html>

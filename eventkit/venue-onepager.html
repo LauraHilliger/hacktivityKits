@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<!-- ================================================================
+WELCOME TO THE WEBMAKER TEACHING KIT TEMPLATE!
+Use this template to create your own teaching kit, lesson plan or educational resource. 
+Edit the HTML below to add your own content, links and images.
+Code comments like these will help with hints and guides. 
+Need help? Start here: http://mzl.la/teachingkit-tips
+================================================================ -->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=640px" name="viewport">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet" type="text/css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.0/normalize.css" rel="stylesheet" type="text/css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://stuff.webmaker.org/teach-assets/css/style-desktop.css" media="all" rel="stylesheet" type="text/css">
+    <link href="https://stuff.webmaker.org/teach-assets/css/style-mobile.css" media="screen and (max-device-width: 640px)" rel="stylesheet" type="text/css">
+    <link href="https://stuff.webmaker.org/teach-assets/css/style-print.css" media="print" rel="stylesheet" type="text/css"><!-- =============================== -->
+    <!-- ADD YOUR TITLE HERE -->
+
+    <title>Find the Perfect Venue</title><!-- =============================== -->
+
+    <style>
+#left-side > section > h1{
+    color:#27AAE1;
+    }
+    .teach-checklist input[type="checkbox"] + label:after, #review input[type="checkbox"] + label:after{
+	     color:#27AAE1;
+    }
+    
+    		#gallery {
+			background: white;
+			width: 595px;
+			padding: 0;
+			overflow: hidden;
+		}
+
+		#gallery > ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		#gallery > ul > li {
+			margin: 0;
+			padding: 0;
+			width: 595px;
+			display: block;
+			float: left;
+		}
+		#gallery > ul > li.transition {
+			margin-left: -595px;
+			opacity: 0;
+			transition: all ease 1s;
+		}
+
+		#gallery ul > li > img {
+			max-width: 100%;
+			display: block;
+			margin: 0 auto;
+		}
+
+		#gallery .content-slide {
+			background: #27AAE1;
+			color: #fff;
+		}
+		
+		#gallery .content-slide img{
+			width:595px;
+		}
+		
+		#gallery .content-slide h1{
+			padding:10px 10px 0px 10px;
+		}
+		
+		#gallery .content-slide p{
+			color:white;
+			padding: 0 20px 20px 20px;
+		}
+		
+		#gallery .content-slide a{
+			color:white;
+			text-decoration: underline;
+		}
+		#gallery .content-slide a:hover{
+			text-decoration: none;
+		}
+		
+		/* bonus feature css */
+		#gallery-controls {
+			margin: 1em auto;
+			text-align: center;
+		}
+		#gallery-controls a {
+			color: #27AAE1;
+		}
+		#left-side{
+			padding:40px 0 0 20px;
+		}
+		#right-side{
+			padding:32px 105px 0 20px;
+		}
+    .attribution{
+	    font-style: italic;
+	    font-size:50%;
+    }
+    </style>
+</head>
+
+<body style="background-color:#FFF2CC">
+    <div class="wrapper">
+        <header id="header" style="background-color:#4D4E53;">
+            <div id="teachingkit-banner" style="background-color:#27AAE1;color:white;">
+                Event Kit
+            </div>
+
+            <div id="header-img">
+                <!-- =============================== -->
+                <!-- HEADER IMAGE -->
+                <!-- Just paste the URL for your image in the "src" attribute below -->
+                <img alt="Header Image" height="180px" src="https://farm8.staticflickr.com/7437/9757973882_83db2a7b5d.jpg" width="180px"> <!-- =============================== -->
+            </div>
+
+            <div id="header-content">
+                <hgroup id="header-group">
+                    <!-- =============================== -->
+                    <!-- TITLE AND SUMMARY -->
+
+                    <h1>Find the Perfect Venue</h1>
+
+                    <h2>Get to know your local community by reaching out to local business owners and organizations.</h2><!-- =============================== -->
+                </hgroup>
+
+                <div id="metadata">
+                    <!-- =============================== -->
+                    <!-- Add your name here -->
+                    <span id="made-by">Made by: <a href="http://webmaker.org/u/mozteach" id="author">MozTeach</a></span> <!-- =============================== -->
+                </div>
+            </div>
+        </header>
+
+        <div id="content">
+            <div id="left-side">
+                <!-- =============================== -->
+                <!-- EVENT TYPE -->
+
+                <section>
+                   <div id="gallery">
+		<ul>
+			<li>
+				<div class="content-slide">
+					<h1>an Independent Cafe</h1>
+					<img src="https://farm8.staticflickr.com/7375/9590727867_3ec67dd588.jpg" alt="img-1">
+					<p>Buy your event snacks and drinks (or have participants buy their own) at a local cafe in exchange for a reserved space. Read about Mozillian <a href="http://www.mozraj.com/2013/10/cyber-cafe-internet-cafe-for-marketing.html">Gauthamraj's experiences</a> in Cyber Cafés! <a href="https://secure.flickr.com/photos/98140588@N07/" class="attribution">Photo by Dronrathore</a></p>
+				</div>
+			</li>
+			<li>
+				<div class="content-slide">
+					<h1>the Local Library</h1>
+					<img src="http://media.mozillarian.org/2014/01/Screenshot-2014-01-12-14.28.13.png" alt="img-2">
+					<p>Libraries are community hubs, and librarians are usually enthused about having digital literacy events take place in their spaces. Just take a look at <a href="http://mozillarian.org/2014/01/09/librarians-in-the-digital-age-infographic/">this infographic</a>!</p>
+				</div>
+			</li>
+			<li>
+				<div class="content-slide">
+					<h1>a Hackerspace</h1>
+					<img src="https://lh6.googleusercontent.com/-Szb-c9fs-KE/UUA9tkIipZI/AAAAAAAAGUI/251Ms9QoHO4/w1512-h1008-no/IMG_2473.JPG" alt="img-3">
+					<p>Be sure you reserve a comfortable venue where you can move the chairs and sit together in a circle. Ensure there is Internet, power and good lighting. Nearby Hackerspaces are usually perfect for an event!</p>
+				</div>
+			</li>
+			<li>
+				<div class="content-slide">
+					<h1>a Museum</h1>
+					<img src="https://farm6.staticflickr.com/5517/9758283774_5489963eb4.jpg" alt="img-4">
+					<p>Plan to tie in topics relevant to the museum, then speak with the museum director about your event. Ask the museum if they'll require an admission fee. <a href="https://secure.flickr.com/photos/saliyath/" class="attribution">Photo by Thalia Papoutsaki</a></p>
+				</div>
+			</li>
+
+			
+						
+		</ul>
+	</div>
+	
+	<div id="gallery-controls">
+		<a href="#prev" rel="prevSlide">prev</a>
+		<a href="#next" rel="nextSlide">next</a>
+	</div>                </section><!-- =============================== -->
+            </div>
+
+            <div id="right-side">
+                <!-- =============================== -->
+              
+                <!-- ADDITIONAL RESOURCES -->
+
+                <section id="resources">
+                    <h1>I plan to ask:</h1>
+
+                    <div class="teach-checklist">
+                        <ul>
+                            <li><input id="r1" type="checkbox"><label for="r1"></label> Possible Venue 1</li>
+
+                            <li><input id="r2" type="checkbox"><label for="r2"></label> Possible Venue 2</li>
+
+                            <li><input id="r3" type="checkbox"><label for="r3"></label> Possible Venue 3</li>
+                        </ul>
+                    </div>
+                </section><!-- =============================== -->
+                <!-- =============================== -->
+                <!-- TIPS & TRICKS -->
+
+                <section id="resources">
+                    <h1>We need to bring:</h1>
+
+                    <div class="teach-checklist">
+                        <ul>
+                            <li><input id="r4" type="checkbox"><label for="r4"></label> Snack</li>
+
+                            <li><input id="r5" type="checkbox"><label for="r5"></label> Beverage</li>
+
+                            <li><input id="r6" type="checkbox"><label for="r6"></label> Material</li>
+
+                            <li><input id="r7" type="checkbox"><label for="r7"></label> Equipment</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    	<!-- some shims to abstract away some cross browser issues -->
+	<script src="//raw.github.com/eligrey/classList.js/master/classList.min.js"></script>
+	<script src="//gist.github.com/fuzzyfox/6762206/raw/EventTarget.addEventListener.min.js"></script>
+
+	<script>
+		// some key things we'll be using
+			// the gallery, the whole gallery
+		var gallery = document.querySelector('#gallery > ul'),
+			// the first slide in the list
+			slide = document.querySelector('#gallery > ul > li'),
+			// the delay bewteen transitions in seconds
+			delay = 5,
+			// use a boolean flag to indicate if we're showing the 
+			// previous slide next
+			prevSlideFlag = false;
+
+		// set width of gallery to match that of all images lined up 
+		// next to each other.
+		gallery.style.width = (595 * gallery.children.length) + "px";
+
+		// write the function to change the slides
+		// but do so inside an event listener
+		gallery.addEventListener('transitionend', function(e){
+			if(e.propertyName == 'opacity'){
+				// remove the transition class from the slide
+				slide.classList.remove('transition');
+
+				// move the slide to the end of the list
+				gallery.appendChild(slide);
+
+				// make `slide` be the new first slide
+				slide = document.querySelector('#gallery > ul > li');
+
+				// bonus (prev button)
+				if(prevSlideFlag){
+					// okay so the previous slide has just been loaded, 
+					// lets get the full list of slides
+					var slides = document.querySelectorAll('#gallery > ul > li');
+					// and put the last side shown next (to keep the list order)
+					gallery.insertBefore(slides[slides.length - 1], slides[1]);
+					// and we've dealt w/ this so set to false.
+					prevSlideFlag = false;
+				}
+			}
+		});
+
+
+		// cause the slides to change every x seconds
+		// where x is the delay we set.
+		var nextSlide = function(){
+				slide.classList.add('transition');
+			},
+			prevSlide = function(){
+				// we need to know about several slides, so lets get the full list
+				var slides = document.querySelectorAll('#gallery > ul > li');
+				// lets move the last slide into the 2nd place
+				gallery.insertBefore(slides[slides.length - 1], slides[1]);
+				// transition the first slide out the way
+				slide.classList.add('transition');
+				// tell the transition watching event that we've just selected the 
+				// previous slide
+				prevSlideFlag = true;
+			},
+			interval = setInterval(nextSlide, delay * 3000);
+
+		// ** bonus (prev/next buttons) **
+		// lets do this using some delegation
+		// create an easy access to the controlls (all of them)
+		var controls = document.querySelector('#gallery-controls');
+		// add a click event to the whole thing
+		controls.addEventListener('click', function(e){
+			// now work out which control was clicked 
+			// using a switch (kinda like a fancy `if`)
+			switch(e.target.rel) {
+				// if it was the next slide control move to the next slide
+				case 'nextSlide':
+					// first we need to stop the slide change timer
+					clearInterval(interval);
+					// now move to the next slide
+					nextSlide();
+					// and restart the timer.
+					interval = setInterval(nextSlide, delay * 1000);
+
+					// we stopped, then restarted so that the slide 
+					// we just changed to is still shown for its full share
+					// of time.
+				break;
+				// if it was the previous slide control move to the previous slide
+				case 'prevSlide':
+					// should be able to guess whats happening here now
+					clearInterval(interval);
+					prevSlide();
+					interval = setInterval(nextSlide, delay * 1000);
+				break;
+				// if none of the above match, then do nothing.
+				default:
+					return;
+				break;
+			}
+
+			// stop url change
+			e.preventDefault();
+		});
+	</script>
+    
+</body>
+</html>

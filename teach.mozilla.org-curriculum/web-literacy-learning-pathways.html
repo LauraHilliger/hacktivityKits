@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Web Literacy Learning Pathways</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js">
+</script>
+    <style>
+body{
+        font-family: 'Open Sans', sans-serif;
+        font-weight:700;
+        font-size:12px;
+        color:white;
+    }
+    h1, h2{
+        color: #4D4E53;
+        font-weight:normal;
+    }
+    header{
+        margin:2%;
+    }
+.skills{
+	position:relative;
+	top:5%;
+	
+}
+.btns {
+	margin-bottom: 9px;
+    margin-top: 9px;
+	background-color:#eeeeee;
+}
+
+.grey{
+	color:#4D4E53;
+}
+.btns a, .btns a:visited, .learnPhrase{
+	color: #4D4E53;
+    font-size: 11px;
+    font-weight: 600;
+    margin: 3px;
+    text-decoration: none;
+}
+
+.btns a:hover, .btns .underline, .learnPhrase{
+	background-color:yellow;
+}
+
+
+    .box {
+    border:1px solid #4D4E53;
+    width:125px;
+    text-align:center;
+    position: absolute;
+    }
+
+    .focus {
+   -webkit-box-shadow: 2px 2px 8px 1px #4D4E53;
+box-shadow: 2px 2px 8px 1px #4D4E53;
+    }
+    .faded {
+    opacity:0.4;
+    }
+
+    p{
+    margin:7px;
+    }
+
+    p.desc{
+    font-weight:300;
+    text-align:left;
+    }
+
+    .navigation{
+    background-color:#C13932;
+    }
+    .mechanics{
+    background-color:#DB8237;
+    }
+    .search{
+    background-color:#FFCE37;
+    color:#4D4E53;
+    }
+    .credibility{
+    background-color:#E4D06E;
+    color:#4D4E53;
+    }
+    .security{
+    background-color:#C6D298;
+    }
+
+    .composing{
+    background-color:#25789A;
+    }
+    .remixing{
+    background-color:#27A9E1;
+    }
+    .design{
+    background-color:#318F70;
+    }
+    .coding{
+    background-color:#3EB48E;
+    }
+    .infrastructure{
+    background-color:#A5D4C0;
+    color:#4D4E53;
+    }
+
+
+    .sharing{
+    background-color:#4D4E53;
+    }
+    .participation{
+    background-color:#757579;
+    }
+    .privacy{
+    background-color:#A5A7AB;
+    }
+    .open{
+    background-color:#E3EAED;
+    color:#4D4E53;
+    }
+
+    </style>
+<script>(function fixExternalLinks() {
+              function pointToBlank(a) {
+                var href = a.getAttribute("href");
+                if (href && href.indexOf("//") > -1) {
+                  // this is an external link.
+                  if(!a.getAttribute("target")) {
+                    a.setAttribute("target", "_blank");
+                  }
+                }
+              }
+              function fixLinks() {
+                document.removeEventListener("DOMContentLoaded", fixLinks);
+                var anchors = document.querySelectorAll("a");
+                var asArray = Array.prototype.slice.call(anchors);
+                asArray.forEach(function(a) {
+                  pointToBlank(a);
+                });
+              }
+              document.addEventListener("DOMContentLoaded", fixLinks);
+            }())</script>
+</head>
+
+<body onload="setupBlocks();">
+    <header>
+        <h1>Web Literacy Learning Pathways</h1>
+
+        <h2>If you can do X, you can do Y! Choose something you feel confident doing, and see what you might learn next.</h2>
+    </header>
+
+    <div class="skills">
+<!--Exploring Skills-->
+
+        <div id="111" data-follow="112 113 114 115 121 122 123 131 132 133 141 142 143 144 151 152 153 211 212 213 214 215 221 222 223 231 232 233 234 235 244 253 254 255 311 312 313 315 316 323 324 325 331 332 334 335 342 343 344" class="box navigation">
+            <p>1.1.1</p>
+
+            <p class="desc">Accessing the web using the common features of web browsers</p>
+        </div>
+
+        <div id="112" data-follow="114 115 122 131 132 133 141 142 143 144 152 153 211 212 213 221 222 223 244 253 254 255 311 312 313 315 316 323 324 325 331 332 334 335 342 343 344" class="box navigation">
+            <p>1.1.2</p>
+
+            <p class="desc">Using hyperlinks to access a range of resources on the web</p>
+        </div>
+
+        <div id="113" data-follow="121 133 141 142 143 144 153 211 212 221 222 223 231 251 344" class="box navigation">
+            <p>1.1.3</p>
+
+            <p class="desc">Reading, evaluating, and manipulating URLs</p>
+        </div>
+
+        <div id="114" data-follow="115 122 133 141 143 144 151 221 231 253 254 311 315 316 323 334 335 341 344" class="box navigation">
+            <p>1.1.4</p>
+
+            <p class="desc">Recognizing the visual cues in everyday web services</p>
+        </div>
+
+        <div id="115" data-follow="151 152 332 335" class="box navigation">
+            <p>1.1.5</p>
+
+            <p class="desc">Using browser add-ons and extensions to provide additional functionality</p>
+        </div>
+
+        <div id="121" data-follow="123 132 133 141 142 143 144 151 152 153 211 212 214 222 223 231 241 243 251 252 255 332 333 335" class="box mechanics">
+            <p>1.2.1</p>
+
+            <p class="desc">Using and understanding the differences between URLs, IP addresses and search terms</p>
+        </div>
+
+        <div id="122" data-follow="142 143 144 211 212 213 221 222 223 233 243 244 253 254 255 311 312 313 331 333 334 335 341 344" class="box mechanics">
+            <p>1.2.2</p>
+
+            <p class="desc">Managing information from various sources on the web</p>
+        </div>
+
+        <div id="123" data-follow="131 132 133 142 143 144 151 213 221 223 313 332" class="box mechanics">
+            <p>1.2.3</p>
+
+            <p class="desc">Demonstrating the difference between the results of varying search strategies</p>
+        </div>
+
+        <div id="131" data-follow="121 123 132 133 142 143 151 213 221 313 326 331 332 344" class="box search">
+            <p>1.3.1</p>
+
+            <p class="desc">Using keywords, search operators, and keyboard shortcuts to make web searches more efficient</p>
+        </div>
+
+        <div id="132" data-follow="123 133 151" class="box search">
+            <p>1.3.2</p>
+
+            <p class="desc">Finding real-time or time-sensitive information using a range of search techniques</p>
+        </div>
+
+        <div id="133" data-follow="115 122 142 143 144 151 213 221 222 223 313 331 332 335" class="box search">
+            <p>1.3.3</p>
+
+            <p class="desc">Locating or finding desired information within search results</p>
+        </div>
+
+        <div id="141" data-follow="142 143 144 151 213 221 255 313 341" class="box credibility">
+            <p>1.4.1</p>
+
+            <p class="desc">Making judgments based on technical and design characteristics to assess the credibility of information</p>
+        </div>
+
+        <div id="142" data-follow="143 144 151 221 223 341 344" class="box credibility">
+            <p>1.4.2</p>
+
+            <p class="desc">Researching authorship and ownership of websites and their content</p>
+        </div>
+
+        <div id="143" data-follow="133 144 151 313 341" class="box credibility">
+            <p>1.4.3</p>
+
+            <p class="desc">Comparing information from a number of sources to judge the trustworthiness of content</p>
+        </div>
+
+        <div id="144" data-follow="142 342" class="box credibility">
+            <p>1.4.4</p>
+
+            <p class="desc">Discriminating between 'original' and derivative web content</p>
+        </div>
+
+        <div id="151" data-follow="255 333 335" class="box security">
+            <p>1.5.1</p>
+
+            <p class="desc">Detecting online scams and 'phishing' by employing recognized tools and techniques</p>
+        </div>
+
+        <div id="152" data-follow="255 332 335" class="box security">
+            <p>1.5.2</p>
+
+            <p class="desc">Encrypting data and communications using software and add-ons</p>
+        </div>
+
+        <div id="153" data-follow="255 332 335" class="box security">
+            <p>1.5.3</p>
+
+            <p class="desc">Changing the default behavior of websites, add-ons and extensions to make web browsing more secure</p>
+        </div>
+<!--Building Skills-->
+        <div id="211" data-follow="212 221 222 223 244 342" class="box composing">
+            <p>2.1.1</p>
+
+            <p class="desc">Inserting hyperlinks into a web page</p>
+        </div>
+
+        <div id="212" data-follow="213 222" class="box composing">
+            <p>2.1.2</p>
+
+            <p class="desc">Embedding multimedia content into a web page</p>
+        </div>
+
+        <div id="213" data-follow="" class="box composing">
+            <p>2.1.3</p>
+
+            <p class="desc">Creating web resources in ways appropriate to the medium/genre</p>
+        </div>
+
+        <div id="214" data-follow="211 212 215 222 223 231 232 234 235 251 252" class="box composing">
+            <p>2.1.4</p>
+
+            <p class="desc">Identifying and using HTML tags</p>
+        </div>
+
+        <div id="215" data-follow="214 222 223 231 232 234" class="box composing">
+            <p>2.1.5</p>
+
+            <p class="desc">Structuring a web page</p>
+        </div>
+
+        <div id="221" data-follow="222 223 341" class="box remixing">
+            <p>2.2.1</p>
+
+            <p class="desc">Identifying and using openly-licensed work</p>
+        </div>
+
+        <div id="222" data-follow="223" class="box remixing">
+            <p>2.2.2</p>
+
+            <p class="desc">Combining multimedia resources</p>
+        </div>
+
+        <div id="223" data-follow="221 222" class="box remixing">
+            <p>2.2.3</p>
+
+            <p class="desc">Creating something new on the web using existing resources</p>
+        </div>
+
+        <div id="231" data-follow="234 235 245 251" class="box design">
+            <p>2.3.1</p>
+
+            <p class="desc">Identifying the different parts of a web page using industry-recognized terms</p>
+        </div>
+
+        <div id="232" data-follow="233" class="box design">
+            <p>2.3.2</p>
+
+            <p class="desc">Improving the accessibility of a web page by modifying its color scheme and markup</p>
+        </div>
+
+        <div id="233" data-follow="234" class="box design">
+            <p>2.3.3</p>
+
+            <p class="desc">Iterating on a design after feedback from a target audience</p>
+        </div>
+
+        <div id="234" data-follow="" class="box design">
+            <p>2.3.4</p>
+
+            <p class="desc">Reorganizing the structure of a web page to improve its hierarchy conceptual flow</p>
+        </div>
+
+        <div id="235" data-follow="" class="box design">
+            <p>2.3.5</p>
+
+            <p class="desc">Demonstrating the difference between inline, embedded and external CSS</p>
+        </div>
+
+        <div id="241" data-follow="244 251" class="box coding">
+            <p>2.4.1</p>
+
+            <p class="desc">Explaining the differences between client-side and server-side scripting</p>
+        </div>
+
+        <div id="242" data-follow="244" class="box coding">
+            <p>2.4.2</p>
+
+            <p class="desc">Composing working loops and arrays</p>
+        </div>
+
+        <div id="243" data-follow="242 244 245" class="box coding">
+            <p>2.4.3</p>
+
+            <p class="desc">Reading and explaining the structure of code</p>
+        </div>
+
+        <div id="244" data-follow="" class="box coding">
+            <p>2.4.4</p>
+
+            <p class="desc">Using a script framework</p>
+        </div>
+
+        <div id="245" data-follow="242" class="box coding">
+            <p>2.4.5</p>
+
+            <p class="desc">Adding code comments for clarification and attribution</p>
+        </div>
+
+        <div id="251" data-follow="" class="box infrastructure">
+            <p>2.5.1</p>
+
+            <p class="desc">Understanding and labeling the web stack</p>
+        </div>
+
+        <div id="252" data-follow="" class="box infrastructure">
+            <p>2.5.2</p>
+
+            <p class="desc">Explaining the differences between the web and the Internet</p>
+        </div>
+
+        <div id="253" data-follow="254 255 334" class="box infrastructure">
+            <p>2.5.3</p>
+
+            <p class="desc">Exporting and backing up your data from web services</p>
+        </div>
+
+        <div id="254" data-follow="255 334" class="box infrastructure">
+            <p>2.5.4</p>
+
+            <p class="desc">Moving the place(s) where your data is hosted on the web</p>
+        </div>
+
+        <div id="255" data-follow="334" class="box infrastructure">
+            <p>2.5.5</p>
+
+            <p class="desc">Securing your data against malware and computer criminals</p>
+        </div>
+<!--Connecting Skills-->
+        <div id="311" data-follow="314 342 343 344" class="box sharing">
+            <p>3.1.1</p>
+
+            <p class="desc">Sharing a resource using an appropriate tool and format for the audience</p>
+        </div>
+
+        <div id="312" data-follow="342 344" class="box sharing">
+            <p>3.1.2</p>
+
+            <p class="desc">Tracking changes made to co-created web resources</p>
+        </div>
+
+        <div id="313" data-follow="315 316 324 343 344" class="box sharing">
+            <p>3.1.3</p>
+
+            <p class="desc">Choosing a web tool to use for a particular contribution or collaboration</p>
+        </div>
+
+        <div id="314" data-follow="344" class="box sharing">
+            <p>3.1.4</p>
+
+            <p class="desc">Co-creating web resources</p>
+        </div>
+
+        <div id="315" data-follow="316 324 344" class="box sharing">
+            <p>3.1.5</p>
+
+            <p class="desc">Configuring notifications to keep up to date with community spaces and interactions</p>
+        </div>
+
+        <div id="316" data-follow="323 324 325 344" class="box sharing">
+            <p>3.1.6</p>
+
+            <p class="desc">Using synchronous and asynchronous tools to communicate with web communities, networks and groups</p>
+        </div>
+
+        <div id="321" data-follow="" class="box participation">
+            <p>3.2.1</p>
+
+            <p class="desc">Encouraging participation in web communities</p>
+        </div>
+
+        <div id="322" data-follow="325 344" class="box participation">
+            <p>3.2.2</p>
+
+            <p class="desc">Using constructive criticism in a group or community setting</p>
+        </div>
+
+        <div id="323" data-follow="324 334 344" class="box participation">
+            <p>3.2.3</p>
+
+            <p class="desc">Configuring settings within tools used by online communities</p>
+        </div>
+
+        <div id="324" data-follow="325 344" class="box participation">
+            <p>3.2.4</p>
+
+            <p class="desc">Participating in both synchronous and asynchronous discussions</p>
+        </div>
+
+        <div id="325" data-follow="344" class="box participation">
+            <p>3.2.5</p>
+
+            <p class="desc">Expressing opinions appropriately in web discussions</p>
+        </div>
+
+        <div id="326" data-follow="344" class="box participation">
+            <p>3.2.6</p>
+
+            <p class="desc">Defining different terminology used within online communities</p>
+        </div>
+
+        <div id="331" data-follow="334 345" class="box privacy">
+            <p>3.3.1</p>
+
+            <p class="desc">Identifying rights retained and removed through user agreements</p>
+        </div>
+
+        <div id="332" data-follow="152 153 334 335" class="box privacy">
+            <p>3.3.2</p>
+
+            <p class="desc">Taking steps to secure non-encrypted connections</p>
+        </div>
+
+        <div id="333" data-follow="334 335" class="box privacy">
+            <p>3.3.3</p>
+
+            <p class="desc">Explaining ways in which computer criminals are able to gain access to user information</p>
+        </div>
+
+        <div id="334" data-follow="335" class="box privacy">
+            <p>3.3.4</p>
+
+            <p class="desc">Managing the digital footprint of an online persona</p>
+        </div>
+
+        <div id="335" data-follow="334" class="box privacy">
+            <p>3.3.5</p>
+
+            <p class="desc">Identifying and taking steps to keep important elements of identity private</p>
+        </div>
+
+        <div id="341" data-follow="221 342 344" class="box open">
+            <p>3.4.1</p>
+
+            <p class="desc">Distinguishing between open and closed licensing</p>
+        </div>
+
+        <div id="342" data-follow="223 343 344" class="box open">
+            <p>3.4.2</p>
+
+            <p class="desc">Making web resources available under an open license</p>
+        </div>
+
+        <div id="343" data-follow="344" class="box open">
+            <p>3.4.3</p>
+
+            <p class="desc">Using and sharing files in open, web-friendly formats when appropriate</p>
+        </div>
+
+        <div id="344" data-follow="" class="box open">
+            <p>3.4.4</p>
+
+            <p class="desc">Contributing to an Open Source project</p>
+        </div>
+    </div><script>
+$(document).ready(function(){
+    // fade all divs
+    $('div .box').addClass('faded');
+    $('div .box').append('<div class="btns"><a href="#" class="prereq">What should I know?</a></div><div class="btns"><a href="#" class="next">What can I learn next?</a></div>');
+
+    var prereqs = {};
+    $('[data-follow]').each(function(){
+        var id = this.id;
+        var followers = new String($(this).data('follow')).split(" ");
+        $(followers).each(function(){
+            if(prereqs[this] == undefined) {
+                prereqs[this] = [];
+            }
+            prereqs[this].push(id);
+        });
+    });
+    
+    $('[data-follow] a.prereq').on('click', function(evt){
+        evt.preventDefault();
+        // fade all divs, remove focus, clear learnPhrase
+        $('div .box').addClass('faded').removeClass('focus');
+        $('div .box a').removeClass('underline');
+        $('.learnPhrase').remove();
+
+        // focus and unfade the current one
+        $(this).parent().parent().removeClass('faded').addClass('focus');
+        $(this).addClass('underline');
+        
+        // unfade prereqs
+        var pres = prereqs[$(this).parent().parent().attr('id')];
+        $(pres).each(function(){
+            $('#'+this).removeClass('faded');
+            $('#'+this).prepend('<div class="learnPhrase">First learn</div>');
+        });
+        setupBlocks();
+        return false;
+    });    
+
+    $('[data-follow] a.next').on('click', function(evt){
+    	evt.preventDefault();        
+        // fade all divs, remove focus, clear learnPhrase
+        $('div .box').addClass('faded').removeClass('focus');
+        $('div .box a').removeClass('underline');
+        $('.learnPhrase').remove();
+
+        // focus and unfade the current one
+        $(this).parent().parent().removeClass('faded').addClass('focus');
+        $(this).addClass('underline');
+        
+        // unfade followers
+        var followers = new String($(this).parent().parent().data('follow')).split(" ");
+        $(followers).each(function(){
+            $('#'+this).removeClass('faded');
+            $('#'+this).prepend('<div class="learnPhrase">Try learning about</div>');
+        });
+        setupBlocks();
+        return false;
+    });
+	$('[data-follow]').on('click', function(evt){
+		evt.preventDefault();
+		$(this).find('a.next').trigger('click');
+		return false;
+	});
+});
+    </script> <script>
+	var colCount = 0;
+    var colWidth = 0;
+    var margin = 10;
+    var windowWidth = 0;
+    var blocks = [];
+
+    $(function(){
+    $(window).resize(setupBlocks);
+    });
+
+    function setupBlocks() {
+        windowWidth = $(window).width();
+        colWidth = $('.box').outerWidth();
+        blocks = [];
+        colCount = Math.floor(windowWidth/(colWidth+margin*2));
+        for(var i=0;i<colCount;i++){
+            blocks.push(margin);
+        }
+        positionBlocks();
+    }
+
+    function positionBlocks() {
+        $('.box').each(function(){
+            var min = Array.min(blocks);
+            var index = $.inArray(min, blocks);
+            var leftPos = margin+(index*(colWidth+margin));
+            $(this).css({
+                'left':leftPos+'px',
+                'top':min+'px'
+            });
+            blocks[index] = min+$(this).outerHeight()+margin;
+        }); 
+        }
+
+        // Function to get the Min value in Array
+        Array.min = function(array) {
+        return Math.min.apply(Math, array);
+    };
+
+
+    </script>
+</body>
+</html>

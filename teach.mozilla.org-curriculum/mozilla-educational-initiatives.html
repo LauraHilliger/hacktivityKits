@@ -1,0 +1,759 @@
+<!DOCTYPE html><html><head>
+<!--
+A Showcase Template
+	Have Some Cool Stuff to showcase out?
+	The template can help you
+	
+	Level: Medium
+
+
+Prior Knowledge:
+		1) Little of Icon implementation
+		2) A little of <></> knowledge, a 0.1grams will also work :)
+
+What you will learn:
+		1) A Better icon selection
+		2) Animation tweakings
+		3) Elements Placement
+		4) Switching Properties
+
+To Do's:
+		1) Change the Header accordingly
+		2) Write a Welcome text
+		3) Place Some Cool icons
+		4) Change the headers of the items
+		5) Write a short story about them
+		6) Change the footer text
+		7) Change the logo icon
+		8) Tweak and change animations
+-->
+<!--
+		You would love changing the title of the page first.
+	-->
+<title>Mozilla Educational Initiatives
+
+</title>
+<script>(function fixExternalLinks() {
+              function pointToBlank(a) {
+                var href = a.getAttribute("href");
+                if (href && href.indexOf("://") > -1) {
+                  // this is an external link.
+                  if(!a.getAttribute("target")) {
+                    a.setAttribute("target", "_blank");
+                  }
+                }
+              }
+              function fixLinks() {
+                document.removeEventListener("DOMContentLoaded", fixLinks);
+                var anchors = document.querySelectorAll("a");
+                var asArray = Array.prototype.slice.call(anchors);
+                asArray.forEach(function(a) {
+                  pointToBlank(a);
+                });
+              }
+              document.addEventListener("DOMContentLoaded", fixLinks);
+            }())</script>
+</head>
+  <body>
+    <div class="head-wrap">
+      	<div class="head">
+          <div class="moz-image">
+            <!--
+				This is a logo place, we will change it in CSS,
+				or you can opt to leave it unchanged to show your love to
+				the non-profit organization. :)
+          -->
+          </div>
+          <div class="text">
+            <!-- 
+				TODO 1: Change the header text here
+			-->
+            
+            <!--
+				This is purely optional, starting from here, and
+			-->
+            <img height="40" id="moz" src="https://mozorg.cdn.mozilla.net/media/img/home/title-wordmark.png">
+            <!--
+					Ending upto here
+			-->in education
+          </div>
+      </div>
+    </div>
+   <div class="body-wrap">
+     <div class="notice">
+       <!-- 
+			TODO 2: Here goes your welcome text, 
+					Be simple and try not writing stories
+		-->
+     The Mozilla Foundation has begun a variety of initiatives that serve to spur innovation in education, technology, journalism and beyond. Webmaker is just the tip of the iceberg for cool happenings under the pervue of the Foundation. We're <b>“Creating a Generation of Webmakers”</b>. Use your mouse to find out more about these Foundation projects.
+      <br><br>
+       <!-- 
+				Sign it if you wish.
+		-->
+       - Laura Hilliger, <i>Mozillian</i>
+     </div>
+       <div class="center-line-wrap">
+         <ul class="ul-nostyle">
+           <!--
+				The Core Task: Following this line you will see things like
+				<li>...codes..and more codes..</li>
+				These are real place of your showcase.
+				
+				Want to remove an item, just remove the whole block inside <li>..</li>,
+				including the <li></li> itself
+				
+				Want to add an item, copy one of the <li>...</li> block and paste it 
+				after any <li>...</li> and then customize it.
+
+				To make a flyout box to be opened in the right side replace the
+				class="flyout-wrap" to class="flyout-wrap left-wrap"
+				of the flyout box or remove the "left-wrap"	to make it open in the left
+				side.
+
+			-->
+           <!--
+					Showcase Item starts past this line
+			-->
+           <li>
+            <img src="https://wiki.mozilla.org/images/thumb/9/94/Mozilla_webmaker_logo-icon.png/100px-Mozilla_webmaker_logo-icon.png">
+
+             <!-- Flyout Box -->
+             <div class="flyout-wrap">
+               <div class="flyout">
+                 <div class="flyout-head">
+                   <div class="flyout-lfloat">
+                     <!--
+							TODO 3 Change the icon on the flyout arrow box 
+					-->
+                     
+                   <img src="https://wiki.mozilla.org/images/thumb/9/94/Mozilla_webmaker_logo-icon.png/100px-Mozilla_webmaker_logo-icon.png">
+                     
+                     
+                     <div class="fx-text">
+                       <!--
+							TODO 4:Change the showcase item header
+						-->
+                       Make Something with Webmaker.
+                     
+                     </div>
+                   </div>
+                   	<div class="flyout-rfloat">
+                      	<div class="rfloat-arrow">
+                      </div>
+                   </div>
+                 </div>
+                 <div class="fx-tip">
+                   <!--
+						TODO 5:Change the description text for showcase item 
+					-->We're a global community that doesn't just use the web, we make it by creating, remixing and teaching. Our goal: encourage millions of people around the world to move beyond using the web to making it. <a href="https://webmaker.org/about">Learn more.</a>
+                 </div>
+               </div>
+             </div>
+           </li>
+           <li>
+             <!--
+					TODO 3: The showcase icon, change the URL to any icon image on the
+							web.
+			-->
+             <img src="http:///stuff.webmaker.org/teach-assets/kits/images/openbadgeslogo.png">
+             
+             <!-- Flyout Box -->
+             <div class="flyout-wrap">
+               <div class="flyout">
+                 <div class="flyout-head">
+                   <div class="flyout-lfloat">
+                     
+                     <!--
+							TODO 3 Change the icon on the flyout arrow box 
+					-->
+                     
+                     <img src="http:///stuff.webmaker.org/teach-assets/kits/images/openbadgeslogo.png"> <div class="fx-text">
+                     
+                     <!--
+							TODO 4 Change the showcase item header
+					-->
+                     
+                     Open Badges
+                     
+                     </div>
+                   </div>
+                   	<div class="flyout-rfloat">
+                      	<div class="rfloat-arrow">
+                      </div>
+                   </div>
+                 </div>
+                 <div class="fx-tip">
+                   
+                   <!--
+						TODO 5 Change the description text for showcase item 
+					-->
+                   
+                   Open Badges is a new online standard to recognize and verify learning. It’s free software and an open technical standard any organization can use to create, issue and verify digital badges. Whether they’re issued by one organization or many, badges can build upon each other and be stacked to tell the full story of your skills and achievements.
+                   <a href="//openbadges.org">Learn more.</a>
+                   
+                   
+                 </div>
+               </div>
+             </div>
+           </li>
+           
+           <!--
+					Showcase Item  ends here
+			-->
+           
+            <!--
+					Showcase Item starts past this line
+			-->
+           <li>
+             
+              <!--
+					TODO 3: The showcase icon, change the URL to any icon image on the
+							web.
+			-->
+             
+             <img src="http://stuff.webmaker.org/teach-assets/kits/images/hivelogo.png">
+             <!-- Flyout Box -->
+             <div class="flyout-wrap left-wrap">
+               <div class="flyout">
+                 <div class="flyout-head">
+                   <div class="flyout-lfloat">
+                      <!--
+							TODO 3 Change the icon on the flyout arrow box 
+					-->
+                     
+                     <img src="http://stuff.webmaker.org/teach-assets/kits/images/hivelogo.png">
+                     
+                     <div class="fx-text">
+                     
+                        <!--
+							TODO 4 Change the showcase item header
+						-->
+                       
+                       Hive Learning Networks
+                     
+                     </div>
+                   </div>
+                   	<div class="flyout-rfloat">
+                      	<div class="rfloat-arrow">
+                      </div>
+                   </div>
+                 </div>
+                 <div class="fx-tip">
+                   
+                   <!--
+						TODO 5 Change the description text for showcase item 
+					-->
+                   
+                 Hive Learning Networks are coalitions of youth-serving organizations dedicated to transforming the learning landscape, creating opportunities for youth to explore their interests, develop new skills, and follow their passions through the educational application of digital media and technology. Learn more about the flagship network, <a href="http://explorecreateshare.org/about/">Hive NYC</a>
+                   
+                 </div>
+               </div>
+             </div>
+           </li>
+           
+            <!--
+					Showcase Item  ends here
+			-->
+           
+            <!--
+					Showcase Item starts past this line
+			-->
+           <li>
+             
+             <!--
+					TODO 3: The showcase icon, change the URL to any icon image on the
+							web.
+			-->
+             <img src="http:///stuff.webmaker.org/teach-assets/kits/images/opennews.png">
+             
+             <!-- Flyout Box -->
+             <div class="flyout-wrap">
+               <div class="flyout">
+                 <div class="flyout-head">
+                   <div class="flyout-lfloat">
+                     
+                     <!--
+							TODO 3 Change the icon on the flyout arrow box 
+					-->
+                   <img src="http:///stuff.webmaker.org/teach-assets/kits/images/opennews.png">
+                     
+                     <div class="fx-text">
+                         <!--
+								TODO 4 Change the showcase item header
+						-->
+                       
+                       Open News
+                     
+                     </div>
+                   </div>
+                   	<div class="flyout-rfloat">
+                      	<div class="rfloat-arrow">
+                      </div>
+                   </div>
+                 </div>
+                 <div class="fx-tip">
+                   
+                   <!--
+						TODO 5 Change the description text for showcase item 
+					-->
+                   
+                   OpenNews is a collaboration between <a href="http://www.knightfoundation.org/">the Knight Foundation</a> and Mozilla that's dedicated to building an ecosystem to help journalism thrive on the open web. It's about producing next-generation web solutions that solve real problems in news. It's about supporting communities of developers and journalists as they make, learn, and invent together. And it's about deploying <a href="http://mozillaopennews.org/fellowships">fellows</a>—and code—into news organizations to collaborate and innovate in new ways.
+                   
+                 </div>
+               </div>
+             </div>
+           </li>
+           
+            <!--
+					Showcase Item  ends here
+			-->
+           
+            <!--
+					Showcase Item starts past this line
+			-->
+           <li>
+             
+             <!--
+					TODO 3: The showcase icon, change the URL to any icon image on the
+							web.
+			-->
+             <img src="https://wiki.mozilla.org/images/thumb/7/72/WebLitStd-avatar.png/100px-WebLitStd-avatar.png">
+             
+             <!-- Flyout Box -->
+             <div class="flyout-wrap left-wrap">
+               <div class="flyout">
+                 <div class="flyout-head">
+                   <div class="flyout-lfloat">
+                   
+                     <!--
+							TODO 3 Change the icon on the flyout arrow box 
+					-->
+                     <img src="https://wiki.mozilla.org/images/thumb/7/72/WebLitStd-avatar.png/100px-WebLitStd-avatar.png">
+                     
+                     <div class="fx-text">
+                       <!--
+								TODO 4 Change the showcase item header
+						-->
+                      Web Literacy Standard
+                     
+                     </div>
+                   </div>
+                   	<div class="flyout-rfloat">
+                      	<div class="rfloat-arrow">
+                      </div>
+                   </div>
+                 </div>
+                 <div class="fx-tip">
+                   <!--
+						TODO 5 Change the description text for showcase item 
+					-->
+                   
+                 The Web Literacy Standard is a map of competencies and skills that Mozilla and our community of stakeholders believe are important to pay attention to when getting better at reading, writing and participating on the web. More <a href="https://webmaker.org/en-US/standard">here</a>.
+                   
+                 </div>
+               </div>
+             </div>
+           </li>
+           
+            <!--
+					Showcase Item  ends here
+			-->
+           
+            <!--
+				Last Showcase Item starts past this line
+			-->
+           <li id="no-border">
+             
+              <!--
+					TODO 3: The showcase icon, change the URL to any icon image on the
+							web.
+			-->
+            
+           </li>
+           <!--
+				Last Showcase Item ends here
+			-->
+         </ul>
+     </div>
+    </div>
+    <div class="footer-wrap">
+      	<div class="footer">
+          <div class="footer-text">
+            <!--
+				TODO 6: Change the footer text
+			-->
+          Mouseover the elements around this page to reveal contents/animations
+      	</div>
+	</div>
+    </div>
+    <style>
+      body {
+      	margin:0;
+        padding:0;
+        font: 12px/21px 'Open Sans',tahoma;
+        font-weight:400;
+        background: url("https://support.cdn.mozilla.net/static/img/grain.png") #f5f5f5;
+      }
+      .head-wrap {
+      	width:100%;
+        position:fixed;
+        top:0;
+        left:0;
+        min-height:80px;
+        background:linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0.8));
+        background:-webkit-linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0.8));
+        background:-ms-linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0.8));
+        background:-o-linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0.8));
+        border-bottom:1px solid #ccc;
+        box-shadow:0 0 8px rgba(0,0,0,0.5);
+      }
+      .head {
+      	margin:0 auto;
+        padding:3px;
+        display:block;
+        width:600px;
+      }
+      .moz-image {
+        margin-top:10px;
+        float:left;
+        /*
+	        TODO 7: Change the logo icon, use a sprite icon having 2 icons together
+        			placed aside of size 60*60 (best) each
+        			Or if you are not sure what this means, you can leave it
+        			with love to mozilla
+        */
+      	background: url("https://mozorg.cdn.mozilla.net/media/img/home/about-icons.png") repeat-x;
+        background-position:0px 15px;
+        width:80px;
+        height:64px;
+        transition-property:background-position;
+        -webkit-transition-property:background-position;
+        -o-transition-property:background-position;
+        -ms-transition-property:background-position;     
+        transition-duration:500ms;
+        -ms-transition-duration:500ms;
+        -o-transition-duration:500ms;
+        -webkit-transition-duration:500ms;
+        transition-timing-function:ease-out;
+        cursor:pointer;
+      }
+      .moz-image:hover {
+      	background-position:80px 15px;
+        transition-property:background-position;
+        -webkit-transition-property:background-position;
+        -o-transition-property:background-position;
+        -ms-transition-property:background-position;    
+        /*
+        
+        	TODO 8: Change the timing to speed up/down the animation
+        			Timing is in milliseconds, you can also give it in seconds like 1s, 2s
+        */
+        transition-duration:500ms;
+        -ms-transition-duration:500ms;
+        -o-transition-duration:500ms;
+        -webkit-transition-duration:500ms;
+        transition-timing-function:ease-out;
+      }
+      .text {
+      	padding:25px 25px;
+        float:left;
+        font-size:43px;
+        color:#555;
+        text-shadow:0 0 1px rgba(0,0,0,0.3);
+      }
+      .body-wrap {
+      	padding:10%;
+        padding-top:30px;
+        margin:0 auto;
+        margin-bottom:160px;
+        width:80%;
+        height:397px;
+        margin-top:80px;
+      }
+      .block-wrap {
+      	width:100%;
+        height:100%;
+      }
+      .center-line-wrap {
+      	width:60px;
+        margin:0 auto;
+        background:#fff;
+        border:1px solid #ccc;
+        box-shadow:0 0 5px #c3d1ec;
+        border-radius:3px;
+      }
+      .inline-block {
+      	display:inline-block;
+        padding:4px;
+        cursor:pointer;
+      	transform: scale(1) rotateY(0deg);
+        -ms-transform: scale(1) rotateY(0deg);
+        -webkit-transform: scale(1) rotateY(0deg);
+        -o-transform: scale(1) rotateY(0deg);
+        transition-property: transform;
+        -webkit-transition-property: transform;
+        -ms-transition-property: transform;
+        -o-transition-property: transform;
+        transition-duration:630ms;
+        -webkit-transition-duration:630ms;
+        -ms-transition-duration:630ms;
+        -o-transition-duration:630ms;
+      }
+      .inline-block:hover {
+      	transform: scale(1.4) rotateY(-180deg);
+        -ms-transform: scale(1.4) rotateY(-180deg);
+        -o-transform: scale(1.4) rotateY(-180deg);
+        -webkit-transform: scale(1.4) rotateY(-180deg);
+        transition-property: transform;
+        -webkit-transition-property: transform;
+        -ms-transition-property: transform;
+        -o-transition-property: transform;
+        transition-duration:530ms;
+        -ms-transition-duration:530ms;
+        -o-transition-duration:530ms;
+        -webkit-transition-duration:530ms;
+      }
+       #moz {
+        transform: scale(0.9) rotateX(0deg);
+        -webkit-transform: scale(0.9) rotateX(0deg);
+        -ms-transform: scale(0.9) rotateX(0deg);
+        -o-transform: scale(0.9) rotateX(0deg);
+        transition-property: transform;
+        -webkit-transition-property: transform;
+        -o-transition-property: transform;
+        -ms-transition-property: transform;
+        transition-duration:530ms;
+        -webkit-transition-duration:530ms;
+        -ms-transition-duration:530ms;
+        -o-transition-duration:530ms;
+        width:150px;
+        cursor:pointer;
+      }
+      #moz:hover {
+        transform: scale(1.1) rotateX(360deg);
+        -webkit-transform: scale(1.1) rotateX(360deg);
+        -o-transform: scale(1.1) rotateX(360deg);
+        -ms-transform: scale(1.1) rotateX(360deg);
+        transition-property: transform;
+        -webkit-transition-property: transform;
+        -ms-transition-property: transform;
+        -o-transition-property: transform;
+        transition-duration:530ms;
+        -webkit-transition-duration:530ms;
+        -o-transition-duration:530ms;
+        -ms-transition-duration:530ms;
+      }
+      .ul-nostyle{
+      	list-style:none;
+        margin:0;
+        padding:3px 1px;
+      }
+      .ul-nostyle li {
+      	padding:10px 3px;
+        border:1px solid #fff;
+        border-bottom:1px solid #f5f5f5;
+        border-radius:3px;
+      }
+      .ul-nostyle li:hover {
+      	background:#f5f5f5;
+        cursor:pointer;
+        border-color:#f5f5f5;
+      }
+      .ul-nostyle li:active {
+      	border:1px solid #ddd;
+        background:#dff;
+      }
+      .ul-nostyle img {
+      	width:50px;
+        min-height:20px;
+      }
+      #no-border{
+      	border-bottom:none;
+      }
+      .ul-nostyle li:hover .flyout-wrap {
+        /*
+	        TODO 8: You can add more animation to the flyout arrow box, you can add
+        		roatateX(180deg),rotateY(180deg) or roatateZ(360deg)
+        		to see more fascinating animation
+        */
+      	transform:scale(1);
+        -webkit-transform:scale(1);
+        -o-transform:scale(1);
+        -ms-transform:scale(1);
+        opacity:1;
+        transition-property:transform, opacity;
+        -ms-transition-property:transform, opacity;
+        -webkit-transition-property:transform, opacity;
+        -o-transition-property:transform, opacity;
+        transition-duration:400ms;
+        -webkit-transition-duration:400ms;
+        -ms-transition-duration:400ms;
+        -o-transition-duration:400ms;
+      }
+      .ul-nostyle li:hover img {
+      	transform:rotateY(360deg);
+        -webkit-transform:rotateY(360deg);
+        -ms-transform:rotateY(360deg);
+        -o-transform:rotateY(360deg);
+        transition-property:transform;
+        -webkit-transition-property:transform;
+        -ms-transition-property:transform;
+        -o-transition-property:transform;
+        /*
+        	TODO 8: Change the timing here to speed up the coin spin of the showcase 
+        			image
+        */
+        transition-duration:800ms;
+        -webkit-transition-duration:800ms;
+        -ms-transition-duration:800ms;
+        -o-transition-duration:800ms;
+      }
+      .footer-wrap {
+      	position:fixed;
+        bottom:0;
+        left:0;
+        width:100%;
+      }
+      .footer-wrap .footer {
+      	width:100%;
+        height:30px;
+        background:rgba(0,0,0,0.5);
+        border-top:1px solid #555;
+        box-shadow:0 0 5px rgba(0,0,0,0.4);
+        opacity:1;
+        margin-top:0;
+        transition-property:opacity;
+        -webkit-transition-property:opacity;
+        -ms-transition-property: opacity;
+        -o-transition-property:opacity;
+        transition-duration:400ms;
+        -webkit-transition-duration:400ms;
+        -o-transition-duration:400ms;
+        -ms-transition-duration:400ms;
+      }
+      .footer-wrap:hover .footer{
+      	opacity:0.2;
+        cursor:pointer;
+         transition-property:opacity;
+        -webkit-transition-property:opacity;
+        -ms-transition-property: opacity;
+        -o-transition-property:opacity;
+        transition-duration:400ms;
+        -webkit-transition-duration:400ms;
+        -o-transition-duration:400ms;
+        -ms-transition-duration:400ms;
+      }
+      
+      .footer-text {
+      	width:410px;
+        margin:0 auto;
+        padding:4px;
+        color:#fff;
+        text-shadow:0 0 3px rgba(0,0,0,0.8);
+      }
+      .rfloat-arrow {
+      	background:url("https://thimble.webmaker.org/friendlycode/img/indicator-arrow.png") no-repeat;
+        width:40px;
+        height:23px;
+        position:absolute;
+        z-index:222;
+        margin-left:-4px;
+        transform:rotate(-90deg);
+        -webkit-transform:rotate(-90deg);
+        -ms-transform:rotate(-90deg);
+        -o-transform:rotate(-90deg);
+      }
+      .flyout-wrap {
+        position:absolute;
+      	margin-left:-412px;
+        transform:scale(0);
+        opacity:0;
+       transition-property:opacity, transform;
+        -webkit-transition-property:opacity, transform;
+        -ms-transition-property: opacity, transform;
+        -o-transition-property:opacity, transform;
+        transition-duration:400ms;
+        -webkit-transition-duration:400ms;
+        -o-transition-duration:400ms;
+        -ms-transition-duration:400ms;
+        width:410px;
+        height:150px;
+        margin-top:-60px;
+        cursor:default;
+      }
+      .flyout {
+      	background:#fff;
+        width:380px;
+        display:inline-block;
+        min-height:120px;
+        padding:5px;
+        border:1px solid #ddd;
+        box-shadow:0 0 5px #c3d1ec;
+        border-radius:5px;
+      }
+      .flyout-head {
+      	width:100%;
+        display:inline-block;
+        border-bottom:1px solid #f5f5f5;
+      }
+      .flyout-rfloat {
+      	float:right;
+        display:inline-block;
+      }
+      .flyout-lfloat {
+      	float:left;
+        font-size:18px;
+        font-weight:lighter;
+        padding:4px;
+        padding-top:0px;
+        color:#888;
+        display:inline-block;
+      }
+      .left-wrap {
+      	margin-left:68px;
+      }
+      .left-wrap .flyout-rfloat {
+      	float: left;
+        transform: rotate(-180deg);
+        -webkit-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+        -o-transform: rotate(-180deg);
+        margin-top: 40px;
+      }
+      .left-wrap .flyout-lfloat {
+      	float:right;
+      }
+      .flyout-lfloat img{
+      	width:30px;
+        padding:3px;
+        float: left;
+      }
+      .left-wrap img {
+      	float:right;
+      }
+      .fx-text {
+      	padding-top:5px;
+        padding-left:5px;
+        display: inline-block;
+        font-weight:lighter;
+      }
+      .fx-tip {
+      	font-weight: lighter;
+        padding:5px;
+        color:#666;
+      }
+     .fx-tip a {
+      	text-decoration:none;
+        color:#444;
+        font-weight:400;
+      }
+     .fx-tip a:hover {
+      	text-decoration: underline;
+        color:#333;
+      }
+      .notice {
+      	padding:1px 5px;
+      }
+    </style>
+ 
+</body></html>

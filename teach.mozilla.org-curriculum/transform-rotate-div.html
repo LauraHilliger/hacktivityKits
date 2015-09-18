@@ -1,0 +1,99 @@
+<!DOCTYPE html><html><head>
+    <title>Transform Rotate DIV</title>
+    <style>
+body {
+	margin:0px;
+	padding:0px;
+}
+#leftRotate, #rightRotate {
+	float:left;
+	margin:0px;
+}
+/*This style fixes the box sizes*/
+    #leftRotate div, #rightRotate div {
+	height:200px;
+	width:200px;
+	position:relative;
+}
+.leftRotate {
+	text-align: center;
+	/*Text Color*/
+	color: #686868;
+	padding: 10px;
+   /*this is the yellow I had open in another window. You can write in color names like red or green or blue. There are 141 different color names, or you can look up the color code*/
+	background-color: #ffcd36;
+	font-size: 18px;
+	/*here's the magic, this tells the entire box to rotate*/
+	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	z-index: 2;
+	/*I stuck this border on so you can see the outline of the boxes*/
+             border:1px solid #000;
+}
+.rightRotate {
+	text-align: center;
+	color: #686868;
+	padding: 10px;
+	background-color: #ffcd36;
+	font-size: 18px;
+        /*Notice that this rotates the opposite way*/
+	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	z-index: 2;
+	border:1px solid #000;
+}
+      /*these two styles move the numbers around*/
+.bottom {
+	position:relative;
+	top:130px;
+	left:90px;
+}
+.top {
+	position:relative;
+	top:130px;
+	left:-90px;
+}
+</style>
+    <base target="_blank">
+</head>
+    <body>
+<!--First the left-hand column of boxes-->
+<div id="leftRotate">
+      <div class="leftRotate">
+    <p>body text</p>
+    <p class="top">5</p>
+  </div>
+      <div class="leftRotate">
+    <p>body text</p>
+    <p class="bottom">6</p>
+  </div>
+      <div class="leftRotate">
+    <p>body text</p>
+    <p class="top">7</p>
+  </div>
+      <div class="leftRotate">
+    <p>body text</p>
+    <p class="bottom">8</p>
+  </div>
+    </div>
+<!--then the right-->
+<div id="rightRotate">
+      <div class="rightRotate">
+    <p>body text</p>
+    <p class="bottom">4</p>
+  </div>
+      <div class="rightRotate">
+    <p>body text</p>
+    <p class="top">3</p>
+  </div>
+      <div class="rightRotate">
+    <p>body text</p>
+    <p class="bottom">2</p>
+  </div>
+      <div class="rightRotate">
+    <p>body text</p>
+    <p class="top">1</p>
+  </div>
+    </div>
+
+</body></html>

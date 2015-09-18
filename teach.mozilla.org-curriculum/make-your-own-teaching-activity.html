@@ -1,0 +1,117 @@
+<!DOCTYPE html><!-- ================================================================
+WELCOME TO THE WEBMAKER ACTIVITY TEMPLATE!
+Use this template to create your own activity for learners, educational resource or lesson. 
+Edit the HTML below to add your own content, links and images.
+Code comments like these will help with hints and guides. 
+Need help? Start here: http://mzl.la/teachingkit-tips
+================================================================ -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta content="teach-activity" name="webmaker:tags">
+  <link href="https://stuff.webmaker.org/webmaker-kits/v2/css/style.css" media="all" rel="stylesheet" type="text/css">
+<!-- =============================== -->
+<!-- ADD YOUR TITLE HERE -->
+<title>Activity Template</title>
+<script>(function fixExternalLinks() {
+              function pointToBlank(a) {
+                var href = a.getAttribute("href");
+                if (href && href.indexOf("//") > -1) {
+                  // this is an external link.
+                  if(!a.getAttribute("target")) {
+                    a.setAttribute("target", "_blank");
+                  }
+                }
+              }
+              function fixLinks() {
+                document.removeEventListener("DOMContentLoaded", fixLinks);
+                var anchors = document.querySelectorAll("a");
+                var asArray = Array.prototype.slice.call(anchors);
+                asArray.forEach(function(a) {
+                  pointToBlank(a);
+                });
+              }
+              document.addEventListener("DOMContentLoaded", fixLinks);
+            }())</script>
+</head>
+<body class="activity">
+
+  <div id="ribbon">Activity</div>
+
+  <header>
+    <hgroup id="header-group">
+      <h1>Name your activity</h1>
+      <h2>Add a description here explaining the activity's purpose, and what participants will learn. What kind of activity is this? Is it a discussion starter? Is it a game? A tutorial? A project? </h2>
+
+      <p id="made-by">Made by <a href="http://example.com">your name</a></p>
+    </hgroup>
+
+  </header>
+  <div class="wrapper">
+    <div class="row">
+      <main>
+        <section class="step-section">
+          <h2>Steps for the Activity</h2>
+          <ol>
+            <li>
+              <p>
+                We believe that peer-to-peer activities are the most powerful way to facilitate interaction, build networks, and collaborate. Successful activities are:
+              </p>
+              <div class="well example">
+                <ul>
+                  <li><strong>Participatory:</strong> Engaging and activating participants from the beginning and getting them making and doing, rather than listening and watching.</li>
+                  <li><strong>Purposeful:</strong> Working toward meaningful goals.
+                  </li>
+                  <li><strong>Productive:</strong> Well-planned so that concrete outcomes are achieved in the allotted time, and participants feel time was well spent.</li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <p>Explain each step of the activity so that others can repeat it in their learning situations. Start by explaining how the activity is set up.</p>
+            </li>
+
+            <li>
+              <p>Be descriptive! Seeing an activity in action is very different than reading about it, so be as specific as you can.</p>
+            </li>
+          </ol>
+        </section>
+
+      </main>
+<!--What is needed to run this activity? Replace the example materials with those your activity needs!-->
+      <aside>
+        <section class="materials">
+          <h2><i class="fa fa-check-square-o"></i> Materials</h2>
+          <div class="well checklist">
+            <ul>
+              <li>Pens</li>
+              <li>Post-its</li>
+              <li>Computer</li>
+              <li>Web Access</li>
+            </ul>
+          </div>
+        </section>
+        <section class="discussion">
+          <h2><i class="fa fa-comments"></i> Discussion</h2>
+          <div class="well yellow">
+            What are the essential questions your learners should be able to discuss and reflect upon after this activity?
+          </div>
+        </section>
+        <section class="teach-list">
+          <h2>Related Activities</h2>
+          <div>
+            <ul>
+
+              <li><a href="http://foo.org/">You can include LINKS...</a></li>
+              <li><a href="http://foo.org/">...to related pages and helpful resources...</a></li>
+              <li><a href="http://foo.org/">...in this section</a></li>
+            </ul>
+          </div>
+        </section>
+      </aside>
+    </div>
+  </div>
+  <script src="https://stuff.webmaker.org/webmaker-kits/v2/js/main.min.js"></script>
+</body>
+</html>

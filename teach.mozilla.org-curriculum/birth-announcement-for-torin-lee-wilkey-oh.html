@@ -1,0 +1,174 @@
+<!DOCTYPE html><!--
+    Let's get started.
+
+    1) LET'S GET STARTED. This is a comment, meaning everything inside of this tag is not processed as code. The comments here will guide you through all the separate elements of the code.
+
+    2) GET ORIENTED IN THE CODE. HTML is made up of tags that look like this <p> </p>. The tags tell you something about the information contained between them. Click on the tags in the code and then on the orange question mark icon to get a description of what each tag is for.
+-->
+<html>
+  <head>
+    <link href="//fonts.googleapis.com/css?family=Sancreek" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Vast+Shadow" rel="stylesheet" type="text/css">
+	<link href="http://reset5.googlecode.com/hg/reset.min.css" rel="stylesheet" type="text/css">
+   <link href='http://fonts.googleapis.com/css?family=Lily+Script+One' rel='stylesheet' type='text/css'>
+    <style>
+      /*
+      Everything contained within this <style> tag is called CSS and it is used to define the presentational components of the page, like fonts, colors, container sizes, positioning, etc. You can edit this CSS to change the look and feel of your page.
+
+      This is where your page background style is defined. Try changing the background colour or image (note that the background image overrides the background colour).
+      */
+	body {
+        background-color:#3FB58E;
+        background-image: url(http://us.cdn4.123rf.com/168nwm/torky/torky1009/torky100900030/7793758-floral-seamless-background-in-retro-colors.jpg);}
+      
+      /*
+        This is where your <h1> header style is defined. Try changing the size or the font attributes.
+      */
+	  h1 {
+        	font-family: 'Sancreek';
+        	color: #e8e3db;
+        	font-size: 90px;
+        	text-shadow: 0px 4px 0px #118f66;
+        	letter-spacing: 3px;
+      		}	
+      h2 {
+        	font-family: 'Sancreek';
+        	color: #e8e3db;
+        	font-size: 50px;
+        	text-shadow: 0px 4px 0px #118f66;
+        	letter-spacing: 3px;
+      		}	
+      p {
+        padding: 0px 20px 0px 10px;	
+      }
+      /* 
+      CSS elements that begin with a "#" (such as "#content" below) are called IDs. IDs are styles that can only be applied to one element; they are unique.
+      */
+      #content {
+        color: white;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      #header {
+        width: 80%;
+        height: 190px;
+        background-color: #3FB58E;
+        margin-left: auto;
+        margin-right: auto;
+        border: 5px solid #118f66;
+        padding: 15px;
+      }
+      #firstname {
+        height: 100px;
+        margin: 0px;
+      }
+      #surname {
+        height: 50px;
+        margin-top: 10px;
+      }
+      #details {
+        background-color: #e8e3db;
+        width: 500px;
+        height: 160px;
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        border: 10px solid white;
+      }
+      /* 
+      CSS elements that begin with a "." (such as ".bird" below) are called classes. Classes are styles that can be applied to many different elements.
+      */
+      .bird {
+        border-radius: 50%;
+		width: 300px;
+		height: 300px; 
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+      .headline {
+        color:#3FB58E;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 30px;
+        font-family: 'Sancreek';
+        font-style: normal;
+        float: left;
+        width: 325px;
+      }
+      .text {
+        color:#7A6645;
+        font-size: 19px;
+        line-height: 30px;
+        font-family: 'Georgia';
+        float: left;
+        font-style: italic;
+        width: 500px;
+      }
+      /* 
+      CSS classes written like the one below (".headshot-mom img") contain both the class name ("headshot-mom") as well as an HTML element (img). This particular example means that these styles will only apply to images within the class "headshot-mom".
+      */
+      .headshot-mom img {
+        width: 75px;
+        height: 75px;
+        float: left;
+        border: 5px solid white;
+        float: left;
+        transform:rotate(353deg);
+		-ms-transform:rotate(353deg); /* Fallback so this attribute will work in IE 9 */
+		-webkit-transform:rotate(353deg); /* Fallback so this attribute will work in Safari and Chrome */
+      }
+      .headshot-dad img {
+        width: 75px;
+        height: 75px;
+        float: left;
+        border: 5px solid white;
+        float: left;
+        transform:rotate(7deg);
+		-ms-transform:rotate(7deg); /* IE 9 */
+		-webkit-transform:rotate(7deg); /* Safari and Chrome */
+      }
+	</style> <!-- End of the CSS styles -->
+
+    <!--
+	The <title>Remix of  element below is our page title. Change this to customize your project name.
+	-->
+  <title>Birth announcement for Torin Lee Wilkey Oh</title>
+  <base target="_blank">
+</head>
+  <body>
+    <!--
+    By putting all the page elements within the "content" div below, I can ensure that every element is centered. Scroll back up to the id for "content" in the CSS styles on lines 48-50 to see how that is done.
+    -->
+    <div id="content">
+      <div id="header">
+          <!--
+          Below is the headline (or h1 and h2) text you see on the Preview on the right. See what happens when you change the text.
+          -->
+          <h1 id="firstname">Torin Lee Wilkey</h1>
+          <h2 id="surname">Oh</h2>
+      </div>
+      <!--
+Change the image in the circle (the hatching chick) by cutting and pasting the src attribute of the <img> tag  down below. The src attribute defines the URL for the image. Be sure to include "http://" and enclose the URL in quotes. 
+      -->
+      <img class="bird" src="http://f.cl.ly/items/2o0m1Z3g2c0z0u0h1824/bird-hatching-white.gif">
+      <div id="details">
+        <div class="headshot-mom">
+          <img alt="Mommy" class="headshot" src="http://images5.fanpop.com/image/photos/25300000/Aphrodite-demigods-and-greek-gods-and-goddesses-25375369-450-401.jpg">
+        </div>
+        <div class="headline">
+          <p>We made this!</p>
+        </div>
+        <div class="headshot-dad">
+          <img alt="Daddy" class="headshot" src="https://lh3.googleusercontent.com/-l_qDqSbr7ck/AAAAAAAAAAI/AAAAAAAAAoc/B4dyh_6Q88U/photo.jpg">
+        </div>
+        <div class="text">
+          <p>Born September 16, 2013 at 8:08am<br/> weighing 9lbs 15.9oz</p>
+        </div>
+      </div><!-- closes the #details div -->
+  	
+  </div> <!--closes the #content div -->
+
+	</body>
+</html>

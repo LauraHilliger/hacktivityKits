@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<title>The Marshmallow</title>
+<body>
+  <section id="start">
+    <h2>The Marshmallow</h2>
+    <p>
+      A marshmallow is here.
+    </p>
+    <p>
+      The doctor said that if you don't eat the marshmallow for 15
+      minutes, you'll get <em>two</em>.
+    </p>
+    <ul>
+      <li><a href="#eat">Eat the marshmallow.</a></li>
+      <li><a href="#wait">Wait.</a></li>
+    </ul>
+  </section>
+  <section id="eat">
+    <h2>Eaten</h2>
+    <p>
+      Yum, that was a really tasty marshmallow!
+    </p>
+    <p>
+      However, the doctor comes back into the room and tells you that
+      you'll never amount to anything. 
+    </p>
+    <p>Except for <a href="http://jessicaklein.blogspot.com/">this person</a> who has already done loads of awesome things due to her impatience and marshmellow eating.</p>
+  </section>
+  <section id="wait">
+    <h2>Not Eaten</h2>
+    <p>The person who was supposed to write this page is busy eating marshmallows.</p>
+  </section>
+  <footer>
+    [ <a href="#">restart story</a>
+      | <input type="checkbox" id="cyoa-debug"> 
+          <label for="cyoa-debug">development mode</label>
+    ]
+  </footer>
+  <style>
+  h2 {
+    font-weight: inherit;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  body {
+    margin: 0 12px;
+  }
+
+  body {
+    line-height: 1.5em;
+    font-family: Palatino, Georgia, serif;
+  }
+
+  footer {
+    margin-top: 2em;
+    padding-top: 1em;
+    border-top: 1px dotted gray;
+    font-size: x-small;
+    text-align: center;
+  }
+
+  footer input[type=checkbox] {
+    width: 0.75em;
+    height: 0.75em;
+  }
+  </style>
+
+  <!-- Everything below this point is the core CYOA code. -->
+
+  <style>
+  body.cyoa-debug section.cyoa-active {
+    background-color: lightyellow;
+  }
+
+  body:not(.cyoa-debug) section:not(.cyoa-active) {
+    display: none;
+  }
+
+  a.cyoa-broken {
+    color: red;
+  }
+  </style>
+  <script>
+  var CYOA = (function() {
+    function $(selector) {
+      try {
+        return document.querySelector(selector);
+      } catch (e) { return null; }
+    };
+
+    function highlightBrokenLinks() {
+      var links = document.querySelectorAll('a[href^="#"]');
+      var link, sectionName;
+
+      for (var i = 0; i < links.length; i++) {
+        link = links[i];
+        sectionName = link.getAttribute('href').slice(1);
+        if (sectionName && !$('section#' + sectionName))
+          link.classList.add('cyoa-broken');
+      }
+    }
+
+    function showSection(name) {
+      var oldSection = $('section.cyoa-active');
+      var newSection = $('section#' + name) || $('section');
+
+      if (oldSection) oldSection.classList.remove('cyoa-active');
+      if (newSection) newSection.classList.add('cyoa-active');
+    };
+
+    function showCurrentSection() { showSection(location.hash.slice(1)); }
+
+    function processDebugCheckbox() {
+      storage.set('cyoa-debug', debugCheckbox.checked);
+      if (debugCheckbox.checked)
+        $('body').classList.add('cyoa-debug');
+      else
+        $('body').classList.remove('cyoa-debug');
+    };
+
+    var debugCheckbox = $('input#cyoa-debug[type=checkbox]');
+    var storage = {
+      set: function set(name, value) {
+        try {
+          sessionStorage[name] = JSON.stringify(value);
+        } catch (e) {};
+      },
+      get: function get(name) {
+        try {
+          return JSON.parse(sessionStorage[name]);
+        } catch (e) { return null; }
+      }
+    };
+
+    if (debugCheckbox) {
+      debugCheckbox.checked = !!storage.get('cyoa-debug');
+      debugCheckbox.addEventListener('change', processDebugCheckbox, false);
+      processDebugCheckbox();
+    }
+    window.addEventListener('hashchange', showCurrentSection, false);
+    showCurrentSection();
+    highlightBrokenLinks();
+
+    if (window.parent !== window) {
+      // We might be in jsbin or thimble or another two-pane editor,
+      // which often handle named anchors poorly, so we'll handle
+      // them ourselves.
+      document.addEventListener('click', function(e) {
+        if (e.target.nodeName == 'A') {
+          var href = e.target.getAttribute('href');
+
+          if (!(href && href[0] == '#')) return;
+          showSection(href.slice(1));
+          storage.set('cyoa-section', href.slice(1));
+          e.preventDefault();
+        }
+      }, true);
+
+      // Two-pane editors don't always retain scroll position, so we'll
+      // do that ourselves too.
+      window.addEventListener('load', function() {
+        scrollTo(0, storage.get('cyoa-scroll') || 0);
+        setInterval(function() {
+          storage.set('cyoa-scroll', window.pageYOffset);
+        }, 1000);
+      }, false);
+
+      showSection(storage.get('cyoa-section') || '');
+    }
+
+    return {$: $, showSection: showSection, storage: storage};
+  })();
+  </script>
+</body>
